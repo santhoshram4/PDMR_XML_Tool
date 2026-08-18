@@ -1,0 +1,1891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="jats-html.xsl"?>
+<!DOCTYPE book PUBLIC "-//NLM//DTD BITS Book Interchange DTD v2.2 20250930//EN" "BITS-book2-2.dtd">
+<book xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="2.2">
+<book-body>
+<?pageStart pdf="9" pagination="5"?>
+<book-part book-part-type="mod-Lerneinheit" id="ch1">
+<book-part-meta>
+<book-part-id book-part-id-type="pu-node-id">678e6f6c7206291f44b06f98</book-part-id>
+<title-group>
+<label>1</label>
+<title id="pg5">Rationale Zahlen</title>
+</title-group>
+</book-part-meta>
+<body>
+<book-part book-part-type="mod-Lerneinheit">
+<book-part-meta>
+<book-part-id book-part-id-type="pu-node-id">68e7cca3d0669932df81e875</book-part-id>
+<title-group>
+<label>[Kapiteleinstieg]</label>
+</title-group>
+<abstract abstract-type="mer-Lernziel">
+<p>In diesem Kapitel lernst du den Begriff rationale Zahlen genauer kennen.</p>
+</abstract>
+<abstract abstract-type="mer-Lernziel">
+<p>In diesem Kapitel lernst du rationale Zahlen zu vergleichen.</p>
+</abstract>
+<abstract abstract-type="mer-Lernziel">
+<p>In diesem Kapitel lernst du Punkte auch mit negativen Koordinaten in einem Koordinatensystem darzustellen.</p>
+</abstract>
+<abstract abstract-type="mer-Lernziel">
+<p>In diesem Kapitel lernst du mit rationalen Zahlen zu rechnen.</p>
+</abstract>
+</book-part-meta>
+<body>
+
+
+<sec id="pg005_s001">
+<p>&#x25B8; Im Winter k&#x00F6;nnen die Temperaturen kleiner als 0 &#x00B0;C werden.</p>
+<p>Dann gibt es negative Temperaturen.</p>
+<p>Stefan und sein Vater, Herr Berger, schauen am Morgen auf das digitale Thermometer.</p> 
+<p>Drau&#x00DF;en sind es &#x2212;9,7 &#x00B0;C und drinnen 18,4 &#x00B0;C.</p>
+<p>Wie viel Grad Celsius ist es drinnen w&#x00E4;rmer als drau&#x00DF;en?</p>
+<p>Wo sind dir schon negative Zahlen begegnet?</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_005_fx_001.jpg"/></p>
+</sec>
+</body>
+</book-part>
+<?pageStart pdf="10" pagination="6"?>
+<book-part book-part-type="mod-Lerneinheit">
+<book-part-meta>
+<book-part-id book-part-id-type="pu-node-id">678e6f6c7206291f44b06f9f</book-part-id>
+<title-group id="pg6">
+<label>Wiederholung</label>
+</title-group>
+<related-object>&#x2192; <xref ref-type="link-toSolution" rid="pg227">L&#x00F6;sungen auf Seite 227</xref> und <xref ref-type="link-toSolution" rid="pg228">228</xref></related-object>
+<related-object content-type="mer-Testen"/>
+</book-part-meta>
+<body>
+<sec id="pg006_s001">
+<sec id="pg006_s002">
+<label>1 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann Zahlen vergleichen.</p>
+</sec>
+<sec sec-type="task" id="pg006_task001">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>1</label>
+<statement><p>Vergleiche die Zahlen.</p>
+<p>Setze im Heft &#x003C;, &#x003E; oder = ein.</p>
+</statement>
+
+<sec sec-type="subtask" id="pg006_task001a">
+<label>a)</label>
+<p>4 &#x25CF; 9</p>
+</sec>
+<sec sec-type="subtask" id="pg006_task001b">
+<label>b)</label>
+<p>3,5 &#x25CF; 2,5</p>
+</sec>
+<sec sec-type="subtask" id="pg006_task001c">
+<label>c)</label>
+<p>0 &#x25CF; 0,1</p>
+</sec>
+<sec sec-type="subtask" id="pg006_task001d">
+<label>d)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{1}{3} \bullet \frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+
+<sec sec-type="subtask" id="pg006_task001e">
+<label>e)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{4} \bullet \frac{2}{3}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+
+<sec sec-type="subtask" id="pg006_task001f">
+<label>f)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(0,5 \bullet \frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+
+</sec>
+<sec id="pg006_s003">
+<label>Lies und &#x00FC;be:</label>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg196_task004">Seite 196 Nr. 4</xref>, <xref ref-type="link-LookItUp" rid="pg196_task005">5</xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg204_task036">Seite 204 Nr. 36</xref></p>
+</sec>
+</sec>
+<sec id="pg006_s004">
+<sec id="pg006_s005">
+<label>2 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann einen Zahlenstrahl zeichnen und einteilen.</p>
+</sec>
+<sec sec-type="task" id="pg006_task002">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>2</label>
+<statement><p>Ist der Zahlenstrahl richtig gezeichnet und eingeteilt?</p>
+<p>Verbessere in deinem Heft.</p></statement>
+<sec sec-type="subtask" id="pg006_task002a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_006_fx_001.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg006_task002b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_006_fx_002.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg006_task002c">
+<label>c)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_006_fx_003.jpg"/>
+</fig>
+</sec>
+</sec>
+<sec id="pg006_s006">
+<label>Lies und &#x00FC;be:</label>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg195_task002">Seite 195 Nr. 2</xref>, <xref ref-type="link-LookItUp" rid="pg195_task003">3</xref></p>
+</sec>
+</sec>
+<sec id="pg006_s007">
+<sec id="pg006_s008">
+<label>3 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann Zahlen auf einem Zahlenstrahl ablesen.</p>
+</sec>
+<sec sec-type="task" id="pg006_task003">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>3</label>
+<statement><p>Lies die markierten Zahlen ab.</p></statement>
+<sec sec-type="subtask" id="pg006_task003a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_006_fx_004.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg006_task003b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_006_fx_005.jpg"/>
+</fig>
+</sec>
+</sec>
+<sec id="pg006_s009">
+<label>Lies und &#x00FC;be:</label>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg195_task001">Seite 195 Nr. 1</xref></p>
+</sec>
+</sec>
+<sec id="pg006_s010">
+<sec id="pg006_s011">
+<label>4 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann Zahlen auf einem passenden Zahlenstrahl markieren.</p>
+</sec>
+<sec sec-type="task" id="pg006_task004">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>4</label>
+<statement><p>Zeichne einen passenden Zahlenstrahl. Markiere die Zahlen.</p></statement>
+<sec sec-type="subtask" id="pg006_task004a">
+<label>a)</label>
+<p>15; 20; 5; 25; 30</p>
+</sec>
+<sec sec-type="subtask" id="pg006_task004b">
+<label>b)</label>
+<p>10; 15; 30; 45; 40</p>
+</sec>
+<sec sec-type="subtask" id="pg006_task004c">
+<label>c)</label>
+<p>2; 0,5; 4,5; 1,25</p>
+</sec>
+<sec sec-type="subtask" id="pg006_task004d">
+<label>d)</label>
+<p>1; 0,6; 0,4; 0,2; 1,8</p>
+</sec>
+</sec>
+<sec id="pg006_s012">
+<label>Lies und &#x00FC;be:</label>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg195_task003">Seite 195 Nr. 3</xref></p>
+</sec>
+</sec>
+<sec id="pg006_s013">
+<sec id="pg006_s014">
+<label>5 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann Punkte in einem Koordinatensystem ablesen und aufschreiben.</p>
+</sec>
+<sec sec-type="task" id="pg006_task005">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>5</label>
+<statement><p>Lies die Punkte ab. Notiere die Koordinaten der Punkte.</p></statement>
+<sec id="pg006_s015">
+<label>Beispiel</label>
+<p>A(2 &#x007C; 1)</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_006_fx_006.jpg"/></p>
+</sec>
+</sec>
+<sec id="pg006_s016">
+<label>Lies und &#x00FC;be:</label>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg220_task107">Seite 220 Nr. 107</xref></p>
+</sec>
+</sec>
+<?pageStart pdf="11" pagination="7"?>
+<sec id="pg007_s001">
+<sec id="pg007_s002">
+<label>6 Kompetenz</label>
+<p specific-use="mer-Lernziel" id="pg7">Ich kann Punkte in ein Koordinatensystem eintragen.</p>
+</sec>
+<sec sec-type="task" id="pg007_task006">
+<label>6</label>
+<statement><p>Zeichne ein Koordinatensystem in dein Heft.</p>
+<p>Die Achsen sollen beide bis 6 gehen.</p>
+<p>Trage die Punkte ein.</p>
+<p>A(1 &#x007C; 5); B(5 &#x007C; 1); C(5 &#x007C; 3); D(0 &#x007C; 4); E(4 &#x007C; 0); F(3 &#x007C; 1,5)</p></statement>
+</sec>
+<sec id="pg007_s003">
+<label>Lies und &#x00FC;be:</label>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg220_task108">Seite 220 Nr. 108</xref></p>
+</sec>
+</sec>
+<sec id="pg007_s004">
+<sec id="pg007_s005">
+<label>7 Kompetenz</label>
+<p specific-use="mer-Lernziel" id="pg007">Ich kann im Kopf rechnen.</p>
+</sec>
+<sec sec-type="task" id="pg007_task007">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>7</label>
+<statement><p>Berechne im Kopf.</p></statement>
+<sec sec-type="subtask" id="pg007_task007a">
+<label>a)</label>
+<p>23 &#x002B; 45</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task007b">
+<label>b)</label>
+<p>15 &#x2212; 8</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task007c">
+<label>c)</label>
+<p>75 &#x002B; 35</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task007d">
+<label>d)</label>
+<p>3,2 &#x2212; 1,2</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task007e">
+<label>e)</label>
+<p>8 &#x00B7; 11</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task007f">
+<label>f)</label>
+<p>32 : 8</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task007g">
+<label>g)</label>
+<p>4,4 &#x00B7; 2</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task007h">
+<label>h)</label>
+<p>9,9 : 3</p>
+</sec>
+</sec>
+<sec id="pg007_s006">
+<label>Lies und &#x00FC;be:</label>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg208_task057">Seite 208 Nr. 57</xref>&#x2013;<xref ref-type="link-LookItUp" rid="pg208_task059">59</xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg211_task071">Seite 211 Nr. 71</xref>, <xref ref-type="link-LookItUp" rid="pg211_task072">72</xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg215_task088">Seite 215 Nr. 88</xref>, <xref ref-type="link-LookItUp" rid="pg215_task092">92</xref></p>
+</sec>
+</sec>
+<sec id="pg007_s007">
+<sec id="pg007_s008">
+<label>8 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann schriftlich addieren und subtrahieren.</p>
+</sec>
+<sec sec-type="task" id="pg007_task008">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>8</label>
+<statement><p>Addiere und subtrahiere schriftlich.</p></statement>
+<sec sec-type="subtask" id="pg007_task008a">
+<label>a)</label>
+<p>230 &#x002B; 165</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task008b">
+<label>b)</label>
+<p>583 &#x2212; 293</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task008c">
+<label>c)</label>
+<p>345 &#x002B; 125</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task008d">
+<label>d)</label>
+<p>644 &#x2212; 307</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task008e">
+<label>e)</label>
+<p>409 &#x002B; 2211</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task008f">
+<label>f)</label>
+<p>1555 &#x2212; 297</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task008g">
+<label>g)</label>
+<p>72,2 &#x002B; 18,9</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task008h">
+<label>h)</label>
+<p>153,5 &#x2212; 83,6</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task008i">
+<label>i)</label>
+<p>578,4 &#x002B; 323,7</p>
+</sec>
+</sec>
+<sec id="pg007_s009">
+<label>Lies und &#x00FC;be:</label>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg209_task060">Seite 209 Nr. 60</xref>, <xref ref-type="link-LookItUp" rid="pg209_task061">61</xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg209_task062">Seite 209 Nr. 62</xref>, <xref ref-type="link-LookItUp" rid="pg209_task063">63</xref></p>
+</sec>
+</sec>
+<sec id="pg007_s010">
+<sec id="pg007_s011">
+<label>9 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann schriftlich multiplizieren und dividieren.</p>
+</sec>
+<sec sec-type="task" id="pg007_task009">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>9</label>
+<statement><p>Multipliziere und dividiere schriftlich.</p></statement>
+<sec sec-type="subtask" id="pg007_task009a">
+<label>a)</label>
+<p>125 &#x00B7; 3</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task009b">
+<label>b)</label>
+<p>14652 : 9</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task009c">
+<label>c)</label>
+<p>235 &#x00B7; 5</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task009d">
+<label>d)</label>
+<p>13184 : 8</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task009e">
+<label>e)</label>
+<p>643 &#x00B7; 21</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task009f">
+<label>f)</label>
+<p>1440 : 12</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task009g">
+<label>g)</label>
+<p>21,3 &#x00B7; 1,5</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task009h">
+<label>h)</label>
+<p>115,05 : 5</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task009i">
+<label>i)</label>
+<p>15,6 &#x00B7; 7,8</p>
+</sec>
+</sec>
+<sec id="pg007_s012">
+<label>Lies und&#x00FC;be:</label>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg212_task075">Seite 212 Nr. 75</xref>, <xref ref-type="link-LookItUp" rid="pg212_task076">76</xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg212_task077">Seite 212 Nr. 77</xref>, <xref ref-type="link-LookItUp" rid="pg212_task078">78</xref></p>
+</sec>
+</sec>
+<sec id="pg007_s013">
+<sec id="pg007_s014">
+<label>10 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann Br&#x00FC;che addieren und subtrahieren.</p>
+</sec>
+<sec sec-type="task" id="pg007_task010">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>10</label>
+<statement><p>Addiere und subtrahiere die Br&#x00FC;che.</p></statement>
+<sec sec-type="subtask" id="pg007_task010a">
+<label>a)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{2}{3} +
+\frac{1}{6}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg007_task010b">
+<label>b)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{8} -
+\frac{1}{4}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg007_task010c">
+<label>c)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{12}{5} +
+\frac{1}{10}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg007_task010d">
+<label>d)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{6}{4}
+- \frac{1}{3}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg007_task010e">
+<label>e)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{10}{8}
++ \frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg007_task010f">
+<label>f)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{27}{2}
+- \frac{5}{6}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+</sec>
+<sec id="pg007_s015">
+<label>Lies und &#x00FC;be:</label>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg213_task081">Seite 213 Nr. 81</xref>&#x2013;<xref ref-type="link-LookItUp" rid="pg213_task083">83</xref></p>
+</sec>
+</sec>
+<sec id="pg007_s016">
+<sec id="pg007_s017">
+<label>11 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann Br&#x00FC;che multiplizieren und dividieren.</p>
+</sec>
+<sec sec-type="task" id="pg007_task011">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>11</label>
+<statement><p>Multipliziere und dividiere die Br&#x00FC;che.</p></statement>
+<sec sec-type="subtask" id="pg007_task011a">
+<label>a)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{2}{3} \cdot
+\frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg007_task011b">
+<label>b)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{8} :
+\frac{6}{8}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg007_task011c">
+<label>c)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{12}{8} \cdot
+\frac{3}{4}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg007_task011d">
+<label>d)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{32}{3} :
+\frac{4}{6}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg007_task011e">
+<label>e)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{20}{21}
+\cdot \frac{3}{4}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg007_task011f">
+<label>f)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{8}{20}
+: \frac{5}{4}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+</sec>
+<sec id="pg007_s018">
+<label>Lies und &#x00FC;be:</label>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg214_task084">Seite 214 Nr. 84</xref>, <xref ref-type="link-LookItUp" rid="pg214_task085">85</xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg214_task086">Seite 214 Nr. 86</xref>, <xref ref-type="link-LookItUp" rid="pg214_task087">87</xref></p>
+</sec>
+</sec>
+<sec id="pg007_s019">
+<sec id="pg007_s020">
+<label>12 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann beim Rechnen die Vorrangregeln beachten.</p>
+</sec>
+<sec sec-type="task" id="pg007_task012">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>12</label>
+<statement><p>Berechne. Beachte die Vorrangregeln.</p></statement>
+<sec id="pg007_s021">
+<label>Beispiel</label>
+<p>2 &#x002B; 5 &#x00B7; (32 &#x2212; 12) = 2 &#x002B; 5 &#x00B7; 20 = 2 &#x002B; 100 = 102</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task012a">
+<label>a)</label>
+<p>14 &#x002B; 6 &#x00B7; 3</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task012b">
+<label>b)</label>
+<p>32 &#x2212; 10 &#x00B7; 2</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task012c">
+<label>c)</label>
+<p>8 &#x00B7;(17 &#x2212; 7)</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task012d">
+<label>d)</label>
+<p>24 &#x002B; 16 : 2 &#x2212; 7</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task012e">
+<label>e)</label>
+<p>10 &#x002B; 2 &#x00B7; (15 &#x002B; 5)</p>
+</sec>
+<sec sec-type="subtask" id="pg007_task012f">
+<label>f)</label>
+<p>40 &#x2212; 4 &#x00B7;(30 &#x2212; 25)</p>
+</sec>
+</sec>
+<sec id="pg007_s022">
+<label>Lies und &#x00FC;be:</label>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg213_task079">Seite 213 Nr. 79</xref></p>
+</sec>
+</sec>
+<sec id="pg007_s023">
+<sec id="pg007_s024">
+<label>13 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann Sachaufgaben l&#x00F6;sen.</p>
+</sec>
+<sec sec-type="task" id="pg007_task013">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>13</label>
+<statement><p>Am Morgen waren es 15 &#x00B0;C. Im Laufe des Tages erh&#x00F6;hte sich die Temperatur um 12 &#x00B0;C. Dann regnete es nachmittags und die Temperatur sank auf 11 &#x00B0;C.</p>
+<p>Um wie viel &#x00B0;C ist die Temperatur nachmittags gesunken?</p></statement>
+</sec>
+<sec id="pg007_s025">
+<label>Lies und &#x00FC;be:</label>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg217_task098">Seite 217 Nr. 98</xref>&#x2013;<xref ref-type="link-LookItUp" rid="pg217_task100">100</xref></p>
+</sec>
+</sec>
+</body>
+</book-part>
+<?pageStart pdf="12" pagination="8"?>
+<book-part book-part-type="mod-Lerneinheit">
+<book-part-meta>
+<book-part-id book-part-id-type="pu-node-id">678e6f6c7206291f44b06fa1</book-part-id>
+<title-group>
+<title id="pg8">Rationale Zahlen darstellen und vergleichen</title>
+</title-group>
+<abstract abstract-type="mer-Lernziel">
+<p>Ich kann rationale Zahlen auf der Zahlengeraden ablesen und eintragen.</p>
+</abstract>
+<abstract abstract-type="mer-Lernziel">
+<p>Ich kann rationale Zahlen ordnen und vergleichen.</p>
+</abstract>
+</book-part-meta>
+<body>
+<book-part book-part-type="mod-Lerneinheit">
+<book-part-meta>
+<title-group>
+<label>Wissen</label>
+</title-group>
+</book-part-meta>
+<body>
+<sec id="pg008_s001">
+<p>Luca liest eine Woche lang morgens um 7:00 Uhr Temperaturen an seinem digitalen Thermometer ab.</p>
+<p>An welchem Tag war es morgens am k&#x00E4;ltesten und an welchem Tag morgens am w&#x00E4;rmsten?</p>
+<sec id="pg008_s002">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_008_fx_001.jpg"/></p>
+</sec>
+</sec>
+<sec id="pg008_s003">
+<label>W</label>
+<p><bold>Rationale Zahlen auf der Zahlengeraden</bold></p>
+<p>Wenn du den Zahlenstrahl nach links verl&#x00E4;ngerst, dann entsteht die Zahlen<bold>gerade.</bold></p>
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p>Die Zahlen links von der Null hei&#x00DF;en <bold>negative Zahlen</bold>.</p>
+<p>Negative Zahlen sind kleiner als Null und haben das Vorzeichen <bold>&#x2212;</bold>.</p></td>
+<td><p>Die Zahlen rechts von der Null hei&#x00DF;en <bold>positive Zahlen</bold>. Positive Zahlen sind gr&#x00F6;&#x00DF;er als Null und haben das Vorzeichen <bold>&#x002B;</bold>.</p>
+<p>Du darfst das Vorzeichen <bold>&#x002B;</bold> auch wegla&#x00DF;en.</p></td>
+</tr>
+<tr>
+<td colspan="2"><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_008_fx_002.jpg"/></p></td>
+</tr>
+<tr>
+<td><p>Nach links werden die Zahlen kleiner.</p></td>
+<td><p>Nach rechts werden die Zahlen gr&#x00F6;&#x00DF;er.</p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<p>Die Zahlen &#x2026;; &#x2212;2; &#x2212;1; 0; 1; 2; &#x2026; hei&#x00DF;en <bold>ganze Zahlen.</bold></p>
+<p>Alle positiven und negativen Br&#x00FC;che und Dezimalzahlen zusammen hei&#x00DF;en <bold>rationale Zahlen.</bold> Auf der Zahlengeraden kannst du alle rationalen Zahlen markieren.</p>
+<p>Luca markiert seine gemessenen Temperaturen auf einer Zahlengeraden:</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_008_fx_003.jpg"/></p>
+<p>Am Donnerstag war es am k&#x00E4;ltesten, am Sonntag war es am w&#x00E4;rmsten.</p>
+<p>Die Zahl <bold>&#x2212;2,7</bold> steht zwischen <bold>&#x2212;3</bold> und <bold>&#x2212;2</bold>. Du kannst auch schreiben: <bold>&#x2212;3</bold> &#x003C; <bold>&#x2212;2,7</bold> &#x003C; <bold>&#x2212;2</bold></p>
+<p>Die Zahl <bold>&#x002B;1,3</bold> steht zwischen <bold>1</bold> und <bold>2</bold>. Du kannst auch schreiben: <bold>1</bold> &#x003C; <bold>&#x002B;1,3</bold> &#x003C; <bold>2</bold></p>
+</sec>
+<sec id="pg008_s004">
+<p><italic>Die Zahl 0 ist weder positiv noch negativ.</italic></p>
+</sec>
+<sec id="pg008_s005">
+<p><related-object content-type="mer-Erklaerfilm"/> <bold>Ganze Zahlen darstellen</bold></p>
+</sec>
+<sec id="pg008_s006">
+<p><related-object content-type="mer-Erklaerfilm"/> <bold>Rationale Zahlen auf der Zahlengeraden darstellen</bold></p>
+</sec>
+<sec id="pg008_s007">
+<p><related-object content-type="mer-Erklaerfilm"/> <bold>Eine Zahlengerade zeichnen und rationale Zahlen eintragen</bold></p>
+</sec>
+<sec id="pg008_s008">
+<p><related-object content-type="mer-Erklaerfilm"/> <bold>Rationale Zahlen vergleichen</bold></p>
+</sec>
+<sec sec-type="task" id="pg008_task001">
+<label>&#x25B8; Aufgabe</label>
+<statement><p>Notiere die markierten Zahlen. Welche Zahlen sind negativ?</p></statement>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_008_fx_004.jpg"/></p>
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg009_task001">1</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg010_task001">1</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg011_task001">1</xref></bold></p>
+</sec>
+<sec id="pg008_s009">
+<label>W</label>
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p>Wenn sich zwei Zahlen nur durch das Vorzeichen unterscheiden, dann hei&#x00DF;en sie <bold>Gegenzahlen</bold>.</p>
+<p>Sie haben dengleichen Abstand zur Null.</p>
+<p>Der Abstand einer Zahl zur Nullhei&#x00DF;t <bold>Betrag.</bold></p>
+<p>Du erh&#x00E4;ltst den Betrag einer Zahl, wenn du das Vorzeichen wegl&#x00E4;sst.</p>
+<p>Gegenzahlen haben denselben Betrag.</p></td>
+<td><p>Die Gegenzahl von <bold>&#x002B;3</bold> ist <bold>&#x2212;3</bold>.</p>
+<p>Die Gegenzahl von <bold>&#x2212;3</bold> ist
+<bold>&#x002B;3</bold>.</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_008_fx_005.jpg"/></p>
+<p>Der Betrag von &#x2212;3 ist 3.</p>
+<p>Der Betrag von &#x002B;3 ist 3.</p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</sec>
+<sec id="pg008_s010">
+<p><italic>Den <bold>Betrag</bold> einer Zahl a kannst du kurz schreiben als</italic> <bold>&#x007C;<italic>a</italic>&#x007C;</bold>.</p>
+<p><italic>Beispiel:</italic> &#x007C;&#x2212;<italic>5</italic>&#x007C; = <italic>5 bedeutet &#x201E;Der Betrag von</italic> &#x2212;<italic>5 ist 5.&#x201C;</italic></p>
+</sec>
+<sec sec-type="task" id="pg008_task002">
+<label>&#x25B8; Aufgabe</label>
+<statement><p>Nenne die Gegenzahl und den Betrag von &#x002B;2, &#x2212;5,2 und &#x002B;9,17.</p></statement>
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg009_task012">12</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg010_task010">10</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg011_task009">9</xref></bold></p>
+</sec>
+</body>
+</book-part>
+<?pageStart pdf="13"pagination="9"?>
+<book-part book-part-type="mod-Lerneinheit">
+<book-part-meta>
+<title-group id="pg9">
+<label>&#x00DC;ben</label>
+</title-group>
+<related-object content-type="mer-Einfach"/>
+</book-part-meta>
+<body>
+<sec sec-type="task" id="pg009_task001">
+<sec-meta><related-object content-type="mer-Worterkl&#x00E4;rung"/></sec-meta>
+<label>1</label>
+<statement><p>Schreibe die positiven Zahlen blau und die negativen Zahlen rot in dein Heft.</p></statement>
+<sec id="pg009_s001">
+<label>Beispiel</label>
+<p>Positiv: &#x002B;3; &#x002B;0,7; &#x2026; Negativ: &#x2212;5; &#x2026;</p>
+<p>&#x002B;3</p>
+<p>&#x2212;5</p>
+<p>&#x002B;0,7</p>
+<p>&#x2212;1,3</p>
+<p>&#x2212;12,5</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(+
+\frac{2}{3}\)]]></tex-math></alternatives></inline-formula></p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(-
+\frac{1}{4}\)]]></tex-math></alternatives></inline-formula></p>
+<p>0,4</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{7}\)]]></tex-math></alternatives></inline-formula></p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(-
+\frac{9}{10}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg009_task002">
+<label>2</label>
+<statement><p>Erg&#x00E4;nze im Heft.</p>
+<p>Welches Vorzeichen passt : &#x002B; oder &#x2212;?</p></statement>
+<p>Janek lief auf dem zugefrorenen See.</p>
+<p>Es waren &#x25CF; 15 &#x00B0;C drau&#x00DF;en. Danach trank er einen hei&#x00DF;en Tee, der &#x25CF; 40 &#x00B0;C warm war.</p>
+</sec>
+<sec sec-type="task" id="pg009_task003">
+<label>3</label>
+<statement><p>Lies die Temperaturen ab und notiere sie.</p>
+<p>Welche Temperaturen sind positiv und welche negativ?</p></statement>
+<sec sec-type="subtask" id="pg009_task003a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_009_fx_001.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg009_task003b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_009_fx_002.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg009_task003c">
+<label>c)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_009_fx_003.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg009_task003d">
+<label>d)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_009_fx_004.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg009_task003e">
+<label>e)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_009_fx_005.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg009_task003f">
+<label>f)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_009_fx_006.jpg"/>
+</fig>
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg010_task003">3</xref></bold></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg009_task004">
+<label>4</label>
+<statement><p><related-object content-type="mer-Gruppe"/> Schreibt auf verschiedene Zettel immer eine positive oder negative Zahl.</p>
+<p>Verteilt dann die Zettel in der Klasse.</p>
+<p>Stellt euch nach der Gr&#x00F6;&#x00DF;e eurer Zahlen auf.</p></statement>
+</sec>
+<sec sec-type="task" id="pg009_task005">
+<label>5</label>
+<statement><p>Notiere zu jedem Buchstaben die passende Zahl.</p></statement>
+<sec id="pg009_s002">
+<p>&#x002B;1,1</p>
+<p>&#x2212;1,7</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(- \frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
+<p>&#x002B;0,2</p>
+<p>&#x2212;1,3</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_009_fx_004.jpg"/></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg009_task006">
+<label>6</label>
+<statement><p>Notiere die markierten Zahlen.</p></statement>
+<sec sec-type="subtask" id="pg009_task006a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_009_fx_005.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg009_task006b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_009_fx_006.jpg"/>
+</fig>
+</sec>
+</sec>
+<sec sec-type="task" id="pg009_task007">
+<sec-meta><related-object content-type="mer-Worterkl&#x00E4;rung"/></sec-meta>
+<label>7</label>
+<statement><p>Zeichne eine Zahlengerade von &#x2212;5 bis 5.</p>
+<p>W&#x00E4;hle 1 cm f&#x00FC;r eine Einheit.</p>
+<p>Trage die Zahlen ein: 4; &#x2212;4; 0; 1,5; &#x2212;3,5</p></statement>
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg010_task006">6</xref></bold></p>
+</sec>
+<sec sec-type="task" id="pg009_task008">
+<sec-meta><related-object content-type="mer-Worterkl&#x00E4;rung"/></sec-meta>
+<label>8</label>
+<statement><p>Erg&#x00E4;nze den L&#x00FC;ckentext im Heft.</p></statement>
+<p>Die Zahl &#x2212;4,2 steht auf der Zahlengeraden zwischen &#x2212;5 und &#x25A0;. Damit ist die Zahl &#x2212;4,2 gr&#x00F6;&#x00DF;er als &#x25A0; und kleiner als &#x25A0;.</p>
+</sec>
+<sec sec-type="task" id="pg009_task009">
+<label>9</label>
+<statement><p> Vergleiche die Temperaturen.</p>
+<p>Welche ist niedriger?</p></statement>
+<sec sec-type="subtask" id="pg009_task009a">
+<label>a)</label>
+<p>&#x002B;19 &#x00B0;C oder &#x002B;21 &#x00B0;C</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task009b">
+<label>b)</label>
+<p>&#x002B;5 &#x00B0;C oder &#x2212;5&#x00B0;C</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task009c">
+<label>c)</label>
+<p>&#x2212;7,9 &#x00B0;C oder &#x2212;9,7 &#x00B0;C</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task009d">
+<label>d)</label>
+<p>&#x2212;5,2 &#x00B0;C oder 3,1 &#x00B0;C</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg009_task010">
+<label>10</label>
+<statement>
+<p>Vergleiche die beiden Zahlen.</p>
+<p>Setze in deinem Heft &#x003C;, &#x003E; oder = ein.</p></statement>
+<sec sec-type="subtask" id="pg009_task010a">
+<label>a)</label>
+<p>&#x002B;8 &#x25CF; &#x002B;6</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task010b">
+<label>b)</label>
+<p>&#x2212;1 &#x25CF; &#x002B;1</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task010c">
+<label>c)</label>
+<p>&#x2212;2,1 &#x25CF; &#x2212;2,3</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task010d">
+<label>d)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(+ 17 \bullet - \frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg009_task010e">
+<label>e)</label>
+<p>7,3 &#x25CF; &#x002B;7,3</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task010f">
+<label>f)</label>
+<p>&#x2212;0,2 &#x25CF;&#x2212;0,7</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg009_task011">
+<label>11</label>
+<statement><p>Ordne die Zahlen der Gr&#x00F6;&#x00DF;e nach. Beginne mit der kleinsten. Du erh&#x00E4;ltst ein L&#x00F6;sungswort.</p> </statement>
+<sec id="pg009_s003">
+<p>5,3 (S)</p>
+<p>&#x2212;0,2 (I)</p>
+<p>&#x2212;9,7 (M)</p>
+<p>0 (N)</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{1}{2}\left( {\rm{U}} \right)\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg009_task012">
+<label>12</label>
+<statement>
+<p>Gib zu jeder Zahl die Gegenzahl an.</p>
+<p>Schreibe wie im Beispiel.</p></statement>
+<sec id="pg009_s004">
+<label>Beispiel</label>
+<p>Die Gegenzahl von &#x002B;9 ist &#x2212;9 .</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task012a">
+<label>a)</label>
+<p>&#x002B;3</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task012b">
+<label>b)</label>
+<p>&#x2212;7</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task012c">
+<label>c)</label>
+<p>&#x002B;0,2</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task012d">
+<label>d)</label>
+<p>5,2</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task012e">
+<label>e)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(- \frac{1}{4}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg009_task013">
+<label>13</label>
+<statement>
+<p>Gib zu jeder Zahl den Betrag an.</p>
+<p>Schreibe wie im Beispiel.</p></statement>
+<sec id="pg009_s005">
+<label>Beispiel</label>
+<p>Der Betrag von &#x2212;9 ist 9.</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task013a">
+<label>a)</label>
+<p>&#x002B;7</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task013b">
+<label>b)</label>
+<p>&#x2212;4</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task013c">
+<label>c)</label>
+<p>9</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task013d">
+<label>d)</label>
+<p>&#x2212;2,5</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task013e">
+<label>e)</label>
+<p>&#x2212; 0,3</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task0013f">
+<label>f)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{1}{3}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg009_task014">
+<label>14</label>
+<statement><p>Schreibe ohne Betragsstriche wie im Beispiel.</p></statement>
+<sec id="pg009_s006">
+<label>Beispiel</label>
+<p>&#x007C;&#x2212;9&#x007C; = 9&#x2003;&#x007C;&#x2212;16&#x007C; = 16&#x2003;&#x007C;7&#x007C; =7</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task014a">
+<label>a)</label>
+<p>&#x007C;&#x2212;12&#x007C;</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task014b">
+<label>b)</label>
+<p>&#x007C;&#x2212;23&#x007C;</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task014c">
+<label>c)</label>
+<p>&#x007C;14&#x007C;</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task014d">
+<label>d)</label>
+<p>&#x007C;2,5&#x007C;</p>
+</sec>
+<sec sec-type="subtask" id="pg009_task014e">
+<label>e)</label>
+<p>&#x007C;&#x2212;2,5&#x007C;</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg009_task015">
+<label>15</label>
+<p><xref ref-type="scaffolding" rid="pg009_s007">&#x25BE;</xref></p>
+<statement><p>Herr Groh hat kein Geld mehr auf dem Konto.</p>
+<p>Er hebt trotzdem noch 270 &#x20AC; ab.</p>
+<p>Sein Kontostand ist jetzt &#x2212;270 &#x20AC;.</p>
+<p>Das bedeutet: Herr Groh hat 270 &#x20AC; <bold>Schulden</bold> bei der Bank.</p>
+<p>Auch Frau Menzel musste mehr Geld abheben, als auf ihrem Konto war. Ihr Kontostand ist jetzt &#x2212;310&#x20AC; . Wer hat mehr Schulden?</p>
+</statement>
+</sec>
+<sec id="pg009_s007">
+<p>Sprachhilfe zu <bold><xref ref-type="xref" rid="pg009_task015">15</xref></bold>: Wenn du dir Geld leihst, dann hast du <bold>Schulden</bold>.</p>
+</sec>
+<sec id="pg009_s008">
+<p><related-object content-type="mer-DigitalHelp"/> Tipp zu <bold><xref ref-type="xref" rid="pg009_task005">5</xref></bold>, <bold><xref ref-type="xref" rid="pg009_task006">6</xref></bold>, <bold><xref ref-type="xref" rid="pg009_task007">7</xref></bold>, <bold><xref ref-type="xref" rid="pg009_task008">8</xref></bold>, <bold><xref ref-type="xref" rid="pg009_task0010">10</xref></bold></p>
+</sec>
+</body>
+</book-part>
+<?pageStart pdf="14" pagination="10"?>
+<book-part book-part-type="mod-Lerneinheit">
+<book-part-meta>
+<title-group id="pg10">
+<label>&#x00DC;ben</label>
+</title-group>
+<related-object content-type="mer-Mittel"/>
+</book-part-meta>
+<body>
+<sec sec-type="task" id="pg010_task001">
+<sec-meta><related-object content-type="mer-Worterkl&#x00E4;rung"/></sec-meta>
+<label>1</label>
+<statement><p>Erkl&#x00E4;re schriftlich, ob das Vorzeichen &#x2212; oder + passt.</p></statement>
+<p>Sinan misst an einem Januartag die</p>
+<p>Temperatur. Um 8 Uhr misst er 2,5 &#x00B0;C.</p>
+<p>Dann wird es w&#x00E4;rmer und um 13 Uhr misst er &#x25CF; 6,8 &#x00B0;C. Nach Sonnenuntergang sinkt die Temperatur unter 0&#x00B0;C, sodass er um 22 Uhr &#x25CF; 7,2 &#x00B0;C misst.</p>
+</sec>
+<sec sec-type="task" id="pg010_task002">
+<label>2</label>
+<statement><p>Lies die Temperaturen ab und notiere sie.</p>
+<p>Welche sind positiv und welche negativ?</p></statement>
+<sec sec-type="subtask" id="pg010_task002a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_010_fx_001.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg010_task002b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_010_fx_002.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg010_task002c">
+<label>c)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_010_fx_003.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg010_task002d">
+<label>d)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_010_fx_004.jpg"/>
+</fig>
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg011_task003">3</xref></bold></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg010_task003">
+<label>3</label>
+<statement><p>Notiere die markierten Zahlen.</p></statement>
+<sec sec-type="subtask" id="pg010_task003a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_010_fx_005.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg010_task003b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_010_fx_006.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg010_task003c">
+<label>c)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_010_fx_007.jpg"/>
+</fig>
+</sec>
+</sec>
+<sec sec-type="task" id="pg010_task004">
+<label>4</label>
+<statement>
+<p>Zeichne eine Zahlengerade von &#x2212;6 bis 6.</p>
+<p>W&#x00E4;hle 1 cm f&#x00FC;r eine Einheit.</p>
+<p>Trage die Zahlen ein.</p>
+<p>4,7; <inline-formula><alternatives><tex-math><![CDATA[\( - \frac{1}{2}\)]]></tex-math></alternatives></inline-formula>; 0; &#x2212;3,9; 0,1; 1,5</p></statement>
+</sec>
+<sec sec-type="task" id="pg010_task005">
+<sec-meta><related-object content-type="mer-Worterkl&#x00E4;rung"/></sec-meta>
+<label>5</label>
+<statement>
+<p>Im Diagramm sind die Temperaturen f&#x00FC;r jeden Monat dargestellt.</p></statement>
+<sec id="pg010_s001">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_010_fx_008.jpg"/></p>
+</sec>
+<sec sec-type="subtask" id="pg010_task005a">
+<label>a)</label>
+<statement><p>Woran erkennst du negative Temperaturen?</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg010_task005b">
+<label>b)</label>
+<statement><p>Lies f&#x00FC;r jeden Monat die Temperatur ab.</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg010_task005c">
+<label>c)</label>
+<statement><p>Zeichne eine Zahlengerade in dein Heft und trage die Werte ein.</p></statement>
+</sec>
+</sec>
+<sec sec-type="task" id="pg010_task006">
+<label>6</label>
+<statement><p>Vergleiche. Setze im Heft &#x003C;, &#x003E; oder = ein.</p></statement>
+<sec sec-type="subtask" id="pg010_task006a">
+<label>a)</label>
+<p>+7,2 &#x25CF; +6,99</p>
+</sec>
+<sec sec-type="subtask" id="pg010_task006b">
+<label>b)</label>
+<p>+0,79 &#x25CF; 0,79</p>
+</sec>
+<sec sec-type="subtask" id="pg010_task006c">
+<label>c)</label>
+<p>&#x2212;2,01 &#x25CF; &#x2212;2,3</p>
+</sec>
+<sec sec-type="subtask" id="pg010_task006d">
+<label>d)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\( - \frac{3}{4} \bullet - 0,75\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg010_task006e">
+<label>e)</label>
+<p>+7,3 &#x25CF; &#x2212;73</p>
+</sec>
+<sec sec-type="subtask" id="pg010_task006f">
+<label>f)</label>
+<p>&#x2212;0,2 &#x25CF; 0</p>
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg011_task006">6</xref></bold></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg010_task007">
+<label>7</label>
+<statement>
+<p>Ordne die Zahlen von klein nach gro&#x00DF;.</p></statement>
+<sec id="pg010_s002">
+<p>+1,72</p>
+<p>&#x2212;0,25</p>
+<p>&#x2212;3,01</p>
+<p>+17,2</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\( - \frac{3}{4}\)]]></tex-math></alternatives></inline-formula></p>
+<p>&#x2212;3,4</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg010_task008">
+<label>8</label>
+<statement><p>Nenne drei Zahlen zwischen &#x2026;</p>
+</statement>
+<sec sec-type="subtask" id="pg010_task008a">
+<label>a)</label>
+<statement><p>&#x2212;7,2 und &#x2212;6,8.</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg010_task008b">
+<label>b)</label>
+<statement><p>4,8 und 5,1.</p></statement>
+</sec>
+</sec>
+<sec sec-type="task" id="pg010_task009">
+<label>9</label>
+<p><xref ref-type="scaffolding" rid="pg010_s005">&#x25BE;</xref></p>
+<statement><p>Martin und Can w&#x00FC;rfeln Dezimalzahlen.</p>
+<p>Die h&#x00F6;here Zahl gewinnt. Sie haben eine M&#x00FC;nze mit &#x201E;+&#x201C; und &#x201E;&#x2212;&#x201C;. Der wei&#x00DF;e W&#x00FC;rfel in der Mitte zeigt die Zahl vor dem Komma und der schwarze W&#x00FC;rfel rechts die Zahl nach dem Komma. Martin wirft zuerst:</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_010_fx_011.jpg"/></p>
+<p>Seine Zahl lautet also &#x2212;1,5.</p></statement>
+<sec sec-type="subtask" id="pg010_task009a">
+<label>a)</label>
+<statement><p>Nenne drei Zahlen, mit denen Can gewinnt.</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg010_task009b">
+<label>b)</label>
+<statement><p>Nenne drei Zahlen, mit denen Can verliert.</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg010_task009c">
+<label>c)</label>
+<statement><p>Welche ist die gr&#x00F6;&#x00DF;te Zahl, die m&#x00F6;glich ist?</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg010_task009d">
+<label>d)</label>
+<statement><p><related-object content-type="mer-Paar"/> Spielt selbst. Notiert die Zahlen und wer gewonnen hat.</p></statement>
+</sec>
+</sec>
+<sec sec-type="task" id="pg010_task010">
+<label>10</label>
+<statement><p>Gib den Betrag und die Gegenzahl an.</p></statement>
+<sec id="pg010_s003">
+<label>Beispiel</label>
+<p>&#x2212;2 Betrag: &#x007C;&#x2212;2&#x007C; = 2 Gegenzahl: 2</p>
+<p>+5 Betrag: &#x007C;+5&#x007C; = 5 Gegenzahl: &#x2212;5</p>
+</sec>
+<sec sec-type="subtask" id="pg010_task010a">
+<label>a)</label>
+<p>+5,16</p>
+</sec>
+<sec sec-type="subtask" id="pg010_task010b">
+<label>b)</label>
+<p>&#x2212;0,07</p>
+</sec>
+<sec sec-type="subtask" id="pg010_task010c">
+<label>c)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\( + \frac{2}{3}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg010_task010d">
+<label>d)</label>
+<p>&#x2212;17,33</p>
+</sec>
+<sec sec-type="subtask" id="pg010_task010e">
+<label>e)</label>
+<p>1,41</p>
+</sec>
+<sec sec-type="subtask" id="pg010_task010f">
+<label>f)</label>
+<p>&#x2212;0,001</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg010_task011">
+<label>11</label>
+<statement>
+<p>Die Planeten unseres Sonnensystems haben sehr unterschiedliche Temperaturen.</p></statement>
+<sec id="pg010_s004">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Planet</bold></p></td>
+<td><p><bold>h&#x00F6;chste Temperatur</bold></p></td>
+<td><p><bold>niedrigste Temperatur</bold></p></td>
+</tr>
+<tr>
+<td><p>Merkur</p></td>
+<td><p>+427 &#x00B0;C</p></td>
+<td><p>&#x2212;173 &#x00B0;C</p></td>
+</tr>
+<tr>
+<td><p>Venus</p></td>
+<td><p>+497 &#x00B0;C</p></td>
+<td><p>+437 &#x00B0;C</p></td>
+</tr>
+<tr>
+<td><p>Erde</p></td>
+<td><p>+58 &#x00B0;C</p></td>
+<td><p>&#x2212;89 &#x00B0;C</p></td>
+</tr>
+<tr>
+<td><p>Mars</p></td>
+<td><p>+27 &#x00B0;C</p></td>
+<td><p>&#x2212;133 &#x00B0;C</p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</sec>
+<sec sec-type="subtask" id="pg010_task011a">
+<label>a)</label>
+<statement><p>Auf welchem Planeten kann es am k&#x00E4;ltesten werden und wo am w&#x00E4;rmsten?</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg010_task011b">
+<label>b)</label>
+<statement><p>Auf welchen Planeten k&#x00F6;nnen es 90 &#x00B0;C sein und wo &#x2212;15 &#x00B0;C?</p></statement>
+</sec>
+</sec>
+<sec id="pg010_s005">
+<p>Sprachhilfe zu <bold><xref ref-type="xref" rid="pg010_task009">9</xref></bold>: Gib jedes Ergebnis so an: Was zeigen die M&#x00FC;nze und die beiden W&#x00FC;rfel?</p>
+</sec>
+<sec id="pg010_s006">
+<p><related-object content-type="mer-DigitalHelp"/>Tipp zu <bold><xref ref-type="xref" rid="pg010_task004">4</xref></bold>, <bold><xref ref-type="xref" rid="pg010_task005">5</xref></bold>, <bold><xref ref-type="xref" rid="pg010_task008">8</xref></bold>, <bold><xref ref-type="xref" rid="pg010_task011">11</xref></bold></p>
+</sec>
+</body>
+</book-part>
+<?pageStart pdf="15" pagination="11"?>
+<book-part book-part-type="mod-Lerneinheit">
+<book-part-meta>
+<title-group id="pg11">
+<label>&#x00DC;ben</label>
+</title-group>
+<related-object content-type="mer-Schwer"/>
+</book-part-meta>
+<body>
+<sec sec-type="task" id="pg011_task001">
+<sec-meta><related-object content-type="mer-Worterkl&#x00E4;rung"/></sec-meta>
+<label>1</label>
+<statement><p>Vervollst&#x00E4;ndige im Heft. Erkl&#x00E4;re schriftlich, welche Temperaturen passen.</p>
+</statement>
+<p>Am 1. M&#x00E4;rz waren es morgens um 6 Uhr noch &#x25CF; &#x00B0;C. Bis um 12 Uhr stiegen die Temperaturen auf +1,3 &#x00B0;C. Bis um 18 Uhr sanken die Temperaturen wieder unter den Gefrierpunkt, es waren dann &#x25CF; &#x00B0;C.</p>
+</sec>
+<sec sec-type="task" id="pg011_task002">
+<sec-meta><related-object content-type="mer-Worterkl&#x00E4;rung"/></sec-meta>
+<label>2</label>
+<statement><p>An zwei Tagen wurde alle drei Stunden die Temperatur gemessen.</p></statement>
+<sec id="pg011_s001">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_011_fx_001.jpg"/></p>
+</sec>
+<sec sec-type="subtask" id="pg011_task002a">
+<label>a)</label>
+<statement><p>Zu welchen Uhrzeiten waren die Temperaturen negativ und zu welchen Uhrzeiten positiv? Erkl&#x00E4;re, wie du abliest.</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg011_task002b">
+<label>b)</label>
+<statement><p>Lies f&#x00FC;r jeden Tag die Temperaturen ab.</p>
+<p>Ordne sie dann von klein nach gro&#x00DF;.</p>
+</statement>
+</sec>
+</sec>
+<sec sec-type="task" id="pg011_task003">
+<label>3</label>
+<statement><p>Notiere die markierten Zahlen.</p></statement>
+<sec sec-type="subtask" id="pg011_task003a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_011_fx_002.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg011_task003b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_011_fx_003.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg011_task003c">
+<label>c)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_011_fx_004.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg011_task003d">
+<label>d)</label>
+<p><related-object content-type="mer-Paar"/> Zeichne zwei verschiedene Zahlengeraden und markiere jeweils f&#x00FC;nf Zahlen. Tauscht eure Zahlengeraden, lest ab und &#x00FC;berpr&#x00FC;ft eure Ergebnisse.</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg011_task004">
+<label>4</label>
+<statement><p>Zeichne eine Zahlengerade in dein Heft und trage die Zahlen ein. &#x00DC;berlege zuerst, welchen Ausschnitt und welche Einteilung du w&#x00E4;hlst.</p></statement>
+<sec id="pg011_s002">
+<p>+5,3</p>
+<p>&#x2212;0,7</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\( + \frac{1}{5}\)]]></tex-math></alternatives></inline-formula></p>
+<p>&#x2212;3,9</p>
+<p>1,45</p>
+<p>&#x2212;2,75</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg011_task005">
+<label>5</label>
+<statement><p>Runde erst die Zahlen sinnvoll. Zeichne dann eine Zahlengerade und trage die gerundeten Werte ein.</p></statement>
+<sec id="pg011_s003">
+<p>+2,17</p>
+<p>&#x2212;1,815</p>
+<p>+0,007</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\( - \frac{2}{3}\)]]></tex-math></alternatives></inline-formula></p>
+<p>1,444</p>
+<p>&#x2212;0,996</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg011_task006">
+<label>6</label>
+<statement><p>Ordne die Zahlen nach der Gr&#x00F6;&#x00DF;e.</p></statement>
+<p>+17,25; &#x2212;29,13; &#x2212;30,1; 1,637; <inline-formula><alternatives><tex-math><![CDATA[\( - \frac{3}{8}\)]]></tex-math></alternatives></inline-formula>; &#x2212;3,8</p>
+</sec>
+<sec sec-type="task" id="pg011_task007">
+<label>7</label>
+<statement>
+<p>Nenne drei Zahlen zwischen &#x2026;</p></statement>
+<sec sec-type="subtask" id="pg011_task007a">
+<label>a)</label>
+<statement><p>&#x2212;3,5 und +1,7.</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg011_task007b">
+<label>b)</label>
+<statement><p>&#x2212;0,9 und 0.</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg011_task007c">
+<label>c)</label>
+<statement><p>&#x2212;1,35 und <inline-formula><alternatives><tex-math><![CDATA[\( - \frac{1}{2}\)]]></tex-math></alternatives></inline-formula>.</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg011_task007d">
+<label>d)</label>
+<statement><p>&#x2212;5,78 und &#x2212;5,77.</p></statement>
+</sec>
+</sec>
+<sec sec-type="task" id="pg011_task008">
+<sec-meta><related-object content-type="mer-Worterkl&#x00E4;rung"/></sec-meta>
+<label>8</label>
+<statement>
+<p>Erstelle die K&#x00E4;rtchen und lege damit Zahlen.</p></statement>
+<sec id="pg011_s004">
+<p>3</p>
+<p>0</p>
+<p>&#x2212;</p>
+<p>5</p>
+<p>,</p>
+<p>8</p>
+<p>+</p>
+<p>Du darfst in der Aufgabe jedes K&#x00E4;rtchen nur einmal verwenden.</p>
+</sec>
+<sec sec-type="subtask" id="pg011_task008a">
+<label>a)</label>
+<statement><p>Lege mit vier K&#x00E4;rtchen eine Zahl zwischen 0 und +1.</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg011_task008b">
+<label>b)</label>
+<statement><p>Lege mit f&#x00FC;nf K&#x00E4;rtchen eine Zahl, die zwischen &#x2212;0,4 und &#x2212;0,2 liegt.</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg011_task008c">
+<label>c)</label>
+<statement><p>Lege die kleinste Zahl, die mit f&#x00FC;nf K&#x00E4;rtchen m&#x00F6;glich ist.</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg011_task008d">
+<label>d)</label>
+<statement>
+<p>Gib die gr&#x00F6;&#x00DF;te negative Zahl an, die du mit sechs K&#x00E4;rtchen legen kannst.</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg011_task008e">
+<label>e)</label>
+<statement>
+<p><related-object content-type="mer-Paar"/> Denkt euch selbst Aufgaben aus. lhr k&#x00F6;nnt auch andere K&#x00E4;rtchen erstellen.</p></statement>
+</sec>
+</sec>
+<sec sec-type="task" id="pg011_task009">
+<sec-meta><related-object content-type="mer-Worterkl&#x00E4;rung"/></sec-meta>
+<label>9</label>
+<statement>
+<p>Begr&#x00FC;nde deine Antworten.</p></statement>
+<sec sec-type="subtask" id="pg011_task009a">
+<label>a)</label>
+<statement><p>Wie viele Zahlen haben den Betrag 6,2?</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg011_task009b">
+<label>b)</label>
+<statement>
+<p>Gibt es eine Zahl, die keine Gegenzahl hat?</p>
+</statement>
+</sec>
+<sec sec-type="subtask" id="pg011_task009c">
+<label>c)</label>
+<statement>
+<p>Welchen Abstand hat die Zahl &#x2212;4,75 zu ihrer Gegenzahl?</p></statement>
+</sec>
+</sec>
+<sec sec-type="task" id="pg011_task010">
+<sec-meta><related-object content-type="mer-Worterkl&#x00E4;rung"/></sec-meta>
+<label>10</label>
+<statement>
+<p>Mia sagt: &#x201E;Ich denke mir zwei Zahlen A und B.</p>
+<p>Die Zahl A ist kleiner als die Zahl B. Der Betrag von A ist aber gr&#x00F6;&#x00DF;er als der Betrag von B.&#x201C;</p>
+<p>Finde zwei Zahlen A und B, f&#x00FC;r die Mias Behauptung stimmt. Notiere sie.</p>
+<p>Begr&#x00FC;nde, warum deine Zahlen Mias Behauptung erf&#x00FC;llen.</p></statement>
+</sec>
+<sec sec-type="task" id="pg011_task011">
+<label>11</label>
+<statement>
+<p>In der Tabelle siehst du f&#x00FC;r einige St&#x00E4;dte den hei&#x00DF;esten Tag &#x24B6; und den k&#x00E4;ltesten Tag &#x24B7; eines Jahres in &#x00B0;C.</p></statement>
+<sec id="pg011_s005">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td></td>
+<td><p><bold>Berlin</bold></p></td>
+<td><p><bold>Tokio</bold></p></td>
+<td><p><bold>Moskau</bold></p></td>
+<td><p><bold>Boston</bold></p></td>
+<td><p><bold>Kairo</bold></p></td>
+</tr>
+<tr>
+<td><p>&#x24B6;</p></td>
+<td><p>+36,1</p></td>
+<td><p>+36,2</p></td>
+<td><p>+34,4</p></td>
+<td><p>+35,4</p></td>
+<td><p>+43,3</p></td>
+</tr>
+<tr>
+<td><p>&#x24B7;</p></td>
+<td><p>&#x2212;11,9</p></td>
+<td><p>&#x2212;1,7</p></td>
+<td><p>&#x2212;23,5</p></td>
+<td><p>&#x2212;17,8</p></td>
+<td><p>+7,7</p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</sec>
+<sec sec-type="subtask" id="pg011_task011a">
+<label>a)</label>
+<statement><p>Wo war es am hei&#x00DF;esten und wo am k&#x00E4;ltesten?</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg011_task011b">
+<label>b)</label>
+<statement><p>In welcher Stadt ist ganz sicher kein Schnee gefallen? Begr&#x00FC;nde.</p></statement>
+</sec>
+</sec>
+<sec id="pg011_s006">
+<p><related-object content-type="mer-DigitalHelp"/> Tipp zu <bold><xref ref-type="xref" rid="pg011_task004">4</xref></bold>, <bold><xref ref-type="xref" rid="pg011_task005">5</xref></bold></p>
+</sec>
+</body>
+</book-part>
+</body>
+</book-part>
+<?pageStart pdf="16" pagination="12"?>
+<book-part book-part-type="mod-Lerneinheit">
+<book-part-meta>
+<book-part-id book-part-id-type="pu-node-id">678e6f6c7206291f44b06fb1</book-part-id>
+<title-group>
+<title id="pg12">Das erweiterte Koordinatensystem</title>
+</title-group>
+<abstract abstract-type="mer-Lernziel">
+<p>Ich kann Punkte im erweiterten Koordinatensystem ablesen und eintragen.</p>
+</abstract>
+</book-part-meta>
+<body>
+<book-part book-part-type="mod-Lerneinheit">
+<book-part-meta>
+<title-group>
+<label>Wissen</label>
+</title-group>
+</book-part-meta>
+<body>
+<sec id="pg012_s001">
+<p>Paula steuert den Roboter mithilfe von Koordinaten.</p>
+<p>Der Roboter soll eine Maschine reparieren.</p>
+<p>Lies dir zuerst die Anweisungen f&#x00FC;r den Roboter in den Sprechblasen durch.</p>
+<p>Paula m&#x00F6;chte den Roboter zur Ladestation schicken. Welche Koordinaten muss Paula eingeben? Kannst du ihr helfen?</p>
+<p>Um den Roboter an alle Orte schicken zu k&#x00F6;nnen, ben&#x00F6;tigst du das erweiterte Koordinatensystem. Die Achsen werden um den negativen Bereich erweitert.</p>
+<sec id="pg0012_s002">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_012_fx_001.jpg"/></p>
+</sec>
+</sec>
+<sec id="pg012_s003">
+<label>W</label>
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Das erweiterte Koordinatensystem</bold> besteht aus zwei Zahlengeraden. Sie hei&#x00DF;en x&#x2013;Achse und y&#x2013;Achse.</p>
+<p>Du kannst an beiden Achsen auch negative Zahlen eintragen und ablesen.</p>
+<p>Durch die zwei Achsen entstehen vier Bereiche. Diese Bereiche hei&#x00DF;en <bold>Quadranten</bold>.</p>
+<p>Die Quadranten sind nummeriert und helfen dir bei der Orientierung.</p></td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_012_fx_002.jpg"/></p>
+<p>Die Ladestation liegt im zweiten Quadranten.</p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</sec>
+<sec id="pg012_s004">
+<p><italic>Die <bold>Quadranten</bold> werden gegen den Uhrzeigersinn nummeriert</italic>.</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_012_fx_003.jpg"/></p>
+</sec>
+<sec id="pg012_s005">
+<p><italic>R&#x00F6;mische Zahlen:</italic></p>
+<p><italic>I: Eins</italic></p>
+<p><italic>II: Zwei</italic></p>
+<p><italic>III: Drei</italic></p>
+<p><italic>IV: Vier</italic></p>
+</sec>
+<sec id="pg012_s006">
+<p><italic>I.  Quadrant &#x2014; Lies: erster Quadrant</italic></p>
+</sec>
+<sec sec-type="task" id="pg012_task001">
+<label>&#x25B8; Aufgabe</label>
+<statement><p>Zeichne ein erweitertes Koordinatensystem mit vier Quadranten. F&#x00E4;rbe die Quadranten in unterschiedlichen Farben und nummeriere sie.</p></statement>
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg013_task001">1</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg014_task001">1</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg015_task001">1</xref></bold></p>
+</sec>
+<sec id="pg012_s007">
+<label>W</label>
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Punkte im erweiterten Koordinatensystem</bold></p>
+<p>Jeder Punkt im erweiterten Koordinatensystem ist durch zwei Zahlen festgelegt.</p>
+<p>Bei jedem Punkt P(x &#x007C; y) wird zun&#x00E4;chst die x-Koordinate und dann die y-Koordinate angegeben.</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_012_fx_004.jpg"/></p>
+</td>
+<td>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_012_fx_005.jpg"/></p>
+<p>Die Ladestation hat die Koordinaten Q(&#x2212;2 &#x007C; 1).</p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</sec>
+<sec id="pg012_s008">
+<p><related-object content-type="mer-Erklaerfilm"/> <bold>Punkte ablesen</bold></p>
+</sec>
+<sec id="pg012_s009">
+<p><related-object content-type="mer-Erklaerfilm"/> <bold>Punkte eintragen</bold></p>
+</sec>
+<sec sec-type="task" id="pg012_task002">
+<label>&#x25B8; Aufgabe</label>
+<statement>
+<p>&#x00DC;bertrage das erweiterte Koordinatensystem in dein Heft. Trage die Punkte R(&#x2212;3 &#x007C; 2) und S(&#x2212;1,5 &#x007C; &#x2212;2) ein.</p></statement>
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg013_task002">2</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg014_task002">2</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg015_task002">2</xref></bold></p>
+</sec>
+</body>
+</book-part>
+<?pageStart pdf="17" pagination="13"?>
+<book-part book-part-type="mod-Lerneinheit">
+<book-part-meta>
+<title-group id="pg13">
+<label>&#x00DC;ben</label>
+</title-group>
+<related-object content-type="mer-Einfach"/>
+</book-part-meta>
+<body>
+<sec sec-type="task" id="pg013_task001">
+<sec-meta><related-object content-type="mer-Worterkl&#x00E4;rung"/></sec-meta>
+<label>1</label>
+<statement><p>Der Roboter hat viele Gegenst&#x00E4;nde verloren.</p></statement>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_013_fx_001.jpg"/></p>
+<p>Gegenst&#x00E4;nde <italic>oben</italic>: der Hammer, der Schraubenschl&#x00FC;ssel, der Schraubenzieher, <italic>Mitte</italic>: der Eimer, die Schere, die Zange <italic>unten</italic>: der Stift, der Besen, der Zirkel, der Taschenrechner, der Schl&#x00FC;ssel</p>
+<p>Gib f&#x00FC;r jeden Gegenstand an, in welchem Quadranten er liegt.</p>
+<sec id="pg013_s001">
+<label>Beispiel</label> 
+<p>Im I. Quadranten: die Zange, &#x2026;</p>
+<p>Bei welchen zwei Gegenst&#x00E4;nden kannst du den Quadranten nicht angeben?</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg013_task002">
+<label>2</label>
+<statement>
+<p>Ordne die Buchstaben den Koordinaten zu. Finde das L&#x00F6;sungswort.</p></statement>
+<p>&#x25CF; (&#x2212;2 &#x007C; 1)</p>
+<p>&#x25CF; (2 &#x007C; &#x2212;2)</p>
+<p>&#x25CF; (&#x2212;2 &#x007C; &#x2212;3)</p>
+<p>&#x25CF; (2 &#x007C; 3)</p>
+<p>&#x25CF; (&#x2212;3 &#x007C; &#x2212;1)</p>
+<p>&#x25CF; (3 &#x007C; &#x2212;1)</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_013_fx_002.jpg"/></p>
+</sec>
+<sec sec-type="task" id="pg013_task003">
+<label>3</label>
+<statement>
+<p>Schreibe die x&#x2013;Koordinaten der Punkte orange und die y&#x2013;Koordinaten gr&#x00FC;n.</p></statement>
+<sec id="pg013_s002">
+<label>Beispiel</label>
+<p>A(2 &#x007C; 3)</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_013_fx_003.jpg"/></p>
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg014_task003">3</xref></bold></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg013_task004">
+<label>4</label>
+<statement>
+<p>&#x00DC;bertrage die Figur in ein Koordinatensystem. Notiere die Koordinaten der Punkte.</p></statement>
+<sec id="pg013_s003">
+<label>Beispiel</label><p>A(&#x2212;1 &#x007C; 2,5)</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_013_fx_004.jpg"/></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg013_task005">
+<sec-meta><related-object content-type="mer-Worterkl&#x00E4;rung"/></sec-meta>
+<label>5</label>
+<statement>
+<p>Zeichne ein erweitertes Koordinatensystem. Beide Achsen sollen von &#x2212;5 bis +5 gehen.</p></statement>
+<sec sec-type="subtask" id="pg013_task005a">
+<label>a</label>
+<statement>
+<p>a) Trage die Punkte ein und verbinde sie.</p></statement>
+<p>&#x2460; A(&#x2212;4 &#x007C; 1); B(&#x2212;1 &#x007C; 1); C(&#x2212;1 &#x007C; 4); D(&#x2212;4 &#x007C; 4)</p>
+<p>&#x2461; E(&#x2212;3,5 &#x007C; &#x2212;3); F(3 &#x007C; &#x2212;2); G(3 &#x007C; 3); H(&#x2212;3,5 &#x007C; &#x2212;2)</p>
+</sec>
+<sec sec-type="subtask" id="pg013_task005b">
+<label>b</label>
+<p>Wie hei&#x00DF;en die geometrischen Figuren, die entstehen? In welchen Quadranten sind die Figuren?</p>
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg014_task004">4</xref></bold></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg013_task006">
+<label>6</label>
+<statement>
+<p>Finde die Fehler. Beschreibe, was falsch gemacht wurde. Zeichne und beschrifte richtig.</p></statement>
+<sec sec-type="subtask" id="pg013_task006a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_013_fx_005.jpg"/></p>
+</fig></sec>
+<sec sec-type="subtask" id="pg013_task006b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_013_fx_006.jpg"/></p>
+</fig></sec>
+</sec>
+<sec sec-type="task" id="pg013_task007">
+<label>7</label>
+<statement>
+<p>Der Roboter m&#x00F6;chte zur Ladestation am Ziel. Welche Koordinaten kann er ansteuern, ohne gegen eine Mauer zu sto&#x00DF;en? Versuche, mit m&#x00F6;glichst wenigen Schritten zum Ziel zu kommen. Schreibe jeweils die Quadranten und die Koordinaten f&#x00FC;r den Roboter auf.</p></statement>
+<p><related-object content-type="mer-Paar"/> Vergleicht eure L&#x00F6;sungen.</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_013_fx_007.jpg"/></p>
+</sec>
+<sec id="pg013_s004">
+<p><related-object content-type="mer-DigitalHelp"/> Tipp zu <bold><xref ref-type="xref" rid="pg013_task001">1</xref></bold>, <bold><xref ref-type="xref" rid="pg013_task006">6</xref></bold>, <bold><xref ref-type="xref" rid="pg013_task007">7</xref></bold></p>
+</sec>
+</body>
+</book-part>
+<?pageStart pdf="18" pagination="14"?>
+<book-part book-part-type="mod-Lerneinheit">
+<book-part-meta>
+<title-group id="pg14">
+<label>&#x00DC;ben</label>
+</title-group>
+<related-object content-type="mer-Mittel"/>
+</book-part-meta>
+<body>
+<sec sec-type="task" id="pg014_task001">
+<label>1</label>
+<statement>
+<p>Die Skizze zeigt den Weg des Roboters.</p></statement>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_014_fx_001.jpg"/></p>
+<p>Notiere die Reihenfolge der Quadranten, die der Roboter durchl&#x00E4;uft.</p>
+<sec id="pg014_s001">
+<label>Beispiel</label>
+<p>Start: IV. Quadrant; dann III. Quadrant; &#x2026;</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg014_task002">
+<label>2</label>
+<statement>
+<p>Notiere die Koordinaten der Punkte.</p>
+</statement>
+<sec id="pg014_s002">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_014_fx_002.jpg"/></p>
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg015_task003">3</xref></bold></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg014_task003">
+<label>3</label> 
+<statement>
+<p>Spiegle im Heft die Figur an der y-Achse.</p>
+<p>Gib die Koordinaten der Bildpunkte an.</p></statement>
+<sec id="pg014_s003">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_014_fx_003.jpg"/></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg014_task004">
+<label>4</label>
+<statement>
+<p>Hier gibt es Fehler. Finde und beschreibe sie. Zeichne und beschrifte richtig.</p></statement>
+<sec sec-type="subtask" id="pg014_task004a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_014_fx_004.jpg"/></p>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg014_task004b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_014_fx_005.jpg"/></p>
+</fig>
+</sec>
+</sec>
+<sec sec-type="task" id="pg014_task005">
+<label>5</label>
+<statement>
+<p>Trage die Punkte in ein Koordinatensystem ein und verbinde sie.</p></statement>
+<p>Welcher Buchstabe entsteht?</p>
+<sec sec-type="subtask" id="pg014_task005a">
+<label>a)</label>
+<p>A(&#x2212;4 &#x007C; &#x2212;2); B(&#x2212;1,5 &#x007C; &#x2212;2); C(&#x2212;1,5 &#x007C; &#x2212;1); D(&#x2212;3 &#x007C; &#x2212;1); E(&#x2212;3 &#x007C; 2,5); F(&#x2212;4 &#x007C; 2,5)</p>
+</sec>  
+<sec sec-type="subtask" id="pg014_task005b">
+<label>b)</label>
+<p>G(0,5 &#x007C; &#x2212;2); H(1,5 &#x007C; &#x2212;2); I(3 &#x007C; 2); J(2 &#x007C; 2); K(1 &#x007C; &#x2212;1); L(0 &#x007C; 2); M(&#x2212;1 &#x007C; 2)</p>
+</sec>
+<sec sec-type="subtask" id="pg014_task005c">
+<label>c)</label>
+<p>N(&#x2212;2 &#x007C; &#x2212;4); O(&#x2212;1 &#x007C; &#x2212;4); P(&#x2212;1 &#x007C; &#x2212;7); Q(0 &#x007C; &#x2212;7); R(0 &#x007C; &#x2212;4); S(1 &#x007C; &#x2212;4); T(1 &#x007C; &#x2212;3); U(&#x2212;2 &#x007C; &#x2212;3)</p>
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg015_task007">7</xref></bold></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg014_task006">
+<label>6</label>
+<statement>
+<p>Nenne den Quadranten, in dem der Punkt liegt.</p>
+<p>Begr&#x00FC;nde ohne zu zeichnen.</p></statement>
+<p>A(1 &#x007C; &#x2212;3)</p>
+<p>B(&#x2212;2 &#x007C; &#x2212;3)</p>
+<p>C(&#x2212;17 &#x007C; &#x2212;5,5)</p>
+<p>D(&#x2212;8 &#x007C; 4)</p>
+<p>E(&#x2212;12 &#x007C; 110)</p>
+<p>F(&#x2212;0,2 &#x007C; 19)</p>
+<p>G(&#x2212;8 &#x007C; 8)</p>
+<p>H(0,1 &#x007C; &#x2212;1)</p>
+<p>I(&#x2212;5 &#x007C; &#x2212;13)</p>
+</sec>
+<sec sec-type="task" id="pg014_task007">
+<label>7</label>
+<statement>
+<p>Ein Schiff soll in den Hafen fahren.</p>
+<p>Es besteht die Gefahr, dass das Schiff auf eine Sandbank f&#x00E4;hrt. Beschreibe einen Weg, um sicher im Hafen bei H (5 &#x007C; &#x2212;5) anzukommen.</p>
+<p>Schreibe in einer Liste f&#x00FC;r die Orte des Schiffs die Quadranten und die Koordinaten auf.</p>
+</statement>
+<p><related-object content-type="mer-Paar"/> Vergleicht eure L&#x00F6;sungen.</p>
+<sec id="pg014_s004">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_014_fx_005.jpg"/></p>
+</sec>
+</sec>
+<sec id="pg014_s005">
+<p><related-object content-type="mer-DigitalHelp"/> Tipp zu <bold><xref ref-type="xref" rid="pg014_task001">1</xref></bold>, <bold><xref ref-type="xref" rid="pg014_task003">3</xref></bold>, <bold><xref ref-type="xref" rid="pg014_task004">4</xref></bold>, <bold><xref ref-type="xref" rid="pg014_task005">5</xref></bold>, <bold><xref ref-type="xref" rid="pg014_task006">6</xref></bold></p>
+</sec>
+</body>
+</book-part>
+
+<?pageStart pdf="19" pagination="15"?>
+<book-part book-part-type="mod-Lerneinheit">
+<book-part-meta>
+<title-group id="pg15">
+<label>&#x00DC;ben</label>
+</title-group>
+<related-object content-type="mer-Schwer"/>
+</book-part-meta>
+<body>
+<sec sec-type="task" id="pg015_task001">
+<label>1</label>
+<statement>
+<p>Nenne den Quadranten, in dem der Punkt liegt. Begr&#x00FC;nde ohne zu zeichnen.</p></statement>
+<p>A(&#x2212;2 &#x007C; 4)</p>
+<p>B(&#x2212;1 &#x007C; &#x2212;6)</p>
+<p>C(34 &#x007C; &#x2212;7,2)</p>
+<p>D(5 &#x007C; &#x2212;3)</p>
+<p>E(30 &#x007C; &#x2212;110)</p>
+<p>F(&#x2212;0,1 &#x007C; 34)</p>
+<p>G(7 &#x007C; &#x2212;9)</p>
+<p>H(1,7 &#x007C; &#x2212;5)</p>
+<p>I(&#x2212;0,01 &#x007C; &#x2212;1)</p>
+</sec>
+<sec sec-type="task" id="pg015_task002">
+<label>2</label>
+<statement>
+<p>&#x00DC;bertrage die Punkte in ein Koordinatensystem.</p>
+<p>Erg&#x00E4;nze die Figur zu einem Smiley.</p>
+<p>Gib die Koordinaten aller Punkte an.</p></statement>
+<sec id="pg015_s001">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_015_fx_001.jpg"/></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg015_task003">
+<label>3</label>
+<statement>
+<p>Spiegle im Heft die Figur an der roten Geraden g, sodass ein Flugzeug entsteht.</p>
+<p>Gib die Koordinaten der Bildpunkte an.</p></statement>
+<sec id="pg015_s002">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_015_fx_002.jpg"/></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg015_task004">
+<label>4</label>
+<statement>
+<p>Finde und beschreibe den Fehler. Zeichne und beschrifte richtig.</p></statement>
+<sec sec-type="subtask" id="pg015_task004a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_015_fx_003.jpg"/></p>
+</fig></sec>
+<sec sec-type="subtask" id="pg015_task004b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_015_fx_004.jpg"/></p>
+</fig></sec>
+</sec>
+<sec sec-type="task" id="pg015_task005">
+<label>5</label>
+<statement>
+<p>&#x00DC;bertrage die Punkte in ein Koordinatensystem und verbinde die braunen Punkte A bis G.</p>
+<p>Es entsteht eine 1. Erg&#x00E4;nze die lila Punkte R, S, T und U mit weiteren Punkten V, W und X so, dass insgesamt die Zahl &#x201E;11&#x201C; entsteht.</p>
+</statement>
+<sec id="pg015_s003">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/978306044467_pg_015_fx_005.jpg"/></p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg015_task006">
+<label>6</label>
+<statement>
+<p>Trage die Punkte in ein Koordinatensystem ein und verbinde sie. Es entstehen ein Buchstabe und ein Symbol.</p></statement>
+<sec sec-type="subtask" id="pg015_task006a">
+<label>a)</label>
+<p>A(&#x2212;3 &#x007C; &#x2212;1,5); B(&#x2212;0,5 &#x007C; &#x2212;1,5); C(&#x2212;0,5 &#x007C; &#x2212;0,5); D(&#x2212;2 &#x007C; &#x2212;0,5); E(&#x2212;2 &#x007C; 3); F(&#x2212;3 &#x007C; 3)</p>
+</sec>
+<sec sec-type="subtask" id="pg015_task006b">
+<label>b)</label>
+<p>A(&#x2212;3 &#x007C; &#x2212;4); B(2 &#x007C; &#x2212;4); C(2 &#x007C; &#x2212;5); D(3,5 &#x007C; &#x2212;3,5); E(2 &#x007C; &#x2212;2); F(2 &#x007C; &#x2212;3); G(&#x2212;3 &#x007C; &#x2212;3)</p>
+</sec>
+<sec sec-type="subtask" id="pg015_task006c">
+<label>c)</label>
+<statement><p><related-object content-type="mer-Paar"/> Zeichnet jeder ein Koordinatensystem. Beschreibe deinem Partner, welche Punkte er eintragen soll. Pr&#x00FC;ft danach gemeinsam, ob die Punkte richtig eingetragen sind. Tauscht dann die Rollen.</p></statement>
+</sec>
+</sec>
+<sec sec-type="task" id="pg015_task007">
+<sec-meta><related-object content-type="mer-Worterkl&#x00E4;rung"/></sec-meta>
+<label>7</label>
+<statement>
+<p>Ver&#x00E4;ndere die Vorzeichen so, dass die Punkte im angegebenen Quadranten liegen.</p></statement>
+<sec sec-type="subtask" id="pg015_task007a">
+<label>a)</label>
+<statement>
+<p>Die Punkte sollen im III. Quadranten liegen:</p>
+<p>A(3 &#x007C; 2,5); B(&#x2212;4 &#x007C; 2); C(3 &#x007C; &#x2212;6,1); D(&#x2212;6,8 &#x007C; &#x2212;8)</p>
+</statement>
+</sec>
+<sec sec-type="subtask" id="pg015_task007b">
+<label>b)</label>
+<statement>
+<p>Die Punkte sollen im IV. Quadranten liegen:</p>
+<p>E(4,3 &#x007C; 8); F(&#x2212;2,4 &#x007C; 6); G(9,6 &#x007C; &#x2212;2); H(&#x2212;5,7 &#x007C; &#x2212;4,9)</p>
+</statement>
+</sec>
+</sec>
+<sec sec-type="task" id="pg015_task008">
+<sec-meta><related-object content-type="mer-Worterkl&#x00E4;rung"/></sec-meta>
+<label>8</label>
+<statement>
+<p>Begr&#x00FC;nde, ob die Aussage stimmt.</p></statement>
+<sec sec-type="subtask" id="pg015_task008a">
+<label>a)</label>
+<statement><p>Sind die Vorzeichen der beiden Koordinaten negativ, dann liegt der Punkt immer im dritten Quadranten.</p></statement>
+</sec>
+<sec sec-type="subtask" id="pg015_task008b">
+<label>b)</label>
+<statement><p>Im zweiten und dritten Quadranten sind die Vorzeichen der beiden Koordinaten immer unterschiedlich.</p></statement>
+</sec>
+</sec>
+<sec sec-type="task" id="pg015_task009">
+<label>9</label>
+<statement>
+<p>F&#x00FC;r den Roboter ist das Koordinatensystem mit vier Quadranten sehr hilfreich. Eignet es sich auch, um eine Drohne zu steuern? Begr&#x00FC;nde.</p>
+</statement>
+</sec>
+<sec id="pg015_s004">
+<p><related-object content-type="mer-DigitalHelp"/> Tipp zu <bold><xref ref-type="xref" rid="pg015_task001">1</xref></bold>, <bold><xref ref-type="xref" rid="pg015_task003">3</xref></bold>, <bold><xref ref-type="xref" rid="pg015_task006">6</xref></bold>, <bold><xref ref-type="xref" rid="pg015_task007">7</xref></bold></p>
+</sec>
+</body>
+</book-part>
+</body>
+</book-part>
+
+</body>
+</book-part>
+</book-body>
+</book>
+
+
