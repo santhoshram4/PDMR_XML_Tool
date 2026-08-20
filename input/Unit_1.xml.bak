@@ -6,7 +6,7 @@
 <head1><bold>1</bold></head1>
 <head1><bold>Rationale Zahlen</bold></head1>
 
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_005_fx_001.jpg"/></p>
+<fig><img/></fig>
 <p>In diesem Kapitel lernst du &#x2026;</p>
 <list list-type="bullet">
 <list-item><p>den Begriff rationale Zahlen genauer kennen,</p></list-item>
@@ -25,31 +25,19 @@
 <label>Aufgabe</label>
 <p><bold>1</bold> Vergleiche die Zahlen.</p>
 <p>Setze im Heft &#x003C;, &#x003E; oder = ein.</p>
-<sec sec-type="subtask" id="pg006_task001a">
-<label>a)</label>
-<p>4 &#x25CF; 9</p>
-</sec>
-<sec sec-type="subtask" id="pg006_task001b">
-<label>b)</label>
-<p>3,5 &#x25CF; 2,5</p>
-</sec>
-<sec sec-type="subtask" id="pg006_task001c">
-<label>c)</label>
-<p>0 &#x25CF; 0,1</p>
-</sec>
-<sec sec-type="subtask" id="pg006_task001d">
-<label>d)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{1}{3} \bullet \frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
+<p>a) 4 &#x25CF; 9</p>
+<p>b) 3,5 &#x25CF; 2,5</p>
+<p>c) 0 &#x25CF; 0,1</p>
+<p>d) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{1}{3} \bullet \frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
 </sec>
 <sec>
 <label>Lies und &#x00FC;be:</label>
 
-<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg196_task004">Seite 196 Nr. 4</xref>, <xref ref-type="link-LookItUp" rid="pg196_task005">5</xref></p>
-<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg204">Seite 204</xref></p>
+<p>&#x2192; Seite 196 Nr. 4, 5</p>
+<p>&#x2192; Seite 204</p>
 
-<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task012">12</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task010">10</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task009">9</xref></bold></p>
-<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task010">10</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task013">13</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task020">20</xref></bold></p>
+<p><bold>&#x25B8;12 <sec-meta>mer-</sec-meta>&#x25B8;10 <sec-meta>mer-</sec-meta>&#x25B8;9</bold></p>
+<p><bold>&#x25B8;10 &#x25B8;13 &#x25B8;20</bold></p>
 
 </sec>
 <sec>
@@ -60,24 +48,9 @@
 <label>Aufgabe</label>
 <p><bold>2</bold> Ist der Zahlenstrahl richtig gezeichnet und eingeteilt?</p>
 <p>Verbessere in deinem Heft.</p>
-<sec sec-type="subtask" id="pg006_task001a">
-<label>a)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_001.jpg"/>
-</fig>
-</sec>
-<sec sec-type="subtask" id="pg006_task001b">
-<label>b)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_002.jpg"/>
-</fig>
-</sec>
-<sec sec-type="subtask" id="pg006_task001c">
-<label>c)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_003.jpg"/>
-</fig>
-</sec>
+<p>a) <fig><img/></fig></p>
+<p>b) <fig><img/></fig></p>
+<p>c) <fig><img/></fig></p>
 </sec>
 
 
@@ -137,7 +110,7 @@
 </tbody>
 </table>
 </table-wrap>
-<p><bold>Rationale Zahlen multiplizieren und dividieren</bold> &#x2192; <xref ref-type="link-LookItUp" rid="pg024">Seite 24</xref></p>
+<p><bold>Rationale Zahlen multiplizieren und dividieren</bold> &#x2192; Seite 24</p>
 <table-wrap>
 <table>
 <tbody>

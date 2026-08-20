@@ -24,27 +24,40 @@ STANDALONE_FIG_RE = re.compile(
     r"<fig\b[^>]*>.*?</fig>|<img\b[^>]*/?>", re.DOTALL | re.IGNORECASE
 )
 
-# Regex 5: Match 'Seite <page_num> Nr. <task_numbers>' pattern
+# Regex 5: Match 'Seite <page_num>' optional with 'Nr. <task_numbers>' pattern
 SEITE_RE = re.compile(
-    r"\b(Seite\s+(\d+)\s+Nr\.\s+([\d\s,]+))\b",
+    r"\b(Seite\s+(\d+)(?:\s+Nr\.\s+([\d\s,]+))?)\b",
     re.IGNORECASE,
 )
 
+# Regex 6: Match &#x25B8; followed by task number
+NEXTLEVEL_RE = re.compile(r"&#x25B8;\s*(\d+)", re.IGNORECASE)
+
+# Regex 7: Cleanup for any <sec-meta> tags completely
+SEC_META_RE = re.compile(r"<sec-meta>.*?</sec-meta>", re.IGNORECASE | re.DOTALL)
+
 
 def process_seite_links(text):
-    """Transforms 'Seite 196 Nr. 4, 5' into exact <xref> link tags."""
+    """Transforms 'Seite 196 Nr. 4, 5' or 'Seite 204' into exact <xref> link tags."""
 
     def replace_seite(match):
         full_match = match.group(1)
         page_num = int(match.group(2))
         page_str = f"{page_num:03d}"  # 196 -> "196", 6 -> "006"
-        nums_part = match.group(3).strip()
+        nums_part = match.group(3)
 
-        # Split comma-separated numbers (e.g. "4, 5" -> ["4", "5"])
+        # Case 1: Only "Seite <num>" without "Nr." (e.g. Seite 204)
+        if not nums_part:
+            rid_val = f"pg{page_str}"
+            return f'<xref ref-type="link-LookItUp" rid="{rid_val}">{full_match}</xref>'
+
+        # Case 2: "Seite <num> Nr. <tasks>" (e.g. Seite 196 Nr. 4, 5)
+        nums_part = nums_part.strip()
         raw_nums = [n.strip() for n in nums_part.split(",") if n.strip()]
 
         if not raw_nums:
-            return full_match
+            rid_val = f"pg{page_str}"
+            return f'<xref ref-type="link-LookItUp" rid="{rid_val}">{full_match}</xref>'
 
         xref_list = []
         for idx, num_str in enumerate(raw_nums):
@@ -68,7 +81,30 @@ def process_seite_links(text):
     return SEITE_RE.sub(replace_seite, text)
 
 
+def process_nextlevel_tasks(text, current_page_fn, pos_offset=0):
+    """Transforms '&#x25B8;12' into standard <xref> format."""
+
+    def replace_nextlevel(match):
+        start_pos = pos_offset + match.start()
+        pg_str = current_page_fn(start_pos)
+
+        task_num = int(match.group(1))
+        task_str = f"{task_num:03d}"  # 12 -> "012", 9 -> "009"
+
+        rid_val = f"pg{pg_str}_task{task_str}"
+
+        return f'&#x25B8; <xref ref-type="nextlevel_task" rid="{rid_val}">{task_num}</xref>'
+
+    # Replace all matches using NEXTLEVEL_RE
+    text = NEXTLEVEL_RE.sub(replace_nextlevel, text)
+
+    return text
+
+
 def process_xml_text(content):
+    # FIRST STEP: Clean all <sec-meta>...</sec-meta> tags from content completely
+    content = SEC_META_RE.sub("", content)
+
     current_page = "001"
     task_count = 1
 
@@ -100,6 +136,11 @@ def process_xml_text(content):
 
         # Process Seite links if present in the paragraph
         inner_content = process_seite_links(inner_content)
+
+        # Process Nextlevel Tasks (&#x25B8;12)
+        inner_content = process_nextlevel_tasks(
+            inner_content, get_page_for_pos, start_pos
+        )
 
         # Extract only alphanumeric character for ID suffix (e.g., "a)" -> "a")
         clean_label = re.sub(r"\W+", "", label)
@@ -138,13 +179,20 @@ def process_xml_text(content):
     # 1. Process List items (<p>a) ... </p>)
     updated_content = P_TAG_RE.sub(replace_p, content)
 
-    # 2. Process Seite links in non-list <p> tags
+    # 2. Process Seite links and Nextlevel tasks in non-list <p> tags
     def replace_regular_p(match):
         full_p = match.group(0)
+        start_pos = match.start()
+
         # Skip if already inside a <sec> block from previous pass
         if "<sec" in full_p:
             return full_p
-        return process_seite_links(full_p)
+
+        p_processed = process_seite_links(full_p)
+        p_processed = process_nextlevel_tasks(
+            p_processed, get_page_for_pos, start_pos
+        )
+        return p_processed
 
     updated_content = re.sub(
         r"<p\b[^>]*>.*?</p>", replace_regular_p, updated_content, flags=re.DOTALL
@@ -172,7 +220,6 @@ def process_xml_text(content):
 
     # Replace standalone figures that are not inside <sec> tags
     def process_figures_outside_sec(content_str):
-        # We find <fig> blocks that are outside <sec> blocks
         parts = re.split(r"(<sec\b[^>]*>.*?</sec>)", content_str, flags=re.DOTALL)
         for i in range(len(parts)):
             if not parts[i].startswith("<sec"):
