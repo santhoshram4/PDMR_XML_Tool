@@ -101,6 +101,65 @@ def process_nextlevel_tasks(text, current_page_fn, pos_offset=0):
     return text
 
 
+def process_task_sections(content, get_page_for_pos):
+    """Parses <sec> blocks and wraps main task paragraphs inside <statement> before subtasks."""
+
+    sec_block_re = re.compile(r"<sec\b[^>]*>(.*?)</sec>", re.DOTALL | re.IGNORECASE)
+
+    def transform_sec(match):
+        start_pos = match.start()
+        pg_str = get_page_for_pos(start_pos)
+        sec_inner = match.group(1)
+
+        # Look for <p...><bold>NUMBER</bold>...</p> inside this sec block
+        first_p_match = re.search(
+            r"<p(?P<pattrs>[^>]*)>\s*<bold>(?P<num>\d+)</bold>\s*(?P<pcontent>.*?)</p>",
+            sec_inner,
+            re.DOTALL | re.IGNORECASE,
+        )
+
+        if not first_p_match:
+            return match.group(0)
+
+        task_num = int(first_p_match.group("num"))
+        task_str = f"{task_num:03d}"
+        sec_id = f"pg{pg_str}_task{task_str}"
+
+        p_attrs = first_p_match.group("pattrs")
+        p_content = first_p_match.group("pcontent").strip()
+
+        # Remove old <label>...</label> if present inside <sec>
+        clean_inner = re.sub(
+            r"^\s*<label>[^<]*</label>\s*", "", sec_inner, flags=re.IGNORECASE
+        )
+
+        # Replace first <p><bold>N</bold> ...</p> with <p>...</p>
+        first_p_full = first_p_match.group(0)
+        new_first_p = f"<p{p_attrs}>{p_content}</p>" if p_content else ""
+
+        clean_inner = clean_inner.replace(first_p_full, new_first_p, 1)
+
+        # Split at the first subtask marker (<sec or list item <p>a) etc) if present
+        subtask_split = re.split(
+            r"(?=<sec\b|<p\b[^>]*>\s*[a-zA-Z0-9]+[\.\)])", clean_inner, 1, flags=re.IGNORECASE
+        )
+
+        statement_part = subtask_split[0].strip()
+        remaining_part = subtask_split[1] if len(subtask_split) > 1 else ""
+
+        # Build output structure
+        res = (
+            f'<sec sec-type="task" id="{sec_id}">\n'
+            f"<label>{task_num}</label>\n"
+            f"<statement>{statement_part}</statement>\n"
+            f"{remaining_part}\n"
+            f"</sec>"
+        )
+        return res
+
+    return sec_block_re.sub(transform_sec, content)
+
+
 def process_xml_text(content):
     # FIRST STEP: Clean all <sec-meta>...</sec-meta> tags from content completely
     content = SEC_META_RE.sub("", content)
@@ -123,6 +182,9 @@ def process_xml_text(content):
             else:
                 break
         return pg
+
+    # Process task <sec> blocks
+    content = process_task_sections(content, get_page_for_pos)
 
     def replace_p(match):
         nonlocal task_count
@@ -184,8 +246,8 @@ def process_xml_text(content):
         full_p = match.group(0)
         start_pos = match.start()
 
-        # Skip if already inside a <sec> block from previous pass
-        if "<sec" in full_p:
+        # Skip if already inside a subtask <sec> block from previous pass
+        if '<sec sec-type="subtask"' in full_p:
             return full_p
 
         p_processed = process_seite_links(full_p)
