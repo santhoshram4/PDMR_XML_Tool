@@ -36,6 +36,12 @@ NEXTLEVEL_RE = re.compile(r"&#x25B8;\s*(\d+)", re.IGNORECASE)
 # Regex 7: Cleanup for any <sec-meta> tags completely
 SEC_META_RE = re.compile(r"<sec-meta>.*?</sec-meta>", re.IGNORECASE | re.DOTALL)
 
+# Regex 8: Clean empty <p></p> tags inside <td>...</td>
+EMPTY_TD_P_RE = re.compile(
+    r"(<td\b[^>]*>)\s*<p(?:\s+[^>]*)?>\s*</p>\s*(</td>)",
+    re.IGNORECASE | re.DOTALL,
+)
+
 
 def process_seite_links(text):
     """Transforms 'Seite 196 Nr. 4, 5' or 'Seite 204' into exact <xref> link tags."""
@@ -101,15 +107,87 @@ def process_nextlevel_tasks(text, current_page_fn, pos_offset=0):
     return text
 
 
-def process_task_sections(content, get_page_for_pos):
-    """Parses <sec> blocks and wraps main task paragraphs inside <statement> before subtasks."""
+def process_kompetenz_sections(content, get_page_for_pos):
+    """Transforms Kompetenz <sec> blocks resetting section IDs per page starting from s001."""
 
+    kompetenz_re = re.compile(
+        r"<sec\b[^>]*>\s*<label>\s*(\d+[^<]*)</label>\s*<p(?P<pattrs>[^>]*)>(?P<pcontent>.*?)</p>\s*</sec>",
+        re.DOTALL | re.IGNORECASE,
+    )
+
+    matches = list(kompetenz_re.finditer(content))
+    if not matches:
+        return content
+
+    sec_counter = {}
+
+    def get_sec_id(pg_str):
+        # Page-wise counter starts from 1 for each page
+        if pg_str not in sec_counter:
+            sec_counter[pg_str] = 1
+        else:
+            sec_counter[pg_str] += 1
+        return f"pg{pg_str}_s{sec_counter[pg_str]:03d}"
+
+    new_content = []
+    last_idx = 0
+    in_kompetenz_group = False
+
+    for i, m in enumerate(matches):
+        start_pos = m.start()
+        pg_str = get_page_for_pos(start_pos)
+
+        lbl_content = m.group(1).strip()
+        p_content = m.group("pcontent").strip()
+
+        outer_id = get_sec_id(pg_str) if not in_kompetenz_group else None
+        inner_id = get_sec_id(pg_str)
+
+        new_content.append(content[last_idx:m.start()])
+
+        block_out = ""
+        if not in_kompetenz_group:
+            block_out += f'<sec id="{outer_id}">\n'
+            in_kompetenz_group = True
+
+        block_out += (
+            f'<sec id="{inner_id}">\n'
+            f"<label>{lbl_content}</label>\n"
+            f'<p specific-use="mer-Lernziel">{p_content}</p>\n'
+            f"</sec>"
+        )
+
+        is_next_kompetenz = False
+        if i + 1 < len(matches):
+            between_text = content[m.end() : matches[i + 1].start()].strip()
+            if not between_text:
+                is_next_kompetenz = True
+
+        if not is_next_kompetenz:
+            block_out += "\n</sec>"
+            in_kompetenz_group = False
+
+        new_content.append(block_out)
+        last_idx = m.end()
+
+    new_content.append(content[last_idx:])
+    return "".join(new_content)
+
+
+def process_task_sections(content, get_page_for_pos):
+    """Parses task <sec> blocks AND standalone <p><bold>N</bold>...</p> tags into task <sec> format."""
+
+    # 1. Process <sec> blocks with tasks
     sec_block_re = re.compile(r"<sec\b[^>]*>(.*?)</sec>", re.DOTALL | re.IGNORECASE)
 
     def transform_sec(match):
         start_pos = match.start()
         pg_str = get_page_for_pos(start_pos)
         sec_inner = match.group(1)
+
+        # Skip if it is a Kompetenz section already handled
+        if 'specific-use="mer-Lernziel"' in sec_inner:
+            return match.group(0)
 
         # Look for <p...><bold>NUMBER</bold>...</p> inside this sec block
         first_p_match = re.search(
@@ -141,7 +219,10 @@ def process_task_sections(content, get_page_for_pos):
 
         # Split at the first subtask marker (<sec or list item <p>a) etc) if present
         subtask_split = re.split(
-            r"(?=<sec\b|<p\b[^>]*>\s*[a-zA-Z0-9]+[\.\)])", clean_inner, 1, flags=re.IGNORECASE
+            r"(?=<sec\b|<p\b[^>]*>\s*[a-zA-Z0-9]+[\.\)])",
+            clean_inner,
+            1,
+            flags=re.IGNORECASE,
         )
 
         statement_part = subtask_split[0].strip()
@@ -157,12 +238,51 @@ def process_task_sections(content, get_page_for_pos):
         )
         return res
 
-    return sec_block_re.sub(transform_sec, content)
+    content = sec_block_re.sub(transform_sec, content)
+
+    # 2. Process standalone <p><bold>N</bold>...</p> tags outside <sec>
+    standalone_p_task_re = re.compile(
+        r"<p(?P<pattrs>[^>]*)>\s*<bold>(?P<num>\d+)</bold>\s*(?P<pcontent>.*?)</p>",
+        re.DOTALL | re.IGNORECASE,
+    )
+
+    def replace_standalone_p_task(match):
+        start_pos = match.start()
+
+        # Skip if already inside a <sec> block generated in previous steps
+        prev_text = content[:start_pos]
+        open_secs = len(re.findall(r"<sec\b", prev_text, re.IGNORECASE))
+        close_secs = len(re.findall(r"</sec>", prev_text, re.IGNORECASE))
+        if open_secs > close_secs:
+            return match.group(0)
+
+        pg_str = get_page_for_pos(start_pos)
+        task_num = int(match.group("num"))
+        task_str = f"{task_num:03d}"
+        sec_id = f"pg{pg_str}_task{task_str}"
+
+        p_attrs = match.group("pattrs")
+        p_content = match.group("pcontent").strip()
+
+        inner_p = f"<p{p_attrs}>{p_content}</p>" if p_content else ""
+
+        res = (
+            f'<sec sec-type="task" id="{sec_id}">\n'
+            f"<label>{task_num}</label>\n"
+            f"<statement>{inner_p}</statement>\n"
+            f"</sec>"
+        )
+        return res
+
+    return standalone_p_task_re.sub(replace_standalone_p_task, content)
 
 
 def process_xml_text(content):
     # FIRST STEP: Clean all <sec-meta>...</sec-meta> tags from content completely
     content = SEC_META_RE.sub("", content)
+
+    # Clean empty <p></p> tags inside <td> tags (e.g. <td><p></p></td> -> <td></td>)
+    content = EMPTY_TD_P_RE.sub(r"\1\2", content)
 
     current_page = "001"
     task_count = 1
@@ -183,7 +303,10 @@ def process_xml_text(content):
                 break
         return pg
 
-    # Process task <sec> blocks
+    # Process Kompetenz <sec> blocks first
+    content = process_kompetenz_sections(content, get_page_for_pos)
+
+    # Process task <sec> blocks & standalone task <p> tags
     content = process_task_sections(content, get_page_for_pos)
 
     def replace_p(match):
