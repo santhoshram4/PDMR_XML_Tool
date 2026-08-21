@@ -6,38 +6,50 @@
 <head1><bold>1</bold></head1>
 <head1><bold>Rationale Zahlen</bold></head1>
 
+<!-- single image-->
 <fig><img/></fig>
-<p>In diesem Kapitel lernst du &#x2026;</p>
-<list list-type="bullet">
-<list-item><p>den Begriff rationale Zahlen genauer kennen,</p></list-item>
-<list-item><p>rationale Zahlen zu vergleichen,</p></list-item>
-<list-item><p>Punkte auch mit negativen Koordinaten in einem Koordinatensystem darzustellen,</p></list-item>
-<list-item><p>mit rationalen Zahlen zu rechnen.</p></list-item>
-</list>
 
+<!-- Book part-->
 <?pageStart pdf="10" pagination="6"?>
 <head2><bold>Wiederholung</bold></head2>
 <sec>
 <label>1 Kompetenz</label>
 <p>Ich kann Zahlen vergleichen.</p>
 </sec>
+
+<!-- Task opening-->
 <sec>
 <label>Aufgabe</label>
 <p><bold>1</bold> Vergleiche die Zahlen.</p>
 <p>Setze im Heft &#x003C;, &#x003E; oder = ein.</p>
+
+<!-- Sub-Task-->
 <p>a) 4 &#x25CF; 9</p>
 <p>b) 3,5 &#x25CF; 2,5</p>
 <p>c) 0 &#x25CF; 0,1</p>
 <p>d) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{1}{3} \bullet \frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
 </sec>
-<sec>
+<!-- Task closing-->
+
+
+<!-- link-LookItUp-->
 <p>&#x2192; Seite 196 Nr. 4, 5</p>
 <p>&#x2192; Seite 204</p>
 
+<!-- link-tosolution -->
+<p><bold>Rationale Zahlen addieren und subtrahieren</bold> &#x2192; Seiten 16 und 20</p>
+
+
+<!-- link-tosolution -->
+<p><bold>Rationale Zahlen multiplizieren und dividieren</bold> &#x2192; Seite 24</p>
+
+
+<!-- Nextlevel_Task-->
 <p><bold><sec-meta>mer-</sec-meta>&#x25B8;12 <sec-meta>mer-</sec-meta>&#x25B8;10 <sec-meta>mer-</sec-meta>&#x25B8;9</bold></p>
 <p><bold>&#x25B8;10 &#x25B8;13 &#x25B8;20</bold></p>
 </sec>
 
+<!-- Task-->
 <sec>
 <label>2 Kompetenz</label>
 <p>Ich kann einen Zahlenstrahl zeichnen und einteilen.</p>
@@ -51,391 +63,64 @@
 <p>c) <fig><img/></fig></p>
 </sec>
 
+<!-- Task-->
 <p><bold>26</bold> Wandle in eine gemischte Zahl um.</p>
+<!-- Sub-Task-->
 <p>a) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{3}\)]]></tex-math></alternatives></inline-formula></p>
 <p>b) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{4}\)]]></tex-math></alternatives></inline-formula></p>
 <p>c) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{5}\)]]></tex-math></alternatives></inline-formula></p>
 <p>d) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{10}{7}\)]]></tex-math></alternatives></inline-formula></p>
 <p>e) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{8}{3}\)]]></tex-math></alternatives></inline-formula></p>
 
-<p><bold>Rationale Zahlen addieren und subtrahieren</bold> &#x2192; Seiten 16 und 20</p>
+
+<!-- table -->
 <table-wrap>
 <table>
 <tbody>
-<tr>
-<td><p>&#x2460;Wenn Rechenzeichen und Vorzeichen <bold>gleich</bold> sind, dann fasse die Zeichen zusammen zu <bold>&#x201E;&#x002B;&#x201C;</bold>.</p>
-<p>&#x2461;Wenn Rechenzeichen und Vorzeichen <bold>verschieden</bold> sind, dann fasse die Zeichen zusammen zu &#x201E;&#x2212;&#x201C;.</p></td>
-<td><p>Addieren</p>
-<p>&#x2460;<inline-formula><alternatives><tex-math><![CDATA[\(\begin{array}{*{20}{l}}
-{}&{6\underbrace { + ( + }_{}3)}&{}\\
-= &{6{\mkern 1mu} {\mkern 1mu} {\mkern 1mu} + 3}&{\text{Ⓐ}}\\
-= &9&{}\\
-{}&{ - 6 + ( + 3)}&{}\\
-= &{ - 6 + 3}&{\text{Ⓑ}}\\
-= &{ - 3}&{}
-\end{array}\)]]></tex-math></alternatives></inline-formula></p></td>
-<td><p>Subtrahieren</p>
-<p>&#x2460;<inline-formula><alternatives><tex-math><![CDATA[\(\begin{array}{*{20}{l}}
-{}&{6\underbrace { - ( - }_{}3)}&{}\\
-= &{6{\mkern 1mu} {\mkern 1mu} {\mkern 1mu} + 3}&{\text{Ⓐ}}\\
-= &9&{}\\
-{}&{ - 6 - ( - 3)}&{}\\
-= &{ - 6 + 3}&{\text{Ⓑ}}\\
-= &{ - 3}&{}
-\end{array}\)]]></tex-math></alternatives></inline-formula></p></td>
-</tr>
 <tr>
 <td><p>Rechne so weiter:</p>
 <p>Achte auf die Zeichen vor den Zahlen.</p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
-<tr>
-<td><p>&#x24B6; Beide Zahlen haben das <bold>gleiche Zeichen</bold> davor: Schreibe das gemeinsame Zeichen vor das Ergebnis. Addiere die Betr&#x00E4;ge der beiden Zahlen.</p>
-<p>&#x24B7; Beide Zahlen haben <bold>verschiedene Zeichen</bold> davor: Schreibe das Zeichen von der Zahl mit dem <bold>gr&#x00F6;&#x00DF;eren Betrag</bold> vor das Ergebnis. Subtrahiere vom <bold>gr&#x00F6;&#x00DF;eren Betrag</bold> den kleineren Betrag.</p>
-</td>
-<td><p>&#x2461;<inline-formula><alternatives><tex-math><![CDATA[\(\begin{array}{*{20}{l}}
-{}&{6\underbrace { + ( - }_{}3)}&{}\\
-= &{6{\mkern 1mu} {\mkern 1mu} {\mkern 1mu} - 3}&{\text{Ⓑ}}\\
-= &3&{}\\
-{}&{ - 6 + ( - 3)}&{}\\
-= &{ - 6 - 3}&{\text{Ⓐ}}\\
-= &{ - 9}&{}
-\end{array}\)]]></tex-math></alternatives></inline-formula></p></td>
-<td><p>&#x2461;<inline-formula><alternatives><tex-math><![CDATA[\(\begin{array}{*{20}{l}}
-{}&{6\underbrace { - ( + }_{}3)}&{}\\
-= &{6{\mkern 1mu} {\mkern 1mu} {\mkern 1mu} - 3}&{\text{Ⓑ}}\\
-= &3&{}\\
-{}&{ - 6 - ( + 3)}&{}\\
-= &{ - 6 - 3}&{\text{Ⓐ}}\\
-= &{ - 9}&{}
-\end{array}\)]]></tex-math></alternatives></inline-formula></p></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-<p><bold>Rationale Zahlen multiplizieren und dividieren</bold> &#x2192; Seite 24</p>
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td><p>&#x2460; Multipliziere oder dividiere die beiden Zahlen <bold>ohne Vorzeichen.</bold></p>
-<p>&#x2461; Bestimme das Vorzeichen f&#x00FC;r das Ergebnis:</p>
-<p>&#x24B6; Wenn beide Zahlen das <bold>gleiche Vorzeichen</bold> haben, dann ist das Vorzeichen f&#x00FC;r das Ergebnis <bold>positiv</bold> (also +).</p>
-<p>&#x24B7; Wenn beide Zahlen <bold>verschiedene</bold> Vorzeichen haben, dann ist das <bold>Vorzeichen</bold> f&#x00FC;r das Ergebnis <bold>negativ</bold> (also &#x2212;).</p>
-</td>
-<td><p>&#x2460; Multipliziere oder dividiere ohne Vorzeichen</p>
-<p>&#x2461;&#x24B6;(+6) &#x00B7; (+2) = 12 &#x2003;&#x2003; (+18) : (+3) = 6</p>
-<p>&#x2003;&#x2003;(&#x2212;6) &#x00B7; (&#x2212;3) = 18 &#x2003;&#x2003; (&#x2212;12) : (&#x2212;6) = 2</p>
-<p>&#x24B7;(+6) &#x00B7; (&#x2212;2) = &#x2212;12 &#x2003;&#x2003; (+18) : (&#x2212;3) = &#x2212;6</p>
-<p>&#x2003;(&#x2212;6) &#x00B7; (+3) = &#x2212;18 &#x2003;&#x2003; (&#x2212;12) : (+6) = &#x2212;2</p></td>
-</tr>
 </tbody>
 </table>
 </table-wrap>
 
 
+<?pageStart pdf="79" pagination="75"?>
 
-<p>&#x2192; Seite 166 Nr. 4</p>
-<p>&#x2192; Seite 190 Nr. 1</p>
-<boxed-text position="float">
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td>
-<p><bold>Werte aus einem Diagramm ablesen</bold></p>
-<p>Wenn du ein Diagramm lesen sollst, dann kannst du so vorgehen:</p>
-<list list-type="order">
-<list-item><p>Lies die &#x00DC;berschrift.</p> 
-<p>Dort erf&#x00E4;hrst du, um was es geht.</p></list-item>
-<list-item><p>Lies, was an den Achsen steht.</p></list-item>
-<list-item><p>Schaue, in welchen Schritten die Achse mit den Zahlen eingeteilt ist.</p></list-item>
-<list-item><p>Lies die Werte ab.</p></list-item>
-</list></td>
-<td><fig><img/></fig>
-<list list-type="order">
-<list-item><p> Das Diagramm zeigt, wie alt Haustiere werden k&#x00F6;nnen.</p></list-item>
-<list-item><p> Auf der unteren Achse stehen drei Tiere (Hund, Goldfisch, Meerschweinchen).</p> 
-<p>Auf der Hochachse steht das Alter der Tiere.</p></list-item>
-<list-item><p> Das Alter der Tiere ist in 5er Schritte eingeteilt.</p></list-item>
-<list-item><p> Ein Goldfisch kann 35 Jahre alt werden.</p></list-item>
-</list></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<p><bold>16</bold> Damir hat alle in seiner Klasse nach dem Lieblingsessen gefragt.</p>
-<p>a) Welches Lieblingsessen wurde am h&#x00E4;ufigsten genannt?</p>
-<p>b) Wie viele essen am liebsten Nudeln?</p>
-<p>c) Wie viele essen am liebsten Pommes?</p>
+<!-- Task-->
+<p><bold>2</bold> Berechne den Umfang des Vierecks.</p>
+<!-- sub-Task-->
+<p>a) a = 6,5 m; b = 7 m; c = 10,5 m; d = 8,5 m</p>
+<p>b) a = 12,3 m; b = 5,5 m; c = 25,7 m; d = 9,5 m</p>
+<p>c) a = 276 m; b = 105 m; c = 723 m; d = 481 m</p>
+<p>d) a = 60 m 50 cm; b = 70,1 m; c = 110 m; d = 30 m 80 cm</p>
+<!-- Task-->
+<p><bold>3</bold> &#x00DC;bertrage die Figuren in dein Heft.</p>
 <fig><img/></fig>
-<?pageStart pdf="220" pagination="216"?>
-<p>&#x2192; Seite 166 Nr. 5</p>
-<p>&#x2192; Seite 190 Nr. 2</p>
-<boxed-text position="float">
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td>
-<p><bold>Ein S&#x00E4;ulendiagramm zeichnen</bold></p>
-<list list-type="order">
-<list-item><p> Lege fest: Was soll auf welche Achse?</p> 
-<p>Die Anzahl steht auf der Hochachse.</p></list-item>
-<list-item><p> Finde den gr&#x00F6;&#x00DF;ten Wert, der auf der Hochachse dargestellt werden muss.</p> 
-<p>&#x00DC;berlege dir eine gleichm&#x00E4;&#x00DF;ige Einteilung.</p> 
-<p>Zeichne die Hochachse etwas h&#x00F6;her als n&#x00F6;tig und beschrifte sie. Beginne mit 0.</p></list-item>
-<list-item><p> Plane die Breite. Beachte die Anzahl der S&#x00E4;ulen, ihre Breite und den Platz dazwischen. Zeichne die untere Achse etwas breiter als n&#x00F6;tig und beschrifte sie.</p></list-item>
-<list-item><p> Zeichne die S&#x00E4;ulen ein und beschrifte sie.</p> 
-<p>Die S&#x00E4;ulen m&#x00FC;ssen alle gleich breit sein.</p></list-item>
-<list-item><p> Gib deinem Diagramm eine &#x00DC;berschrift.</p></list-item>
-</list></td>
-<td><p>Leon hat beim Kartenspielen 8-mal gewonnen, Jan 4-mal und Serda 7-mal.</p>
-<fig><img/></fig></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<p><bold>17</bold> Bei der Wahl zum Klassensprecher hat Chiara 12 Stimmen bekommen. Patryk hat 8 Stimmen und Mathias hat 6 Stimmen bekommen. Stelle das Ergebnis in einem S&#x00E4;ulendiagramm dar.</p>
-<p><bold>18</bold> Die Klasse von Frau Arslan stimmt &#x00FC;ber den Wandertag ab. 5 Kinder wollen ins Schwimmbad, 8 Kinder wollen ins Kino, 2 Kinder wollen wandern, 9 Kinder wollen in die Kletterhalle und 2 Kinder haben sich enthalten. Stelle das Ergebnis in einem S&#x00E4;ulendiagramm dar.</p>
-<p>&#x2192; Seite 28 Nr. 1, 2</p>
-<p>&#x2192; Seite 57 Nr. 8</p>
-<p>&#x2192; Seite 191 Nr. 7</p>
-<boxed-text position="float">
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td>
-<p><bold>Br&#x00FC;che als Teil eines Ganzen angeben</bold></p>
-<p>Br&#x00FC;che sind Teile eines Ganzen.</p>
-<p>Der Nenner gibt an, in wie viele gleich gro&#x00DF;e Teile das Ganze aufgeteilt wurde.</p>
-<p>Der Z&#x00E4;hler gibt an, um wie viele Teile des Ganzen es geht.</p>
+<p>a) Beschrifte vollst&#x00E4;ndig.</p>
+<p>b) Sch&#x00E4;tze zuerst den Umfang. Miss dann die L&#x00E4;nge der Seiten und berechne den Umfang. Vergleiche mit deiner Sch&#x00E4;tzung.</p>
+<p><bold>4</bold> Nenne die Vierecksart. Berechne den Umfang.</p>
+<p>a)</p>
 <fig><img/></fig>
-</td>
-<td>
-<p>Welcher Teil des Ganzen ist rot?</p>
+<p>b)</p>
 <fig><img/></fig>
-<p>Der ganze Kreis wurde in 3 gleich gro&#x00DF;e Teile aufgeteilt.</p> 
-<p>2 Teile des Ganzen sind rot markiert.</p>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{2}{3}\)]]></tex-math></alternatives></inline-formula> des Ganzen sind rot.</p></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<p><bold>19</bold> Welcher Teil des Ganzen ist gr&#x00FC;n? Schreibe als Bruch.</p>
-<p>a) <fig><img/></fig></p>
-<p>b) <fig><img/></fig></p>
-<p>c) <fig><img/></fig></p>
-<p>d) <fig><img/></fig></p>
-<p>e) <fig><img/></fig></p>
-<p>f) <fig><img/></fig></p>
-<p>g) <fig><img/></fig></p>
-<p>h) <fig><img/></fig></p>
-<p>i) <fig><img/></fig></p>
-<p>j) <fig><img/></fig></p>
-<?pageStart pdf="221" pagination="217"?>
-<p>&#x2192; Seite 28 Nr. 3</p>
-<boxed-text position="float">
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td>
-<p><bold>Einen Bruch in einem Rechteck darstellen</bold></p>
-<p>So kannst du einen Bruch in einem Rechteck oder in einem Quader darstellen.</p>
-<list list-type="order">
-<list-item><p> Schaue dir den Nenner an. Das ist die Zahl unter dem Bruchstrich.</p> 
-<p>In so viele Teile soll das Rechteck geteilt werden.</p></list-item>
-<list-item><p> &#x00DC;berlege: Wie kannst du das Rechteck in so viele gleich gro&#x00DF;e Teile aufteilen, wie der Nenner angibt?</p></list-item>
-<list-item><p> Teile das Rechteck in gleich gro&#x00DF;e Teile.</p></list-item>
-<list-item><p> Schaue dir den Z&#x00E4;hler an. Das ist die Zahl &#x00FC;ber dem Bruchstrich.</p></list-item>
-<list-item><p> Markiere so viele Teile des Ganzen, wie es der Z&#x00E4;hler angibt.</p></list-item>
-</list></td>
-<td><p>Markiere den Bruchteil <inline-formula><alternatives><tex-math><![CDATA[\(\frac{2}{5}\)]]></tex-math></alternatives></inline-formula> rot.</p>
-<list list-type="order">
-<list-item><p> Das Rechteck muss in 5 gleich gro&#x00DF;e Teile aufgeteilt werden.</p>
-</list-item>
-<list-item><p> Das Rechteck hat eine L&#x00E4;nge von 10 K&#x00E4;stchen und eine Breite von 6 K&#x00E4;stchen. 10 l&#x00E4;sst sich gut durch 5 teilen, 6 nicht.</p>
-</list-item>
-<list-item><p> Teile das Rechteck entlang der L&#x00E4;nge in 5 gleich gro&#x00DF;e Teile.</p>
-<p>4./5. Markiere 2 der 5 Teile.</p>
-</list-item>
-</list></td>
-<td><fig><img/></fig>
+<p>c)</p>
 <fig><img/></fig>
-<fig><img/></fig></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<p><bold>20</bold> &#x00DC;bertrage das Rechteck in dein Heft. Markiere den Bruchteil rot.</p>
-<p>a) <fig><img/></fig></p>
-<p>b) <fig><img/></fig></p>
-<p>c) <fig><img/></fig></p>
-<p>d) <fig><img/></fig></p>
-<p>&#x2192; Seite 28 Nr. 4, 5</p>
-<boxed-text position="float">
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td>
-<p><bold>Bruchteile von Gr&#x00F6;&#x00DF;en berechnen</bold></p>
-<p>So berechnest du Bruchteile von Gr&#x00F6;&#x00DF;en:</p>
-<list list-type="order">
-<list-item><p> Teile die gegebene Gr&#x00F6;&#x00DF;e durch den Nenner.</p></list-item>
-<list-item><p> Multipliziere das Ergebnis mit dem Z&#x00E4;hler.</p></list-item>
-</list>
-<p>Manchmal l&#x00E4;sst sich die gegebene Gr&#x00F6;&#x00DF;e nicht durch den Nenner des Bruchs teilen.</p> 
-<p>H&#x00E4;ufig hilft dann, die gegebene Gr&#x00F6;&#x00DF;e in eine kleinere Einheit umzurechnen.</p></td>
-<td><p>Wie viel sind <inline-formula><alternatives><tex-math><![CDATA[\(\frac{2}{5}\)]]></tex-math></alternatives></inline-formula> von 15 Murmeln?</p>
-<list list-type="order">
-<list-item><p> 15 Murmeln &#x2236; 5 = 3 Murmeln</p></list-item>
-<list-item><p> 3 Murmeln &#x00B7; 2 = 6 Murmeln</p></list-item>
-</list>
-<p>Wie viel sind <inline-formula><alternatives><tex-math><![CDATA[\(\frac{2}{5}\)]]></tex-math></alternatives></inline-formula> von 3 kg?</p>
-<p>3 l&#x00E4;sst sich nicht durch 5 teilen.</p>
-<p>Aber 3 kg = 3000 g</p>
-<list list-type="order">
-<list-item><p> 3000 g &#x2236; 5 = 600 g</p></list-item>
-<list-item><p> 600 g &#x00B7; 2 = 1200 g</p></list-item>
-</list></td>
-<td><fig><img/></fig></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<p><bold>21</bold> Berechne den Bruchteil.</p>
-<p>a) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{2}{3}\)]]></tex-math></alternatives></inline-formula> von 15 Murmeln</p>
-<p>b) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{4}\)]]></tex-math></alternatives></inline-formula> von 20 Sch&#x00FC;lern</p>
-<p>c) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{7}\)]]></tex-math></alternatives></inline-formula> von 70 Autos</p>
-<p>d) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{10}\)]]></tex-math></alternatives></inline-formula> von 80 Bussen</p>
-<p><bold>22</bold> Rechne zuerst in die kleinere Einheit um. Berechne dann den Bruchteil.</p>
-<p>a) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{5}\)]]></tex-math></alternatives></inline-formula> von 3 kg</p>
-<p>b) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{2}{5}\)]]></tex-math></alternatives></inline-formula> von 4 kg</p>
-<p>c) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{4}\)]]></tex-math></alternatives></inline-formula> von 2 cm</p>
-<p>d) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{10}\)]]></tex-math></alternatives></inline-formula> von 4 &#x20AC;</p>
-<p>e) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{19}{100}\)]]></tex-math></alternatives></inline-formula> von 2 &#x20AC;</p>
-<p>f) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{4}\)]]></tex-math></alternatives></inline-formula> von 1 km</p>
-<p>g) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{6}\)]]></tex-math></alternatives></inline-formula> von 2 min</p>
-<p>h) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{8}\)]]></tex-math></alternatives></inline-formula> von 2 Tagen</p>
-<?pageStart pdf="222" pagination="218"?>
-<p>&#x2192; Seite 28 Nr. 6</p>
-<boxed-text position="float">
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td><p><bold>Eine gemischte Zahl in einen Bruch umwandeln</bold></p>
-<p>Eine gemischte Zahl besteht aus einer nat&#x00FC;rlichen Zahl und einem Bruch.</p></td>
-<td><p><fig><img/></fig></p></td>
-<td>
-<p>3 Ganze und 2 F&#x00FC;nftel</p>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(3\frac{2}{5}\)]]></tex-math></alternatives></inline-formula></p>
-</td>
-</tr>
-<tr>
-<td><p>So wandelst du eine gemischte Zahl in einen Bruch um:</p>
-<list list-type="order">
-<list-item><p> Der Nenner des Bruchs bleibt gleich.</p></list-item>
-<list-item><p> Berechne den neuen Z&#x00E4;hler:</p> 
-<p>Multipliziere die nat&#x00FC;rliche Zahl mit dem Nenner. Addiere dann noch den Z&#x00E4;hler des Bruchs.</p></list-item>
-</list></td>
-<td><p><fig><img/></fig></p>
-<p>Der Nenner ist 5.</p>
-<p>Der neue Z&#x00E4;hler ist 3 &#x00B7; 5 + 2 = 17</p>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(3\frac{2}{5} = \frac{{3\,.\,5 + 2}}{5} = \frac{{17}}{5}\)]]></tex-math></alternatives></inline-formula></p>
-</td>
-<td>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{17}{5}\)]]></tex-math></alternatives></inline-formula></p> 
-<p>17 F&#x00FC;nftel</p></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<p><bold>23</bold> Gib als gemischte Zahl und als Bruch an.</p>
-<p>a) <fig><img/></fig></p>
-<p>b) <fig><img/></fig></p>
-<p>c) <fig><img/></fig></p>
-<p>d) <fig><img/></fig></p>
-<p><bold>24</bold> Schreibe als Bruch.</p>
-<p>a) <inline-formula><alternatives><tex-math><![CDATA[\(1\frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
-<p>b) <inline-formula><alternatives><tex-math><![CDATA[\(3\frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
-<p>c) <inline-formula><alternatives><tex-math><![CDATA[\(5\frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
-<p>d) <inline-formula><alternatives><tex-math><![CDATA[\(1\frac{2}{3}\)]]></tex-math></alternatives></inline-formula></p>
-<p>e) <inline-formula><alternatives><tex-math><![CDATA[\(3\frac{2}{3}\)]]></tex-math></alternatives></inline-formula></p>
-<p>f) <inline-formula><alternatives><tex-math><![CDATA[\(1\frac{1}{4}\)]]></tex-math></alternatives></inline-formula></p>
-<p>g) <inline-formula><alternatives><tex-math><![CDATA[\(2\frac{3}{4}\)]]></tex-math></alternatives></inline-formula></p>
-<p>h) <inline-formula><alternatives><tex-math><![CDATA[\(3\frac{1}{4}\)]]></tex-math></alternatives></inline-formula></p>
-<p>i) <inline-formula><alternatives><tex-math><![CDATA[\(3\frac{4}{5}\)]]></tex-math></alternatives></inline-formula></p>
-<p>j) <inline-formula><alternatives><tex-math><![CDATA[\(5\frac{1}{8}\)]]></tex-math></alternatives></inline-formula></p>
-<p>&#x2192; Seite 29 Nr. 7</p>
-<p>&#x2192; Seite 57 Nr. 12</p>
-<boxed-text position="float">
-<p><bold>Einen Bruch in eine gemischte Zahl umwandeln</bold></p>
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td><p>Wenn bei einem Bruch der Z&#x00E4;hler und der Nenner gleich sind, dann hat der Bruch den Wert 1.</p>
-<p>Wenn bei einem Bruch der Z&#x00E4;hler gr&#x00F6;&#x00DF;er ist als der Nenner, dann ist der Bruch gr&#x00F6;&#x00DF;er als 1.</p> 
-<p>Du kannst den Bruch als gemischte Zahl schreiben.</p>
-<list list-type="order">
-<list-item><p> Teile den Z&#x00E4;hler durch den Nenner.</p></list-item>
-<list-item><p> Du erh&#x00E4;ltst die nat&#x00FC;rliche Zahl.</p></list-item>
-<list-item><p> Der Rest ist der neue Z&#x00E4;hler des Bruchs.</p></list-item>
-<list-item><p> Der Nenner bleibt gleich.</p></list-item>
-</list></td>
-<td><p>Bei <inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{4}\)]]></tex-math></alternatives></inline-formula> ist der Z&#x00E4;hler 3 kleiner als der Nenner 4, also <inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{4} < 1\)]]></tex-math></alternatives></inline-formula>.</p>
-<p>Bei <inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{7}\)]]></tex-math></alternatives></inline-formula> sind Z&#x00E4;hler 7 und Nenner 7 gleich, also <inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{7} = 1\)]]></tex-math></alternatives></inline-formula></p>
-<p>Bei <inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{3}\)]]></tex-math></alternatives></inline-formula> ist der Z&#x00E4;hler 5 gr&#x00F6;&#x00DF;er als der Nenner 3, also <inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{3} > 1\)]]></tex-math></alternatives></inline-formula>.</p>
-<p>Schreibe <inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{3}\)]]></tex-math></alternatives></inline-formula> als gemischte Zahl.</p>
-<p>5 &#x2236; 3 = 1 Rest 2</p>
-<p>1 ist die nat&#x00FC;rliche Zahl.</p>
-<p>2 ist der neue Z&#x00E4;hler.</p>
-<p>Also: <inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{3} = 1\frac{2}{3}\)]]></tex-math></alternatives></inline-formula></p>
+<p><bold>5</bold> In die Rechnungen von Fiona und Amar haben sich Fehler eingeschlichen.</p>
 <fig><img/></fig>
-</td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<p><bold>25</bold> &#x00DC;bertrage die Tabelle in dein Heft. Trage die Br&#x00FC;che ein.</p>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{4}\)]]></tex-math></alternatives></inline-formula>; <inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{3}\)]]></tex-math></alternatives></inline-formula>; <inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{3}\)]]></tex-math></alternatives></inline-formula>; <inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{4}\)]]></tex-math></alternatives></inline-formula>; <inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{4}\)]]></tex-math></alternatives></inline-formula>; <inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{7}\)]]></tex-math></alternatives></inline-formula>; <inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{7}\)]]></tex-math></alternatives></inline-formula>; <inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{7}\)]]></tex-math></alternatives></inline-formula>; <inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{3}\)]]></tex-math></alternatives></inline-formula></p>
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td><p><bold>kleiner als 1</bold></p></td>
-<td><p><bold>gleich 1</bold></p></td>
-<td><p><bold>gr&#x00F6;&#x00DF;er als 1</bold></p></td>
-</tr>
-<tr>
-<td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-<p><bold>26</bold> Wandle in eine gemischte Zahl um.</p>
-<p>a) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{3}\)]]></tex-math></alternatives></inline-formula></p>
-<p>b) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{4}\)]]></tex-math></alternatives></inline-formula></p>
-<p>c) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{5}\)]]></tex-math></alternatives></inline-formula></p>
-<p>d) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{10}{7}\)]]></tex-math></alternatives></inline-formula></p>
-<p>e) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{8}{3}\)]]></tex-math></alternatives></inline-formula></p>
-<p>f) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{11}{4}\)]]></tex-math></alternatives></inline-formula></p>
-<p>g) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{16}{5}\)]]></tex-math></alternatives></inline-formula></p>
-<p>h) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{23}{4}\)]]></tex-math></alternatives></inline-formula></p>
+<p>Fiona:</p>
+<p>u = a + b</p>
+<p>u = 12,5 m + 6,4 m</p>
+<p>u = 18,9 m</p>
+<p>Amar:</p>
+<p>u = 2 &#x00B7; a + 2 &#x00B7; b</p>
+<p>u = 2 &#x00B7; 12,5 + 6,4</p>
+<p>u = 31,4 m</p>
+<p>a) Beschreibe die Fehler.</p>
+<p>b) Rechne richtig im Heft.</p>
 
 
 </book>

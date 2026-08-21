@@ -6,15 +6,10 @@
 <head1><bold>1</bold></head1>
 <head1><bold>Rationale Zahlen</bold></head1>
 
+<!-- single image-->
 <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_005_fx_001.jpg"/></p>
-<p>In diesem Kapitel lernst du &#x2026;</p>
-<list list-type="bullet">
-<list-item><p>den Begriff rationale Zahlen genauer kennen,</p></list-item>
-<list-item><p>rationale Zahlen zu vergleichen,</p></list-item>
-<list-item><p>Punkte auch mit negativen Koordinaten in einem Koordinatensystem darzustellen,</p></list-item>
-<list-item><p>mit rationalen Zahlen zu rechnen.</p></list-item>
-</list>
 
+<!-- Book part-->
 <?pageStart pdf="10" pagination="6"?>
 <head2><bold>Wiederholung</bold></head2>
 <sec id="pg006_s001">
@@ -23,10 +18,14 @@
 <p specific-use="mer-Lernziel">Ich kann Zahlen vergleichen.</p>
 </sec>
 </sec>
+
+<!-- Task opening-->
 <sec sec-type="task" id="pg006_task001">
 <label>1</label>
 <statement><p>Vergleiche die Zahlen.</p>
-<p>Setze im Heft &#x003C;, &#x003E; oder = ein.</p></statement>
+<p>Setze im Heft &#x003C;, &#x003E; oder = ein.</p>
+
+<!-- Sub-Task--></statement>
 <sec sec-type="subtask" id="pg006_task001a">
 <label>a)</label>
 <p>4 &#x25CF; 9</p>
@@ -45,14 +44,27 @@
 </sec>
 
 </sec>
-<sec>
+<!-- Task closing-->
+
+
+<!-- link-LookItUp-->
 <p>&#x2192; <xref ref-type="link-LookItUp" rid="pg196_task004">Seite 196 Nr. 4</xref>, <xref ref-type="link-LookItUp" rid="pg196_task005">5</xref></p>
 <p>&#x2192; <xref ref-type="link-LookItUp" rid="pg204">Seite 204</xref></p>
 
+<!-- link-tosolution -->
+<p><bold>Rationale Zahlen addieren und subtrahieren</bold> &#x2192; Seiten 16 und 20</p>
+
+
+<!-- link-tosolution -->
+<p><bold>Rationale Zahlen multiplizieren und dividieren</bold> &#x2192; <xref ref-type="link-LookItUp" rid="pg024">Seite 24</xref></p>
+
+
+<!-- Nextlevel_Task-->
 <p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task012">12</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task010">10</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task009">9</xref></bold></p>
 <p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task010">10</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task013">13</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task020">20</xref></bold></p>
 </sec>
 
+<!-- Task-->
 <sec id="pg006_s003">
 <sec id="pg006_s004">
 <label>2 Kompetenz</label>
@@ -84,10 +96,11 @@
 
 </sec>
 
+<!-- Task-->
 <sec sec-type="task" id="pg006_task026">
 <label>26</label>
 <statement><p>Wandle in eine gemischte Zahl um.</p></statement>
-</sec>
+<!-- Sub-Task-->
 <sec sec-type="subtask" id="pg006_task001a">
 <label>a)</label>
 <p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{3}\)]]></tex-math></alternatives></inline-formula></p>
@@ -109,609 +122,96 @@
 <p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{8}{3}\)]]></tex-math></alternatives></inline-formula></p>
 </sec>
 
-<p><bold>Rationale Zahlen addieren und subtrahieren</bold> &#x2192; Seiten 16 und 20</p>
+
+<!-- table -->
 <table-wrap>
 <table>
 <tbody>
-<tr>
-<td><p>&#x2460;Wenn Rechenzeichen und Vorzeichen <bold>gleich</bold> sind, dann fasse die Zeichen zusammen zu <bold>&#x201E;&#x002B;&#x201C;</bold>.</p>
-<p>&#x2461;Wenn Rechenzeichen und Vorzeichen <bold>verschieden</bold> sind, dann fasse die Zeichen zusammen zu &#x201E;&#x2212;&#x201C;.</p></td>
-<td><p>Addieren</p>
-<p>&#x2460;<inline-formula><alternatives><tex-math><![CDATA[\(\begin{array}{*{20}{l}}
-{}&{6\underbrace { + ( + }_{}3)}&{}\\
-= &{6{\mkern 1mu} {\mkern 1mu} {\mkern 1mu} + 3}&{\text{Ⓐ}}\\
-= &9&{}\\
-{}&{ - 6 + ( + 3)}&{}\\
-= &{ - 6 + 3}&{\text{Ⓑ}}\\
-= &{ - 3}&{}
-\end{array}\)]]></tex-math></alternatives></inline-formula></p></td>
-<td><p>Subtrahieren</p>
-<p>&#x2460;<inline-formula><alternatives><tex-math><![CDATA[\(\begin{array}{*{20}{l}}
-{}&{6\underbrace { - ( - }_{}3)}&{}\\
-= &{6{\mkern 1mu} {\mkern 1mu} {\mkern 1mu} + 3}&{\text{Ⓐ}}\\
-= &9&{}\\
-{}&{ - 6 - ( - 3)}&{}\\
-= &{ - 6 + 3}&{\text{Ⓑ}}\\
-= &{ - 3}&{}
-\end{array}\)]]></tex-math></alternatives></inline-formula></p></td>
-</tr>
 <tr>
 <td><p>Rechne so weiter:</p>
 <p>Achte auf die Zeichen vor den Zahlen.</p></td>
 <td></td>
 <td></td>
 </tr>
-<tr>
-<td><p>&#x24B6; Beide Zahlen haben das <bold>gleiche Zeichen</bold> davor: Schreibe das gemeinsame Zeichen vor das Ergebnis. Addiere die Betr&#x00E4;ge der beiden Zahlen.</p>
-<p>&#x24B7; Beide Zahlen haben <bold>verschiedene Zeichen</bold> davor: Schreibe das Zeichen von der Zahl mit dem <bold>gr&#x00F6;&#x00DF;eren Betrag</bold> vor das Ergebnis. Subtrahiere vom <bold>gr&#x00F6;&#x00DF;eren Betrag</bold> den kleineren Betrag.</p>
-</td>
-<td><p>&#x2461;<inline-formula><alternatives><tex-math><![CDATA[\(\begin{array}{*{20}{l}}
-{}&{6\underbrace { + ( - }_{}3)}&{}\\
-= &{6{\mkern 1mu} {\mkern 1mu} {\mkern 1mu} - 3}&{\text{Ⓑ}}\\
-= &3&{}\\
-{}&{ - 6 + ( - 3)}&{}\\
-= &{ - 6 - 3}&{\text{Ⓐ}}\\
-= &{ - 9}&{}
-\end{array}\)]]></tex-math></alternatives></inline-formula></p></td>
-<td><p>&#x2461;<inline-formula><alternatives><tex-math><![CDATA[\(\begin{array}{*{20}{l}}
-{}&{6\underbrace { - ( + }_{}3)}&{}\\
-= &{6{\mkern 1mu} {\mkern 1mu} {\mkern 1mu} - 3}&{\text{Ⓑ}}\\
-= &3&{}\\
-{}&{ - 6 - ( + 3)}&{}\\
-= &{ - 6 - 3}&{\text{Ⓐ}}\\
-= &{ - 9}&{}
-\end{array}\)]]></tex-math></alternatives></inline-formula></p></td>
-</tr>
 </tbody>
 </table>
 </table-wrap>
-<p><bold>Rationale Zahlen multiplizieren und dividieren</bold> &#x2192; <xref ref-type="link-LookItUp" rid="pg024">Seite 24</xref></p>
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td><p>&#x2460; Multipliziere oder dividiere die beiden Zahlen <bold>ohne Vorzeichen.</bold></p>
-<p>&#x2461; Bestimme das Vorzeichen f&#x00FC;r das Ergebnis:</p>
-<p>&#x24B6; Wenn beide Zahlen das <bold>gleiche Vorzeichen</bold> haben, dann ist das Vorzeichen f&#x00FC;r das Ergebnis <bold>positiv</bold> (also +).</p>
-<p>&#x24B7; Wenn beide Zahlen <bold>verschiedene</bold> Vorzeichen haben, dann ist das <bold>Vorzeichen</bold> f&#x00FC;r das Ergebnis <bold>negativ</bold> (also &#x2212;).</p>
-</td>
-<td><p>&#x2460; Multipliziere oder dividiere ohne Vorzeichen</p>
-<p>&#x2461;&#x24B6;(+6) &#x00B7; (+2) = 12 &#x2003;&#x2003; (+18) : (+3) = 6</p>
-<p>&#x2003;&#x2003;(&#x2212;6) &#x00B7; (&#x2212;3) = 18 &#x2003;&#x2003; (&#x2212;12) : (&#x2212;6) = 2</p>
-<p>&#x24B7;(+6) &#x00B7; (&#x2212;2) = &#x2212;12 &#x2003;&#x2003; (+18) : (&#x2212;3) = &#x2212;6</p>
-<p>&#x2003;(&#x2212;6) &#x00B7; (+3) = &#x2212;18 &#x2003;&#x2003; (&#x2212;12) : (+6) = &#x2212;2</p></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-
-
-
-<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg166_task004">Seite 166 Nr. 4</xref></p>
-<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg190_task001">Seite 190 Nr. 1</xref></p>
-<boxed-text position="float">
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td>
-<p><bold>Werte aus einem Diagramm ablesen</bold></p>
-<p>Wenn du ein Diagramm lesen sollst, dann kannst du so vorgehen:</p>
-<list list-type="order">
-<list-item><p>Lies die &#x00DC;berschrift.</p> 
-<p>Dort erf&#x00E4;hrst du, um was es geht.</p></list-item>
-<list-item><p>Lies, was an den Achsen steht.</p></list-item>
-<list-item><p>Schaue, in welchen Schritten die Achse mit den Zahlen eingeteilt ist.</p></list-item>
-<list-item><p>Lies die Werte ab.</p></list-item>
-</list></td>
-<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_004.jpg"/></p>
-<list list-type="order">
-<list-item><p> Das Diagramm zeigt, wie alt Haustiere werden k&#x00F6;nnen.</p></list-item>
-<list-item><p> Auf der unteren Achse stehen drei Tiere (Hund, Goldfisch, Meerschweinchen).</p> 
-<p>Auf der Hochachse steht das Alter der Tiere.</p></list-item>
-<list-item><p> Das Alter der Tiere ist in 5er Schritte eingeteilt.</p></list-item>
-<list-item><p> Ein Goldfisch kann 35 Jahre alt werden.</p></list-item>
-</list></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<sec sec-type="task" id="pg006_task016">
-<label>16</label>
-<statement><p>Damir hat alle in seiner Klasse nach dem Lieblingsessen gefragt.</p></statement>
 </sec>
-<sec sec-type="subtask" id="pg216_task001a">
+<?pageStart pdf="79" pagination="75"?>
+
+<!-- Task-->
+<sec sec-type="task" id="pg075_task002">
+<label>2</label>
+<statement><p>Berechne den Umfang des Vierecks.</p></statement>
+<!-- sub-Task-->
+<sec sec-type="subtask" id="pg075_task001a">
 <label>a)</label>
-<p>Welches Lieblingsessen wurde am h&#x00E4;ufigsten genannt?</p>
+<p>a = 6,5 m; b = 7 m; c = 10,5 m; d = 8,5 m</p>
 </sec>
-<sec sec-type="subtask" id="pg216_task001b">
+<sec sec-type="subtask" id="pg075_task001b">
 <label>b)</label>
-<p>Wie viele essen am liebsten Nudeln?</p>
+<p>a = 12,3 m; b = 5,5 m; c = 25,7 m; d = 9,5 m</p>
 </sec>
-<sec sec-type="subtask" id="pg216_task001c">
+<sec sec-type="subtask" id="pg075_task001c">
 <label>c)</label>
-<p>Wie viele essen am liebsten Pommes?</p>
+<p>a = 276 m; b = 105 m; c = 723 m; d = 481 m</p>
+</sec>
+<sec sec-type="subtask" id="pg075_task001d">
+<label>d)</label>
+<p>a = 60 m 50 cm; b = 70,1 m; c = 110 m; d = 30 m 80 cm</p>
+</sec>
+<!-- Task-->
+</sec><sec sec-type="task" id="pg075_task003">
+<label>3</label>
+<statement><p>&#x00DC;bertrage die Figuren in dein Heft.</p></statement>
+<fig><img/></fig>
+<sec sec-type="subtask" id="pg075_task001a">
+<label>a)</label>
+<p>Beschrifte vollst&#x00E4;ndig.</p>
+</sec>
+<sec sec-type="subtask" id="pg075_task001b">
+<label>b)</label>
+<p>Sch&#x00E4;tze zuerst den Umfang. Miss dann die L&#x00E4;nge der Seiten und berechne den Umfang. Vergleiche mit deiner Sch&#x00E4;tzung.</p>
+</sec>
+</sec><sec sec-type="task" id="pg075_task004">
+<label>4</label>
+<statement><p>Nenne die Vierecksart. Berechne den Umfang.</p></statement>
+<sec sec-type="subtask" id="pg075_task001a">
+<label>a)</label>
+<p></p>
 </sec>
 <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_001.jpg"/></p>
-<?pageStart pdf="220" pagination="216"?>
-<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg166_task005">Seite 166 Nr. 5</xref></p>
-<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg190_task002">Seite 190 Nr. 2</xref></p>
-<boxed-text position="float">
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td>
-<p><bold>Ein S&#x00E4;ulendiagramm zeichnen</bold></p>
-<list list-type="order">
-<list-item><p> Lege fest: Was soll auf welche Achse?</p> 
-<p>Die Anzahl steht auf der Hochachse.</p></list-item>
-<list-item><p> Finde den gr&#x00F6;&#x00DF;ten Wert, der auf der Hochachse dargestellt werden muss.</p> 
-<p>&#x00DC;berlege dir eine gleichm&#x00E4;&#x00DF;ige Einteilung.</p> 
-<p>Zeichne die Hochachse etwas h&#x00F6;her als n&#x00F6;tig und beschrifte sie. Beginne mit 0.</p></list-item>
-<list-item><p> Plane die Breite. Beachte die Anzahl der S&#x00E4;ulen, ihre Breite und den Platz dazwischen. Zeichne die untere Achse etwas breiter als n&#x00F6;tig und beschrifte sie.</p></list-item>
-<list-item><p> Zeichne die S&#x00E4;ulen ein und beschrifte sie.</p> 
-<p>Die S&#x00E4;ulen m&#x00FC;ssen alle gleich breit sein.</p></list-item>
-<list-item><p> Gib deinem Diagramm eine &#x00DC;berschrift.</p></list-item>
-</list></td>
-<td><p>Leon hat beim Kartenspielen 8-mal gewonnen, Jan 4-mal und Serda 7-mal.</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_005.jpg"/></p></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<sec sec-type="task" id="pg216_task017">
-<label>17</label>
-<statement><p>Bei der Wahl zum Klassensprecher hat Chiara 12 Stimmen bekommen. Patryk hat 8 Stimmen und Mathias hat 6 Stimmen bekommen. Stelle das Ergebnis in einem S&#x00E4;ulendiagramm dar.</p></statement>
-</sec>
-<sec sec-type="task" id="pg216_task018">
-<label>18</label>
-<statement><p>Die Klasse von Frau Arslan stimmt &#x00FC;ber den Wandertag ab. 5 Kinder wollen ins Schwimmbad, 8 Kinder wollen ins Kino, 2 Kinder wollen wandern, 9 Kinder wollen in die Kletterhalle und 2 Kinder haben sich enthalten. Stelle das Ergebnis in einem S&#x00E4;ulendiagramm dar.</p></statement>
-</sec>
-<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg028_task001">Seite 28 Nr. 1</xref>, <xref ref-type="link-LookItUp" rid="pg028_task002">2</xref></p>
-<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg057_task008">Seite 57 Nr. 8</xref></p>
-<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg191_task007">Seite 191 Nr. 7</xref></p>
-<boxed-text position="float">
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td>
-<p><bold>Br&#x00FC;che als Teil eines Ganzen angeben</bold></p>
-<p>Br&#x00FC;che sind Teile eines Ganzen.</p>
-<p>Der Nenner gibt an, in wie viele gleich gro&#x00DF;e Teile das Ganze aufgeteilt wurde.</p>
-<p>Der Z&#x00E4;hler gibt an, um wie viele Teile des Ganzen es geht.</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_005_fx_002.jpg"/></p>
-</td>
-<td>
-<p>Welcher Teil des Ganzen ist rot?</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_005_fx_003.jpg"/></p>
-<p>Der ganze Kreis wurde in 3 gleich gro&#x00DF;e Teile aufgeteilt.</p> 
-<p>2 Teile des Ganzen sind rot markiert.</p>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{2}{3}\)]]></tex-math></alternatives></inline-formula> des Ganzen sind rot.</p></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<sec sec-type="task" id="pg216_task019">
-<label>19</label>
-<statement><p>Welcher Teil des Ganzen ist gr&#x00FC;n? Schreibe als Bruch.</p></statement>
-</sec>
-<sec sec-type="subtask" id="pg217_task001a">
-<label>a)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_217_fx_001.jpg"/>
-</fig>
-</sec>
-<sec sec-type="subtask" id="pg217_task001b">
+<sec sec-type="subtask" id="pg075_task001b">
 <label>b)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_217_fx_002.jpg"/>
-</fig>
+<p></p>
 </sec>
-<sec sec-type="subtask" id="pg217_task001c">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_002.jpg"/></p>
+<sec sec-type="subtask" id="pg075_task001c">
 <label>c)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_217_fx_003.jpg"/>
-</fig>
+<p></p>
 </sec>
-<sec sec-type="subtask" id="pg217_task001d">
-<label>d)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_217_fx_004.jpg"/>
-</fig>
-</sec>
-<sec sec-type="subtask" id="pg217_task001e">
-<label>e)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_217_fx_005.jpg"/>
-</fig>
-</sec>
-<sec sec-type="subtask" id="pg217_task001f">
-<label>f)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_217_fx_006.jpg"/>
-</fig>
-</sec>
-<sec sec-type="subtask" id="pg217_task001g">
-<label>g)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_217_fx_007.jpg"/>
-</fig>
-</sec>
-<sec sec-type="subtask" id="pg217_task001h">
-<label>h)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_217_fx_008.jpg"/>
-</fig>
-</sec>
-<sec sec-type="subtask" id="pg217_task001i">
-<label>i)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_217_fx_009.jpg"/>
-</fig>
-</sec>
-<sec sec-type="subtask" id="pg217_task001j">
-<label>j)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_217_fx_010.jpg"/>
-</fig>
-</sec>
-<?pageStart pdf="221" pagination="217"?>
-<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg028_task003">Seite 28 Nr. 3</xref></p>
-<boxed-text position="float">
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td>
-<p><bold>Einen Bruch in einem Rechteck darstellen</bold></p>
-<p>So kannst du einen Bruch in einem Rechteck oder in einem Quader darstellen.</p>
-<list list-type="order">
-<list-item><p> Schaue dir den Nenner an. Das ist die Zahl unter dem Bruchstrich.</p> 
-<p>In so viele Teile soll das Rechteck geteilt werden.</p></list-item>
-<list-item><p> &#x00DC;berlege: Wie kannst du das Rechteck in so viele gleich gro&#x00DF;e Teile aufteilen, wie der Nenner angibt?</p></list-item>
-<list-item><p> Teile das Rechteck in gleich gro&#x00DF;e Teile.</p></list-item>
-<list-item><p> Schaue dir den Z&#x00E4;hler an. Das ist die Zahl &#x00FC;ber dem Bruchstrich.</p></list-item>
-<list-item><p> Markiere so viele Teile des Ganzen, wie es der Z&#x00E4;hler angibt.</p></list-item>
-</list></td>
-<td><p>Markiere den Bruchteil <inline-formula><alternatives><tex-math><![CDATA[\(\frac{2}{5}\)]]></tex-math></alternatives></inline-formula> rot.</p>
-<list list-type="order">
-<list-item><p> Das Rechteck muss in 5 gleich gro&#x00DF;e Teile aufgeteilt werden.</p>
-</list-item>
-<list-item><p> Das Rechteck hat eine L&#x00E4;nge von 10 K&#x00E4;stchen und eine Breite von 6 K&#x00E4;stchen. 10 l&#x00E4;sst sich gut durch 5 teilen, 6 nicht.</p>
-</list-item>
-<list-item><p> Teile das Rechteck entlang der L&#x00E4;nge in 5 gleich gro&#x00DF;e Teile.</p>
-<sec sec-type="subtask" id="pg217_task0014">
-<label>4.</label>
-<p>/5. Markiere 2 der 5 Teile.</p>
-</sec>
-</list-item>
-</list></td>
-<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_002.jpg"/></p>
 <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_003.jpg"/></p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_004.jpg"/></p></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<sec sec-type="task" id="pg217_task020">
-<label>20</label>
-<statement><p>&#x00DC;bertrage das Rechteck in dein Heft. Markiere den Bruchteil rot.</p></statement>
-</sec>
-<sec sec-type="subtask" id="pg217_task001a">
+</sec><sec sec-type="task" id="pg075_task005">
+<label>5</label>
+<statement><p>In die Rechnungen von Fiona und Amar haben sich Fehler eingeschlichen.</p></statement>
+<fig><img/></fig>
+<p>Fiona:</p>
+<p>u = a + b</p>
+<p>u = 12,5 m + 6,4 m</p>
+<p>u = 18,9 m</p>
+<p>Amar:</p>
+<p>u = 2 &#x00B7; a + 2 &#x00B7; b</p>
+<p>u = 2 &#x00B7; 12,5 + 6,4</p>
+<p>u = 31,4 m</p>
+<sec sec-type="subtask" id="pg075_task001a">
 <label>a)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_217_fx_011.jpg"/>
-</fig>
+<p>Beschreibe die Fehler.</p>
 </sec>
-<sec sec-type="subtask" id="pg217_task001b">
+<sec sec-type="subtask" id="pg075_task001b">
 <label>b)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_217_fx_012.jpg"/>
-</fig>
-</sec>
-<sec sec-type="subtask" id="pg217_task001c">
-<label>c)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_217_fx_013.jpg"/>
-</fig>
-</sec>
-<sec sec-type="subtask" id="pg217_task001d">
-<label>d)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_217_fx_014.jpg"/>
-</fig>
-</sec>
-<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg028_task004">Seite 28 Nr. 4</xref>, <xref ref-type="link-LookItUp" rid="pg028_task005">5</xref></p>
-<boxed-text position="float">
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td>
-<p><bold>Bruchteile von Gr&#x00F6;&#x00DF;en berechnen</bold></p>
-<p>So berechnest du Bruchteile von Gr&#x00F6;&#x00DF;en:</p>
-<list list-type="order">
-<list-item><p> Teile die gegebene Gr&#x00F6;&#x00DF;e durch den Nenner.</p></list-item>
-<list-item><p> Multipliziere das Ergebnis mit dem Z&#x00E4;hler.</p></list-item>
-</list>
-<p>Manchmal l&#x00E4;sst sich die gegebene Gr&#x00F6;&#x00DF;e nicht durch den Nenner des Bruchs teilen.</p> 
-<p>H&#x00E4;ufig hilft dann, die gegebene Gr&#x00F6;&#x00DF;e in eine kleinere Einheit umzurechnen.</p></td>
-<td><p>Wie viel sind <inline-formula><alternatives><tex-math><![CDATA[\(\frac{2}{5}\)]]></tex-math></alternatives></inline-formula> von 15 Murmeln?</p>
-<list list-type="order">
-<list-item><p> 15 Murmeln &#x2236; 5 = 3 Murmeln</p></list-item>
-<list-item><p> 3 Murmeln &#x00B7; 2 = 6 Murmeln</p></list-item>
-</list>
-<p>Wie viel sind <inline-formula><alternatives><tex-math><![CDATA[\(\frac{2}{5}\)]]></tex-math></alternatives></inline-formula> von 3 kg?</p>
-<p>3 l&#x00E4;sst sich nicht durch 5 teilen.</p>
-<p>Aber 3 kg = 3000 g</p>
-<list list-type="order">
-<list-item><p> 3000 g &#x2236; 5 = 600 g</p></list-item>
-<list-item><p> 600 g &#x00B7; 2 = 1200 g</p></list-item>
-</list></td>
-<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_006.jpg"/></p></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<sec sec-type="task" id="pg217_task021">
-<label>21</label>
-<statement><p>Berechne den Bruchteil.</p></statement>
-</sec>
-<sec sec-type="subtask" id="pg217_task001a">
-<label>a)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{2}{3}\)]]></tex-math></alternatives></inline-formula> von 15 Murmeln</p>
-</sec>
-<sec sec-type="subtask" id="pg217_task001b">
-<label>b)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{4}\)]]></tex-math></alternatives></inline-formula> von 20 Sch&#x00FC;lern</p>
-</sec>
-<sec sec-type="subtask" id="pg217_task001c">
-<label>c)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{7}\)]]></tex-math></alternatives></inline-formula> von 70 Autos</p>
-</sec>
-<sec sec-type="subtask" id="pg217_task001d">
-<label>d)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{10}\)]]></tex-math></alternatives></inline-formula> von 80 Bussen</p>
-</sec>
-<sec sec-type="task" id="pg217_task022">
-<label>22</label>
-<statement><p>Rechne zuerst in die kleinere Einheit um. Berechne dann den Bruchteil.</p></statement>
-</sec>
-<sec sec-type="subtask" id="pg217_task001a">
-<label>a)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{5}\)]]></tex-math></alternatives></inline-formula> von 3 kg</p>
-</sec>
-<sec sec-type="subtask" id="pg217_task001b">
-<label>b)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{2}{5}\)]]></tex-math></alternatives></inline-formula> von 4 kg</p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001c">
-<label>c)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{4}\)]]></tex-math></alternatives></inline-formula> von 2 cm</p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001d">
-<label>d)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{10}\)]]></tex-math></alternatives></inline-formula> von 4 &#x20AC;</p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001e">
-<label>e)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{19}{100}\)]]></tex-math></alternatives></inline-formula> von 2 &#x20AC;</p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001f">
-<label>f)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{4}\)]]></tex-math></alternatives></inline-formula> von 1 km</p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001g">
-<label>g)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{6}\)]]></tex-math></alternatives></inline-formula> von 2 min</p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001h">
-<label>h)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{8}\)]]></tex-math></alternatives></inline-formula> von 2 Tagen</p>
-</sec>
-<?pageStart pdf="222" pagination="218"?>
-<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg028_task006">Seite 28 Nr. 6</xref></p>
-<boxed-text position="float">
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td><p><bold>Eine gemischte Zahl in einen Bruch umwandeln</bold></p>
-<p>Eine gemischte Zahl besteht aus einer nat&#x00FC;rlichen Zahl und einem Bruch.</p></td>
-<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_005_fx_004.jpg"/></p></p></td>
-<td>
-<p>3 Ganze und 2 F&#x00FC;nftel</p>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(3\frac{2}{5}\)]]></tex-math></alternatives></inline-formula></p>
-</td>
-</tr>
-<tr>
-<td><p>So wandelst du eine gemischte Zahl in einen Bruch um:</p>
-<list list-type="order">
-<list-item><p> Der Nenner des Bruchs bleibt gleich.</p></list-item>
-<list-item><p> Berechne den neuen Z&#x00E4;hler:</p> 
-<p>Multipliziere die nat&#x00FC;rliche Zahl mit dem Nenner. Addiere dann noch den Z&#x00E4;hler des Bruchs.</p></list-item>
-</list></td>
-<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_007.jpg"/></p></p>
-<p>Der Nenner ist 5.</p>
-<p>Der neue Z&#x00E4;hler ist 3 &#x00B7; 5 + 2 = 17</p>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(3\frac{2}{5} = \frac{{3\,.\,5 + 2}}{5} = \frac{{17}}{5}\)]]></tex-math></alternatives></inline-formula></p>
-</td>
-<td>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{17}{5}\)]]></tex-math></alternatives></inline-formula></p> 
-<p>17 F&#x00FC;nftel</p></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<sec sec-type="task" id="pg218_task023">
-<label>23</label>
-<statement><p>Gib als gemischte Zahl und als Bruch an.</p></statement>
-</sec>
-<sec sec-type="subtask" id="pg218_task001a">
-<label>a)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_218_fx_001.jpg"/>
-</fig>
-</sec>
-<sec sec-type="subtask" id="pg218_task001b">
-<label>b)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_218_fx_002.jpg"/>
-</fig>
-</sec>
-<sec sec-type="subtask" id="pg218_task001c">
-<label>c)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_218_fx_003.jpg"/>
-</fig>
-</sec>
-<sec sec-type="subtask" id="pg218_task001d">
-<label>d)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_218_fx_004.jpg"/>
-</fig>
-</sec>
-<sec sec-type="task" id="pg218_task024">
-<label>24</label>
-<statement><p>Schreibe als Bruch.</p></statement>
-</sec>
-<sec sec-type="subtask" id="pg218_task001a">
-<label>a)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(1\frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001b">
-<label>b)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(3\frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001c">
-<label>c)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(5\frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001d">
-<label>d)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(1\frac{2}{3}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001e">
-<label>e)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(3\frac{2}{3}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001f">
-<label>f)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(1\frac{1}{4}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001g">
-<label>g)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(2\frac{3}{4}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001h">
-<label>h)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(3\frac{1}{4}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001i">
-<label>i)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(3\frac{4}{5}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001j">
-<label>j)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(5\frac{1}{8}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg029_task007">Seite 29 Nr. 7</xref></p>
-<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg057_task012">Seite 57 Nr. 12</xref></p>
-<boxed-text position="float">
-<p><bold>Einen Bruch in eine gemischte Zahl umwandeln</bold></p>
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td><p>Wenn bei einem Bruch der Z&#x00E4;hler und der Nenner gleich sind, dann hat der Bruch den Wert 1.</p>
-<p>Wenn bei einem Bruch der Z&#x00E4;hler gr&#x00F6;&#x00DF;er ist als der Nenner, dann ist der Bruch gr&#x00F6;&#x00DF;er als 1.</p> 
-<p>Du kannst den Bruch als gemischte Zahl schreiben.</p>
-<list list-type="order">
-<list-item><p> Teile den Z&#x00E4;hler durch den Nenner.</p></list-item>
-<list-item><p> Du erh&#x00E4;ltst die nat&#x00FC;rliche Zahl.</p></list-item>
-<list-item><p> Der Rest ist der neue Z&#x00E4;hler des Bruchs.</p></list-item>
-<list-item><p> Der Nenner bleibt gleich.</p></list-item>
-</list></td>
-<td><p>Bei <inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{4}\)]]></tex-math></alternatives></inline-formula> ist der Z&#x00E4;hler 3 kleiner als der Nenner 4, also <inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{4} < 1\)]]></tex-math></alternatives></inline-formula>.</p>
-<p>Bei <inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{7}\)]]></tex-math></alternatives></inline-formula> sind Z&#x00E4;hler 7 und Nenner 7 gleich, also <inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{7} = 1\)]]></tex-math></alternatives></inline-formula></p>
-<p>Bei <inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{3}\)]]></tex-math></alternatives></inline-formula> ist der Z&#x00E4;hler 5 gr&#x00F6;&#x00DF;er als der Nenner 3, also <inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{3} > 1\)]]></tex-math></alternatives></inline-formula>.</p>
-<p>Schreibe <inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{3}\)]]></tex-math></alternatives></inline-formula> als gemischte Zahl.</p>
-<p>5 &#x2236; 3 = 1 Rest 2</p>
-<p>1 ist die nat&#x00FC;rliche Zahl.</p>
-<p>2 ist der neue Z&#x00E4;hler.</p>
-<p>Also: <inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{3} = 1\frac{2}{3}\)]]></tex-math></alternatives></inline-formula></p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_008.jpg"/></p>
-</td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<sec sec-type="task" id="pg218_task025">
-<label>25</label>
-<statement><p>&#x00DC;bertrage die Tabelle in dein Heft. Trage die Br&#x00FC;che ein.</p></statement>
-</sec>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{4}\)]]></tex-math></alternatives></inline-formula>; <inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{3}\)]]></tex-math></alternatives></inline-formula>; <inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{3}\)]]></tex-math></alternatives></inline-formula>; <inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{4}\)]]></tex-math></alternatives></inline-formula>; <inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{4}\)]]></tex-math></alternatives></inline-formula>; <inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{7}\)]]></tex-math></alternatives></inline-formula>; <inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{7}\)]]></tex-math></alternatives></inline-formula>; <inline-formula><alternatives><tex-math><![CDATA[\(\frac{3}{7}\)]]></tex-math></alternatives></inline-formula>; <inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{3}\)]]></tex-math></alternatives></inline-formula></p>
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td><p><bold>kleiner als 1</bold></p></td>
-<td><p><bold>gleich 1</bold></p></td>
-<td><p><bold>gr&#x00F6;&#x00DF;er als 1</bold></p></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-<sec sec-type="task" id="pg218_task026">
-<label>26</label>
-<statement><p>Wandle in eine gemischte Zahl um.</p></statement>
-</sec>
-<sec sec-type="subtask" id="pg218_task001a">
-<label>a)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{3}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001b">
-<label>b)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{4}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001c">
-<label>c)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{5}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001d">
-<label>d)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{10}{7}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001e">
-<label>e)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{8}{3}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001f">
-<label>f)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{11}{4}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001g">
-<label>g)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{16}{5}\)]]></tex-math></alternatives></inline-formula></p>
-</sec>
-<sec sec-type="subtask" id="pg218_task001h">
-<label>h)</label>
-<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{23}{4}\)]]></tex-math></alternatives></inline-formula></p>
+<p>Rechne richtig im Heft.</p>
 </sec>
 
 
 </book>
+</sec>

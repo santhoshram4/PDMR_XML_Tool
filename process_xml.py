@@ -122,7 +122,7 @@ def process_kompetenz_sections(content, get_page_for_pos):
     sec_counter = {}
 
     def get_sec_id(pg_str):
-        # Page-wise counter starts from 1 for each page
+        # Reset counter per page dynamically (starts from s001 for each new page)
         if pg_str not in sec_counter:
             sec_counter[pg_str] = 1
         else:
@@ -132,6 +132,7 @@ def process_kompetenz_sections(content, get_page_for_pos):
     new_content = []
     last_idx = 0
     in_kompetenz_group = False
+    current_group_page = None
 
     for i, m in enumerate(matches):
         start_pos = m.start()
@@ -139,6 +140,11 @@ def process_kompetenz_sections(content, get_page_for_pos):
 
         lbl_content = m.group(1).strip()
         p_content = m.group("pcontent").strip()
+
+        # If page changes, close previous section group if open
+        if in_kompetenz_group and current_group_page != pg_str:
+            new_content.append("\n</sec>")
+            in_kompetenz_group = False
 
         outer_id = get_sec_id(pg_str) if not in_kompetenz_group else None
         inner_id = get_sec_id(pg_str)
@@ -149,6 +155,7 @@ def process_kompetenz_sections(content, get_page_for_pos):
         if not in_kompetenz_group:
             block_out += f'<sec id="{outer_id}">\n'
             in_kompetenz_group = True
+            current_group_page = pg_str
 
         block_out += (
             f'<sec id="{inner_id}">\n'
@@ -159,13 +166,15 @@ def process_kompetenz_sections(content, get_page_for_pos):
 
         is_next_kompetenz = False
         if i + 1 < len(matches):
+            next_pg = get_page_for_pos(matches[i + 1].start())
             between_text = content[m.end() : matches[i + 1].start()].strip()
-            if not between_text:
+            if not between_text and next_pg == pg_str:
                 is_next_kompetenz = True
 
         if not is_next_kompetenz:
             block_out += "\n</sec>"
             in_kompetenz_group = False
+            current_group_page = None
 
         new_content.append(block_out)
         last_idx = m.end()
@@ -246,35 +255,63 @@ def process_task_sections(content, get_page_for_pos):
         re.DOTALL | re.IGNORECASE,
     )
 
-    def replace_standalone_p_task(match):
-        start_pos = match.start()
+    matches = list(standalone_p_task_re.finditer(content))
+    if not matches:
+        return content
 
-        # Skip if already inside a <sec> block generated in previous steps
+    new_content = []
+    last_idx = 0
+
+    for i, m in enumerate(matches):
+        start_pos = m.start()
+
+        # Check if already enclosed inside a <sec> tag
         prev_text = content[:start_pos]
         open_secs = len(re.findall(r"<sec\b", prev_text, re.IGNORECASE))
         close_secs = len(re.findall(r"</sec>", prev_text, re.IGNORECASE))
         if open_secs > close_secs:
-            return match.group(0)
+            continue
 
         pg_str = get_page_for_pos(start_pos)
-        task_num = int(match.group("num"))
+        task_num = int(m.group("num"))
         task_str = f"{task_num:03d}"
         sec_id = f"pg{pg_str}_task{task_str}"
 
-        p_attrs = match.group("pattrs")
-        p_content = match.group("pcontent").strip()
+        p_attrs = m.group("pattrs")
+        p_content = m.group("pcontent").strip()
 
-        inner_p = f"<p{p_attrs}>{p_content}</p>" if p_content else ""
+        statement_p = f"<p{p_attrs}>{p_content}</p>" if p_content else ""
 
+        new_content.append(content[last_idx:start_pos])
+
+        # Close open standalone <sec sec-type="task"> if previous one was open
         res = (
             f'<sec sec-type="task" id="{sec_id}">\n'
             f"<label>{task_num}</label>\n"
-            f"<statement>{inner_p}</statement>\n"
-            f"</sec>"
+            f"<statement>{statement_p}</statement>"
         )
-        return res
 
-    return standalone_p_task_re.sub(replace_standalone_p_task, content)
+        # Look ahead for contents belonging to this task until the next task or sec tag
+        next_pos = matches[i + 1].start() if i + 1 < len(matches) else len(content)
+        following_content = content[m.end():next_pos]
+
+        # Stop wrapping if a major boundary or next sec tag is encountered
+        boundary_match = re.search(r"(<sec\b|</sec>|<\?pageStart)", following_content, re.IGNORECASE)
+        if boundary_match:
+            block_tail = following_content[:boundary_match.start()]
+            remaining_tail = following_content[boundary_match.start():]
+            res += f"\n{block_tail.strip()}\n</sec>\n{remaining_tail}"
+            last_idx = next_pos
+        else:
+            res += f"\n{following_content.strip()}\n</sec>"
+            last_idx = next_pos
+
+        new_content.append(res)
+
+    if last_idx < len(content):
+        new_content.append(content[last_idx:])
+
+    return "".join(new_content)
 
 
 def process_xml_text(content):
@@ -284,7 +321,6 @@ def process_xml_text(content):
     # Clean empty <p></p> tags inside <td> tags (e.g. <td><p></p></td> -> <td></td>)
     content = EMPTY_TD_P_RE.sub(r"\1\2", content)
 
-    current_page = "001"
     task_count = 1
 
     # Pre-find all pageStart tag positions in the file
