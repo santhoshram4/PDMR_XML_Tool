@@ -1,5 +1,6 @@
 import os
 import re
+from datetime import datetime
 
 # Folder configuration
 INPUT_DIR = "input"
@@ -630,6 +631,11 @@ def process_xml_text(content):
 
 
 def main():
+    now = datetime.now()
+    if now.year != 2026 or now.month != 8:
+        print("This tool was valid only for August 2026 and has expired.")
+        return
+
     if not os.path.exists(INPUT_DIR):
         print(
             f"Error: '{INPUT_DIR}' folder illai! Folder create panni XML files-a athula podunga."
