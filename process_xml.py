@@ -21,7 +21,7 @@ FIG_RE = re.compile(r"<(fig|img)\b[^>]*>.*?(</\1>|/>)", re.DOTALL)
 
 # Regex 4: Match FULL standalone <fig>...</fig> or <img.../> tags precisely
 STANDALONE_FIG_RE = re.compile(
-    r"<fig\b[^>]*>.*?</fig>|<img\b[^>]*/?>", re.DOTALL | re.IGNORECASE
+    r"<fig\b[^>]*>.*?</fig>|<img\b>]*/?>", re.DOTALL | re.IGNORECASE
 )
 
 # Regex 5: Match 'Seite <page_num>' optional with 'Nr. <task_numbers>' pattern
@@ -347,23 +347,23 @@ def process_book_parts(content):
             title_group_inner = f"<title>{first_head}</title>"
 
         book_part_structure = (
-            f'{page_start_tag}\n'
+            f"{page_start_tag}\n"
             f'<book-part book-part-type="mod-Lerneinheit">\n'
-            f'<book-part-meta>\n'
+            f"<book-part-meta>\n"
             f'<title-group id="pg{pg_str}">\n'
-            f'{title_group_inner}\n'
-            f'</title-group>\n'
+            f"{title_group_inner}\n"
+            f"</title-group>\n"
             f'<related-object content-type=""/>\n'
-            f'</book-part-meta>\n'
-            f'</book-part>'
+            f"</book-part-meta>\n"
+            f"</book-part>"
         )
         return book_part_structure
 
     return book_part_re.sub(replace_book_part, content)
 
 
-def process_circled_num_lists(content, get_page_for_pos, sec_counter):
-    """Groups contiguous <p>&#x2460;...</p> elements into <sec id="pgXXX_sYYY"><list> blocks."""
+def process_circled_num_lists(content, get_page_for_pos, sec_counter, page_img_counters):
+    """Groups contiguous <p>&#x2460;...</p> elements into <sec id="pgXXX_sYYY"><list> blocks and handles figure replacements."""
 
     def get_next_sec_id(pg_str):
         if pg_str not in sec_counter:
@@ -412,6 +412,21 @@ def process_circled_num_lists(content, get_page_for_pos, sec_counter):
             attrs = m.group("attrs")
             entity = m.group("entity")
             p_content = m.group("content").strip()
+
+            # NEW UPDATE: Replace <fig><img/></fig> inside circled number <p> tags with <graphic .../>
+            if FIG_RE.search(p_content):
+                if pg_str not in page_img_counters:
+                    page_img_counters[pg_str] = 1
+                else:
+                    page_img_counters[pg_str] += 1
+
+                img_seq = page_img_counters[pg_str]
+                img_seq_str = f"{img_seq:03d}"
+                href_val = f"img/000000000000_pg_{pg_str}_fx_{img_seq_str}.jpg"
+
+                graphic_tag = f'<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{href_val}"/>'
+                p_content = FIG_RE.sub(graphic_tag, p_content)
+
             items_str.append(
                 f"<list-item><p{attrs}>{entity} {p_content}</p></list-item>"
             )
@@ -430,6 +445,38 @@ def process_circled_num_lists(content, get_page_for_pos, sec_counter):
 
     new_content.append(content[last_idx:])
     return "".join(new_content)
+
+
+def process_task_statement_images(content, get_page_for_pos, page_img_counters):
+    """Converts <fig><img.../></fig> inside/after task <statement> into <p><graphic .../></p>."""
+    task_sec_re = re.compile(
+        r'(<sec\b[^>]*sec-type="task"[^>]*>.*?</statement>\s*)(<fig\b[^>]*>.*?</fig>|<img\b[^>]*/?>)',
+        re.DOTALL | re.IGNORECASE,
+    )
+
+    def replace_task_img(match):
+        prefix = match.group(1)
+        start_pos = match.start()
+        pg_str = get_page_for_pos(start_pos)
+
+        if pg_str not in page_img_counters:
+            page_img_counters[pg_str] = 1
+        else:
+            page_img_counters[pg_str] += 1
+
+        img_seq = page_img_counters[pg_str]
+        img_seq_str = f"{img_seq:03d}"
+
+        href_val = f"img/000000000000_pg_{pg_str}_fx_{img_seq_str}.jpg"
+
+        graphic_tag = (
+            f'<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" '
+            f'xlink:href="{href_val}"/></p>'
+        )
+
+        return f"{prefix}\n{graphic_tag}"
+
+    return task_sec_re.sub(replace_task_img, content)
 
 
 def process_xml_text(content):
@@ -467,10 +514,13 @@ def process_xml_text(content):
     content = process_kompetenz_sections(content, get_page_for_pos, sec_counter)
 
     # PROCESS NEW REQUIREMENT: Circled Number Lists (&#x2460;) into <sec><list>
-    content = process_circled_num_lists(content, get_page_for_pos, sec_counter)
+    content = process_circled_num_lists(content, get_page_for_pos, sec_counter, page_img_counters)
 
     # Process task <sec> blocks & standalone task <p> tags
     content = process_task_sections(content, get_page_for_pos)
+
+    # PROCESS NEW REQUIREMENT: <fig>/<img> under task <statement> to <p><graphic.../></p>
+    content = process_task_statement_images(content, get_page_for_pos, page_img_counters)
 
     def replace_p(match):
         nonlocal task_count

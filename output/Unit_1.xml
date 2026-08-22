@@ -94,19 +94,19 @@
 <sec sec-type="subtask" id="pg006_task001a">
 <label>a)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_001.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_002.jpg"/>
 </fig>
 </sec>
 <sec sec-type="subtask" id="pg006_task001b">
 <label>b)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_002.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_003.jpg"/>
 </fig>
 </sec>
 <sec sec-type="subtask" id="pg006_task001c">
 <label>c)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_003.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_004.jpg"/>
 </fig>
 </sec>
 
@@ -180,7 +180,8 @@
 </sec><sec sec-type="task" id="pg075_task003">
 <label>3</label>
 <statement><p>&#x00DC;bertrage die Figuren in dein Heft.</p></statement>
-<fig><img/></fig>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_001.jpg"/></p>
 <sec sec-type="subtask" id="pg075_task001a">
 <label>a)</label>
 <p>Beschrifte vollst&#x00E4;ndig.</p>
@@ -210,7 +211,8 @@
 </sec><sec sec-type="task" id="pg075_task005">
 <label>5</label>
 <statement><p>In die Rechnungen von Fiona und Amar haben sich Fehler eingeschlichen.</p></statement>
-<fig><img/></fig>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_075_fx_001.jpg"/></p>
 <p>Fiona:</p>
 <p>u = a + b</p>
 <p>u = 12,5 m + 6,4 m</p>
@@ -247,7 +249,7 @@
 </book-part>
 <p>Max und Ida interessieren sich f&#x00FC;r Sportflugzeuge. Sie wollen die Oberfl&#x00E4;che eines Fl&#x00FC;gels zeichnen. Die l&#x00E4;ngste Seite ist 4 m lang, der gegen&#x00FC;berliegende Winkel ist 120&#x00B0; gro&#x00DF;.</p>
 <p>Die k&#x00FC;rzeste Seite ist 2 m lang. Wie lang ist die fehlende Seite?</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_004.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_005.jpg"/></p>
 <boxed-text position="float">
 <p><bold>W</bold></p>
 <table-wrap>
@@ -265,11 +267,11 @@
 <td>
 <p>&#x24B6; <italic>gegeben:</italic> b = 4 m; a = 2 m; <italic>&#x03B2;</italic> = 120&#x00B0;</p>
 <p>&#x24B7; <italic>Planfigur:</italic></p> 
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_005.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_006.jpg"/></p>
 <p>1 cm entspricht 1 m.</p>
 <p>&#x24B8; <italic>Konstruktion:</italic></p>
 <p>&#x24B9; <italic>Konstruktionsbeschreibung:</italic></p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_006.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_007.jpg"/></p>
 <sec id="pg084_s001">
 <list list-type="simple">
 <list-item><p>&#x2460; Zeichne a = 2 cm.</p></list-item>
@@ -292,7 +294,7 @@
 </boxed-text>
 <boxed-text position="float">
 <p><italic>Du kannst jede Seitenl&#x00E4;nge eines Dreiecks ABC als Strecke notieren:</italic> <inline-formula><alternatives><tex-math><![CDATA[\(\rm a = \overline {{\rm{BC}}} \)]]></tex-math></alternatives></inline-formula>, <inline-formula><alternatives><tex-math><![CDATA[\(\rm b = \overline {{\rm{AC}}} \)]]></tex-math></alternatives></inline-formula>, <inline-formula><alternatives><tex-math><![CDATA[\(\rm c =  \overline {{\rm{AB}}} \)]]></tex-math></alternatives></inline-formula></p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_007.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_008.jpg"/></p>
 </boxed-text>
 <p>&#x25B6; <bold>Aufgabe</bold> Konstruiere das Dreieck mit a = 7 cm, c = 3 cm und <italic>&#x03B1;</italic> = 130&#x00B0;.</p>
 <p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg085_task001">1</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg085_task001">1</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg085_task001">1</xref></bold></p>
@@ -318,11 +320,11 @@
 <p><italic>&#x03B3;</italic> = 50&#x00B0;</p></td>
 <td>
 <p><italic>Konstruktion </italic>&#x2460;</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_008.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_009.jpg"/></p>
 </td>
 <td>
 <p><italic>Konstruktion </italic>&#x2461;</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_009.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_010.jpg"/></p>
 </td>
 </tr>
 </tbody>
@@ -380,9 +382,9 @@
 </sec>
 <sec id="pg085_s002">
 <list list-type="simple">
-<list-item><p>&#x2460; <fig><img/></fig></p></list-item>
-<list-item><p>&#x2461; <fig><img/></fig></p></list-item>
-<list-item><p>&#x2462; <fig><img/></fig></p></list-item>
+<list-item><p>&#x2460; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_085_fx_001.jpg"/></fig></p></list-item>
+<list-item><p>&#x2461; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_085_fx_002.jpg"/></fig></p></list-item>
+<list-item><p>&#x2462; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_085_fx_003.jpg"/></fig></p></list-item>
 </list>
 </sec>
 <sec sec-type="task" id="pg085_task003">
@@ -431,22 +433,23 @@
 </sec><sec sec-type="task" id="pg085_task005">
 <label>5</label>
 <statement><p>Ein Dreieck ist mit den Winkeln <italic>&#x03B1;</italic> = 40&#x00B0;, <italic>&#x03B2;</italic> = 55&#x00B0; und <italic>&#x03B3;</italic> = 85&#x00B0; gegeben. Naomi und Cen wollen dieses Dreieck zeichnen.</p></statement>
-<sec sec-type="subtask" id="pg085_task001a">
+<sec sec-type="subtask" id="pg086_task001a">
 <label>a)</label>
 <p>&#x00DC;berlegt gemeinsam: Welche Angaben ben&#x00F6;tigen Naomi und Cen noch, damit sie genau das gleiche Dreieck zeichnen? Begr&#x00FC;ndet eure Antwort.</p>
 </sec>
-<sec sec-type="subtask" id="pg085_task001b">
+<sec sec-type="subtask" id="pg086_task001b">
 <label>b)</label>
 <p>Konstruiert dann ein m&#x00F6;gliches Dreieck.</p>
 </sec>
-<sec sec-type="subtask" id="pg085_task001c">
+<sec sec-type="subtask" id="pg086_task001c">
 <label>c)</label>
 <p>Pr&#x00E4;sentiert eure Ergebnisse in der Klasse.</p>
 </sec>
 </sec><sec sec-type="task" id="pg085_task006">
 <label>6</label>
 <statement><p>&#x25BE; Philippe zeichnet zum <bold>Laubh&#x00FC;ttenfest</bold> ein Muster f&#x00FC;r drei Gru&#x00DF;karten. F&#x00FC;r die erste Gru&#x00DF;karte w&#x00E4;hlt Philippe a = 6 cm, f&#x00FC;r die zweite a = 8 cm und f&#x00FC;r die dritte a = 12 cm.</p></statement>
-<fig><img/></fig>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_085_fx_004.jpg"/></p>
 <p>Konstruiere das Muster der drei Gru&#x00DF;karten mit WWW im Heft. Male die Dreiecke in der Mitte farbig aus. Beschreibe deine Beobachtung.</p>
 <p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg086_task007">7</xref></bold></p>
 </sec><sec sec-type="task" id="pg085_task007">
@@ -544,7 +547,8 @@
 </sec><sec sec-type="task" id="pg086_task004">
 <label>4</label>
 <statement><p>Ole und Max trainieren Eckst&#x00F6;&#x00DF;e auf einem Fu&#x00DF;ballfeld.</p></statement>
-<fig><img/></fig>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_086_fx_001.jpg"/></p>
 <sec sec-type="subtask" id="pg086_task001a">
 <label>a)</label>
 <p>&#x00DC;berlege dir eine passende Aufgabe mit Angaben zur Konstruktion mit SsW.</p>
@@ -553,14 +557,15 @@
 <label>b)</label>
 <p>Tauscht eure Aufgaben aus und l&#x00F6;st sie durch Konstruktion. W&#x00E4;hlt 1 cm f&#x00FC;r 10 m.</p>
 </sec>
-<sec sec-type="subtask" id="pg086_task001c">
+<sec sec-type="subtask" id="pg087_task001c">
 <label>c)</label>
 <p>Gebt euch R&#x00FC;ckmeldungen und ver&#x00E4;ndert die Aufgaben, falls notwendig.</p>
 </sec>
 </sec><sec sec-type="task" id="pg086_task005">
 <label>5</label>
 <statement><p>Riccardo entwirft f&#x00FC;r seine Praktikumsarbeit vier verschiedene Dreiecke mit WWW. Zeichne die vier Dreiecke mit den Winkelgr&#x00F6;&#x00DF;en von Riccardo auf ein Blatt.</p></statement>
-<fig><img/></fig>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_086_fx_002.jpg"/></p>
 <p>Bestimme jeweils die Seitenl&#x00E4;ngen von a und b.</p>
 </sec>
 <sec id="pg086_s001">
@@ -610,10 +615,11 @@
 </sec> 
 <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_008.jpg"/></p>
 <p>Bestimmt alle Seiten und Winkel.</p>
-</sec><sec sec-type="task" id="pg086_task009">
+</sec><sec sec-type="task" id="pg087_task009">
 <label>9</label>
 <statement><p>&#x25BE; Die Klasse 8a besucht eine Ausstellung in Wien zur Koordinierung der Erzeugung von elektrischer Energie (Strom) in Europa.</p></statement>
-<fig><img/></fig>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_087_fx_004.jpg"/></p>
 <p>In der Legende stehen folgende Angaben: c = 1000 km; b = 1700 km; <italic>&#x03B2;</italic> = 100&#x00B0;.</p>
 <p>Wie lang ist die <bold>Stromtrasse</bold> von Punkt B in Polen zu Punkt C in Schweden?</p>
 <sec sec-type="subtask" id="pg087_task001a">
@@ -666,11 +672,11 @@
 <label>b)</label>
 <p><inline-formula><alternatives><tex-math><![CDATA[\(\rm c = \overline {{\rm{AB}}} = 3\,cm \)]]></tex-math></alternatives></inline-formula>; <italic>&#x03B1;</italic> = 140&#x00B0;; <inline-formula><alternatives><tex-math><![CDATA[\(\rm a = \overline {{\rm{BC}}} = 12\, cm \)]]></tex-math></alternatives></inline-formula></p>
 </sec>
-<sec sec-type="subtask" id="pg087_task001c">
+<sec sec-type="subtask" id="pg088_task001c">
 <label>c)</label>
 <p><inline-formula><alternatives><tex-math><![CDATA[\(\rm c = \overline {{\rm{AB}}} = 4,5\, cm \)]]></tex-math></alternatives></inline-formula>; <italic>&#x03B1;</italic> = 85&#x00B0;; <inline-formula><alternatives><tex-math><![CDATA[\(\rm a = \overline {{\rm{BC}}} = 14\, cm\)]]></tex-math></alternatives></inline-formula></p>
 </sec>
-<sec sec-type="subtask" id="pg087_task001d">
+<sec sec-type="subtask" id="pg088_task001d">
 <label>d)</label>
 <p>&#x00DC;berpr&#x00FC;fe deine Konstruktion mit DGS.</p>
 </sec>
@@ -682,9 +688,9 @@
 </sec>
 <sec id="pg087_s001">
 <list list-type="simple">
-<list-item><p>&#x2460; <fig><img/></fig></p></list-item>
-<list-item><p>&#x2461; <fig><img/></fig></p></list-item>
-<list-item><p>&#x2462; <fig><img/></fig></p></list-item>
+<list-item><p>&#x2460; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_087_fx_001.jpg"/></fig></p></list-item>
+<list-item><p>&#x2461; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_087_fx_002.jpg"/></fig></p></list-item>
+<list-item><p>&#x2462; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_087_fx_003.jpg"/></fig></p></list-item>
 </list>
 </sec>
 <sec sec-type="task" id="pg087_task004">
@@ -706,7 +712,8 @@
 </sec><sec sec-type="task" id="pg087_task005">
 <label>5</label>
 <statement><p>&#x25BE; Im Skigebiet wird eine Piste beschneit.</p></statement>
-<fig><img/></fig>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_087_fx_005.jpg"/></p>
 <sec sec-type="subtask" id="pg088_task001a">
 <label>a)</label>
 <p>Notiere, was gegeben ist.</p>
@@ -727,7 +734,8 @@
 </sec><sec sec-type="task" id="pg087_task007">
 <label>7</label>
 <statement><p>Max und Alia wollen durch den See schwimmen. Vorher m&#x00F6;chten sie die Entfernung zum anderen Ufer wissen.</p></statement>
-<fig><img/></fig>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_088_fx_001.jpg"/></p>
 <sec sec-type="subtask" id="pg088_task001a">
 <label>a)</label>
 <p>Sch&#x00E4;tze die Entfernung vom Start zum Ziel.</p>
@@ -737,26 +745,27 @@
 <p>&#x00DC;berlege, wie die beiden vorgehen k&#x00F6;nnen.</p>
 </sec> 
 <p>Zeichne eine Planfigur.</p>
-<sec sec-type="subtask" id="pg088_task001c">
+<sec sec-type="subtask" id="pg089_task001c">
 <label>c)</label>
 <p>Vergleicht eure Ideen und besprecht miteinander euer Vorgehen. Konstruiert das Dreieck und messt die Strecke zwischen Start und Ziel. Habt ihr die Entfernung richtig gesch&#x00E4;tzt?</p>
 </sec>
-<sec sec-type="subtask" id="pg088_task001d">
+<sec sec-type="subtask" id="pg089_task001d">
 <label>d)</label>
 <p>Beschreibt die Konstruktion schriftlich.</p>
 </sec>
-</sec><sec sec-type="task" id="pg087_task008">
+</sec><sec sec-type="task" id="pg088_task008">
 <label>8</label>
 <statement><p>Am Messeturm wird eine Werbefl&#x00E4;che von Stockwerk 25 bis 40 geplant. Ein Laser an Punkt B misst die L&#x00E4;ngen der Strecken <inline-formula><alternatives><tex-math><![CDATA[\(\overline {{\rm{BC}}} \)]]></tex-math></alternatives></inline-formula> und <inline-formula><alternatives><tex-math><![CDATA[\(\overline {{\rm{BA}}} \)]]></tex-math></alternatives></inline-formula>: c = 80 m; a = 134 m. Der Winkel <italic>&#x03B1;</italic> betr&#x00E4;gt 135&#x00B0;. Bestimme die L&#x00E4;nge des Werbeplakats mit Hilfe einer Konstruktion.</p></statement>
-<fig><img/></fig>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_088_fx_002.jpg"/></p>
 </sec><sec sec-type="task" id="pg088_task009">
 <label>9</label>
 <statement><p>Erstellt eine Kartei mit Sachaufgaben und zugeh&#x00F6;rigen L&#x00F6;sungen f&#x00FC;r eure Klasse.</p></statement>
-<sec sec-type="subtask" id="pg088_task001a">
+<sec sec-type="subtask" id="pg089_task001a">
 <label>a)</label>
 <p>Recherchiert im Internet zum Beispiel: die H&#x00F6;he ber&#x00FC;hmter Geb&#x00E4;ude und Berge oder die Breite von Fl&#x00FC;ssen.</p>
 </sec>
-<sec sec-type="subtask" id="pg088_task001b">
+<sec sec-type="subtask" id="pg089_task001b">
 <label>b)</label>
 <p>&#x00DC;berlegt euch dann eigene Sachaufgaben zur Konstruktion mit SsW.</p>
 </sec>
@@ -782,8 +791,8 @@
 <p>Claudia hat einen Wolf aus Dreiecken gezeichnet.</p>
 <p>Antonio schneidet dazu Dreiecke aus buntem Papier aus und klebt sie auf Claudias Zeichnung.</p>
 <p>Jedes Dreieck aus buntem Papier muss genau auf das Dreieck in der Zeichnung passen.</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_010.jpg"/></p>
 <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_011.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_012.jpg"/></p>
 <boxed-text position="float">
 <table-wrap>
 <table>
@@ -795,7 +804,7 @@
 <p>Kongruente Dreiecke stimmen in <bold>allen Seitenl&#x00E4;ngen</bold> und <bold>Winkelgr&#x00F6;&#x00DF;en</bold> &#x00FC;berein. Du kannst sie durch Verschieben, Drehen oder Spiegeln genau &#x00FC;bereinanderlegen.</p>
 </td>
 <td>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_012.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_013.jpg"/></p>
 <p>Diese Dreiecke sind kongruent, weil sie in allen Seitenl&#x00E4;ngen und Winkelgr&#x00F6;&#x00DF;en &#x00FC;bereinstimmen.</p>
 </td>
 </tr>
@@ -807,7 +816,7 @@
 <label>1</label>
 <statement><p>Zeichne zwei Dreiecke. Schneide sie aus und lege sie &#x00FC;bereinander.</p></statement>
 <p>Sind die beiden Dreiecke kongruent? Begr&#x00FC;nde deine Antwort.</p>
-</sec><sec sec-type="task" id="pg088_task002">
+</sec><sec sec-type="task" id="pg089_task002">
 <label>2</label>
 <statement><p>Sind die Dreiecke kongruent? Pr&#x00FC;fe so:</p></statement>
 <sec sec-type="subtask" id="pg089_task0011">
@@ -828,7 +837,7 @@
 <p>Pr&#x00FC;fe, ob du die Dreiecke genau &#x00FC;bereinanderlegen kannst.</p>
 </sec>
 <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_009.jpg"/></p>
-</sec><sec sec-type="task" id="pg088_task003">
+</sec><sec sec-type="task" id="pg089_task003">
 <label>3</label>
 <statement><p>&#x00DC;berpr&#x00FC;ft die Aussage. Zeichnet Gegenbeispiele, falls die Aussage falsch ist. Falls die Aussage richtig ist, begr&#x00FC;ndet warum.</p></statement>
 <sec sec-type="subtask" id="pg089_task001a">
@@ -859,8 +868,8 @@
 </sec>
 <sec id="pg089_s001">
 <list list-type="simple">
-<list-item><p>&#x2460; <fig><img/></fig></p></list-item>
-<list-item><p>&#x2461; <fig><img/></fig></p></list-item>
+<list-item><p>&#x2460; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_089_fx_001.jpg"/></fig></p></list-item>
+<list-item><p>&#x2461; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_089_fx_002.jpg"/></fig></p></list-item>
 </list>
 </sec>
 <?pageStart pdf="93" pagination="89"?>
@@ -888,7 +897,7 @@
 <list list-type="bullet">
 <list-item><p>alle drei Seitenl&#x00E4;ngen</p></list-item>
 </list>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_013.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_014.jpg"/></p>
 </td>
 <td>
 <p><bold>WSW</bold></p>
@@ -897,7 +906,7 @@
 <list-item><p>eine Seitenl&#x00E4;nge</p></list-item>
 <list-item><p>die Gr&#x00F6;&#x00DF;en der zwei anliegenden Winkel</p></list-item>
 </list>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_014.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_015.jpg"/></p>
 </td>
 <td>
 <p><bold>SWS</bold></p>
@@ -906,7 +915,7 @@
 <list-item><p>zwei Seitenl&#x00E4;ngen</p></list-item>
 <list-item><p>die Gr&#x00F6;&#x00DF;e des eingeschlossenen Winkels</p></list-item>
 </list>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_015.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_016.jpg"/></p>
 </td>
 <td>
 <p><bold>SsW</bold></p>
@@ -915,7 +924,7 @@
 <list-item><p>zwei Seitenl&#x00E4;ngen</p></list-item>
 <list-item><p>die Gr&#x00F6;&#x00DF;e des Winkels, der der l&#x00E4;ngeren Seite gegen&#x00FC;berliegt</p></list-item>
 </list>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_016.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_017.jpg"/></p>
 </td>
 </tr>
 </tbody>
@@ -1089,21 +1098,21 @@
 <fig><img/></fig></statement>
 
 </sec>
-<sec sec-type="task" id="pg091_task004">
+<sec sec-type="task" id="pg092_task004">
 <label>4</label>
 <statement><p>Konstruiere das Dreieck ABC mit WSW.</p> 
 <p>Der Winkel <italic>&#x03B1;</italic> betr&#x00E4;gt 30&#x00B0;. Der Winkel <italic>&#x03B2;</italic> betr&#x00E4;gt 105&#x00B0;. Die Seite c ist 5 cm lang.</p> 
 <p>Erstelle eine Planfigur und konstruiere das Dreieck.</p></statement>
 
 </sec>
-<sec sec-type="task" id="pg091_task004">
+<sec sec-type="task" id="pg092_task004">
 <label>4</label>
 <statement><p>Konstruiere das Dreieck im Ma&#x00DF;stab 1 : 10000.</p> 
 <p>Wie hoch ist der Eifelturm?</p>
 <fig><img/></fig></statement>
 
 </sec>
-<sec sec-type="task" id="pg091_task005">
+<sec sec-type="task" id="pg092_task005">
 <label>5</label>
 <statement><p>Ich kann aus zwei Seitenl&#x00E4;ngen und einem Winkel ein Dreieck konstruieren mit SsW (<bold>S</bold>eite &#x2013; k&#x00FC;rzere <bold>S</bold>eite &#x2013; <bold>W</bold>inkel).</p>
 <p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg084">Seite 84</xref></bold> nach.</p></statement>
@@ -1174,7 +1183,7 @@
 <p>Mit einer dynamischen Geometrie-Software kannst du ein Dreieck mit SSS zeichnen und ver&#x00E4;ndern.</p> 
 <p>Dabei kannst du direkt untersuchen, wie sich der Fl&#x00E4;cheninhalt des Dreiecks ver&#x00E4;ndert. &#x2192; <xref ref-type="link-LookItUp" rid="pg254">Seite 254</xref></p>
 <p><bold>Wichtige Werkzeuge</bold></p>
-<sec sec-type="task" id="pg092_task001">
+<sec sec-type="task" id="pg093_task001">
 <label>1</label>
 <statement><p>Legt in der Klasse eine &#x00DC;bersicht &#x00FC;ber die wichtigsten Werkzeuge der Software an.</p></statement>
 <p>Hier seht ihr ein Beispiel f&#x00FC;r Werkzeuge mit einer passenden Anleitung dazu.</p> 
@@ -1257,39 +1266,39 @@
 <related-object content-type=""/>
 </book-part-meta>
 </book-part>
-<sec sec-type="task" id="pg093_task001">
+<sec sec-type="task" id="pg094_task001">
 <label>1</label>
 <statement><p>Zu welcher Planfigur geh&#x00F6;rt welche Konstruktion? Max hat Planfiguren gezeichnet.</p></statement>
 <p>&#x00DC;bertrage die Planfiguren in dein Heft.</p> 
 <p>Ordne der Planfigur das passende K&#x00E4;rtchen zu.</p>
-<sec sec-type="subtask" id="pg094_task001a">
+<sec sec-type="subtask" id="pg095_task001a">
 <label>a)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_094_fx_001.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_095_fx_002.jpg"/>
 </fig>
 </sec>
-<sec sec-type="subtask" id="pg094_task001b">
+<sec sec-type="subtask" id="pg095_task001b">
 <label>b)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_094_fx_002.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_095_fx_003.jpg"/>
 </fig>
 </sec>
-<sec sec-type="subtask" id="pg094_task001c">
+<sec sec-type="subtask" id="pg095_task001c">
 <label>c)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_094_fx_003.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_095_fx_004.jpg"/>
 </fig>
 </sec>
-<sec sec-type="subtask" id="pg094_task001d">
+<sec sec-type="subtask" id="pg095_task001d">
 <label>d)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_094_fx_004.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_095_fx_005.jpg"/>
 </fig>
 </sec>
-<sec sec-type="subtask" id="pg094_task001e">
+<sec sec-type="subtask" id="pg095_task001e">
 <label>e)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_094_fx_005.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_095_fx_006.jpg"/>
 </fig>
 </sec>
 <p>WWW</p>   
@@ -1297,7 +1306,7 @@
 <p>SWS</p>   
 <p>SsW</p>   
 <p>SSS</p>
-</sec><sec sec-type="task" id="pg093_task002">
+</sec><sec sec-type="task" id="pg094_task002">
 <label>2</label>
 <statement><p>Bei dieser Konstruktionsbeschreibung stimmt die Reihenfolge der Schritte nicht.</p></statement>
 <p><italic>gegeben:</italic> c = 5 cm; <italic>&#x03B1;</italic> = 40&#x00B0;; <italic>&#x03B2;</italic> = 55&#x00B0;</p>
@@ -1317,19 +1326,19 @@
 </list>
 </sec> 
 <p>Verl&#x00E4;ngere den Schenkel von <italic>&#x03B2;</italic>.</p>
-<sec sec-type="subtask" id="pg094_task001a">
+<sec sec-type="subtask" id="pg095_task001a">
 <label>a)</label>
 <p>Bringe die Konstruktionsbeschreibung in die richtige Reihenfolge.</p>
 </sec>
-<sec sec-type="subtask" id="pg094_task001b">
+<sec sec-type="subtask" id="pg095_task001b">
 <label>b)</label>
 <p>Nenne die Konstruktion, um die es sich handelt: SSS, WSW, SsW, SWS oder WWW?</p>
 </sec>
-<sec sec-type="subtask" id="pg094_task001c">
+<sec sec-type="subtask" id="pg095_task001c">
 <label>c)</label>
 <p>Konstruiere das Dreieck.</p>
 </sec>
-<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg096_task003">3</xref></bold></p>
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg097_task003">3</xref></bold></p>
 <sec sec-type="task" id="pg094_task003">
 <label>3</label>
 <statement><p>Konstruiere das Dreieck mit WSW: c = 6,5 cm, <italic>&#x03B1;</italic> = 45&#x00B0; und <italic>&#x03B2;</italic> = 65&#x00B0;.</p></statement>
@@ -1382,7 +1391,8 @@
 </sec><sec sec-type="task" id="pg094_task006">
 <label>6</label>
 <statement><p>&#x25BE; Pietro hat versucht ein Dreieck mit den Seitenl&#x00E4;ngen a = 3 cm, b = 4 cm und c = 6 cm zu konstruieren. Doch es ist kein Dreieck entstanden.</p></statement>
-<fig><img/></fig>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_089_fx_003.jpg"/></p>
 <sec sec-type="subtask" id="pg095_task001a">
 <label>a)</label>
 <p>Erkl&#x00E4;re, welchen Fehler Pietro bei der Konstruktion gemacht hat.</p>
@@ -1409,7 +1419,7 @@
 <p>Konstruiere das Dreieck im Ma&#x00DF;stab 1 : 1000.</p>
 </sec> 
 <p>1 cm in deiner Zeichnung entspricht 10 m.</p>
-<sec sec-type="subtask" id="pg095_task001b">
+<sec sec-type="subtask" id="pg096_task001b">
 <label>b)</label>
 <p>Wie weit stehen Svenja und Luna voneinander entfernt   wie weit Murat und Luna?</p>
 </sec>
@@ -1427,40 +1437,40 @@
 <related-object content-type=""/>
 </book-part-meta>
 </book-part>
-<sec sec-type="task" id="pg094_task001">
+<sec sec-type="task" id="pg095_task001">
 <label>1</label>
 <statement><p>Zu welcher Planfigur geh&#x00F6;rt welche Konstruktion? &#x00DC;bertrage die Planfiguren in dein Heft. Ordne den Planfiguren WSW, SSS, SsW, SWS oder WWW zu.</p></statement>
-<sec sec-type="subtask" id="pg095_task001a">
+<sec sec-type="subtask" id="pg096_task001a">
 <label>a)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_095_fx_001.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_096_fx_002.jpg"/>
 </fig>
 </sec>
-<sec sec-type="subtask" id="pg095_task001b">
+<sec sec-type="subtask" id="pg096_task001b">
 <label>b)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_095_fx_002.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_096_fx_003.jpg"/>
 </fig>
 </sec>
-<sec sec-type="subtask" id="pg095_task001c">
+<sec sec-type="subtask" id="pg096_task001c">
 <label>c)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_095_fx_003.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_096_fx_004.jpg"/>
 </fig>
 </sec>
-<sec sec-type="subtask" id="pg095_task001d">
+<sec sec-type="subtask" id="pg096_task001d">
 <label>d)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_095_fx_004.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_096_fx_005.jpg"/>
 </fig>
 </sec>
-<sec sec-type="subtask" id="pg095_task001e">
+<sec sec-type="subtask" id="pg096_task001e">
 <label>e)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_095_fx_005.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_096_fx_006.jpg"/>
 </fig>
 </sec>
-</sec><sec sec-type="task" id="pg094_task002">
+</sec><sec sec-type="task" id="pg095_task002">
 <label>2</label>
 <statement><p>Bei dieser Konstruktionsbeschreibung stimmt die Reihenfolge der Schritte nicht.</p></statement>
 
@@ -1529,25 +1539,27 @@
 <label>c)</label>
 <p>&#x2026; ein Dreieck mit b = 4 cm, in dem gilt: <italic>&#x03B1;</italic> = <italic>&#x03B2;</italic> = <italic>&#x03B3;</italic>. Nenne die Dreiecksart des Dreiecks.</p>
 </sec>
-<sec sec-type="subtask" id="pg096_task001d">
+<sec sec-type="subtask" id="pg097_task001d">
 <label>d)</label>
 <p>Erkl&#x00E4;rt euch gegenseitig, wie ihr vorgegangen seid.</p>
 </sec>
 </sec><sec sec-type="task" id="pg095_task005">
 <label>5</label>
 <statement><p>Ricci hat ein Dreieck mit c = 7 cm, b = 4,8 cm und <italic>&#x03B3;</italic> = 110&#x00B0; gezeichnet. Dabei ist ihm ein Fehler unterlaufen.</p></statement>
-<fig><img/></fig>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_095_fx_001.jpg"/></p>
 <p>Beschreibe Riccis Fehler. Konstruiere dann das Dreieck. Bestimme die fehlende Seitenl&#x00E4;nge.</p>
 </sec><sec sec-type="task" id="pg095_task006">
 <label>6</label>
 <statement><p>&#x25BE; In einem Wohngebiet sind laut <bold>Bebauungsplan</bold> nur D&#x00E4;cher mit einer Neigung von 60&#x00B0; und 35&#x00B0; erlaubt.</p></statement>
-<fig><img/></fig>
-<sec sec-type="subtask" id="pg096_task001a">
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_096_fx_001.jpg"/></p>
+<sec sec-type="subtask" id="pg097_task001a">
 <label>a)</label>
 <p>Welche L&#x00E4;nge haben die Dachkanten?</p>
 </sec> 
 <p>Sch&#x00E4;tze zuerst. Konstruiere das Dreieck im Ma&#x00DF;stab 1 : 100. Miss dann nach.</p>
-<sec sec-type="subtask" id="pg096_task001b">
+<sec sec-type="subtask" id="pg097_task001b">
 <label>b)</label>
 <p>Laut Vorschrift darf das Dach nicht h&#x00F6;her als 3,5 m sein. &#x00DC;berpr&#x00FC;fe, ob die Vorschrift eingehalten wurde.</p>
 </sec>
@@ -1555,7 +1567,8 @@
 </sec><sec sec-type="task" id="pg095_task007">
 <label>7</label>
 <statement><p>Die Klasse 8a besucht eine Flugschau. Zwei Flugzeuge fliegen so, dass sie mit einem Raucheffekt einen 70 m hohen und 20 m breiten Pfeil in die Luft zeichnen. Bestimme die L&#x00E4;nge einer Rauchspur in m.</p></statement>
-<fig><img/></fig>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_097_fx_001.jpg"/></p>
 </sec><sec sec-type="task" id="pg095_task008">
 <label>8</label>
 <statement><p>Cecilia ist Mitglied in einem Tischtennisverein.</p></statement>
@@ -1619,12 +1632,13 @@
 </sec><sec sec-type="task" id="pg096_task003">
 <label>3</label>
 <statement><p>Badia hat versucht, ein Dreieck mit c = 6,8 cm, a = 5,3 cm und <italic>&#x03B2;</italic> = 55&#x00B0; zu zeichnen. Dabei ist ihr ein Fehler unterlaufen.</p></statement>
-<fig><img/></fig>
-<sec sec-type="subtask" id="pg097_task001a">
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_097_fx_002.jpg"/></p>
+<sec sec-type="subtask" id="pg098_task001a">
 <label>a)</label>
 <p>Beschreibe Badias Fehler.</p>
 </sec>
-<sec sec-type="subtask" id="pg097_task001b">
+<sec sec-type="subtask" id="pg098_task001b">
 <label>b)</label>
 <p>Konstruiere das Dreieck.</p>
 </sec> 
@@ -1632,19 +1646,19 @@
 </sec><sec sec-type="task" id="pg096_task004">
 <label>4</label>
 <statement><p>Begr&#x00FC;nde, ohne zu zeichnen, ob mit den Angaben ein eindeutiges Dreieck konstruiert werden kann.</p></statement>
-<sec sec-type="subtask" id="pg097_task001a">
+<sec sec-type="subtask" id="pg098_task001a">
 <label>a)</label>
 <p><italic>&#x03B1;</italic> = 57&#x00B0;; <italic>&#x03B2;</italic> = 44&#x00B0;; <italic>&#x03B3;</italic> = 79&#x00B0;</p>
 </sec>
-<sec sec-type="subtask" id="pg097_task001b">
+<sec sec-type="subtask" id="pg098_task001b">
 <label>b)</label>
 <p>c = 76 mm; a = 4,4 cm; <italic>&#x03B3;</italic> = 90&#x00B0;</p>
 </sec>
-<sec sec-type="subtask" id="pg097_task001c">
+<sec sec-type="subtask" id="pg098_task001c">
 <label>c)</label>
 <p>a = 6,3 km; b = 7100 m; <italic>&#x03B3;</italic> = 63&#x00B0;</p>
 </sec>
-<sec sec-type="subtask" id="pg097_task001d">
+<sec sec-type="subtask" id="pg098_task001d">
 <label>d)</label>
 <p>a = 4,3 cm; b = 2,1 cm; c = 7,3 cm</p>
 </sec>
@@ -1653,11 +1667,11 @@
 <statement><p>Torben sagt: &#x201E;Man kann ein Dreieck mit WWW nie eindeutig konstruieren. Man muss immer auch die L&#x00E4;nge einer Seite des Dreiecks kennen.&#x201C;</p></statement>
 <p>Laura entgegnet: &#x201E;Das stimmt nicht ganz.</p> 
 <p>Wenn die H&#x00F6;he des Dreiecks gegeben ist, dann kannst du das Dreieck auch eindeutig konstruieren.&#x201C;</p>
-<sec sec-type="subtask" id="pg097_task001a">
+<sec sec-type="subtask" id="pg098_task001a">
 <label>a)</label>
 <p>Zeigt an einem Beispiel, dass Laura recht hat.</p>
 </sec>
-<sec sec-type="subtask" id="pg097_task001b">
+<sec sec-type="subtask" id="pg098_task001b">
 <label>b)</label>
 <p>Erkl&#x00E4;rt, warum Laura recht hat.</p>
 </sec>
@@ -1676,7 +1690,8 @@
 </sec><sec sec-type="task" id="pg096_task008">
 <label>8</label>
 <statement><p>&#x25BE; Simon f&#x00E4;hrt sehr nah an einem fahrenden LKW vorbei. Das ist vor allem dann gef&#x00E4;hrlich, wenn Simon sich im <bold>toten Winkel</bold> des LKWs befindet.</p></statement>
-<fig><img/></fig>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_097_fx_003.jpg"/></p>
 <sec sec-type="subtask" id="pg098_task001a">
 <label>a)</label>
 <p>Wie viele Meter f&#x00E4;hrt Simon im Bereich des toten Winkels, wenn er den LKW &#x00FC;berholt?</p>
@@ -1687,7 +1702,7 @@
 <p>Recherchiere. Wie viele Meter Abstand sollten Fahrradfahrer zu Autos lassen?</p>
 </sec> 
 <p>Konstruiere das Dreieck mit dem Wert, den du herausgefunden hast.</p>
-</sec><sec sec-type="task" id="pg096_task009">
+</sec><sec sec-type="task" id="pg097_task009">
 <label>9</label>
 <statement><p>Von einem Helikopter aus wird die L&#x00E4;nge eines Feldes gemessen. Der Helikopter fliegt in einer H&#x00F6;he von 700 m. Es sind die Winkel <italic>&#x03B1;</italic> = 40&#x00B0; und <italic>&#x03B2;</italic> = 50&#x00B0; gemessen worden.</p></statement>
 <p>Wie lang ist das Feld? Sch&#x00E4;tze zuerst.</p> 
@@ -1712,7 +1727,7 @@
 <p>Um den Rover in der Simulation genau steuern zu k&#x00F6;nnen, m&#x00FC;ssen Sina und Mark die Entfernungen und die Winkelgr&#x00F6;&#x00DF;en kennen.</p> 
 <p>Einige Orte haben sie nach ihren Freunden und Freundinnen benannt.</p>
 <p>Sina legt fest: &#x201E;1 cm in der Zeichnung entspricht 100 km in Wirklichkeit.&#x201C;</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_017.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_018.jpg"/></p>
 <table-wrap>
 <table>
 <tbody>
@@ -1746,14 +1761,14 @@
 <boxed-text position="float">
 <p><bold>A</bold> Sina hat f&#x00FC;r die Konstruktion des Dreiecks &#x2460; die Seitenl&#x00E4;ngen aufgeschrieben: a = 12,6 cm; b = 8,5 cm; c = 13,9 cm.</p>
 <p>Planfigur:</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_018.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_019.jpg"/></p>
 <p>Konstruiere das Dreieck mit SSS.</p> 
 <p>Wie gro&#x00DF; sind die Winkel?</p>
 </boxed-text>
 <boxed-text position="float">
 <p><bold>B</bold> Der Rover kann das Gebirge nicht befahren.</p> 
 <p>Konstruiere das Dreieck &#x2461; und bestimme die L&#x00E4;nge des Gebirgszugs in km.</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_019.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_020.jpg"/></p>
 </boxed-text>
 <boxed-text position="float">
 <p><bold>C</bold> Mark hat zum Dreieck &#x2462; eine Tabelle erstellt.</p> 
@@ -1788,7 +1803,7 @@
 <related-object content-type=""/>
 </book-part-meta>
 </book-part>
-<sec sec-type="task" id="pg097_task001">
+<sec sec-type="task" id="pg098_task001">
 <label>1</label>
 <statement><p>Zu welcher Planfigur geh&#x00F6;rt welche Konstruktion: SSS, SWS, WSW, SsW oder WWW?</p></statement>
 <sec sec-type="subtask" id="pg098_task001a">
@@ -1823,13 +1838,13 @@
 </sec>
 
 </sec>
-<sec sec-type="task" id="pg097_task001">
+<sec sec-type="task" id="pg098_task001">
 <label>1</label>
 <statement><p>Nenne drei m&#x00F6;gliche Wege, das Dreieck ABC mit diesen Angaben zu konstruieren. Zeichne die zugeh&#x00F6;rigen Planfiguren.</p>
 <fig><img/></fig></statement>
 
 </sec>
-<sec sec-type="task" id="pg097_task001">
+<sec sec-type="task" id="pg098_task001">
 <label>1</label>
 <statement><p>Adrian will das Dreieck ABC mit WWW konstruieren.</p> 
 <p>Begr&#x00FC;nde, warum WWW in diesem Fall eine eindeutige Konstruktion liefern w&#x00FC;rde.</p>
@@ -1954,9 +1969,9 @@
 <td><p>&#x24B6; <italic>gegeben</italic>: a = 3 cm;</p> 
 <p>b = 2 cm; c = 4 cm</p>
 <p>&#x24B7; <italic>Planfigur</italic>:</p>
-<p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_020.jpg"/></p></p></td>
-<td><p>&#x24B8; <italic>Konstruktion</italic>:</p>
 <p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_021.jpg"/></p></p></td>
+<td><p>&#x24B8; <italic>Konstruktion</italic>:</p>
+<p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_022.jpg"/></p></p></td>
 <td><p>&#x24B9; <italic>Konstruktionsbeschreibung</italic>:</p>
 <sec id="pg098_s001">
 <list list-type="simple">
@@ -1990,9 +2005,9 @@
 <tr>
 <td><p>&#x24B6; <italic>gegeben</italic>: b = 2 cm; <italic>&#x03B1;</italic> = 50&#x00B0;; c = 5 cm</p>
 <p>&#x24B7; <italic>Planfigur</italic>:</p>
-<p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_022.jpg"/></p></p></td>
-<td><p>&#x24B8; <italic>Konstruktion</italic>:</p>
 <p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_023.jpg"/></p></p></td>
+<td><p>&#x24B8; <italic>Konstruktion</italic>:</p>
+<p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_024.jpg"/></p></p></td>
 <td><p>&#x24B9; <italic>Konstruktionsbeschreibung</italic>:</p>
 <sec id="pg098_s002">
 <list list-type="simple">
@@ -2010,9 +2025,9 @@
 <td><p>&#x24B6; <italic>gegeben</italic>: c = 4 cm;</p> 
 <p><italic>&#x03B1;</italic> = 50&#x00B0;; <italic>&#x03B2;</italic> = 40&#x00B0;</p>
 <p>&#x24B7; <italic>Planfigur</italic>:</p>
-<p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_024.jpg"/></p></p></td>
-<td><p>&#x24B8; <italic>Konstruktion</italic>:</p>
 <p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_025.jpg"/></p></p></td>
+<td><p>&#x24B8; <italic>Konstruktion</italic>:</p>
+<p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_026.jpg"/></p></p></td>
 <td><p>&#x24B9; <italic>Konstruktionsbeschreibung</italic>:</p>
 <sec id="pg098_s003">
 <list list-type="simple">
@@ -2037,9 +2052,9 @@
 <tr>
 <td><p>&#x24B6; <italic>gegeben</italic>: b = 4 cm; a = 1,5 cm; <italic>&#x03B2;</italic> = 100&#x00B0;</p>
 <p>&#x24B7; <italic>Planfigur</italic>:</p>
-<p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_026.jpg"/></p></p></td>
-<td><p>&#x24B8; <italic>Konstruktion</italic>:</p>
 <p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_027.jpg"/></p></p></td>
+<td><p>&#x24B8; <italic>Konstruktion</italic>:</p>
+<p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_028.jpg"/></p></p></td>
 <td><p>&#x24B9; <italic>Konstruktionsbeschreibung</italic>:</p>
 <sec id="pg098_s004">
 <list list-type="simple">
