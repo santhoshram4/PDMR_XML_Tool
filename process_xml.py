@@ -42,6 +42,12 @@ EMPTY_TD_P_RE = re.compile(
     re.IGNORECASE | re.DOTALL,
 )
 
+# Regex 9: Circled numbers pattern (&#x2460; through &#x2473; or other hex entities)
+CIRCLED_P_RE = re.compile(
+    r"<p(?P<attrs>[^>]*)>\s*(?P<entity>&#x24[67][0-9a-fA-F];)\s*(?P<content>.*?)</p>",
+    re.DOTALL | re.IGNORECASE,
+)
+
 
 def process_seite_links(text):
     """Transforms 'Seite 196 Nr. 4, 5' or 'Seite 204' into exact <xref> link tags."""
@@ -78,7 +84,9 @@ def process_seite_links(text):
                 # Subsequent elements get only the number: "5"
                 text_content = num_str
 
-            xref_tag = f'<xref ref-type="link-LookItUp" rid="{rid_val}">{text_content}</xref>'
+            xref_tag = (
+                f'<xref ref-type="link-LookItUp" rid="{rid_val}">{text_content}</xref>'
+            )
             xref_list.append(xref_tag)
 
         # Join generated xref tags with comma space
@@ -107,7 +115,7 @@ def process_nextlevel_tasks(text, current_page_fn, pos_offset=0):
     return text
 
 
-def process_kompetenz_sections(content, get_page_for_pos):
+def process_kompetenz_sections(content, get_page_for_pos, sec_counter):
     """Transforms Kompetenz <sec> blocks resetting section IDs per page starting from s001."""
 
     kompetenz_re = re.compile(
@@ -119,10 +127,7 @@ def process_kompetenz_sections(content, get_page_for_pos):
     if not matches:
         return content
 
-    sec_counter = {}
-
     def get_sec_id(pg_str):
-        # Reset counter per page dynamically (starts from s001 for each new page)
         if pg_str not in sec_counter:
             sec_counter[pg_str] = 1
         else:
@@ -149,7 +154,7 @@ def process_kompetenz_sections(content, get_page_for_pos):
         outer_id = get_sec_id(pg_str) if not in_kompetenz_group else None
         inner_id = get_sec_id(pg_str)
 
-        new_content.append(content[last_idx:m.start()])
+        new_content.append(content[last_idx : m.start()])
 
         block_out = ""
         if not in_kompetenz_group:
@@ -293,13 +298,15 @@ def process_task_sections(content, get_page_for_pos):
 
         # Look ahead for contents belonging to this task until the next task or sec tag
         next_pos = matches[i + 1].start() if i + 1 < len(matches) else len(content)
-        following_content = content[m.end():next_pos]
+        following_content = content[m.end() : next_pos]
 
         # Stop wrapping if a major boundary or next sec tag is encountered
-        boundary_match = re.search(r"(<sec\b|</sec>|<\?pageStart)", following_content, re.IGNORECASE)
+        boundary_match = re.search(
+            r"(<sec\b|</sec>|<\?pageStart)", following_content, re.IGNORECASE
+        )
         if boundary_match:
-            block_tail = following_content[:boundary_match.start()]
-            remaining_tail = following_content[boundary_match.start():]
+            block_tail = following_content[: boundary_match.start()]
+            remaining_tail = following_content[boundary_match.start() :]
             res += f"\n{block_tail.strip()}\n</sec>\n{remaining_tail}"
             last_idx = next_pos
         else:
@@ -314,6 +321,117 @@ def process_task_sections(content, get_page_for_pos):
     return "".join(new_content)
 
 
+def process_book_parts(content):
+    """Processes <head2> tags following <?pageStart ...?> to create <book-part> wrappers."""
+    book_part_re = re.compile(
+        r'(<\?pageStart\b[^>]*pagination=["\'](\d+)["\'][^>]*\?>)\s*'
+        r'<head2>(?:<bold>)?(.*?)(?:</bold>)?</head2>'
+        r'(?:\s*<head2>(?:<bold>)?(.*?)(?:</bold>)?</head2>)?',
+        re.DOTALL | re.IGNORECASE,
+    )
+
+    def replace_book_part(match):
+        page_start_tag = match.group(1)
+        pg_num = int(match.group(2))
+        pg_str = f"{pg_num:03d}"
+
+        first_head = match.group(3).strip()
+        second_head = match.group(4)
+
+        if second_head is not None:
+            second_head = second_head.strip()
+            title_group_inner = (
+                f"<label>{first_head}</label>\n" f"<title>{second_head}</title>"
+            )
+        else:
+            title_group_inner = f"<title>{first_head}</title>"
+
+        book_part_structure = (
+            f'{page_start_tag}\n'
+            f'<book-part book-part-type="mod-Lerneinheit">\n'
+            f'<book-part-meta>\n'
+            f'<title-group id="pg{pg_str}">\n'
+            f'{title_group_inner}\n'
+            f'</title-group>\n'
+            f'<related-object content-type=""/>\n'
+            f'</book-part-meta>\n'
+            f'</book-part>'
+        )
+        return book_part_structure
+
+    return book_part_re.sub(replace_book_part, content)
+
+
+def process_circled_num_lists(content, get_page_for_pos, sec_counter):
+    """Groups contiguous <p>&#x2460;...</p> elements into <sec id="pgXXX_sYYY"><list> blocks."""
+
+    def get_next_sec_id(pg_str):
+        if pg_str not in sec_counter:
+            sec_counter[pg_str] = 1
+        else:
+            sec_counter[pg_str] += 1
+        return f"pg{pg_str}_s{sec_counter[pg_str]:03d}"
+
+    matches = list(CIRCLED_P_RE.finditer(content))
+    if not matches:
+        return content
+
+    groups = []
+    current_group = []
+
+    for m in matches:
+        if not current_group:
+            current_group.append(m)
+        else:
+            prev = current_group[-1]
+            between = content[prev.end() : m.start()].strip()
+            if not between:
+                current_group.append(m)
+            else:
+                groups.append(current_group)
+                current_group = [m]
+
+    if current_group:
+        groups.append(current_group)
+
+    new_content = []
+    last_idx = 0
+
+    for grp in groups:
+        first_m = grp[0]
+        last_m = grp[-1]
+
+        start_pos = first_m.start()
+        pg_str = get_page_for_pos(start_pos)
+        sec_id = get_next_sec_id(pg_str)
+
+        new_content.append(content[last_idx:start_pos])
+
+        items_str = []
+        for m in grp:
+            attrs = m.group("attrs")
+            entity = m.group("entity")
+            p_content = m.group("content").strip()
+            items_str.append(
+                f"<list-item><p{attrs}>{entity} {p_content}</p></list-item>"
+            )
+
+        items_joined = "\n".join(items_str)
+        list_block = (
+            f'<sec id="{sec_id}">\n'
+            f'<list list-type="simple">\n'
+            f"{items_joined}\n"
+            f"</list>\n"
+            f"</sec>"
+        )
+
+        new_content.append(list_block)
+        last_idx = last_m.end()
+
+    new_content.append(content[last_idx:])
+    return "".join(new_content)
+
+
 def process_xml_text(content):
     # FIRST STEP: Clean all <sec-meta>...</sec-meta> tags from content completely
     content = SEC_META_RE.sub("", content)
@@ -321,10 +439,16 @@ def process_xml_text(content):
     # Clean empty <p></p> tags inside <td> tags (e.g. <td><p></p></td> -> <td></td>)
     content = EMPTY_TD_P_RE.sub(r"\1\2", content)
 
+    # PROCESS NEW REQUIREMENT: Convert pageStart followed by <head2> into <book-part>
+    content = process_book_parts(content)
+
     task_count = 1
 
     # Pre-find all pageStart tag positions in the file
     page_matches = list(PAGE_RE.finditer(content))
+
+    # Global page-level section counter tracking (s001, s002...)
+    sec_counter = {}
 
     # Page-wise counter dictionary to track image order for each page separately
     page_img_counters = {}
@@ -340,7 +464,10 @@ def process_xml_text(content):
         return pg
 
     # Process Kompetenz <sec> blocks first
-    content = process_kompetenz_sections(content, get_page_for_pos)
+    content = process_kompetenz_sections(content, get_page_for_pos, sec_counter)
+
+    # PROCESS NEW REQUIREMENT: Circled Number Lists (&#x2460;) into <sec><list>
+    content = process_circled_num_lists(content, get_page_for_pos, sec_counter)
 
     # Process task <sec> blocks & standalone task <p> tags
     content = process_task_sections(content, get_page_for_pos)
@@ -435,7 +562,7 @@ def process_xml_text(content):
         href_val = f"img/000000000000_pg_{pg_str}_fx_{img_seq_str}.jpg"
 
         return (
-            f"<p><graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" "
+            f'<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" '
             f'xlink:href="{href_val}"/></p>'
         )
 
