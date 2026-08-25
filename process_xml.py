@@ -632,14 +632,16 @@ def process_xml_text(content):
 
 def main():
     try:
-        now = datetime.now()
-        if now.year != 2026 or now.month != 8:
-            print("This tool was valid only for August 2026 and has expired.")
+        # Expiry date setting: August 31, 2026 (End of day: 23:59:59)
+        EXPIRY_DATE = datetime(2026, 8, 31, 23, 59, 59)
+        
+        if datetime.now() > EXPIRY_DATE:
+            print("This tool has expired on August 31, 2026. Please contact support/developer.")
             return
 
         if not os.path.exists(INPUT_DIR):
             print(
-                f"Error: '{INPUT_DIR}' folder illai! Folder create panni XML files-a athula podunga."
+                f"Error: '{INPUT_DIR}' There is no folder! Create a folder and place the XML files in it."
             )
             return
 

@@ -1,12 +1,24 @@
 import os
 import re
+from datetime import datetime
+
+# ==========================================
+# EXPIRY DATE CHECK (Expiry: Aug 31, 2026)
+# ==========================================
+EXPIRY_DATE = datetime(2026, 8, 31, 23, 59, 59)
+
+def check_expiry():
+    current_time = datetime.now()
+    if current_time > EXPIRY_DATE:
+        print("\n" + "=" * 55)
+        print(" ERROR: Script Expired!")
+        print(" This tool has expired on August 31, 2026. Please contact Tool Developer.")
+        print("=" * 55 + "\n")
+        return False
+    return True
 
 input_folder = "input"
 output_folder = "output"
-
-# Output folder create pannurom
-if not os.path.exists(output_folder):
-    os.makedirs(output_folder)
 
 def process_xml_content(xml_content):
     # ==========================================
@@ -98,11 +110,9 @@ def process_xml_content(xml_content):
         p_content = match.group(3)
         sec_end = match.group(4)
 
-        # Remove <p> and </p> tags
         inner_text = re.sub(r'^<p\b[^>]*>', '', p_content, flags=re.IGNORECASE)
         inner_text = re.sub(r'</p>$', '', inner_text, flags=re.IGNORECASE).strip()
 
-        # ONLY check if the content ends with punctuation (., ;, ?, :) BEFORE </p>
         if re.search(r'[.;?:!]\s*$', inner_text):
             wrapped_p = f"<statement>\n{p_content}\n</statement>"
             return f"{sec_start}\n{label_part}\n{wrapped_p}\n{sec_end}"
@@ -116,26 +126,22 @@ def process_xml_content(xml_content):
     # STEP 8: ACCURATE Subtask ID Replacement for ALL Children (a, b, c, d...)
     # ==========================================
     def fix_subtask_ids_across_file(content):
-        # Sec task ah base panni split panrom
         parts = re.split(r'(<sec\b[^>]*sec-type=["\']task["\'][^>]*>)', content, flags=re.IGNORECASE)
-        
         new_content = [parts[0]]
         
         for i in range(1, len(parts), 2):
             task_header = parts[i]
             task_body = parts[i+1] if (i+1) < len(parts) else ""
             
-            # Label number-a search panrom (e.g. 62 -> 062)
             label_match = re.search(r'<label>\s*(\d+)\s*</label>', task_body, flags=re.IGNORECASE)
             if label_match:
                 task_num_raw = label_match.group(1)
                 formatted_task_num = f"{int(task_num_raw):03d}"
                 
-                # Ulla irukura ELLA subtask IDs-ayum update panrom
                 def subtask_id_replacer(m):
-                    prefix = m.group(1)       # id="pg239_task
-                    sub_letter = m.group(2)   # a, b, c...
-                    quote = m.group(3)        # "
+                    prefix = m.group(1)
+                    sub_letter = m.group(2)
+                    quote = m.group(3)
                     return f'{prefix}{formatted_task_num}{sub_letter}{quote}'
 
                 task_body = re.sub(
@@ -166,30 +172,52 @@ def process_xml_content(xml_content):
     return xml_content
 
 def process_xml_files():
+    print("========================================")
+    print("      XML Processing Tool Running...    ")
+    print("========================================\n")
+
+    # Expiry Check
+    if not check_expiry():
+        input("\nPress ENTER to exit...")
+        return
+
     if not os.path.exists(input_folder):
         print(f"Error: '{input_folder}' folder illa! First 'input' folder create pannungga.")
+        input("\nPress ENTER to exit...")
         return
+
+    # Output folder create pannurom
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
 
     files = [f for f in os.listdir(input_folder) if f.endswith('.xml')]
     
     if not files:
         print(f"'{input_folder}' folder-la XML files edhum illa!")
+        input("\nPress ENTER to exit...")
         return
 
     for file_name in files:
+        print(f"File processing: {file_name} ...")
         input_path = os.path.join(input_folder, file_name)
         output_path = os.path.join(output_folder, file_name)
 
         with open(input_path, 'r', encoding='utf-8') as f:
             content = f.read()
 
-        # Update process
         updated_content = process_xml_content(content)
 
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(updated_content)
 
-        print(f"Processed: {file_name} -> Saved to '{output_folder}/'")
+        print(f"File run complete: Saved to '{output_folder}/{file_name}'\n")
+
+    print("========================================")
+    print("     ALL FILES PROCESSED SUCCESSFULLY!  ")
+    print("========================================")
+    
+    # Enter press panninaa thaan CMD window close aagum
+    input("\nPress ENTER to exit...")
 
 if __name__ == "__main__":
     process_xml_files()
