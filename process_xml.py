@@ -414,7 +414,7 @@ def process_circled_num_lists(content, get_page_for_pos, sec_counter, page_img_c
             entity = m.group("entity")
             p_content = m.group("content").strip()
 
-            # NEW UPDATE: Replace <fig><img/></fig> inside circled number <p> tags with <graphic .../>
+            # REPLACE: <fig><img/></fig> inside circled number <p> tags with <graphic .../>
             if FIG_RE.search(p_content):
                 if pg_str not in page_img_counters:
                     page_img_counters[pg_str] = 1
@@ -487,7 +487,7 @@ def process_xml_text(content):
     # Clean empty <p></p> tags inside <td> tags (e.g. <td><p></p></td> -> <td></td>)
     content = EMPTY_TD_P_RE.sub(r"\1\2", content)
 
-    # PROCESS NEW REQUIREMENT: Convert pageStart followed by <head2> into <book-part>
+    # Convert pageStart followed by <head2> into <book-part>
     content = process_book_parts(content)
 
     task_count = 1
@@ -514,13 +514,13 @@ def process_xml_text(content):
     # Process Kompetenz <sec> blocks first
     content = process_kompetenz_sections(content, get_page_for_pos, sec_counter)
 
-    # PROCESS NEW REQUIREMENT: Circled Number Lists (&#x2460;) into <sec><list>
+    # Circled Number Lists (&#x2460;) into <sec><list>
     content = process_circled_num_lists(content, get_page_for_pos, sec_counter, page_img_counters)
 
     # Process task <sec> blocks & standalone task <p> tags
     content = process_task_sections(content, get_page_for_pos)
 
-    # PROCESS NEW REQUIREMENT: <fig>/<img> under task <statement> to <p><graphic.../></p>
+    # <fig>/<img> under task <statement> to <p><graphic.../></p>
     content = process_task_statement_images(content, get_page_for_pos, page_img_counters)
 
     def replace_p(match):
@@ -631,40 +631,49 @@ def process_xml_text(content):
 
 
 def main():
-    now = datetime.now()
-    if now.year != 2026 or now.month != 8:
-        print("This tool was valid only for August 2026 and has expired.")
-        return
+    try:
+        now = datetime.now()
+        if now.year != 2026 or now.month != 8:
+            print("This tool was valid only for August 2026 and has expired.")
+            return
 
-    if not os.path.exists(INPUT_DIR):
-        print(
-            f"Error: '{INPUT_DIR}' folder illai! Folder create panni XML files-a athula podunga."
-        )
-        return
+        if not os.path.exists(INPUT_DIR):
+            print(
+                f"Error: '{INPUT_DIR}' folder illai! Folder create panni XML files-a athula podunga."
+            )
+            return
 
-    files = [f for f in os.listdir(INPUT_DIR) if f.endswith(".xml")]
+        files = [f for f in os.listdir(INPUT_DIR) if f.endswith(".xml")]
 
-    if not files:
-        print(f"'{INPUT_DIR}' folder-kulla XML files edhum illai.")
-        return
+        if not files:
+            print(f"'{INPUT_DIR}' folder-kulla XML files edhum illai.")
+            return
 
-    for filename in files:
-        in_path = os.path.join(INPUT_DIR, filename)
-        out_path = os.path.join(OUTPUT_DIR, filename)
+        print("Processing started...\n")
+        for filename in files:
+            print(f"Processing: {filename}")
+            in_path = os.path.join(INPUT_DIR, filename)
+            out_path = os.path.join(OUTPUT_DIR, filename)
 
-        try:
-            with open(in_path, "r", encoding="utf-8") as f:
-                content = f.read()
+            try:
+                with open(in_path, "r", encoding="utf-8") as f:
+                    content = f.read()
 
-            updated_xml = process_xml_text(content)
+                updated_xml = process_xml_text(content)
 
-            with open(out_path, "w", encoding="utf-8") as f:
-                f.write(updated_xml)
+                with open(out_path, "w", encoding="utf-8") as f:
+                    f.write(updated_xml)
 
-            print(f"Successfully processed: {filename} -> {out_path}")
+                print(f"Successfully processed: {filename} -> {out_path}\n")
 
-        except Exception as e:
-            print(f"Error in processing {filename}: {e}")
+            except Exception as e:
+                print(f"Error in processing {filename}: {e}\n")
+
+        print("All files processed successfully!")
+
+    finally:
+        # User enter press panna mattum windown close aagum
+        input("\nPress ENTER to exit...")
 
 
 if __name__ == "__main__":

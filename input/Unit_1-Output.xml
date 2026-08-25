@@ -1,0 +1,1768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="jats-html.xsl"?>
+<!DOCTYPE book PUBLIC "-//NLM//DTD BITS Book Interchange DTD v2.2 20250930//EN" "BITS-book2-2.dtd">
+<book xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="2.2">
+<?pageStart pdf="9" pagination="5"?>
+<head1><bold>1</bold></head1>
+<head1><bold>Rationale Zahlen</bold></head1>
+
+<!-- Book part-->
+<?pageStart pdf="10" pagination="6"?>
+<book-part book-part-type="mod-Lerneinheit">
+<book-part-meta>
+<title-group id="pg006">
+<label>Wiederholung</label>
+<title>qweijcx</bold></title>
+</title-group>
+<related-object content-type=""/>
+</book-part-meta>
+</book-part>
+
+<sec id="pg006_s001">
+<sec id="pg006_s002">
+<label>1 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann Zahlen vergleichen.</p>
+</sec>
+</sec>
+
+<!-- Task opening-->
+<sec sec-type="task" id="pg006_task001">
+<label>1</label>
+<statement><p>Vergleiche die Zahlen.</p>
+<p>Setze im Heft &#x003C;, &#x003E; oder = ein.</p>
+
+<!-- Sub-Task--></statement>
+<sec sec-type="subtask" id="pg006_task001a">
+<label>a)</label>
+<p>4 &#x25CF; 9</p>
+</sec>
+<sec sec-type="subtask" id="pg006_task001b">
+<label>b)</label>
+<p>3,5 &#x25CF; 2,5</p>
+</sec>
+<sec sec-type="subtask" id="pg006_task001c">
+<label>c)</label>
+<p>0 &#x25CF; 0,1</p>
+</sec>
+<sec sec-type="subtask" id="pg006_task001d">
+<label>d)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{1}{3} \bullet \frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+
+</sec>
+<!-- Task closing-->
+
+
+
+<!-- single image-->
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_001.jpg"/></p>
+
+<!-- caption image-->
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_002.jpg"/></p>
+<p><bold>KIRSCHE</bold></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_003.jpg"/></p>   
+<p><bold>ERDBEERE</bold></p>
+
+<!-- caption image-->
+<p><bold>KIRSCHE</bold></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_002.jpg"/></p>
+<p><bold>ERDBEERE</bold></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_003.jpg"/></p>   
+
+<!-- link-LookItUp-->
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg196_task004">Seite 196 Nr. 4</xref>, <xref ref-type="link-LookItUp" rid="pg196_task005">5</xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg204">Seite 204</xref></p>
+
+<!-- link-tosolution -->
+<p><bold>Rationale Zahlen addieren und subtrahieren</bold> &#x2192; Seiten 16 und 20</p>
+<p><bold>Rationale Zahlen multiplizieren und dividieren</bold> &#x2192; Seiten 18</p>
+
+
+<!-- link-tosolution -->
+<p><bold>Rationale Zahlen multiplizieren und dividieren</bold> &#x2192; <xref ref-type="link-LookItUp" rid="pg024">Seite 24</xref></p>
+
+
+<!-- Nextlevel_Task-->
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task012">12</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task010">10</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task009">9</xref></bold></p>
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task010">10</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task013">13</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg006_task020">20</xref></bold></p>
+</sec>
+
+<!-- Task-->
+<sec id="pg006_s003">
+<sec id="pg006_s004">
+<label>2 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann einen Zahlenstrahl zeichnen und einteilen.</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg006_task002">
+<label>2</label>
+<statement><p>Ist der Zahlenstrahl richtig gezeichnet und eingeteilt?</p>
+<p>Verbessere in deinem Heft.</p></statement>
+<sec sec-type="subtask" id="pg006_task001a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_002.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg006_task001b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_003.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg006_task001c">
+<label>c)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_004.jpg"/>
+</fig>
+</sec>
+
+</sec>
+
+<!-- Task-->
+<sec sec-type="task" id="pg006_task026">
+<label>26</label>
+<statement><p>Wandle in eine gemischte Zahl um.</p></statement>
+<!-- Sub-Task-->
+<sec sec-type="subtask" id="pg006_task001a">
+<label>a)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{3}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg006_task001b">
+<label>b)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{4}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg006_task001c">
+<label>c)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{5}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg006_task001d">
+<label>d)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{10}{7}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<sec sec-type="subtask" id="pg006_task001e">
+<label>e)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{8}{3}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+
+
+<!-- table -->
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p>Rechne so weiter:</p>
+<p>Achte auf die Zeichen vor den Zahlen.</p></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</sec>
+<?pageStart pdf="79" pagination="75"?>
+
+<!-- Task-->
+<sec sec-type="task" id="pg075_task002">
+<label>2</label>
+<statement><p>Berechne den Umfang des Vierecks.</p></statement>
+<!-- sub-Task-->
+<sec sec-type="subtask" id="pg075_task001a">
+<label>a)</label>
+<p>a = 6,5 m; b = 7 m; c = 10,5 m; d = 8,5 m</p>
+</sec>
+<sec sec-type="subtask" id="pg075_task001b">
+<label>b)</label>
+<p>a = 12,3 m; b = 5,5 m; c = 25,7 m; d = 9,5 m</p>
+</sec>
+<sec sec-type="subtask" id="pg075_task001c">
+<label>c)</label>
+<p>a = 276 m; b = 105 m; c = 723 m; d = 481 m</p>
+</sec>
+<sec sec-type="subtask" id="pg075_task001d">
+<label>d)</label>
+<p>a = 60 m 50 cm; b = 70,1 m; c = 110 m; d = 30 m 80 cm</p>
+</sec>
+<!-- Task-->
+</sec><sec sec-type="task" id="pg075_task003">
+<label>3</label>
+<statement><p>&#x00DC;bertrage die Figuren in dein Heft.</p></statement>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_001.jpg"/></p>
+<sec sec-type="subtask" id="pg075_task001a">
+<label>a)</label>
+<p>Beschrifte vollst&#x00E4;ndig.</p>
+</sec>
+<sec sec-type="subtask" id="pg075_task001b">
+<label>b)</label>
+<p>Sch&#x00E4;tze zuerst den Umfang. Miss dann die L&#x00E4;nge der Seiten und berechne den Umfang. Vergleiche mit deiner Sch&#x00E4;tzung.</p>
+</sec>
+</sec><sec sec-type="task" id="pg075_task004">
+<label>4</label>
+<statement><p>Nenne die Vierecksart. Berechne den Umfang.</p></statement>
+<sec sec-type="subtask" id="pg075_task001a">
+<label>a)</label>
+<p></p>
+</sec>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_004.jpg"/></p>
+<sec sec-type="subtask" id="pg075_task001b">
+<label>b)</label>
+<p></p>
+</sec>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_005.jpg"/></p>
+<sec sec-type="subtask" id="pg075_task001c">
+<label>c)</label>
+<p></p>
+</sec>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_006.jpg"/></p>
+</sec><sec sec-type="task" id="pg075_task005">
+<label>5</label>
+<statement><p>In die Rechnungen von Fiona und Amar haben sich Fehler eingeschlichen.</p></statement>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_075_fx_001.jpg"/></p>
+<p>Fiona:</p>
+<p>u = a + b</p>
+<p>u = 12,5 m + 6,4 m</p>
+<p>u = 18,9 m</p>
+<p>Amar:</p>
+<p>u = 2 &#x00B7; a + 2 &#x00B7; b</p>
+<p>u = 2 &#x00B7; 12,5 + 6,4</p>
+<p>u = 31,4 m</p>
+<sec sec-type="subtask" id="pg251_task001a">
+<label>a)</label>
+<p>Beschreibe die Fehler.</p>
+</sec>
+<sec sec-type="subtask" id="pg251_task001b">
+<label>b)</label>
+<p>Rechne richtig im Heft.</p>
+</sec>
+
+<!-- sanh=geeth-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="jats-html.xsl"?>
+<!DOCTYPE book PUBLIC "-//NLM//DTD BITS Book Interchange DTD v2.2 20250930//EN" "BITS-book2-2.dtd">
+<book xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="2.2">
+</sec>
+<?pageStart pdf="243" pagination="239"?>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg073_task003"><xref ref-type="link-LookItUp" rid="pg073_task003">Seite 73 Nr. 3</xref></xref></p>
+<boxed-text position="float">
+<p><bold>L&#x00E4;ngen mit dem Geodreieck messen</bold></p>
+<p>So kannst du L&#x00E4;ngen mit dem Geodreieck oder mit dem Lineal messen:</p>
+<list list-type="order">
+<list-item><p>Lege die Null der L&#x00E4;ngenskala auf den Anfangspunkt, hier auf Punkt A.</p></list-item>
+<list-item><p>Die L&#x00E4;ngenskala muss ganz genau auf der Linie liegen.</p></list-item>
+<list-item><p>Lies die L&#x00E4;nge am Endpunkt ab, hier bei Punkt B.</p></list-item>
+</list>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_005.jpg"/></p>
+<p>Die Strecke ist 6 cm lang.</p>
+</boxed-text>
+<sec sec-type="task" id="pg239_task062">
+<label>62</label>
+<statement><p>Sch&#x00E4;tze die L&#x00E4;nge der Strecke. Miss dann nach.</p></statement>
+<sec sec-type="subtask" id="pg239_task001a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_239_fx_003.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg239_task001b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_239_fx_004.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg239_task001c">
+<label>c)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_239_fx_005.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg239_task001d">
+<label>d)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_239_fx_006.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg239_task001e">
+<label>e)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_239_fx_007.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg239_task001f">
+<label>f)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_239_fx_008.jpg"/>
+</fig>
+</sec>
+</sec><sec sec-type="task" id="pg239_task063">
+<label>63</label>
+<statement><p>Bestimme die L&#x00E4;ngen der Strecken.</p></statement>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_239_fx_001.jpg"/></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg072_task004"><xref ref-type="link-LookItUp" rid="pg072_task004">Seite 72 Nr. 4</xref></xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Strecken mit einer bestimmten L&#x00E4;nge zeichnen</bold></p></td>
+<td><p>Zeichne eine Strecke <inline-formula><alternatives><tex-math><![CDATA[\(\overline{{\rm{AB}}}\)]]></tex-math></alternatives></inline-formula>, die 3,5 cm lang ist.</p></td>
+</tr>
+<tr>
+<td>
+<p>So zeichnest du eine Strecke mit einer bestimmten L&#x00E4;nge: Nutze ein Lineal oder ein Geodreieck.</p>
+<list list-type="order">
+<list-item><p>Markiere zuerst einen Anfangspunkt, hier A.</p></list-item>
+<list-item><p>Lege die Null auf den Anfangspunkt.</p></list-item>
+<list-item><p>Zeichne eine Strecke bis zum Endpunkt bei 3,5 cm.</p></list-item>
+<list-item><p>Markiere den Endpunkt mit einem weiteren Buchstaben, hier B.</p></list-item>
+</list>
+</td>
+<td><p><fig><img/></fig></p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+</sec><sec sec-type="task" id="pg239_task064">
+<label>64</label>
+<statement><p>Zeichne die Strecke in dein Heft.</p></statement>
+<sec sec-type="subtask" id="pg240_task001a">
+<label>a)</label>
+<p>Strecke <inline-formula><alternatives><tex-math><![CDATA[\(\overline{{\rm{AB}}}\)]]></tex-math></alternatives></inline-formula> mit den Endpunkten A und B, L&#x00E4;nge 5 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg240_task001b">
+<label>b)</label>
+<p>Strecke <inline-formula><alternatives><tex-math><![CDATA[\(\overline{{\rm{CD}}}\)]]></tex-math></alternatives></inline-formula> mit den Endpunkten C und D, L&#x00E4;nge 6,5 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg240_task001c">
+<label>c)</label>
+<p>Strecke <inline-formula><alternatives><tex-math><![CDATA[\(\overline{{\rm{EF}}}\)]]></tex-math></alternatives></inline-formula> mit den Endpunkten E und F, L&#x00E4;nge 3,7 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg240_task001d">
+<label>d)</label>
+<p>Strecke <inline-formula><alternatives><tex-math><![CDATA[\(\overline{{\rm{GH}}}\)]]></tex-math></alternatives></inline-formula> mit den Endpunkten G und H, L&#x00E4;nge 8 cm 4 mm</p>
+</sec>
+</sec>
+<?pageStart pdf="244" pagination="240"?>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg046_task001"><xref ref-type="link-LookItUp" rid="pg046_task001">Seite 46 Nr. 1</xref></xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Untersuchen, ob Geraden parallel zueinander sind</bold></p></td>
+<td><p><bold>Untersuchen, ob Geraden senkrecht zueinander sind</bold></p></td>
+</tr>
+<tr>
+<td>
+<p>Zwei Geraden g und h sind parallel zueinander, wenn sie &#x00DC;berall den gleichen Abstand voneinander haben. Parallele Geraden schneiden sich nie. Nutze die parallelen Hilfslinien am Geodreieck.</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_006.jpg"/></p>
+<p>g &#x007C;&#x007C; h (<bold>Kurzform</bold>)</p>
+</td>
+<td>
+<p>Zwei Geraden g und h liegen senkrecht zueinander, wenn sie einen rechten Winkel bilden.</p>
+<p>Nutze die Mittellinie des Geodreiecks.</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_007.jpg"/></p>
+<p>g &#x22A5; h (<bold>Kurzform</bold>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+<sec sec-type="task" id="pg240_task065">
+<label>65</label>
+<statement><p>Pr&#x00FC;fe mit deinem Geodreieck.</p></statement>
+<sec sec-type="subtask" id="pg241_task001a">
+<label>a)</label>
+<p>Welche Geraden verlaufen parallel zueinander? Schreibe in Kurzform auf (Kurzform g &#x007C;&#x007C; h).</p>
+</sec>
+<sec sec-type="subtask" id="pg241_task001b">
+<label>b)</label>
+<p>Welche Geraden verlaufen senkrecht zueinander? Schreibe in Kurzform auf (Kurzform g &#x22A5; h).</p>
+</sec>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_007.jpg"/></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg047_task012"><xref ref-type="link-LookItUp" rid="pg047_task012">Seite 47 Nr. 12</xref></xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Den Abstand von einem Punkt zu einer Geraden bestimmen</bold></p></td>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_008.jpg"/></p></p></td>
+</tr>
+<tr>
+<td>
+<p>Die k&#x00FC;rzeste Entfernung von einem Punkt P zu einer Geraden g hei&#x00DF;t <bold>Abstand</bold>.</p>
+<p>So bestimmst du den Abstand des Punktes P zur Geraden g:</p>
+<list list-type="order">
+<list-item><p>Zeichne eine Strecke zwischen P und g.</p> 
+<p>Die Strecke muss senkrecht auf g stehen.</p></list-item>
+<list-item><p>Miss die L&#x00E4;nge dieser Strecke.</p></list-item>
+</list>
+</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+</sec><sec sec-type="task" id="pg241_task066">
+<label>66</label>
+<statement><p>&#x00DC;bertrage die Abbildung in dein Heft.</p></statement>
+<p>Bestimme den Abstand der Punkte A, B und C zur Geraden g.</p>
+<fig><img/></fig>
+</sec>
+<?pageStart pdf="245" pagination="241"?>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg046_task006"><xref ref-type="link-LookItUp" rid="pg046_task006">Seite 46 Nr. 6</xref></xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg182_task001"><xref ref-type="link-LookItUp" rid="pg182_task001">Seite 182 Nr. 1</xref></xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Punkte im Koordinatensystem ablesen und einzeichnen</bold></p></td>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_005_fx_001.jpg"/></p></p></td>
+</tr>
+<tr>
+<td>
+<p>Ein Koordinatensystem besteht aus zwei Zahlenstrahlen. Sie hei&#x00DF;en die x-Achse und die y-Achse. Beide Achsen beginnen im Nullpunkt.</p>
+<p>Den Nullpunkt nennt man <bold>Ursprung</bold>, kurz O(0 &#x007C; 0).</p>
+<p>Die Achsen sind senkrecht zueinander.</p>
+<p>Jeder Punkt im Koordinatensystem ist durch zwei Zahlen (<bold>Koordinaten</bold>) festgelegt.</p>
+<p>Bei jedem Punkt P(x &#x007C; y) wird zun&#x00E4;chst die x-Koordinate und dann die y-Koordinate angegeben.</p>
+</td>
+<td>
+<p>Der Punkt P hat die Koordinaten P(3 &#x007C; 2).</p>
+<p>Das bedeutet: Gehe von (0 &#x007C; 0) zuerst 3 Einheiten nach rechts und danach 2 Einheiten nach oben.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+<sec sec-type="task" id="pg241_task067">
+<label>67</label>
+<statement><p>Schreibe die Koordinaten der Punkte ins Heft.</p></statement>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_239_fx_002.jpg"/></p>
+</sec><sec sec-type="task" id="pg241_task068">
+<label>68</label>
+<statement><p>Zeichne ein Koordinatensystem.</p></statement>
+<p>Die x-Achse soll von 0 bis 9 gehen.</p>
+<p>Die y-Achse soll von 0 bis 6 gehen.</p>
+<sec sec-type="subtask" id="pg242_task001a">
+<label>a)</label>
+<p>Trage die Punkte A(1 &#x007C; 1); B(4 &#x007C; 1); C(3 &#x007C; 6) und D(0 &#x007C; 6) ein. Verbinde sie zu einem Viereck.</p>
+</sec>
+<sec sec-type="subtask" id="pg242_task001b">
+<label>b)</label>
+<p>Trage die Punkte E(5 &#x007C; 0); F(8 &#x007C; 2,5) und G(6,5 &#x007C; 5) ein. Verbinde sie zu einem Dreieck.</p>
+</sec>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg073_task013"><xref ref-type="link-LookItUp" rid="pg073_task013">Seite 73 Nr. 13</xref></xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg129_task009"><xref ref-type="link-LookItUp" rid="pg129_task009">Seite 129 Nr. 9</xref></xref>, <xref ref-type="link-LookItUp" rid="pg129_task010">10</xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Eine Planfigur zeichnen</bold></p></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>Eine Planfigur ist eine Zeichnung, die ungef&#x00E4;hr so aussieht wie die eigentliche Figur.</p>
+<p>Du zeichnest sie, bevor du die eigentliche Figur konstruierst. Du markierst die gegebenen Strecken und Winkel rot und beschriftest sie. Damit hast du eine &#x00DC;bersicht &#x00FC;ber das, was du schon kennst.</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td><p>Zeichne die Planfigur eines Rechtecks mit a = 3 cm und b = 2 cm.</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_008.jpg"/></p></td>
+<td><p>Zeichne die Planfigur eines Dreiecks mit a = 4 cm, c = 5 cm und <italic>&#x03B3;</italic> = 90&#x00B0;.</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_009.jpg"/></p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+</sec><sec sec-type="task" id="pg241_task069">
+<label>69</label>
+<statement><p>Zeichne eine Planfigur.</p></statement>
+<sec sec-type="subtask" id="pg242_task001a">
+<label>a)</label>
+<p>Dreieck mit <italic>&#x03B1;</italic> = 90&#x00B0; und b = c = 3 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg242_task001b">
+<label>b)</label>
+<p>Dreieck mit a = 6 cm, b = 4,5 cm und <italic>&#x03B3;</italic> = 110&#x00B0;</p>
+</sec>
+<sec sec-type="subtask" id="pg242_task001c">
+<label>c)</label>
+<p>Quadrat mit a = 2 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg242_task001d">
+<label>d)</label>
+<p>Raute mit e = 5 cm und f = 2 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg242_task001e">
+<label>e)</label>
+<p>Parallelogramm mit a = 4 cm, b = 2 cm und h = 1,5 cm</p>
+</sec>
+</sec>
+<?pageStart pdf="246" pagination="242"?>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg047_task008"><xref ref-type="link-LookItUp" rid="pg047_task008">Seite 47 Nr. 8</xref></xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg073_task009"><xref ref-type="link-LookItUp" rid="pg073_task009">Seite 73 Nr. 9</xref></xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Dreiecke vollst&#x00E4;ndig beschriften</bold></p></td>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_005_fx_002.jpg"/></p></p></td>
+</tr>
+<tr>
+<td>
+<p>So beschriftest du ein Dreieck:</p>
+<p>Eckpunkte: Die Eckpunkte hei&#x00DF;en A, B und C.</p>
+<p>Die Reihenfolge ist gegen den Uhrzeigersinn.</p>
+<p>Seiten: Die Seite gegen&#x00FC;ber von Eckpunkt A hei&#x00DF;t a.</p>
+<p>Die Seite gegen&#x00FC;ber von Eckpunkt B hei&#x00DF;t b.</p>
+<p>Die Seite gegen&#x00FC;ber von Eckpunkt C hei&#x00DF;t c.</p>
+<p>Winkel: Der Winkel bei A hei&#x00DF;t a.</p>
+<p>Der Winkel bei B hei&#x00DF;t &#x03B2;. Der Winkel bei C hei&#x00DF;t &#x03B3;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+<sec sec-type="task" id="pg242_task070">
+<label>70</label>
+<statement><p>&#x00DC;bertrage die Dreiecke ins Heft.</p></statement>
+<p>Beschrifte alle Eckpunkte, Seiten und Winkel.</p>
+<sec sec-type="subtask" id="pg242_task001a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_242_fx_001.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg242_task001b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_242_fx_002.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg242_task001c">
+<label>c)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_242_fx_003.jpg"/>
+</fig>
+</sec>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg047_task009"><xref ref-type="link-LookItUp" rid="pg047_task009">Seite 47 Nr. 9</xref></xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg073_task010"><xref ref-type="link-LookItUp" rid="pg073_task010">Seite 73 Nr. 10</xref></xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg128_task004"><xref ref-type="link-LookItUp" rid="pg128_task004">Seite 128 Nr. 4</xref></xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Dreiecksarten &#x2013; Dreiecke nach ihren Winkelarten benennen</bold></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_010.jpg"/></p>
+<p><bold>spitzwinkliges Dreieck:</bold></p>
+<p>Alle drei Winkel sind spitze Winkel, also kleiner als 90&#x00B0;.</p>
+</td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_011.jpg"/></p>
+<p><bold>rechtwinkliges Dreieck:</bold></p>
+<p>Ein Winkel des Dreiecks ist ein rechter Winkel, also 90&#x00B0;.</p>
+</td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_012.jpg"/></p>
+<p><bold>stumpfwinkliges Dreieck:</bold></p>
+<p>Ein Winkel des Dreiecks ist ein stumpfer Winkel, also gr&#x00F6;&#x00DF;er als 90&#x00B0;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Dreiecksarten &#x2013; Dreiecke nach ihren Seitenl&#x00E4;ngen benennen</bold></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_013.jpg"/></p>
+<p><bold>gleichseitiges Dreieck:</bold></p>
+<p>Alle Seiten sind gleich lang.</p>
+<p>Alle Winkel sind 60&#x00B0; gro&#x00DF;.</p>
+</td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_014.jpg"/></p>
+<p><bold>gleichschenkliges Dreieck:</bold></p>
+<p>Zwei Seiten sind gleich lang.</p>
+<p>Zwei Winkel sind gleich gro&#x00DF;.</p>
+</td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_015.jpg"/></p>
+<p><bold>unregelm&#x00E4;&#x00DF;iges Dreieck:</bold></p>
+<p>Alle Seiten sind verschieden lang.</p>
+<p>Alle Winkel sind verschieden gro&#x00DF;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+</sec><sec sec-type="task" id="pg242_task071">
+<label>71</label>
+<statement><p>Benenne das Dreieck nach den Winkelarten und nach den Seitenl&#x00E4;ngen.</p></statement>
+
+</sec>
+<sec id="pg243_s001">
+<list list-type="simple">
+<list-item><sec id="pg242_s001">
+<list list-type="simple">
+<list-item><p>&#x2460; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_243_fx_001.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+<list-item><sec id="pg242_s002">
+<list list-type="simple">
+<list-item><p>&#x2461; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_243_fx_002.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+<list-item><sec id="pg242_s003">
+<list list-type="simple">
+<list-item><p>&#x2462; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_243_fx_003.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+<list-item><sec id="pg242_s004">
+<list list-type="simple">
+<list-item><p>&#x2463; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_243_fx_004.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+</list>
+</sec>
+<?pageStart pdf="247" pagination="243"?>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg047_task010"><xref ref-type="link-LookItUp" rid="pg047_task010">Seite 47 Nr. 10</xref></xref>, <xref ref-type="link-LookItUp" rid="pg047_task011">11</xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg128_task005"><xref ref-type="link-LookItUp" rid="pg128_task005">Seite 128 Nr. 5</xref></xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg129_task010"><xref ref-type="link-LookItUp" rid="pg129_task010">Seite 129 Nr. 10</xref></xref></p>
+<boxed-text position="float">
+<p><bold>Eigenschaften von Vierecken kennen</bold></p>
+<p>Das sind die Vierecksarten. F&#x00FC;r gleich lange Seiten benutzt du denselben Buchstaben.</p>
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td>
+<p><bold>das Quadrat</bold></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_016.jpg"/></p>
+<list list-type="bullet">
+<list-item><p>4 gleich lange Seiten</p></list-item>
+<list-item><p>4 rechte Winkel</p></list-item>
+</list>
+</td>
+<td>
+<p><bold>das Rechteck</bold></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_017.jpg"/></p>
+<list list-type="bullet">
+<list-item><p>Gegen&#x00FC;berliegende Seiten sind gleich lang und zueinander parallel.</p></list-item>
+<list-item><p>4 rechte Winkel</p></list-item>
+</list>
+</td>
+<td>
+<p><bold>das Trapez</bold></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_018.jpg"/></p>
+<list list-type="bullet">
+<list-item><p>2 Seiten sind zueinander parallel.</p></list-item>
+</list>
+</td>
+</tr>
+<tr>
+<td>
+<p><bold>die Raute</bold></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_019.jpg"/></p>
+<list list-type="bullet">
+<list-item><p>4 gleich lange Seiten</p></list-item>
+<list-item><p>Gegen&#x00FC;berliegende Seiten sind zueinander parallel.</p></list-item>
+<list-item><p>Gegen&#x00FC;berliegende Winkel sind gleich gro&#x00DF;.</p></list-item>
+</list>
+</td>
+<td>
+<p><bold>das Parallelogramm</bold></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_020.jpg"/></p>
+<list list-type="bullet">
+<list-item><p>Gegen&#x00FC;berliegende Seiten sind gleich lang und zueinander parallel.</p></list-item>
+<list-item><p>Gegen&#x00FC;berliegende Winkel sind gleich gro&#x00DF;.</p></list-item>
+</list>
+</td>
+<td>
+<p><bold>das Drachenviereck</bold></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_021.jpg"/></p>
+<list list-type="bullet">
+<list-item><p>2 Paar benachbarter Seiten sind gleich lang.</p></list-item>
+<list-item><p>2 gegen&#x00FC;berliegende Winkel sind gleich gro&#x00DF;.</p></list-item>
+</list>
+</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+<sec sec-type="task" id="pg243_task072">
+<label>72</label>
+<statement><p>Ordne jedem Viereck die Vierecksart zu.</p></statement>
+<p>&#x24B6; das Quadrat</p>   
+<p>&#x24B7; das Rechteck</p>
+<p>&#x24B8; die Raute</p>   
+<p>&#x24B9; das Parallelogramm</p>
+<p>&#x24BA; das Trapez</p>   
+<p>&#x24BB; das Drachenviereck</p>
+</sec>
+<sec id="pg243_s002">
+<list list-type="simple">
+<list-item><sec id="pg243_s001">
+<list list-type="simple">
+<list-item><p>&#x2460; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_243_fx_005.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+<list-item><sec id="pg243_s002">
+<list list-type="simple">
+<list-item><p>&#x2461; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_243_fx_006.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+<list-item><sec id="pg243_s003">
+<list list-type="simple">
+<list-item><p>&#x2462; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_243_fx_007.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+<list-item><sec id="pg243_s004">
+<list list-type="simple">
+<list-item><p>&#x2463; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_243_fx_008.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+<list-item><sec id="pg243_s005">
+<list list-type="simple">
+<list-item><p>&#x2464; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_243_fx_009.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+<list-item><sec id="pg243_s006">
+<list list-type="simple">
+<list-item><p>&#x2465; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_243_fx_010.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+</list>
+</sec>
+<sec sec-type="task" id="pg244_task073">
+<label>73</label>
+<statement><p>&#x00DC;bertrage die Vierecke in dein Heft.</p></statement>
+<sec sec-type="subtask" id="pg244_task001a">
+<label>a)</label>
+<p>Beschrifte die Eckpunkte, Seiten und Winkel.</p>
+</sec>
+<sec sec-type="subtask" id="pg244_task001b">
+<label>b)</label>
+<p>Nenne die Vierecksart.</p>
+</sec>
+</sec>
+<sec id="pg243_s003">
+<list list-type="simple">
+<list-item><sec id="pg243_s007">
+<list list-type="simple">
+<list-item><p>&#x2460; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_243_fx_011.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+<list-item><sec id="pg243_s008">
+<list list-type="simple">
+<list-item><p>&#x2461; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_243_fx_012.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+<list-item><sec id="pg243_s009">
+<list list-type="simple">
+<list-item><p>&#x2462; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_243_fx_013.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+</list>
+</sec>
+<sec sec-type="task" id="pg244_task074">
+<label>74</label>
+<statement><p>&#x00DC;bertrage die Tabelle in dein Heft. Trage die Vierecksarten in die Tabelle ein, die diese Eigenschaft besitzt.</p></statement>
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Eigenschaft</bold></p></td>
+<td><p><bold>Vierecksart</bold></p></td>
+</tr>
+<tr>
+<td><p>4 rechte Winkel</p></td>
+<td><p>Quadrat, &#x2026;</p></td>
+</tr>
+<tr>
+<td><p>4 Seiten sind gleich lang.</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Die gegen&#x00FC;berliegenden Seiten sind gleich lang.</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Die benachbarten Seiten sind gleich lang.</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</sec><sec sec-type="task" id="pg244_task075">
+<label>75</label>
+<statement><p>Zeichne eine Planfigur und konstruiere das Viereck.</p></statement>
+<sec sec-type="subtask" id="pg245_task001a">
+<label>a)</label>
+<p>Quadrat mit a = 4,5 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg245_task001b">
+<label>b)</label>
+<p>Rechteck mit a = 3,5 cm und b = 5 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg245_task001c">
+<label>c)</label>
+<p>Parallelogramm mit a = 6 cm, b = 4 cm und <italic>&#x03B2;</italic> = 100&#x00B0;</p>
+</sec>
+<sec sec-type="subtask" id="pg245_task001d">
+<label>d)</label>
+<p>Raute mit a = 5,5 cm und <italic>&#x03B1;</italic> = 70&#x00B0;</p>
+</sec>
+</sec>
+<?pageStart pdf="248" pagination="244"?>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg128_task006"><xref ref-type="link-LookItUp" rid="pg128_task006">Seite 128 Nr. 6</xref></xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Umfang von Dreiecken und Vierecken berechnen</bold></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>Der <bold>Umfang u einer Fl&#x00E4;che</bold> ist die Summe der Seitenl&#x00E4;ngen.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Den <bold>Umfang eines Dreiecks</bold> mit den Seitenl&#x00E4;ngen a, b und c berechnest du so:</p>
+<p>u = a + b + c</p>
+</td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_022.jpg"/></p></td>
+<td>
+<p><italic>gegeben:</italic> a = 4 cm; b= 5 cm; c = 3 cm</p>
+<p><italic>gesucht:</italic> u</p>
+<p>u = 4 cm + 5 cm + 3 cm = 12 cm</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Den <bold>Umfang eines Vierecks</bold> mit den Seitenl&#x00E4;ngen a, b, c und d berechnest du so:</p>
+<p>u = a + b + c + d</p>
+</td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_023.jpg"/></p></td>
+<td>
+<p><italic>gegeben:</italic> a = 6 cm; b = 3,6 cm; c = 4 cm; d = 5 cm</p>
+<p><italic>gesucht:</italic> u</p>
+<p>u = 6 cm + 3,6 cm + 4 cm + 5 cm = 18,6 cm</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>F&#x00FC;r manche Vierecksarten kannst du den Umfang auch mit einer Formel berechnen.</p>
+<p>Quadrat und Raute:</p>
+<p>u = 4 &#x00B7; a</p>
+</td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_024.jpg"/></p></td>
+<td>
+<p><italic>gegeben:</italic> a = 2,5 cm</p>
+<p><italic>gesucht:</italic> u</p>
+<p>u = 4 &#x00B7; 2,5 cm = 10 cm</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Rechteck, Parallelogramm und Drachenviereck:</p>
+<p>u = 2 &#x00B7; a + 2 &#x00B7; b</p>
+</td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_025.jpg"/></p></td>
+<td>
+<p><italic>gegeben:</italic> a = 3,6 cm; b = 6,3 cm</p>
+<p><italic>gesucht:</italic> u</p>
+<p>u = 2 &#x00B7; 3,6 cm + 2 &#x00B7; 6,3 cm</p>
+<p>= 7,2 cm + 12,6 cm = 19,8 cm</p>
+</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+<sec sec-type="task" id="pg245_task076">
+<label>76</label>
+<statement><p>Berechne den Umfang der Vielecke.</p></statement>
+<sec sec-type="subtask" id="pg245_task001a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_245_fx_001.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg245_task001b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_245_fx_002.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg246_task001c">
+<label>c)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_246_fx_001.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg246_task001d">
+<label>d)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_246_fx_002.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg246_task001e">
+<label>e)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_246_fx_003.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg246_task001f">
+<label>f)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_246_fx_004.jpg"/>
+</fig>
+</sec>
+</sec><sec sec-type="task" id="pg245_task077">
+<label>77</label>
+<statement><p>Berechne den Umfang der Vielecke.</p></statement>
+<sec sec-type="subtask" id="pg246_task001a">
+<label>a)</label>
+<p>Dreieck: a= 4,3 cm; b = 5,3 cm; c = 6,7 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg246_task001b">
+<label>b)</label>
+<p>Raute: a = 5,1 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg246_task001c">
+<label>c)</label>
+<p>Parallelogramm: a = 7,3 cm; b = 4,8 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg246_task001d">
+<label>d)</label>
+<p>Trapez: a = 6 cm; b = 3,5 cm; c = 4 cm; d = 3,5 cm</p>
+</sec>
+</sec>
+<?pageStart pdf="249" pagination="245"?>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg073_task012"><xref ref-type="link-LookItUp" rid="pg073_task012">Seite 73 Nr. 12</xref></xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg128_task007"><xref ref-type="link-LookItUp" rid="pg128_task007">Seite 128 Nr. 7</xref></xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Fl&#x00E4;cheninhalt von Dreiecken berechnen</bold></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p><bold>Fl&#x00E4;cheninhalt A eines rechtwinkligen Dreiecks</bold></p>
+<p>Multipliziere die L&#x00E4;ngen der beiden Seiten, die den rechten Winkel bilden und teile das Ergebnis durch 2. Wenn a und b den rechten Winkel bilden, dann rechne:</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{A}} = \frac{1}{2} \cdot {\rm{a}} \cdot {\rm{b}} \)]]></tex-math></alternatives></inline-formula></p>
+</td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_026.jpg"/></p></td>
+<td>
+<p>a und b bilden einen rechten Winkel</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{A}} = \frac{1}{2} \cdot {4,7} {\rm{cm}} \cdot {3} {\rm{cm}} \cdot = {7,05} {\rm{cm}}^2 \)]]></tex-math></alternatives></inline-formula></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><bold>Fl&#x00E4;cheninhalt A eines beliebigen Dreiecks</bold></p>
+<p>Bestimme eine Grundseite g und die dazugeh&#x00F6;rige H&#x00F6;he h. Rechne:</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{A}} = \frac{1}{2} \cdot {\rm{g}} \cdot {\rm{h}}\)]]></tex-math></alternatives></inline-formula></p>
+</td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_027.jpg"/></p></td>
+<td>
+<p>h steht senkrecht auf g und verl&#x00E4;uft durch den Punkt C.</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{A}} = \frac{1}{2} \cdot {\rm{g}} \cdot {\rm{h}}\)]]></tex-math></alternatives></inline-formula></p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{A}} = \frac{1}{2} \cdot {3,5} {\rm{cm}} \cdot {2} {\rm{cm}} \cdot = {3,5} {\rm{cm}}^2 \)]]></tex-math></alternatives></inline-formula></p>
+</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+<sec sec-type="task" id="pg246_task078">
+<label>78</label>
+<statement><p>Berechne den Fl&#x00E4;cheninhalt des Dreiecks.</p></statement>
+<sec sec-type="subtask" id="pg246_task001a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_246_fx_005.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg246_task001b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_246_fx_006.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg246_task001c">
+<label>c)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_246_fx_007.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg246_task001d">
+<label>d)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_246_fx_008.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg246_task001e">
+<label>e)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_246_fx_009.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg246_task001f">
+<label>f)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_246_fx_010.jpg"/>
+</fig>
+</sec>
+</sec><sec sec-type="task" id="pg246_task079">
+<label>79</label>
+<statement><p>&#x00DC;bertrage die Dreiecke in dein Heft.</p></statement>
+<p>Zeichne alle H&#x00F6;hen ein.</p>
+<p>Miss und notiere die L&#x00E4;ngen der H&#x00F6;hen.</p>
+<p>Bestimme den Fl&#x00E4;cheninhalt des Dreiecks.</p>
+<sec sec-type="subtask" id="pg246_task001a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_246_fx_011.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg247_task001b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_247_fx_001.jpg"/>
+</fig>
+</sec>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg072_task005"><xref ref-type="link-LookItUp" rid="pg072_task005">Seite 72 Nr. 5</xref></xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Einen Kreis mit dem Zirkel zeichnen</bold></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Wenn der Durchmesser d des Kreises gegeben ist, dann teile den Durchmesser durch 2, um den Radius zu berechnen: Also r = d : 2</p>
+</td>
+</tr>
+<tr>
+<td>
+</sec>
+<sec id="pg245_s001">
+<list list-type="simple">
+<list-item><sec id="pg245_s001">
+<list list-type="simple">
+<list-item><p>&#x2460; Markiere den Mittelpunkt M des Kreises.</p></list-item>
+</list>
+</sec></list-item>
+</list>
+</sec></td>
+<td><sec id="pg245_s002">
+<list list-type="simple">
+<list-item><sec id="pg245_s002">
+<list list-type="simple">
+<list-item><p>&#x2461; Stelle den Zirkel auf die L&#x00E4;nge des Radius ein.</p></list-item>
+</list>
+</sec></list-item>
+</list>
+</sec></td>
+<td><sec id="pg245_s003">
+<list list-type="simple">
+<list-item><sec id="pg245_s003">
+<list list-type="simple">
+<list-item><p>&#x2462; Ziehe den Kreis um den Mittelpunkt.</p></list-item>
+</list>
+</sec></list-item>
+</list>
+</sec></td>
+</tr>
+<tr>
+<td colspan="3"><p>Zeichne einen Kreis mit dem Radius r = 3 cm.</p></td>
+</tr>
+<tr>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_009.jpg"/></p></p></td>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_010.jpg"/></p></p></td>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_011.jpg"/></p></p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+<sec sec-type="task" id="pg246_task080">
+<label>80</label>
+<statement><p>Zeichne den Kreis.</p></statement>
+<sec sec-type="subtask" id="pg247_task001a">
+<label>a)</label>
+<p>r = 4 cm</p>
+</sec>   
+<sec sec-type="subtask" id="pg247_task001b">
+<label>b)</label>
+<p>r = 5,5 cm</p>
+</sec>   
+<sec sec-type="subtask" id="pg247_task001c">
+<label>c)</label>
+<p>d = 10 cm</p>
+</sec>   
+<sec sec-type="subtask" id="pg247_task001d">
+<label>d)</label>
+<p>d = 7 cm</p>
+</sec>   
+<sec sec-type="subtask" id="pg247_task001e">
+<label>e)</label>
+<p>d = 5,8 cm</p>
+</sec>   
+<sec sec-type="subtask" id="pg247_task001f">
+<label>f)</label>
+<p>r = 12 cm</p>
+</sec>
+</sec>
+<?pageStart pdf="250" pagination="246"?>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg007_task007"><xref ref-type="link-LookItUp" rid="pg007_task007">Seite 7 Nr. 7</xref></xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg129_task008"><xref ref-type="link-LookItUp" rid="pg129_task008">Seite 129 Nr. 8</xref></xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Fl&#x00E4;cheninhalt von Vierecken berechnen</bold></p></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>Den <bold>Fl&#x00E4;cheninhalt A eines Quadrats</bold> berechnest du so:</p>
+<p><bold>A</bold> = a &#x00B7; a</p>
+</td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_028.jpg"/></p></td>
+<td>
+<p><italic>gegeben:</italic> a = 2 cm</p>
+<p><italic>gesucht:</italic> A</p>
+<p>A = 2 cm &#x00B7; 2 cm = 4 cm<sup>2</sup></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><bold>Fl&#x00E4;cheninhalt A eines Rechtecks</bold> mit den Seitenl&#x00E4;ngen a und b:</p>
+<p><bold>A</bold> = a &#x00B7; b</p>
+</td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_029.jpg"/></p></td>
+<td>
+<p><italic>gegeben:</italic> a = 3 cm; b = 2 cm</p>
+<p><italic>gesucht:</italic> A</p>
+<p>A = 3 cm &#x00B7; 2 cm = 6 cm<sup>2</sup></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><bold>Fl&#x00E4;cheninhalt A eines Parallelogramms:</bold></p>
+<p><bold>A</bold> = g &#x00B7; h</p>
+</td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_030.jpg"/></p></td>
+<td>
+<p><italic>gegeben:</italic> g = 3 cm; h = 2 cm</p>
+<p><italic>gesucht:</italic> A</p>
+<p>A = 3 cm &#x00B7; 2 cm = 6 cm<sup>2</sup></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><bold>Fl&#x00E4;cheninhalt A eines Trapezes:</bold></p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{A}} = \frac{(a + c)}{2} \cdot {\rm{h}}\)]]></tex-math></alternatives></inline-formula></p>
+</td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_031.jpg"/></p></td>
+<td>
+<p><italic>gegeben:</italic> a = 3 cm; c = 1,5 cm; h = 2 cm</p>
+<p><italic>gesucht:</italic> A</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{A}} = \frac{(3\text{cm} + 1,5\text{cm})}{2} \cdot {2} {\rm{cm}} = {4,5} {\rm{cm}}^2\)]]></tex-math></alternatives></inline-formula></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><bold>Fl&#x00E4;cheninhalt A eines Drachenvierecks:</bold></p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{A}} =\frac{\rm{e} \cdot \rm{f}}{2}\)]]></tex-math></alternatives></inline-formula></p>
+</td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_032.jpg"/></p></td>
+<td>
+<p><italic>gegeben:</italic> e = 4 cm; f = 2 cm</p>
+<p><italic>gesucht:</italic> A</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{A}} =\frac{4\text{cm} \cdot 3\text{cm}}{2} = 3\text{cm}\)]]></tex-math></alternatives></inline-formula></p>
+</td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+<sec sec-type="task" id="pg247_task081">
+<label>81</label>
+<statement><p>Berechne den Fl&#x00E4;cheninhalt des Vierecks.</p></statement>
+<sec sec-type="subtask" id="pg248_task001a">
+<label>a)</label>
+<p>Quadrat: a = 3 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg248_task001b">
+<label>b)</label>
+<p>Quadrat: a = 2,7 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg248_task001c">
+<label>c)</label>
+<p>Rechteck: a = 9 m; b = 5 m</p>
+</sec>
+<sec sec-type="subtask" id="pg248_task001d">
+<label>d)</label>
+<p>Parallelogramm: g = 5 cm; h = 6 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg248_task001e">
+<label>e)</label>
+<p>Trapez: a = 6 cm; c = 4 cm; h = 2,5 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg248_task001f">
+<label>f)</label>
+<p>Drachenviereck: e = 5,5 cm; f = 10 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg248_task001g">
+<label>g)</label>
+<p>Trapez: a = 5,3 cm; c = 4,5 cm; h = 3,8 cm</p>
+</sec>
+</sec><sec sec-type="task" id="pg247_task082">
+<label>82</label>
+<statement><p>Berechne den Fl&#x00E4;cheninhalt des Vierecks.</p></statement>
+<sec sec-type="subtask" id="pg248_task001a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_248_fx_001.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg248_task001b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_248_fx_002.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg248_task001c">
+<label>c)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_248_fx_003.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg248_task001d">
+<label>d)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_248_fx_004.jpg"/>
+</fig>
+</sec>
+</sec>
+<?pageStart pdf="251" pagination="247"?>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg046_task002"><xref ref-type="link-LookItUp" rid="pg046_task002">Seite 46 Nr. 2</xref></xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Fachbegriffe bei Winkeln</bold></p></td>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_012.jpg"/></p></p></td>
+</tr>
+<tr>
+<td>
+<p>Ein Winkel ist der Bereich zwischen zwei <bold>Schenkeln</bold>.</p>
+<p>Die Schenkel beginnen im <bold>Scheitelpunkt S</bold>.</p>
+<p>Du kennzeichnest einen Winkel mit einem <bold>Winkelbogen</bold>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Winkel benennst du mit griechischen Buchstaben:</p>
+<p><italic>&#x03B1; &#x03B2; &#x03B3; &#x03B4; &#x03B5;</italic></p>
+<p>Alpha Beta Gamma Delta Epsilon</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Winkelgr&#x00F6;&#x00DF;en misst du in <bold>Grad</bold>, kurz &#x00B0;.</p>
+<p>Ein Kreis hat 360&#x00B0;.</p>
+<p>Wenn du den Kreis in 360 gleich gro&#x00DF;e Teile teilst, so hat jedes Teil eine Winkelgr&#x00F6;&#x00DF;e von 1&#x00B0;.</p>
+</td>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_033.jpg"/></p></p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+<sec sec-type="task" id="pg248_task083">
+<label>83</label>
+<statement><p>&#x00DC;bertrage den Winkel ins Heft. Ordne den Nummern die Fachbegriffe Schenkel, Scheitelpunkt und Winkelbogen zu.</p></statement>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_241_fx_001.jpg"/></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg046_task003"><xref ref-type="link-LookItUp" rid="pg046_task003">Seite 46 Nr. 3</xref></xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Die Winkelarten</bold></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p><bold>spitzer Winkel</bold></p>
+<p>gr&#x00F6;&#x00DF;er als 0&#x00B0; und kleiner als 90&#x00B0;</p>
+<fig><img/></fig>
+</td>
+<td>
+<p><bold>rechter Winkel</bold></p>
+<p>genau 90&#x00B0;, die Schenkel sind senkrecht zueinander</p>
+<fig><img/></fig>
+</td>
+<td>
+<p><bold>gestreckter Winkel</bold></p>
+<p>genau 180&#x00B0;, es entsteht eine gerade Linie</p>
+<fig><img/></fig>
+</td>
+</tr>
+<tr>
+<td>
+<p><bold>stumpfer Winkel</bold></p>
+<p>gr&#x00F6;&#x00DF;er als 90&#x00B0; und kleiner als 180&#x00B0;</p>
+<fig><img/></fig>
+</td>
+<td>
+<p><bold>&#x00DC;berstumpfer Winkel</bold></p>
+<p>gr&#x00F6;&#x00DF;er als 180&#x00B0; und kleiner als 360&#x00B0;</p>
+<fig><img/></fig>
+</td>
+<td>
+<p><bold>Vollwinkel</bold></p>
+<p>genau 360&#x00B0;, die Schenkel liegen aufeinander</p>
+<fig><img/></fig></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+</sec><sec sec-type="task" id="pg248_task084">
+<label>84</label>
+<statement><p>Bestimme f&#x00FC;r jeden Winkel die Winkelart. Begr&#x00FC;nde deine Antwort.</p></statement>
+<sec sec-type="subtask" id="pg249_task001a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_249_fx_002.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg249_task001b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_249_fx_003.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg249_task001c">
+<label>c)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_249_fx_004.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg249_task001d">
+<label>d)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_249_fx_005.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg249_task001e">
+<label>e)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_249_fx_006.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg249_task001f">
+<label>f)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_249_fx_007.jpg"/>
+</fig>
+</sec>
+<sec sec-type="subtask" id="pg249_task001g">
+<label>g)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_249_fx_008.jpg"/>
+</fig>
+</sec>
+</sec><sec sec-type="task" id="pg248_task085">
+<label>85</label>
+<statement><p>Bestimme die Winkelart.</p></statement>
+<sec sec-type="subtask" id="pg249_task001a">
+<label>a)</label>
+<p><italic>&#x03B1;</italic> = 105&#x00B0;</p>
+</sec>
+<sec sec-type="subtask" id="pg249_task001b">
+<label>b)</label>
+<p><italic>&#x03B2;</italic> = 90&#x00B0;</p>
+</sec>
+<sec sec-type="subtask" id="pg249_task001c">
+<label>c)</label>
+<p><italic>&#x03B3;</italic> = 46&#x00B0;</p>
+</sec>
+<sec sec-type="subtask" id="pg249_task001d">
+<label>d)</label>
+<p><italic>&#x03B4;</italic> = 360&#x00B0;</p>
+</sec>
+<sec sec-type="subtask" id="pg249_task001e">
+<label>e)</label>
+<p><italic>&#x03B5;</italic> = 255&#x00B0;</p>
+</sec>
+</sec>
+<?pageStart pdf="252" pagination="248"?>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg046_task004"><xref ref-type="link-LookItUp" rid="pg046_task004">Seite 46 Nr. 4</xref></xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg072_task001"><xref ref-type="link-LookItUp" rid="pg072_task001">Seite 72 Nr. 1</xref></xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Winkelgr&#x00F6;&#x00DF;en messen</bold></p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>So kannst du die Winkelgr&#x00F6;&#x00DF;e messen.</p>
+<list list-type="order">
+<list-item><p>Lege die Zeichenkante des Geodreiecks genau an einen Schenkel.</p>
+<p>Der Nullpunkt des Geodreiecks muss genau auf dem Scheitelpunkt S des Winkels liegen.</p></list-item>
+<list-item><p>W&#x00E4;hle die Skala, die beim angelegten Schenkel mit 0&#x00B0; beginnt.</p></list-item>
+<list-item><p>Lies die Winkelgr&#x00F6;&#x00DF;e am anderen Schenkel ab.</p></list-item></list></td>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_034.jpg"/></p></p>
+<p>Die Winkelgr&#x00F6;&#x00DF;e betr&#x00E4;gt 60&#x00B0;.</p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+<sec sec-type="task" id="pg249_task086">
+<label>86</label>
+<statement><p>&#x00DC;berlege zuerst, ob der Winkel spitz oder stumpf ist. Sch&#x00E4;tze anschlie&#x00DF;end die Winkelgr&#x00F6;&#x00DF;e. Miss dann die Winkelgr&#x00F6;&#x00DF;e.</p></statement>
+
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_249_fx_001.jpg"/></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg046_task005"><xref ref-type="link-LookItUp" rid="pg046_task005">Seite 46 Nr. 5</xref></xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg072_task002"><xref ref-type="link-LookItUp" rid="pg072_task002">Seite 72 Nr. 2</xref></xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Winkel zeichnen</bold></p></td>
+<td><p>Zeichne einen Winkel von 60&#x00B0;.</p></td>
+</tr>
+<tr>
+<td><p>So kannst du einen Winkel zeichnen.</p>
+<list list-type="order">
+<list-item><p>Zeichne einen Schenkel mit dem Scheitelpunkt S.</p></list-item>
+<list-item><p>Lege die Zeichenkante des Geodreiecks auf den Schenkel.</p>
+<p>Der Nullpunkt des Geodreiecks muss genau auf dem Scheitelpunkt des Winkels liegen.</p></list-item>
+<list-item><p>W&#x00E4;hle die Skala, die beim angelegten Schenkel mit 0&#x00B0; beginnt.</p></list-item>
+<list-item><p>Markiere einen Strich an der Gradzahl, die du zeichnen sollst.</p></list-item>
+<list-item><p>Verbinde deine Markierung mit dem Scheitelpunkt S. Das ist der zweite Schenkel des Winkels.</p></list-item>
+<list-item><p>Trage den Winkelbogen ein und beschrifte den Winkel.</p></list-item></list></td>
+<td><p><fig><img/></fig></p>
+<p><fig><img/></fig></p>
+<p><fig><img/></fig></p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+</sec><sec sec-type="task" id="pg249_task087">
+<label>87</label>
+<statement><p>Zeichne die Winkel in dein Heft.</p></statement>
+<sec sec-type="subtask" id="pg250_task001a">
+<label>a)</label>
+<p><italic>&#x03B1;</italic> = 70&#x00B0;</p>
+</sec>
+<sec sec-type="subtask" id="pg250_task001b">
+<label>b)</label>
+<p><italic>&#x03B2;</italic> = 140&#x00B0;</p>
+</sec>
+<sec sec-type="subtask" id="pg250_task001c">
+<label>c)</label>
+<p><italic>&#x03B3;</italic> = 35&#x00B0;</p>
+</sec>
+<sec sec-type="subtask" id="pg250_task001d">
+<label>d)</label>
+<p><italic>&#x03B4;</italic> = 115&#x00B0;</p>
+</sec>
+<sec sec-type="subtask" id="pg250_task001e">
+<label>e)</label>
+<p><italic>&#x03B5;</italic> = 68&#x00B0;</p>
+</sec>
+</sec>
+<?pageStart pdf="253" pagination="249"?>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg129_task011"><xref ref-type="link-LookItUp" rid="pg129_task011">Seite 129 Nr. 11</xref></xref>, <xref ref-type="link-LookItUp" rid="pg129_task012">12</xref>, <xref ref-type="link-LookItUp" rid="pg129_task013">13</xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Eigenschaften, Netze und Schr&#x00E4;gbilder von W&#x00FC;rfel und Quader</bold></p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Quader und W&#x00FC;rfel haben 6 Fl&#x00E4;chen, 12 Kanten und 8 Ecken.</p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Ein <bold>Quader</bold> wird durch Rechtecke begrenzt.</p> 
+<p>Jeweils zwei Rechtecke sind gleich gro&#x00DF;.</p> 
+<p>Diese Rechtecke liegen sich gegen&#x00FC;ber.</p></td>
+<td><p>Ein <bold>W&#x00FC;rfel</bold> wird durch Quadrate begrenzt.</p> 
+<p>Alle Quadrate sind gleich gro&#x00DF;.</p> 
+<p>Der W&#x00FC;rfel ist ein besonderer Quader.</p></td>
+</tr>
+<tr>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_035.jpg"/></p></p></td>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_036.jpg"/></p></p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p>So zeichnest du das <bold>Schr&#x00E4;gbild</bold> eines Quaders.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><sec id="pg249_s001">
+<sec id="pg249_s002">
+<label>1.</label>
+<p specific-use="mer-Lernziel">Zeichne die Kanten der vorderen Fl&#x00E4;che.</p>
+</sec>
+</sec></td>
+<td><sec id="pg249_s003">
+<sec id="pg249_s004">
+<label>2.</label>
+<p specific-use="mer-Lernziel">Zeichne die H&#x00E4;lfte der Breite schr&#x00E4;g nach hinten in einem Winkel von 45&#x00B0; ein.</p>
+</sec>
+</sec></td>
+<td><sec id="pg249_s005">
+<sec id="pg249_s006">
+<label>3.</label>
+<p specific-use="mer-Lernziel">Verbinde die Eckpunkte. Strichle die Kanten, die du nicht siehst.</p>
+</sec>
+</sec></td>
+</tr>
+<tr>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_013.jpg"/></p></p></td>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_014.jpg"/></p></p></td>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_001_fx_015.jpg"/></p></p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p>Das <bold>Netz eines K&#x00F6;rpers</bold> entsteht, wenn du den K&#x00F6;rper auseinanderfaltest.</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Das <bold>Netz eines W&#x00FC;rfels</bold> besteht aus 6 gleich gro&#x00DF;en Quadraten.</p></td>
+<td><p>Das <bold>Netz eines Quaders</bold> besteht aus 6 Rechtecken.</p></td>
+</tr>
+<tr>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_037.jpg"/></p></p></td>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_038.jpg"/></p></p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+<sec sec-type="task" id="pg250_task088">
+<label>88</label>
+<statement><p>Entscheide, ob die Aussagen wahr sind. Begr&#x00FC;nde.</p></statement>
+<sec sec-type="subtask" id="pg250_task001a">
+<label>a)</label>
+<p>Ein Quader wird durch 6 Quadrate begrenzt.</p>
+</sec>
+<sec sec-type="subtask" id="pg250_task001b">
+<label>b)</label>
+<p>Ein W&#x00FC;rfel hat 6 Ecken.</p>
+</sec>
+<sec sec-type="subtask" id="pg250_task001c">
+<label>c)</label>
+<p>Bei einem W&#x00FC;rfel sind alle Kanten gleich lang.</p>
+</sec>
+<sec sec-type="subtask" id="pg250_task001d">
+<label>d)</label>
+<p>Ein Quader hat 12 Kanten.</p>
+</sec>
+</sec><sec sec-type="task" id="pg250_task089">
+<label>89</label>
+<statement><p>Zeichne das Schr&#x00E4;gbild.</p></statement>
+<sec sec-type="subtask" id="pg250_task001a">
+<label>a)</label>
+<p>W&#x00FC;rfel mit a = 4 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg250_task001b">
+<label>b)</label>
+<p>Quader: 5 cm lang, 6 cm breit und 2,5 cm hoch</p>
+</sec>
+</sec><sec sec-type="task" id="pg250_task090">
+<label>90</label>
+<statement><p>Aus welchen Netzen kannst du einen Quader falten?</p></statement>
+
+</sec>
+<sec id="pg250_s001">
+<list list-type="simple">
+<list-item><sec id="pg249_s007">
+<list list-type="simple">
+<list-item><p>&#x2460; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_250_fx_001.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+<list-item><sec id="pg249_s008">
+<list list-type="simple">
+<list-item><p>&#x2461; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_250_fx_002.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+<list-item><sec id="pg249_s009">
+<list list-type="simple">
+<list-item><p>&#x2462; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_250_fx_003.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+<list-item><sec id="pg250_s001">
+<list list-type="simple">
+<list-item><p>&#x2463; <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_250_fx_004.jpg"/></fig></p></list-item>
+</list>
+</sec></list-item>
+</list>
+</sec>
+<?pageStart pdf="254" pagination="250"?>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg129_task014"><xref ref-type="link-LookItUp" rid="pg129_task014">Seite 129 Nr. 14</xref></xref></p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Oberfl&#x00E4;cheninhalt und Volumen von W&#x00FC;rfel und Quader</bold></p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Der <bold>Oberfl&#x00E4;cheninhalt des Quaders</bold> ist die Summe des Fl&#x00E4;cheninhalts der 6 Rechtecke.</p>
+<p>Fl&#x00E4;cheninhalt des &#x2026;</p>
+<p>&#x2026; gr&#x00FC;nen Rechtecks: a &#x00B7; b</p>
+<p>&#x2026; blauen Rechtecks: a &#x00B7; c</p>
+<p>&#x2026; roten Rechtecks: b &#x00B7; c</p>
+<p>Jedes Rechteck kommt zweimal vor.</p></td>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_039.jpg"/></p></p></td>
+</tr>
+<tr>
+<td><p>Der Oberfl&#x00E4;cheninhalt O eines Quaders ist:</p>
+<p>O = 2 &#x00B7; a &#x00B7; b + 2 &#x00B7; a &#x00B7; c + 2 &#x00B7; b &#x00B7; c</p>
+<p>oder O = 2 &#x00B7; (a &#x00B7; b + a &#x00B7; c + b &#x00B7; c)</p></td>
+<td><p>O = 2 &#x00B7; a &#x00B7; b + 2 &#x00B7; a &#x00B7; c + 2 &#x00B7; b &#x00B7; c</p>
+<p>O = 2 &#x00B7; 4 cm &#x00B7; 8 cm + 2 &#x00B7; 4 cm &#x00B7; 2cm + 2 &#x00B7; 8 cm &#x00B7; 2 cm</p>
+<p>= 64 cm<sup>2</sup> + 16 cm<sup>2</sup> + 32 cm<sup>2</sup> = 112 cm<sup>2</sup></p>
+<p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_040.jpg"/></p></p></td>
+</tr>
+<tr>
+<td><p>Der <bold>Oberfl&#x00E4;cheninhalt des W&#x00FC;rfels</bold> besteht aus 6 Quadraten.</p>
+<p>Alle Quadrate sind gleich gro&#x00DF;.</p>
+<p>Fl&#x00E4;cheninhalt eines Quadrats: A = a &#x00B7; a</p>
+<p>Oberfl&#x00E4;cheninhalt eines W&#x00FC;rfels:</p>
+<p>O = 6 &#x00B7; a &#x00B7; a</p></td>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_041.jpg"/></p></p>
+<p>O = 6 &#x00B7; a &#x00B7; a</p>
+<p>O = 6 &#x00B7; 4 cm &#x00B7; 4 cm = 96 cm<sup>2</sup></p></td>
+</tr>
+<tr>
+<td><p><bold>Volumen eines Quaders und eines W&#x00FC;rfels</bold></p>
+<p>Multipliziere die drei Kantenl&#x00E4;ngen.</p>
+<p>Volumen eines Quaders: V = a &#x00B7; b &#x00B7; c</p>
+<p>Volumen eines W&#x00FC;rfels: V = a &#x00B7; a &#x00B7; a</p></td>
+<td><p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_042.jpg"/></p></p>
+<p>V = a &#x00B7; b &#x00B7; c</p>
+<p>V = 4 cm &#x00B7; 8cm &#x00B7; 2 cm = 64 cm<sup>3</sup></p>
+<p><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_006_fx_043.jpg"/></p></p>
+<p>V = a &#x00B7; a &#x00B7; a</p>
+<p>V = 4 cm &#x00B7; 4 cm &#x00B7; 4 cm = 64 cm<sup>3</sup></p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+<sec sec-type="task" id="pg250_task091">
+<label>91</label>
+<statement><p>Berechne den Oberfl&#x00E4;cheninhalt O.</p></statement>
+<sec sec-type="subtask" id="pg250_task001a">
+<label>a)</label>
+<p>Quader mit a = 3 cm, b = 5 cm und c = 10 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg250_task001b">
+<label>b)</label>
+<p>W&#x00FC;rfel mit a = 7 dm</p>
+</sec>
+<sec sec-type="subtask" id="pg250_task001c">
+<label>c)</label>
+<p>Quader mit a = 2,5 m, b = 6 m und c = 4,5 m</p>
+</sec>
+<sec sec-type="subtask" id="pg250_task001d">
+<label>d)</label>
+<p>W&#x00FC;rfel mit a = 1,2 mm</p>
+</sec>
+</sec><sec sec-type="task" id="pg250_task092">
+<label>92</label>
+<statement><p>Berechne das Volumen V.</p></statement>
+<sec sec-type="subtask" id="pg250_task001a">
+<label>a)</label>
+<p>Quader mit a = 3 cm, b = 5 cm und c = 8 cm</p>
+</sec>
+<sec sec-type="subtask" id="pg250_task001b">
+<label>b)</label>
+<p>W&#x00FC;rfel mit a = 3 m</p>
+</sec>
+<sec sec-type="subtask" id="pg250_task001c">
+<label>c)</label>
+<p>Quader mit a = 1,5 m, b = 4 m und c = 2,5 m</p>
+</sec>
+<sec sec-type="subtask" id="pg250_task001d">
+<label>d)</label>
+<p>W&#x00FC;rfel mit a = 4,2 cm</p>
+</sec>
+
+</book>
+
+</book>
