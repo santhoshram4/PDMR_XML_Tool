@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="jats-html.xsl"?>
+<!DOCTYPE book PUBLIC "-//NLM//DTD BITS Book Interchange DTD v2.2 20250930//EN" "BITS-book2-2.dtd">
+<book xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="2.2">
+<?pageStart pdf="9" pagination="5"?>
+<head1><bold>1</bold></head1>
+<head1><bold>Rationale Zahlen</bold></head1>
+
+<!-- Book part-->
+<?pageStart pdf="10" pagination="6"?>
+<head2><bold>Wiederholung</bold></head2>
+<head2><bold>qweijcx</bold></head2>
+
+<sec>
+<label>1 Kompetenz</label>
+<p>Ich kann Zahlen vergleichen.</p>
+</sec>
+
+<!-- Task opening-->
+<sec>
+<label>Aufgabe</label>
+<p><bold>1</bold> Vergleiche die Zahlen.</p>
+<p>Setze im Heft &#x003C;, &#x003E; oder = ein.</p>
+
+<!-- Sub-Task-->
+<p>a) 4 &#x25CF; 9</p>
+<p>b) 3,5 &#x25CF; 2,5</p>
+<p>c) 0 &#x25CF; 0,1</p>
+<p>d) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{1}{3} \bullet \frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
+<!-- Task closing-->
+
+<!-- link-LookItUp-->
+<p>&#x2192; Seite 196 Nr. 4, 5</p>
+<p>&#x2192; Seite 204</p>
+
+<!-- link-tosolution -->
+<p><bold>Rationale Zahlen addieren und subtrahieren</bold> &#x2192; Seiten 16 und 20</p>
+
+<!-- link-tosolution -->
+<p><bold>Rationale Zahlen multiplizieren und dividieren</bold> &#x2192; Seite 24</p>
+
+
+<!-- Nextlevel_Task-->
+<p><bold><sec-meta>mer-</sec-meta>&#x25B8;12 <sec-meta>mer-</sec-meta>&#x25B8;10 <sec-meta>mer-</sec-meta>&#x25B8;9</bold></p>
+
+<p><bold>&#x25B8;10 &#x25B8;13 &#x25B8;20</bold></p>
+</sec>
+
+<!-- Task-->
+<sec>
+<label>2 Kompetenz</label>
+<p>Ich kann einen Zahlenstrahl zeichnen und einteilen.</p>
+</sec>
+<sec>
+<label>Aufgabe</label>
+<p><bold>2</bold> Ist der Zahlenstrahl richtig gezeichnet und eingeteilt?</p>
+<p>Verbessere in deinem Heft.</p>
+<p>a) <fig><img/></fig></p>
+<p>b) <fig><img/></fig></p>
+<p>c) <fig><img/></fig></p>
+</sec>
+
+
+<!-- single image-->
+<fig><img/></fig>
+
+
+<!-- Task-->
+<p><bold>26</bold> Wandle in eine gemischte Zahl um.</p>
+<!-- Sub-Task-->
+<p>a) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{3}\)]]></tex-math></alternatives></inline-formula></p>
+<p>b) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{4}\)]]></tex-math></alternatives></inline-formula></p>
+<p>c) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{5}\)]]></tex-math></alternatives></inline-formula></p>
+<p>d) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{10}{7}\)]]></tex-math></alternatives></inline-formula></p>
+<p>e) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{8}{3}\)]]></tex-math></alternatives></inline-formula></p>
+
+
+<!-- table -->
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p>Rechne so weiter:</p>
+<p>Achte auf die Zeichen vor den Zahlen.</p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+
+
+<?pageStart pdf="79" pagination="75"?>
+
+<!-- Task-->
+<p><bold>2</bold> Berechne den Umfang des Vierecks.</p>
+<!-- sub-Task-->
+<p>a) a = 6,5 m; b = 7 m; c = 10,5 m; d = 8,5 m</p>
+<p>b) a = 12,3 m; b = 5,5 m; c = 25,7 m; d = 9,5 m</p>
+<p>c) a = 276 m; b = 105 m; c = 723 m; d = 481 m</p>
+<p>d) a = 60 m 50 cm; b = 70,1 m; c = 110 m; d = 30 m 80 cm</p>
+<!-- Task-->
+<p><bold>3</bold> &#x00DC;bertrage die Figuren in dein Heft.</p>
+<fig><img/></fig>
+<p>a) Beschrifte vollst&#x00E4;ndig.</p>
+<p>b) Sch&#x00E4;tze zuerst den Umfang. Miss dann die L&#x00E4;nge der Seiten und berechne den Umfang. Vergleiche mit deiner Sch&#x00E4;tzung.</p>
+<p><bold>4</bold> Nenne die Vierecksart. Berechne den Umfang.</p>
+<p>a)</p>
+<fig><img/></fig>
+<p>b)</p>
+<fig><img/></fig>
+<p>c)</p>
+<fig><img/></fig>
+<p><bold>5</bold> In die Rechnungen von Fiona und Amar haben sich Fehler eingeschlichen.</p>
+<fig><img/></fig>
+<p>Fiona:</p>
+<p>u = a + b</p>
+<p>u = 12,5 m + 6,4 m</p>
+<p>u = 18,9 m</p>
+<p>Amar:</p>
+<p>u = 2 &#x00B7; a + 2 &#x00B7; b</p>
+<p>u = 2 &#x00B7; 12,5 + 6,4</p>
+<p>u = 31,4 m</p>
+<p>a) Beschreibe die Fehler.</p>
+<p>b) Rechne richtig im Heft.</p>
+
+
+
+
+
+
+<!-- sangeeth-->
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="jats-html.xsl"?>
+<!DOCTYPE book PUBLIC "-//NLM//DTD BITS Book Interchange DTD v2.2 20250930//EN" "BITS-book2-2.dtd">
+<book xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="2.2">
+<?pageStart pdf="255" pagination="251"?>
+<p>&#x2192; Seite 152 Nr. 7, 8</p>
+<p>&#x2192; Seite 153 Nr. 8</p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Fachbegriffe bei der Wahrscheinlichkeitsrechnung</bold></p>
+<p>An diesen Merkmalen erkennst du ein <bold>Zufallsexperiment</bold>:</p>
+<list list-type="order">
+<list-item><p>Du kannst das Ergebnis nicht vorhersagen oder beeinflussen.</p></list-item>
+<list-item><p>Du kennst alle m&#x00F6;glichen Ergebnisse.</p></list-item>
+<list-item><p>Du kannst das Experiment beliebig oft wiederholen.</p></list-item></list></td>
+<td><p>In Melissas Tasche ist ein rotes, ein gelbes, ein wei&#x00DF;es und ein violettes Kaugummi. Melissa zieht ein Kaugummi aus ihrer Tasche.</p>
+<p>Es handelt sich um ein Zufallsexperiment, denn:</p>
+<list list-type="order">
+<list-item><p>Du kannst nicht vorhersagen oder beeinflussen, ob Melissa das rote, das gelbe, das wei&#x00DF;e oder das violette Kaugummi zieht.</p></list-item>
+<list-item><p>m&#x00F6;gliche Ergebnisse: rot, gelb, wei&#x00DF; oder violett</p></list-item>
+<list-item><p>Melissa kann immer wieder erneut ziehen, wenn sie das gezogene Kaugummi wieder in die Tasche steckt.</p></list-item></list></td>
+</tr>
+<tr>
+<td><p>Wenn du mehrere <bold>Ergebnisse</bold> zusammenfasst, dann nennst du das ein <bold>Ereignis</bold>.</p></td>
+<td><p>Die Ergebnisse &#x201E;gelbes Kaugummi&#x201C; und &#x201E;wei&#x00DF;es Kaugummi&#x201C; fasst du zum Ereignis &#x201E;gelbes oder wei&#x00DF;es Kaugummi&#x201C; zusammen.</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
+</tr>
+<tr>
+<td><p>Die <bold>Wahrscheinlichkeit</bold> f&#x00FC;r ein Ergebnis oder ein Ereignis wird mit <bold>P( )</bold> abgek&#x00FC;rzt.</p> 
+<p>In die Klammer beschreibst du das Ergebnis oder Ereignis.</p></td>
+<td><p>Die Wahrscheinlichkeit f&#x00FC;r das Ereignis &#x201E;gelbes oder wei&#x00DF;es Kaugummi&#x201C; schreibst du:</p>
+<p>P(gelbes oder wei&#x00DF;es Kaugummi).</p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+<sec sec-type="task" id="pg_task0093">
+<statement><p>Entscheide, ob es sich um ein Zufallsexperiment handelt.</p></statement>
+<sec sec-type="subtask" id="pg_task00a">
+<p>Du wirfst eine M&#x00FC;nze.</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00b">
+<p>Du wirfst den Deckel einer Flasche.</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00c">
+<p>Du ziehst eine Karte aus einem Kartenspiel.</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00d">
+<p>Du ziehst dein Lieblings-T-Shirt an.</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00e">
+<p>Du ziehst eine Kugel aus einer Schale, in der sich nur rote Kugeln befinden.</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00f">
+<p>Du ziehst eine Kugel aus einer Schale, in der sich rote und wei&#x00DF;e Kugeln befinden.</p>
+</sec>
+<sec sec-type="task" id="pg_task0094">
+<statement><p>Nenne alle m&#x00F6;glichen Ergebnisse.</p></statement>
+<sec sec-type="subtask" id="pg_task00a">
+<p>Du wirfst eine 50-Cent-M&#x00FC;nze.</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00b">
+<p>Du w&#x00FC;rfelst mit einem Spielw&#x00FC;rfel.</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00c">
+<p>Du drehst ein Gl&#x00FC;cksrad mit den Zahlen 0 bis 5.</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00d">
+<p>Du wirfst den Deckel einer Wasserflasche.</p>
+</sec>
+<sec sec-type="task" id="pg_task0095">
+<statement><p>&#x00DC;bertrage den Text in dein Heft. Setze diese Fachbegriffe ein: Wahrscheinlichkeit, Ereignis, Ergebnis und Zufallsexperiment.</p></statement>
+<p>Can f&#x00FC;hrt ein _____ durch: Er dreht ein Gl&#x00FC;cksrad. Ein m&#x00F6;gliches _____ ist rot. Die _____ daf&#x00FC;r wird mit P(rot) abgek&#x00FC;rzt.</p> 
+<p>Can erh&#x00E4;lt einen Gewinn, wenn das _____ &#x201E;blau oder gr&#x00FC;n&#x201C; eintritt.</p>
+<?pageStart pdf="256" pagination="252"?>
+<p>&#x2192; Seite 153 Nr. 9, 10, 11, 13</p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Wahrscheinlichkeiten bei Laplace-Experimenten</bold></p></td>
+<td></td>
+</tr>
+<tr>
+<td><p>Wenn bei einem Zufallsexperiment jedes Ergebnis <bold>gleich wahrscheinlich </bold>ist, dann ist es ein Laplace-Experiment.</p>
+<p>Die Wahrscheinlichkeit f&#x00FC;r ein Ergebnis betr&#x00E4;gt:</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{P(Ergebnis) = }}\frac{{\rm{1}}}{{{\rm{Anzahl \, aller \, m\ddot oglichen \, Ergebnisse}}}}\)]]></tex-math></alternatives></inline-formula></p></td>
+<td><p>Jette wirft einen W&#x00FC;rfel.</p>
+<p>Das Werfen eines W&#x00FC;rfels ist ein Laplace-Experiment, weil alle Ergebnisse gleich wahrscheinlich sind: Eine 2 zu w&#x00FC;rfeln ist genauso wahrscheinlich wie eine 5 zu w&#x00FC;rfeln.</p>
+<p>Es gibt 6 m&#x00F6;gliche Ergebnisse: 1, 2, 3, 4, 5 und 6.</p>
+<p>Die Wahrscheinlichkeit eine 3 zu w&#x00FC;rfeln ist <inline-formula><alternatives><tex-math><![CDATA[\(\frac{{\rm{1}}}{{\rm{6}}}\)]]></tex-math></alternatives></inline-formula>:</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{P(3) = }}\frac{{\rm{1}}}{{\rm{6}}}\)]]></tex-math></alternatives></inline-formula></p></td>
+</tr>
+<tr>
+<td><p>So berechnest du bei einem Laplace-Experiment die Wahrscheinlichkeit f&#x00FC;r ein Ereignis:</p>
+<p>1. Z&#x00E4;hle alle einzelnen Ergebnisse, die zu dem Ereignis geh&#x00F6;ren.</p>
+<p>Das sind die g&#x00FC;nstigen Ergebnisse.</p>
+<p>2. Z&#x00E4;hle alle m&#x00F6;glichen Ergebnisse.</p>
+<p>3. Rechne so:</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{P(Ergebnis) = }}\frac{{{\rm{Anzahl \, der \, g\ddot unstigen \, Ergebnisse}}}}{{{\rm{Anzahl \, aller \, m\ddot oglichen \, Ergebnisse}}}}\)]]></tex-math></alternatives></inline-formula></p></td>
+<td><p>Jette m&#x00F6;chte die Wahrscheinlichkeit f&#x00FC;r das Ereignis &#x201E;Ich werfe eine Zahl gr&#x00F6;&#x00DF;er als 4.&#x201C; bestimmen.</p>
+<p>Es gibt 2 g&#x00FC;nstige Ergebnisse: 5, 6</p>
+<p>Es gibt 6 m&#x00F6;gliche Ergebnisse: 1, 2, 3, 4, 5, 6</p>
+<p>Also:</p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{P(gr\ddot o\beta er \, als 4) = }}\frac{{\rm{2}}}{{\rm{6}}}{\rm{ = }}\frac{{\rm{1}}}{{\rm{3}}}\)]]></tex-math></alternatives></inline-formula></p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+<sec sec-type="task" id="pg_task0096">
+<statement><p>Entscheide, ob es sich um ein Laplace-Experiment handeln kann.</p></statement>
+<sec sec-type="subtask" id="pg_task00a">
+<p>eine M&#x00FC;nze werfen</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00b">
+<p>den Deckel einer Wasserflasche werfen</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00c">
+<p>mit einem Quader w&#x00FC;rfeln</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00d">
+<p>mit einem W&#x00FC;rfel w&#x00FC;rfeln</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00e">
+<p>Gl&#x00FC;cksrad &#x2460; drehen</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00f">
+<p>Gl&#x00FC;cksrad &#x2461; drehen</p>
+<p>&#x2460; <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
+<p>&#x2461;<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
+</sec>
+<sec sec-type="task" id="pg_task0097">
+<statement><p>Gib die Wahrscheinlichkeit f&#x00FC;r das Ergebnis 3 an.</p></statement>
+<sec sec-type="subtask" id="pg_task00a">
+<p>W&#x00FC;rfeln mit einem sechsseitigen W&#x00FC;rfel</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00b">
+<p>Drehen von Gl&#x00FC;cksrad &#x2461;</p>
+</sec>
+<sec sec-type="task" id="pg_task0098">
+<statement><p>Gl&#x00FC;cksrad &#x2461; aus Aufgabe 105 wird gedreht. Notiere alle g&#x00FC;nstigen Ergebnisse f&#x00FC;r das Ereignis. Gib die Wahrscheinlichkeit f&#x00FC;r das Ereignis an.</p></statement>
+<sec sec-type="subtask" id="pg_task00a">
+<p>eine ungerade Zahl</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00b">
+<p>eine Zahl, die gr&#x00F6;&#x00DF;er als 6 ist (also mindestens eine 7)</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00c">
+<p>eine Primzahl</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00d">
+<p>eine Zahl, die kleiner als 8 ist (also h&#x00F6;chstens eine 7)</p>
+<?pageStart pdf="257" pagination="253"?>
+<p>&#x2192; Seite 153 Nr. 12</p>
+<boxed-text position="float">
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Ein Baumdiagramm zeichnen</bold></p>
+<p>Mit einem <bold>Baumdiagramm</bold> kannst du die Ergebnisse und Wahrscheinlichkeiten eines Zufallsexperiments darstellen.</p></td>
+<td><p>Das Gl&#x00FC;cksrad wird einmal gedreht.</p>
+<p>Es gibt drei m&#x00F6;gliche Ergebnisse: Rot, Gr&#x00FC;n, Blau</p></td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
+</tr>
+<tr>
+<td><p>Bestimme, wie viele Ergebnisse es gibt. Zeichne einen Baum mit so vielen &#x00C4;sten. Fasse dabei gleiche Ergebnisse zu einem Ast zusammen.</p>
+<p>Beschrifte das Baumdiagramm:</p>
+<p>&#x2013; Schreibe hinter jeden Ast das Ergebnis.</p>
+<p>&#x2013; Schreibe an jeden Ast die Wahrscheinlichkeit f&#x00FC;r das Ergebnis.</p></td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
+<td><p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{P(Rot) = }}\frac{{\rm{1}}}{{\rm{2}}}\)]]></tex-math></alternatives></inline-formula></p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{P(Gr\ddot un) = }}\frac{{\rm{1}}}{{\rm{4}}}\)]]></tex-math></alternatives></inline-formula></p>
+<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{P(Blau) = }}\frac{{\rm{1}}}{{\rm{4}}}\)]]></tex-math></alternatives></inline-formula></p></td>
+</tr>
+<tr>
+<td><p>An dem Baumdiagramm kannst du die Wahrscheinlichkeit f&#x00FC;r die Ereignisse ablesen oder neue Wahrscheinlichkeiten berechnen.</p></td>
+<td><p>Die Wahrscheinlichkeit f&#x00FC;r Rot betr&#x00E4;gt <inline-formula><alternatives><tex-math><![CDATA[\(\frac{{\rm{1}}}{{\rm{2}}}\)]]></tex-math></alternatives></inline-formula>.</p>
+<p>Die Wahrscheinlichkeit f&#x00FC;r Gr&#x00FC;n oder Blau betr&#x00E4;gt <inline-formula><alternatives><tex-math><![CDATA[\(\frac{{\rm{1}}}{{\rm{4}}} + \frac{{\rm{1}}}{{\rm{4}}} = \frac{{\rm{1}}}{{\rm{2}}}\)]]></tex-math></alternatives></inline-formula></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+</boxed-text>
+<sec sec-type="task" id="pg_task0099">
+<statement><p>Zeichne ein Baumdiagramm und beschrifte es.</p></statement>
+<sec sec-type="subtask" id="pg_task00a">
+<p>Eine M&#x00FC;nze wird geworfen. Die m&#x00F6;glichen Ergebnisse sind Zahl und Wappen.</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00b">
+<p>In einer Sch&#x00FC;ssel sind drei rote und zwei blaue Kugeln. Eine Kugel wird gezogen.</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00c">
+<p>Ein Spielw&#x00FC;rfel mit den Ziffern 1 bis 6 wird geworfen.</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00d">
+<p>In einer Sch&#x00FC;ssel sind f&#x00FC;nf rote, drei blaue und zwei gr&#x00FC;ne Kugeln. Eine Kugel wird gezogen.</p>
+<?pageStart pdf="258" pagination="254"?>
+<p>&#x2192; Seite 73 Nr. 14</p>
+<head2><bold><sec-meta>mer-</sec-meta> Dynamische Geometrie-Software</bold></head2>
+<p>Mit einer dynamischen Geometrie-Software (DGS) kannst du Figuren zeichnen und ver&#x00E4;ndern.</p>
+<p>So sieht das Fenster aus, in dem du arbeitest.</p>
+<p>In der Men&#x00FC;leiste stehen dir verschiedene Werkzeuge zur Verf&#x00FC;gung, die du in der Zeichenfl&#x00E4;che verwenden kannst.</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
+<p><bold>Wichtige Werkzeuge</bold></p>
+<table-wrap>
+<table>
+<tbody>
+<tr>
+<td><p><bold>Einen Punkt zeichnen</bold></p>
+<p>Klicke in der Werkzeugleiste auf das Symbol und w&#x00E4;hle &#x201E;Punkt&#x201C;.</p>
+<p>Klicke dann auf die Stelle im Zeichenfenster, an der der Punkt gesetzt werden soll.</p></td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
+</tr>
+<tr>
+<td><p><bold>Einen Punkt verschieben</bold></p>
+<p>Klicke in der Werkzeugleiste auf das Symbol und w&#x00E4;hle &#x201E;Bewege&#x201C;. Klicke dann auf den Punkt, den du verschieben m&#x00F6;chtest. Halte die linke Maustaste gedr&#x00FC;ckt und verschiebe den Punkt.</p></td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
+</tr>
+<tr>
+<td><p><bold>Eine Strecke zeichnen</bold></p>
+<p>Klicke in der Werkzeugleiste auf das Symbol und w&#x00E4;hle &#x201E;Strecke&#x201C;. Klicke dann auf den Anfangspunkt und danach auf den Endpunkt der Strecke.</p></td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
+</tr>
+<tr>
+<td><p><bold>Ein Dreieck zeichnen</bold></p>
+<p>Klicke in der Werkzeugleiste auf das Symbol und w&#x00E4;hle &#x201E;Vieleck&#x201C;. Klicke nacheinander auf alle Eckpunkte des Dreiecks. Zum Schluss klickst du erneut auf den ersten Eckpunkt.</p></td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
+</tr>
+<tr>
+<td><p><bold>Die Mittelsenkrechte zeichnen</bold></p>
+<p>Klicke in der Werkzeugleiste auf das Symbol. Es befindet sich im Untermen&#x00FC; besondere Geraden. Klicke dann auf zwei Punkte oder eine Strecke.</p></td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
+</tr>
+<tr>
+<td><p><bold>Die Winkelhalbierende zeichnen</bold></p>
+<p>Klicke in der Werkzeugleiste auf das Symbol. Es befindet sich im Untermen&#x00FC; besondere Geraden. Klicke gegen den Uhrzeigersinn zun&#x00E4;chst auf einen Punkt auf dem ersten Schenkel, danach auf Scheitelpunkt und zum Schluss auf einen Punkt auf dem zweiten Schenkel.</p></td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
+</tr>
+<tr>
+<td><p><bold>Schnittpunkte zeichnen</bold></p>
+<p>Klicke in der Werkzeugleiste auf das Symbol. Es befindet sich im Untermen&#x00FC; besondere Punkte. Klicke dann nacheinander auf die zwei Objekte, deren Schnittpunkte du suchst. Alternativ dazu kannst du auch direkt auf den Schnittpunkt klicken.</p></td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
+</tr>
+<tr>
+<td><p><bold>Einen Kreis um einen Mittelpunkt durch einen anderen Punkt zeichnen</bold></p>
+<p>Klicke in der Werkzeugleiste auf das Symbol. Klicke dann auf den Mittelpunktpunkt des Kreises und danach auf einen Punkt auf der Kreislinie.</p></td>
+<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
+</tr>
+</tbody>
+</table>
+</table-wrap>
+<sec sec-type="task" id="pg_task00100">
+<statement><p>Konstruiere mit einer dynamischen Geometrie-Software den Umkreis eines Dreiecks. Gehe in vier Schritten vor.</p></statement>
+<p>&#x2460; <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
+<p>Zeichne ein Dreieck ABC.</p>
+<p>&#x2461; <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
+<p>Zeichne die Mittelsenkrechten.</p>
+<p>&#x2462; <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
+<p>Bestimme den Schnittpunkt M der Mittelsenkrechten.</p>
+<p>&#x2463; <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
+<p>Zeichne einen Kreis um M durch die Eckpunkte des Dreiecks.</p>
+<?pageStart pdf="259" pagination="255"?>
+<head2><bold> <sec-meta>mer-</sec-meta> Tabellenkalkulation</bold></head2>
+<p>Mit einer Tabellenkalkulation kannst du Daten eingeben und verarbeiten.</p>
+<p>Wenn du das Programm &#x00F6;ffnest, siehst du ein Tabellenblatt mit Spalten (A, B, C, &#x2026;) und Zeilen (1, 2, 3, &#x2026;).</p>
+<p>Die Schnittstelle zwischen einer Zeile und einer Spalte hei&#x00DF;t Zelle.</p>
+<p>Wenn du eine Zelle anklickst, dann kannst du W&#x00F6;rter, Zahlen und Formeln eingeben.</p>
+<p>Das Wort &#x201E;Hallo&#x201C; steht in Spalte <bold>B</bold> und Zeile <bold>3</bold>. Also hei&#x00DF;t die Zelle <bold>B3</bold>.</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
+<p>Die Zelladresse zeigt an, welche Zelle du gerade bearbeitest.</p>
+<p>Die Formelzeile zeigt an, was du in die Zelle eintr&#x00E4;gst.</p>
+<p>Mit <bold>Formeln</bold> kannst du etwas <bold>berechnen</bold>. Formeln beginnen immer mit =.</p>
+<p>Zum Beispiel kannst du 12 und 3 auf diese Weise miteinander multiplizieren:</p>
+<list list-type="order">
+<list-item><p>Trage 12 in <bold>A1</bold> und 3 in <bold>A2</bold> ein.</p></list-item>
+<list-item><p>Trage in <bold>A3 =A1<sup>*</sup>A2</bold> ein.</p>
+<p>(<bold>*</bold> steht f&#x00FC;r &#x201E;Mal&#x201C;: Halte die Shift-Taste gedr&#x00FC;ckt und dr&#x00FC;cke gleichzeitig die Plus-Taste)</p></list-item>
+<list-item><p>Dr&#x00FC;cke ENTER.</p></list-item>
+<list-item><p>Das Ergebnis steht nun in <bold>A3</bold>. Die Formel siehst du weiterhin in der Formelzeile.</p></list-item></list>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
+</sec>
+<sec sec-type="task" id="pg_task00101">
+<statement><p>Den Umfang und Fl&#x00E4;cheninhalt von Rechtecken kannst du mit deiner Tabellenkalkulation ermitteln.</p></statement>
+<p>&#x00DC;bertrage die Eingaben in deine Tabellenkalkulation.</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00a">
+<p>In welcher Zelle steht das Wort &#x201E;Seitenl&#x00E4;ngen&#x201C;?</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00b">
+<p>Was steht in der Zelle <bold>B6</bold>?</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00c">
+<p>In welcher Zelle steht die Formel <bold>=2<sup>*</sup>C3+2<sup>*</sup>C4</bold>?</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00d">
+<p>Welche Formel steht in der Zelle <bold>C7</bold>?</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00e">
+<p>Berechne den Umfang und den Fl&#x00E4;cheninhalt f&#x00FC;r ein Rechteck mit den Seitenl&#x00E4;ngen a = 23 cm und b = 47 cm.</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
+</sec>
+<sec sec-type="task" id="pg_task00102">
+<statement><p>Vier Freundinnen gehen am Wochenende zelten.</p></statement>
+<p>Sie haben eine Kiste Wasser und eine Kiste Limonade gekauft.</p>
+<p>Eine Flasche Wasser kostet 0,50&#x00A0; &#x20AC;.</p>
+<p>Eine Flasche Limonade kostet 0,80&#x00A0; &#x20AC;.</p>
+<p>Hanna nutzt f&#x00FC;r die Abrechnung die Tabellenkalkulation.</p>
+<p>&#x00DC;bertrage die Eingaben in deine Tabellenkalkulation.</p>
+<p>Schreibe die Preise in den Zellen <bold>C2</bold> und <bold>C3</bold> als W&#x00E4;hrung.</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00a">
+<p>In welcher Zelle steht der Name Hanna?</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00b">
+<p>Was steht in der Zelle <bold>B3</bold>?</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00c">
+<p>In welche Zelle hat Hanna <bold>=B6+B7+B8+B9</bold> eingetragen? Was berechnet sie hier?</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00d">
+<p>In welche Zelle hat Hanna <bold>=B7<sup>*</sup>C2+C7<sup>*</sup>C3</bold> eingetragen? Was berechnet sie hier?</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00e">
+<p>Welche Formel hat Hanna in Zelle <bold>C11</bold> eingetragen? Was berechnet sie hier?</p>
+</sec>
+<sec sec-type="subtask" id="pg_task00f">
+<p>Welche Formel hat Hanna in Zelle <bold>D6</bold> eingetragen? Was berechnet sie hier?</p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
+</book>
