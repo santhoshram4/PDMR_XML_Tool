@@ -20,7 +20,45 @@ def check_expiry():
 input_folder = "input"
 output_folder = "output"
 
-def process_xml_content(xml_content):
+def get_isbn_number():
+    txt_path = os.path.join(input_folder, "Mention_ISBN_Num.txt")
+    default_isbn = "000000000000"
+    
+    if os.path.exists(txt_path):
+        try:
+            with open(txt_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+                match = re.search(r'ISBN\s*Number:\s*["\'](\d+)["\']', content, flags=re.IGNORECASE)
+                if match:
+                    return match.group(1)
+                else:
+                    fallback_match = re.search(r'(\d{10,13})', content)
+                    if fallback_match:
+                        return fallback_match.group(1)
+        except Exception:
+            pass
+    return default_isbn
+
+def process_xml_content(xml_content, isbn_num):
+    # ==========================================
+    # STEP 0: Insert Oxygen Schema PI above <book> tag
+    # ==========================================
+    if '<book' in xml_content and 'SCHSchema="Stukturerfassung-Lehrwerke-fuer-KI.sch"' not in xml_content:
+        xml_content = re.sub(r'(<book\b)', r'<?oxygen SCHSchema="Stukturerfassung-Lehrwerke-fuer-KI.sch"?>\n\1', xml_content, count=1, flags=re.IGNORECASE)
+
+    # ==========================================
+    # STEP 0.1: Remove leading zeros in <title-group id="pg007"> -> <title-group id="pg7">
+    # ==========================================
+    def fix_title_group_id(match):
+        prefix = match.group(1)
+        num_str = match.group(2)
+        suffix = match.group(3)
+        cleaned_num = str(int(num_str))
+        return f"{prefix}{cleaned_num}{suffix}"
+
+    pattern_title_group_id = r'(<title-group\b[^>]*\bid=["\']pg)0+(\d+)(["\'])'
+    xml_content = re.sub(pattern_title_group_id, fix_title_group_id, xml_content, flags=re.IGNORECASE)
+
     # ==========================================
     # STEP 1: Title kulla irukura bold tags-a remove panradhu
     # ==========================================
@@ -39,32 +77,79 @@ def process_xml_content(xml_content):
     xml_content = re.sub(pattern_sec, r'</sec>\n\1', xml_content, flags=re.IGNORECASE)
 
     # ==========================================
-    # STEP 3: Dynamic Page Track & <fig><img/></fig> -> <graphic/> Tag Conversion
+    # STEP 3: Dynamic Page Track & Image Conversion (<fig><img/></fig>, Standalone <img/>, and <graphic/>)
+    # Reset FX sequence to 1 when page changes!
     # ==========================================
     fx_counter = [1]
     current_page = ["001"] # Default fallback page number
 
-    combined_pattern = r'(<\?pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*\?>|<pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*/>)|(<p>\s*<fig>\s*<img\s*/>\s*</fig>\s*</p>)|(<fig>\s*<img\s*/>\s*</fig>)'
+    # Pattern captures:
+    # Group 1: PageStart tags
+    # Group 4: <p><fig><img/></fig></p>
+    # Group 5: <fig><img/></fig>
+    # Group 6: Standalone <img/> or <img .../> tags
+    # Group 7: Existing <graphic ... /> tags
+    combined_pattern = r'(<\?pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*\?>|<pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*/>)|(<p>\s*<fig>\s*<img\s*/>\s*</fig>\s*</p>)|(<fig>\s*<img\s*/>\s*</fig>)|(<img\s*/?>)|(<graphic\b[^>]*\bxlink:href=["\'][^"\']*["\'][^>]*/>)'
 
     def replacer(match):
         if match.group(1):
+            # Page switch detected: update page number & RESET fx_counter to 1
             page_num_val = match.group(2) if match.group(2) else match.group(3)
             current_page[0] = f"{int(page_num_val):03d}"
+            fx_counter[0] = 1  # Reset FX sequence per page!
             return match.group(0)
+            
         elif match.group(4):
             fx_str = f"fx_{fx_counter[0]:03d}"
             fx_counter[0] += 1
             pg_str = f"pg_{current_page[0]}"
-            return f'<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_{pg_str}_{fx_str}.jpg"/>'
+            return f'<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/{isbn_num}_{pg_str}_{fx_str}.jpg"/>'
+            
         elif match.group(5):
             fx_str = f"fx_{fx_counter[0]:03d}"
             fx_counter[0] += 1
             pg_str = f"pg_{current_page[0]}"
-            return f'<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_{pg_str}_{fx_str}.jpg"/></p>'
+            return f'<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/{isbn_num}_{pg_str}_{fx_str}.jpg"/></p>'
+            
+        elif match.group(6):
+            fx_str = f"fx_{fx_counter[0]:03d}"
+            fx_counter[0] += 1
+            pg_str = f"pg_{current_page[0]}"
+            return f'<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/{isbn_num}_{pg_str}_{fx_str}.jpg"/>'
+
+        elif match.group(7):
+            # Fix existing <graphic> tags with active page and fx sequence
+            fx_str = f"fx_{fx_counter[0]:03d}"
+            fx_counter[0] += 1
+            pg_str = f"pg_{current_page[0]}"
+            return f'<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/{isbn_num}_{pg_str}_{fx_str}.jpg"/>'
 
         return match.group(0)
 
     xml_content = re.sub(combined_pattern, replacer, xml_content, flags=re.IGNORECASE)
+
+    # ==========================================
+    # STEP 3.1: GLOBAL REPLACE - Replace residual img/000000000000_ tags with loaded ISBN
+    # ==========================================
+    pattern_global_zeros = r'(xlink:href=["\']img/)000000000000(_)'
+    xml_content = re.sub(pattern_global_zeros, rf'\g<1>{isbn_num}\g<2>', xml_content, flags=re.IGNORECASE)
+
+    # ==========================================
+    # STEP 3.2: DYNAMIC SECTION PAGE ID FIX - Update task/subtask sec IDs based on active pageStart
+    # ==========================================
+    current_pg_id = ["001"]
+    sec_page_pattern = r'(<\?pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*\?>|<pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*/>)|(<sec\b[^>]*\bid=["\']pg)\d+(_task[^"\']*["\'][^>]*>)'
+
+    def sec_page_replacer(m):
+        if m.group(1):
+            p_val = m.group(2) if m.group(2) else m.group(3)
+            current_pg_id[0] = f"{int(p_val):03d}"
+            return m.group(0)
+        elif m.group(4):
+            return f"{m.group(4)}{current_pg_id[0]}{m.group(5)}"
+        return m.group(0)
+
+    xml_content = re.sub(sec_page_pattern, sec_page_replacer, xml_content, flags=re.IGNORECASE)
 
     # ==========================================
     # STEP 4: Remove nested duplicate <p><p>...</p></p> tags
@@ -176,7 +261,6 @@ def process_xml_files():
     print("      XML Processing Tool Running...    ")
     print("========================================\n")
 
-    # Expiry Check
     if not check_expiry():
         input("\nPress ENTER to exit...")
         return
@@ -186,9 +270,11 @@ def process_xml_files():
         input("\nPress ENTER to exit...")
         return
 
-    # Output folder create pannurom
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
+
+    isbn_num = get_isbn_number()
+    print(f"Loaded ISBN Number: {isbn_num}\n")
 
     files = [f for f in os.listdir(input_folder) if f.endswith('.xml')]
     
@@ -205,7 +291,7 @@ def process_xml_files():
         with open(input_path, 'r', encoding='utf-8') as f:
             content = f.read()
 
-        updated_content = process_xml_content(content)
+        updated_content = process_xml_content(content, isbn_num)
 
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(updated_content)
@@ -216,7 +302,6 @@ def process_xml_files():
     print("     ALL FILES PROCESSED SUCCESSFULLY!  ")
     print("========================================")
     
-    # Enter press panninaa thaan CMD window close aagum
     input("\nPress ENTER to exit...")
 
 if __name__ == "__main__":

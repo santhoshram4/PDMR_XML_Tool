@@ -236,7 +236,7 @@ def process_task_sections(content, get_page_for_pos):
         subtask_split = re.split(
             r"(?=<sec\b|<p\b[^>]*>\s*[a-zA-Z0-9]+[\.\)])",
             clean_inner,
-            1,
+            maxsplit=1,
             flags=re.IGNORECASE,
         )
 

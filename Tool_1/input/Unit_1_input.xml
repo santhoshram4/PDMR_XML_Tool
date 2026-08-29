@@ -127,344 +127,593 @@
 
 
 
+<!-- 2 Task-->
+<?pageStart pdf="146" pagination="142"?>
+<?pageStart pdf="147" pagination="143"?>
+<head2><bold>Zwischentest</bold></head2>
+<sec>
+<label>1 Kompetenz</label>
+<p>Ich kann im Kopf multiplizieren und dividieren. Ich kann mit den Fachbegriffen der Multiplikation und Division umgehen.</p>
+<p>&#x2192; Lies auf <bold>Seite 124</bold> nach.</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>1</bold> &#x00DC;bertrage ins Heft. Finde die fehlende Zahl.</p>
+<p>a) 9 &#x00B7; 9 = &#x25A0;</p> 
+<p>b) 27 : 9 = &#x25A0;</p>
+<p>c) 6 &#x00B7; &#x25A0; = 42</p> 
+<p>d) &#x25A0; : 3 = 8</p>
+<p>Unterstreiche farbig: Faktor = rot,</p>
+<p>Dividend = blau, Divisor = gr&#x00FC;n.</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>1</bold> Finde den fehlenden Wert. Gib den Fachbegriff f&#x00FC;r den fehlenden Wert an. Nutze:</p> 
+<p>Faktor, Dividend, Wert des Produkts, Wert des Quotienten</p>
+<p>a) 11 &#x00B7; 7 = &#x25A0;</p> 
+<p>b) 108 : 12 = &#x25A0;</p>
+<p>c) &#x25A0; : 8 = 9</p> 
+<p>d) &#x25A0; &#x00B7; 18 = 90</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>1</bold> &#x00DC;bersetze den Text in eine Rechnung und finde den fehlenden Wert.</p>
+<p>a) Der 2. Faktor ist 34. Der Wert des Produkts betr&#x00E4;gt 238.</p>
+<p>b) Der Dividend ist 126, der Divisor ist 14.</p>
+</sec>
+
+<sec>
+<label>2 Kompetenz</label>
+<p>Ich kann das Vertauschungsgesetz (Kommutativgesetz) und das Verbindungsgesetz (Assoziativgesetz) bei der Multiplikation anwenden.</p>
+<p>&#x2192; Lies auf <bold>Seite 124</bold> nach.</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>2</bold> Rechne vorteilhaft. Nutze die Rechengesetze.</p>
+<p>Vertausche die Zahlen so, dass du einfach rechnen kannst.</p>
+<p>a) 2 &#x00B7; 9 &#x00B7; 5</p>
+<p>b) 20 &#x00B7; 7 &#x00B7; 5</p>
+<p>c) 8 &#x00B7; 4 &#x00B7; 25</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>2</bold> Rechne vorteilhaft. Nutze die Rechengesetze.</p>
+<p>a) 200 &#x00B7; 17 &#x00B7; 5</p>
+<p>b) 18 &#x00B7; 4 &#x00B7; 5</p>
+<p>c) Schreibe selbst eine &#x00E4;hnliche Aufgabe auf, bei der Vertauschen und Verbinden Rechenvorteile bringen.</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>2</bold> Rechne im Kopf. Nutze die Rechengesetze.</p>
+<p>a) 250 &#x00B7; 11 &#x00B7; 4 &#x00B7; 3</p>
+<p>b) 20 &#x00B7; 16 &#x00B7; 6 &#x00B7; 5</p>
+<p>c) Schreibe selbst eine &#x00E4;hnliche Aufgabe auf, bei der du <bold>nicht</bold> beliebig verbinden darfst.</p>
+</sec>
+<sec>
+<label>3 Kompetenz</label>
+<p>Ich kann beim Rechnen die Vorrangregeln &#x201E;Klammern zuerst&#x201C; und &#x201E;Punkt vor Strich&#x201C; beachten.</p>
+<p>&#x2192; Lies auf <bold>Seite 128</bold> nach.</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>3</bold> Rechne vorteilhaft.</p>
+<p>Beachte die Vorrangregeln.</p>
+<p>a) 3 + (8 &#x2212; 6)</p> 
+<p>b) 4 &#x00B7; 2 + 3</p>
+<p>c) 2 + 81 : 9</p> 
+<p>d) (4 + 32) : 6</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>3</bold> Rechne im Kopf.</p>
+<p>a) 3 &#x00B7; 5 + 6 &#x00B7; 2</p>
+<p>b) 2 &#x00B7; (9 &#x2212; 2) + 6</p>
+<p>c) (40 + 8) : 6 &#x2212; 2</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>3</bold> Rechne im Kopf.</p>
+<p>a) 4 + 50 : 2 &#x2212; 11</p>
+<p>b) 98 + (60 &#x2212; 48) : 3</p>
+<p>c) 8 &#x00B7; (26 &#x2212; 15) &#x2212; 19</p>
+</sec>
+<sec>
+<label>4 Kompetenz</label>
+<p>Ich kann das Verteilungsgesetz (Distributivgesetz) zum Ausklammern und zum Ausmultiplizieren nutzen.</p>
+<p>&#x2192; Lies auf <bold>Seite 128</bold> nach.</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>4</bold> Rechne vorteilhaft.</p>
+<p>a) Klammere zuerst aus:</p>
+<p>83 &#x00B7; 5 + 17 &#x00B7; 5 = (83 + &#x25A0;) &#x00B7; &#x25A0; = &#x2026;</p>
+<p>b) Multipliziere aus:</p>
+<p>(8 + 10) &#x00B7; 9 = 8 &#x00B7; 9 + &#x2026;</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>4</bold> Rechne vorteilhaft. Nutze dazu das Ausklammern oder das Ausmultiplizieren.</p>
+<p>a) 225 &#x00B7; 8 + 775 &#x00B7; 8</p>
+<p>b) (65 + 91) : 13</p>
+<p>c) 165 : 40 &#x2212; 45 : 40</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>4</bold> Rechne vorteilhaft. Nutze dazu das Ausklammern oder das Ausmultiplizieren.</p>
+<p>a) 106 : 25 &#x2212; 31 : 25</p>
+<p>b) 115 &#x00B7; 17 + 44 &#x00B7; 17 &#x2212; 59 &#x00B7; 17</p>
+<p>c) 59 &#x00B7; 16</p>
+</sec>
+<sec>
+<label>5 Kompetenz</label>
+<p>Ich kann schriftlich multiplizieren.</p>
+<p>&#x2192; Lies auf <bold>Seite 132</bold> nach.</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>5</bold> &#x00DC;bertrage ins Heft. Multipliziere schriftlich.</p>
+<p>a)</p>
+<fig><img/></fig>
+<p>2 7 &#x00B7; 6</p>
+<p>b)</p>
+<fig><img/></fig>
+<p>2 8 6 &#x00B7; 1 3</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>5</bold> Multipliziere schriftlich im Heft.</p>
+<p>a)</p>
+<fig><img/></fig>
+<p>7 6 &#x00B7; 5 2</p>
+<p>b)</p>
+<fig><img/></fig>
+<p>1 0 8 &#x00B7; 8 0</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>5</bold> Multipliziere schriftlich.</p>
+<p>a) 179 &#x00B7; 53</p>
+<p>b) 564 &#x00B7; 54</p>
+<p>c) 48 &#x00B7; 590</p>
+</sec>
+<sec>
+<label>6 Kompetenz</label>
+<p>Ich kann schriftlich dividieren.</p>
+<p>&#x2192; Lies auf <bold>Seite 138</bold> nach.</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>6</bold> &#x00DC;bertrage ins Heft. Dividiere schriftlich.</p>
+<p>a)</p>
+<fig><img/></fig>
+<p>7 8 4 : 7 = </p> 
+<p>b)</p>
+<fig><img/></fig>
+<p>5 0 8 2 : 1 1 =</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>6</bold> Dividiere schriftlich im Heft.</p>
+<p>a)</p>
+<fig><img/></fig>
+<p>5 6 3 2 : 8</p> 
+<p>b)</p>
+<fig><img/></fig>
+<p>8 0 6 4 : 1 2</p>
+</sec>
+<sec>
+<label><sec-meta>mer-</sec-meta></label>
+<p><bold>6</bold> Dividiere schriftlich.</p>
+<p>a) 2669 : 17</p>
+<p>b) 60 059 : 19</p>
+<p>c) 124 124 : 124</p>
+</sec>
+<p>&#x2192; L&#x00F6;sungen auf Seite 241</p>
+<p>&#x2192; L&#x00F6;sungen auf Seite 241 und 242</p>
 
 
 
-<!-- sangeeth-->
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="jats-html.xsl"?>
-<!DOCTYPE book PUBLIC "-//NLM//DTD BITS Book Interchange DTD v2.2 20250930//EN" "BITS-book2-2.dtd">
-<book xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="2.2">
-<?pageStart pdf="255" pagination="251"?>
-<p>&#x2192; Seite 152 Nr. 7, 8</p>
-<p>&#x2192; Seite 153 Nr. 8</p>
-<boxed-text position="float">
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td><p><bold>Fachbegriffe bei der Wahrscheinlichkeitsrechnung</bold></p>
-<p>An diesen Merkmalen erkennst du ein <bold>Zufallsexperiment</bold>:</p>
-<list list-type="order">
-<list-item><p>Du kannst das Ergebnis nicht vorhersagen oder beeinflussen.</p></list-item>
-<list-item><p>Du kennst alle m&#x00F6;glichen Ergebnisse.</p></list-item>
-<list-item><p>Du kannst das Experiment beliebig oft wiederholen.</p></list-item></list></td>
-<td><p>In Melissas Tasche ist ein rotes, ein gelbes, ein wei&#x00DF;es und ein violettes Kaugummi. Melissa zieht ein Kaugummi aus ihrer Tasche.</p>
-<p>Es handelt sich um ein Zufallsexperiment, denn:</p>
-<list list-type="order">
-<list-item><p>Du kannst nicht vorhersagen oder beeinflussen, ob Melissa das rote, das gelbe, das wei&#x00DF;e oder das violette Kaugummi zieht.</p></list-item>
-<list-item><p>m&#x00F6;gliche Ergebnisse: rot, gelb, wei&#x00DF; oder violett</p></list-item>
-<list-item><p>Melissa kann immer wieder erneut ziehen, wenn sie das gezogene Kaugummi wieder in die Tasche steckt.</p></list-item></list></td>
-</tr>
-<tr>
-<td><p>Wenn du mehrere <bold>Ergebnisse</bold> zusammenfasst, dann nennst du das ein <bold>Ereignis</bold>.</p></td>
-<td><p>Die Ergebnisse &#x201E;gelbes Kaugummi&#x201C; und &#x201E;wei&#x00DF;es Kaugummi&#x201C; fasst du zum Ereignis &#x201E;gelbes oder wei&#x00DF;es Kaugummi&#x201C; zusammen.</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
-</tr>
-<tr>
-<td><p>Die <bold>Wahrscheinlichkeit</bold> f&#x00FC;r ein Ergebnis oder ein Ereignis wird mit <bold>P( )</bold> abgek&#x00FC;rzt.</p> 
-<p>In die Klammer beschreibst du das Ergebnis oder Ereignis.</p></td>
-<td><p>Die Wahrscheinlichkeit f&#x00FC;r das Ereignis &#x201E;gelbes oder wei&#x00DF;es Kaugummi&#x201C; schreibst du:</p>
-<p>P(gelbes oder wei&#x00DF;es Kaugummi).</p></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<sec sec-type="task" id="pg_task0093">
-<statement><p>Entscheide, ob es sich um ein Zufallsexperiment handelt.</p></statement>
-<sec sec-type="subtask" id="pg_task00a">
-<p>Du wirfst eine M&#x00FC;nze.</p>
+<!-- 2 Task completed-->
+<sec id="pg142_s001">
+<sec id="pg142_s002">
+<label>1 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann im Kopf multiplizieren und dividieren. Ich kann mit den Fachbegriffen der Multiplikation und Division umgehen.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg124">Seite 124</xref></bold> nach.</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00b">
-<p>Du wirfst den Deckel einer Flasche.</p>
+<sec sec-type="task" id="pg142_task001">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>1</label>
+<statement>
+<p>&#x00DC;bertrage ins Heft. Finde die fehlende Zahl.</p>
+</statement>
+<sec sec-type="subtask" id="pg142_task001a">
+<label>a)</label>
+<p>9 &#x00B7; 9 = &#x25A0;</p> 
 </sec>
-<sec sec-type="subtask" id="pg_task00c">
-<p>Du ziehst eine Karte aus einem Kartenspiel.</p>
+<sec sec-type="subtask" id="pg142_task001b">
+<label>b)</label>
+<p>27 : 9 = &#x25A0;</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00d">
-<p>Du ziehst dein Lieblings-T-Shirt an.</p>
+<sec sec-type="subtask" id="pg142_task001c">
+<label>c)</label>
+<p>6 &#x00B7; &#x25A0; = 42</p> 
 </sec>
-<sec sec-type="subtask" id="pg_task00e">
-<p>Du ziehst eine Kugel aus einer Schale, in der sich nur rote Kugeln befinden.</p>
+<sec sec-type="subtask" id="pg142_task001d">
+<label>d)</label>
+<p>&#x25A0; : 3 = 8</p>
+<p>Unterstreiche farbig: Faktor = rot,</p>
+<p>Dividend = blau, Divisor = gr&#x00FC;n.</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00f">
-<p>Du ziehst eine Kugel aus einer Schale, in der sich rote und wei&#x00DF;e Kugeln befinden.</p>
 </sec>
-<sec sec-type="task" id="pg_task0094">
-<statement><p>Nenne alle m&#x00F6;glichen Ergebnisse.</p></statement>
-<sec sec-type="subtask" id="pg_task00a">
-<p>Du wirfst eine 50-Cent-M&#x00FC;nze.</p>
+<sec sec-type="task" id="pg143_task1a1">
+<sec-meta><related-object content-type="mer-Mittel"/></sec-meta>
+<label>1</label>
+<statement>
+<p>Finde den fehlenden Wert. Gib den Fachbegriff f&#x00FC;r den fehlenden Wert an. Nutze:</p> 
+<p>Faktor, Dividend, Wert des Produkts, Wert des Quotienten</p>
+</statement>
+<sec sec-type="subtask" id="pg143_task1a1a">
+<label>a)</label>
+<p>11 &#x00B7; 7 = &#x25A0;</p> 
 </sec>
-<sec sec-type="subtask" id="pg_task00b">
-<p>Du w&#x00FC;rfelst mit einem Spielw&#x00FC;rfel.</p>
+<sec sec-type="subtask" id="pg143_task1a1b">
+<label>b)</label>
+<p>108 : 12 = &#x25A0;</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00c">
-<p>Du drehst ein Gl&#x00FC;cksrad mit den Zahlen 0 bis 5.</p>
+<sec sec-type="subtask" id="pg143_task1a1c">
+<label>c)</label>
+<p>&#x25A0; : 8 = 9</p> 
 </sec>
-<sec sec-type="subtask" id="pg_task00d">
-<p>Du wirfst den Deckel einer Wasserflasche.</p>
+<sec sec-type="subtask" id="pg143_task1a1d">
+<label>d)</label>
+<p>&#x25A0; &#x00B7; 18 = 90</p>
 </sec>
-<sec sec-type="task" id="pg_task0095">
-<statement><p>&#x00DC;bertrage den Text in dein Heft. Setze diese Fachbegriffe ein: Wahrscheinlichkeit, Ereignis, Ergebnis und Zufallsexperiment.</p></statement>
-<p>Can f&#x00FC;hrt ein _____ durch: Er dreht ein Gl&#x00FC;cksrad. Ein m&#x00F6;gliches _____ ist rot. Die _____ daf&#x00FC;r wird mit P(rot) abgek&#x00FC;rzt.</p> 
-<p>Can erh&#x00E4;lt einen Gewinn, wenn das _____ &#x201E;blau oder gr&#x00FC;n&#x201C; eintritt.</p>
-<?pageStart pdf="256" pagination="252"?>
-<p>&#x2192; Seite 153 Nr. 9, 10, 11, 13</p>
-<boxed-text position="float">
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td><p><bold>Wahrscheinlichkeiten bei Laplace-Experimenten</bold></p></td>
-<td></td>
-</tr>
-<tr>
-<td><p>Wenn bei einem Zufallsexperiment jedes Ergebnis <bold>gleich wahrscheinlich </bold>ist, dann ist es ein Laplace-Experiment.</p>
-<p>Die Wahrscheinlichkeit f&#x00FC;r ein Ergebnis betr&#x00E4;gt:</p>
-<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{P(Ergebnis) = }}\frac{{\rm{1}}}{{{\rm{Anzahl \, aller \, m\ddot oglichen \, Ergebnisse}}}}\)]]></tex-math></alternatives></inline-formula></p></td>
-<td><p>Jette wirft einen W&#x00FC;rfel.</p>
-<p>Das Werfen eines W&#x00FC;rfels ist ein Laplace-Experiment, weil alle Ergebnisse gleich wahrscheinlich sind: Eine 2 zu w&#x00FC;rfeln ist genauso wahrscheinlich wie eine 5 zu w&#x00FC;rfeln.</p>
-<p>Es gibt 6 m&#x00F6;gliche Ergebnisse: 1, 2, 3, 4, 5 und 6.</p>
-<p>Die Wahrscheinlichkeit eine 3 zu w&#x00FC;rfeln ist <inline-formula><alternatives><tex-math><![CDATA[\(\frac{{\rm{1}}}{{\rm{6}}}\)]]></tex-math></alternatives></inline-formula>:</p>
-<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{P(3) = }}\frac{{\rm{1}}}{{\rm{6}}}\)]]></tex-math></alternatives></inline-formula></p></td>
-</tr>
-<tr>
-<td><p>So berechnest du bei einem Laplace-Experiment die Wahrscheinlichkeit f&#x00FC;r ein Ereignis:</p>
-<p>1. Z&#x00E4;hle alle einzelnen Ergebnisse, die zu dem Ereignis geh&#x00F6;ren.</p>
-<p>Das sind die g&#x00FC;nstigen Ergebnisse.</p>
-<p>2. Z&#x00E4;hle alle m&#x00F6;glichen Ergebnisse.</p>
-<p>3. Rechne so:</p>
-<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{P(Ergebnis) = }}\frac{{{\rm{Anzahl \, der \, g\ddot unstigen \, Ergebnisse}}}}{{{\rm{Anzahl \, aller \, m\ddot oglichen \, Ergebnisse}}}}\)]]></tex-math></alternatives></inline-formula></p></td>
-<td><p>Jette m&#x00F6;chte die Wahrscheinlichkeit f&#x00FC;r das Ereignis &#x201E;Ich werfe eine Zahl gr&#x00F6;&#x00DF;er als 4.&#x201C; bestimmen.</p>
-<p>Es gibt 2 g&#x00FC;nstige Ergebnisse: 5, 6</p>
-<p>Es gibt 6 m&#x00F6;gliche Ergebnisse: 1, 2, 3, 4, 5, 6</p>
-<p>Also:</p>
-<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{P(gr\ddot o\beta er \, als 4) = }}\frac{{\rm{2}}}{{\rm{6}}}{\rm{ = }}\frac{{\rm{1}}}{{\rm{3}}}\)]]></tex-math></alternatives></inline-formula></p></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<sec sec-type="task" id="pg_task0096">
-<statement><p>Entscheide, ob es sich um ein Laplace-Experiment handeln kann.</p></statement>
-<sec sec-type="subtask" id="pg_task00a">
-<p>eine M&#x00FC;nze werfen</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00b">
-<p>den Deckel einer Wasserflasche werfen</p>
+<sec sec-type="task" id="pg143_task1a2">
+<sec-meta><related-object content-type="mer-Schwer"/></sec-meta>
+<label>1</label>
+<statement>
+<p>&#x00DC;bersetze den Text in eine Rechnung und finde den fehlenden Wert.</p>
+</statement>
+<sec sec-type="subtask" id="pg143_task1a2a">
+<label>a)</label>
+<statement>
+<p>Der 2. Faktor ist 34. Der Wert des Produkts betr&#x00E4;gt 238.</p>
+</statement>
 </sec>
-<sec sec-type="subtask" id="pg_task00c">
-<p>mit einem Quader w&#x00FC;rfeln</p>
+<sec sec-type="subtask" id="pg143_task1a2b">
+<label>b)</label>
+<statement>
+<p>Der Dividend ist 126, der Divisor ist 14.</p>
+</statement>
 </sec>
-<sec sec-type="subtask" id="pg_task00d">
-<p>mit einem W&#x00FC;rfel w&#x00FC;rfeln</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00e">
-<p>Gl&#x00FC;cksrad &#x2460; drehen</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00f">
-<p>Gl&#x00FC;cksrad &#x2461; drehen</p>
-<p>&#x2460; <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
-<p>&#x2461;<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
+<sec id="pg142_s003">
+<sec id="pg142_s004">
+<label>2 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann das Vertauschungsgesetz (Kommutativgesetz) und das Verbindungsgesetz (Assoziativgesetz) bei der Multiplikation anwenden.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg124">Seite 124</xref></bold> nach.</p>
 </sec>
-<sec sec-type="task" id="pg_task0097">
-<statement><p>Gib die Wahrscheinlichkeit f&#x00FC;r das Ergebnis 3 an.</p></statement>
-<sec sec-type="subtask" id="pg_task00a">
-<p>W&#x00FC;rfeln mit einem sechsseitigen W&#x00FC;rfel</p>
+<sec sec-type="task" id="pg142_task002">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>2</label>
+<statement>
+<p>Rechne vorteilhaft. Nutze die Rechengesetze.</p>
+<p>Vertausche die Zahlen so, dass du einfach rechnen kannst.</p>
+</statement>
+<sec sec-type="subtask" id="pg142_task002a">
+<label>a)</label>
+<p>2 &#x00B7; 9 &#x00B7; 5</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00b">
-<p>Drehen von Gl&#x00FC;cksrad &#x2461;</p>
+<sec sec-type="subtask" id="pg142_task002b">
+<label>b)</label>
+<p>20 &#x00B7; 7 &#x00B7; 5</p>
 </sec>
-<sec sec-type="task" id="pg_task0098">
-<statement><p>Gl&#x00FC;cksrad &#x2461; aus Aufgabe 105 wird gedreht. Notiere alle g&#x00FC;nstigen Ergebnisse f&#x00FC;r das Ereignis. Gib die Wahrscheinlichkeit f&#x00FC;r das Ereignis an.</p></statement>
-<sec sec-type="subtask" id="pg_task00a">
-<p>eine ungerade Zahl</p>
+<sec sec-type="subtask" id="pg142_task002c">
+<label>c)</label>
+<p>8 &#x00B7; 4 &#x00B7; 25</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00b">
-<p>eine Zahl, die gr&#x00F6;&#x00DF;er als 6 ist (also mindestens eine 7)</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00c">
-<p>eine Primzahl</p>
+<sec sec-type="task" id="pg143_task2a1">
+<sec-meta><related-object content-type="mer-Mittel"/></sec-meta>
+<label>2</label>
+<statement>
+<p>Rechne vorteilhaft. Nutze die Rechengesetze.</p>
+</statement>
+<sec sec-type="subtask" id="pg143_task2a1a">
+<label>a)</label>
+<p>200 &#x00B7; 17 &#x00B7; 5</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00d">
-<p>eine Zahl, die kleiner als 8 ist (also h&#x00F6;chstens eine 7)</p>
-<?pageStart pdf="257" pagination="253"?>
-<p>&#x2192; Seite 153 Nr. 12</p>
-<boxed-text position="float">
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td><p><bold>Ein Baumdiagramm zeichnen</bold></p>
-<p>Mit einem <bold>Baumdiagramm</bold> kannst du die Ergebnisse und Wahrscheinlichkeiten eines Zufallsexperiments darstellen.</p></td>
-<td><p>Das Gl&#x00FC;cksrad wird einmal gedreht.</p>
-<p>Es gibt drei m&#x00F6;gliche Ergebnisse: Rot, Gr&#x00FC;n, Blau</p></td>
-<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
-</tr>
-<tr>
-<td><p>Bestimme, wie viele Ergebnisse es gibt. Zeichne einen Baum mit so vielen &#x00C4;sten. Fasse dabei gleiche Ergebnisse zu einem Ast zusammen.</p>
-<p>Beschrifte das Baumdiagramm:</p>
-<p>&#x2013; Schreibe hinter jeden Ast das Ergebnis.</p>
-<p>&#x2013; Schreibe an jeden Ast die Wahrscheinlichkeit f&#x00FC;r das Ergebnis.</p></td>
-<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
-<td><p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{P(Rot) = }}\frac{{\rm{1}}}{{\rm{2}}}\)]]></tex-math></alternatives></inline-formula></p>
-<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{P(Gr\ddot un) = }}\frac{{\rm{1}}}{{\rm{4}}}\)]]></tex-math></alternatives></inline-formula></p>
-<p><inline-formula><alternatives><tex-math><![CDATA[\({\rm{P(Blau) = }}\frac{{\rm{1}}}{{\rm{4}}}\)]]></tex-math></alternatives></inline-formula></p></td>
-</tr>
-<tr>
-<td><p>An dem Baumdiagramm kannst du die Wahrscheinlichkeit f&#x00FC;r die Ereignisse ablesen oder neue Wahrscheinlichkeiten berechnen.</p></td>
-<td><p>Die Wahrscheinlichkeit f&#x00FC;r Rot betr&#x00E4;gt <inline-formula><alternatives><tex-math><![CDATA[\(\frac{{\rm{1}}}{{\rm{2}}}\)]]></tex-math></alternatives></inline-formula>.</p>
-<p>Die Wahrscheinlichkeit f&#x00FC;r Gr&#x00FC;n oder Blau betr&#x00E4;gt <inline-formula><alternatives><tex-math><![CDATA[\(\frac{{\rm{1}}}{{\rm{4}}} + \frac{{\rm{1}}}{{\rm{4}}} = \frac{{\rm{1}}}{{\rm{2}}}\)]]></tex-math></alternatives></inline-formula></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-</boxed-text>
-<sec sec-type="task" id="pg_task0099">
-<statement><p>Zeichne ein Baumdiagramm und beschrifte es.</p></statement>
-<sec sec-type="subtask" id="pg_task00a">
-<p>Eine M&#x00FC;nze wird geworfen. Die m&#x00F6;glichen Ergebnisse sind Zahl und Wappen.</p>
+<sec sec-type="subtask" id="pg143_task2a1b">
+<label>a)</label>
+<p>18 &#x00B7; 4 &#x00B7; 5</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00b">
-<p>In einer Sch&#x00FC;ssel sind drei rote und zwei blaue Kugeln. Eine Kugel wird gezogen.</p>
+<sec sec-type="subtask" id="pg143_task2a1c">
+<label>c)</label>
+<statement>
+<p>Schreibe selbst eine &#x00E4;hnliche Aufgabe auf, bei der Vertauschen und Verbinden Rechenvorteile bringen.</p>
+</statement>
 </sec>
-<sec sec-type="subtask" id="pg_task00c">
-<p>Ein Spielw&#x00FC;rfel mit den Ziffern 1 bis 6 wird geworfen.</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00d">
-<p>In einer Sch&#x00FC;ssel sind f&#x00FC;nf rote, drei blaue und zwei gr&#x00FC;ne Kugeln. Eine Kugel wird gezogen.</p>
-<?pageStart pdf="258" pagination="254"?>
-<p>&#x2192; Seite 73 Nr. 14</p>
-<head2><bold><sec-meta>mer-</sec-meta> Dynamische Geometrie-Software</bold></head2>
-<p>Mit einer dynamischen Geometrie-Software (DGS) kannst du Figuren zeichnen und ver&#x00E4;ndern.</p>
-<p>So sieht das Fenster aus, in dem du arbeitest.</p>
-<p>In der Men&#x00FC;leiste stehen dir verschiedene Werkzeuge zur Verf&#x00FC;gung, die du in der Zeichenfl&#x00E4;che verwenden kannst.</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
-<p><bold>Wichtige Werkzeuge</bold></p>
-<table-wrap>
-<table>
-<tbody>
-<tr>
-<td><p><bold>Einen Punkt zeichnen</bold></p>
-<p>Klicke in der Werkzeugleiste auf das Symbol und w&#x00E4;hle &#x201E;Punkt&#x201C;.</p>
-<p>Klicke dann auf die Stelle im Zeichenfenster, an der der Punkt gesetzt werden soll.</p></td>
-<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
-</tr>
-<tr>
-<td><p><bold>Einen Punkt verschieben</bold></p>
-<p>Klicke in der Werkzeugleiste auf das Symbol und w&#x00E4;hle &#x201E;Bewege&#x201C;. Klicke dann auf den Punkt, den du verschieben m&#x00F6;chtest. Halte die linke Maustaste gedr&#x00FC;ckt und verschiebe den Punkt.</p></td>
-<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
-</tr>
-<tr>
-<td><p><bold>Eine Strecke zeichnen</bold></p>
-<p>Klicke in der Werkzeugleiste auf das Symbol und w&#x00E4;hle &#x201E;Strecke&#x201C;. Klicke dann auf den Anfangspunkt und danach auf den Endpunkt der Strecke.</p></td>
-<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
-</tr>
-<tr>
-<td><p><bold>Ein Dreieck zeichnen</bold></p>
-<p>Klicke in der Werkzeugleiste auf das Symbol und w&#x00E4;hle &#x201E;Vieleck&#x201C;. Klicke nacheinander auf alle Eckpunkte des Dreiecks. Zum Schluss klickst du erneut auf den ersten Eckpunkt.</p></td>
-<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
-</tr>
-<tr>
-<td><p><bold>Die Mittelsenkrechte zeichnen</bold></p>
-<p>Klicke in der Werkzeugleiste auf das Symbol. Es befindet sich im Untermen&#x00FC; besondere Geraden. Klicke dann auf zwei Punkte oder eine Strecke.</p></td>
-<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
-</tr>
-<tr>
-<td><p><bold>Die Winkelhalbierende zeichnen</bold></p>
-<p>Klicke in der Werkzeugleiste auf das Symbol. Es befindet sich im Untermen&#x00FC; besondere Geraden. Klicke gegen den Uhrzeigersinn zun&#x00E4;chst auf einen Punkt auf dem ersten Schenkel, danach auf Scheitelpunkt und zum Schluss auf einen Punkt auf dem zweiten Schenkel.</p></td>
-<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
-</tr>
-<tr>
-<td><p><bold>Schnittpunkte zeichnen</bold></p>
-<p>Klicke in der Werkzeugleiste auf das Symbol. Es befindet sich im Untermen&#x00FC; besondere Punkte. Klicke dann nacheinander auf die zwei Objekte, deren Schnittpunkte du suchst. Alternativ dazu kannst du auch direkt auf den Schnittpunkt klicken.</p></td>
-<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
-</tr>
-<tr>
-<td><p><bold>Einen Kreis um einen Mittelpunkt durch einen anderen Punkt zeichnen</bold></p>
-<p>Klicke in der Werkzeugleiste auf das Symbol. Klicke dann auf den Mittelpunktpunkt des Kreises und danach auf einen Punkt auf der Kreislinie.</p></td>
-<td><p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p></td>
-</tr>
-</tbody>
-</table>
-</table-wrap>
-<sec sec-type="task" id="pg_task00100">
-<statement><p>Konstruiere mit einer dynamischen Geometrie-Software den Umkreis eines Dreiecks. Gehe in vier Schritten vor.</p></statement>
-<p>&#x2460; <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
-<p>Zeichne ein Dreieck ABC.</p>
-<p>&#x2461; <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
-<p>Zeichne die Mittelsenkrechten.</p>
-<p>&#x2462; <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
-<p>Bestimme den Schnittpunkt M der Mittelsenkrechten.</p>
-<p>&#x2463; <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
-<p>Zeichne einen Kreis um M durch die Eckpunkte des Dreiecks.</p>
-<?pageStart pdf="259" pagination="255"?>
-<head2><bold> <sec-meta>mer-</sec-meta> Tabellenkalkulation</bold></head2>
-<p>Mit einer Tabellenkalkulation kannst du Daten eingeben und verarbeiten.</p>
-<p>Wenn du das Programm &#x00F6;ffnest, siehst du ein Tabellenblatt mit Spalten (A, B, C, &#x2026;) und Zeilen (1, 2, 3, &#x2026;).</p>
-<p>Die Schnittstelle zwischen einer Zeile und einer Spalte hei&#x00DF;t Zelle.</p>
-<p>Wenn du eine Zelle anklickst, dann kannst du W&#x00F6;rter, Zahlen und Formeln eingeben.</p>
-<p>Das Wort &#x201E;Hallo&#x201C; steht in Spalte <bold>B</bold> und Zeile <bold>3</bold>. Also hei&#x00DF;t die Zelle <bold>B3</bold>.</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
-<p>Die Zelladresse zeigt an, welche Zelle du gerade bearbeitest.</p>
-<p>Die Formelzeile zeigt an, was du in die Zelle eintr&#x00E4;gst.</p>
-<p>Mit <bold>Formeln</bold> kannst du etwas <bold>berechnen</bold>. Formeln beginnen immer mit =.</p>
-<p>Zum Beispiel kannst du 12 und 3 auf diese Weise miteinander multiplizieren:</p>
-<list list-type="order">
-<list-item><p>Trage 12 in <bold>A1</bold> und 3 in <bold>A2</bold> ein.</p></list-item>
-<list-item><p>Trage in <bold>A3 =A1<sup>*</sup>A2</bold> ein.</p>
-<p>(<bold>*</bold> steht f&#x00FC;r &#x201E;Mal&#x201C;: Halte die Shift-Taste gedr&#x00FC;ckt und dr&#x00FC;cke gleichzeitig die Plus-Taste)</p></list-item>
-<list-item><p>Dr&#x00FC;cke ENTER.</p></list-item>
-<list-item><p>Das Ergebnis steht nun in <bold>A3</bold>. Die Formel siehst du weiterhin in der Formelzeile.</p></list-item></list>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
+<sec sec-type="task" id="pg143_task2a2">
+<sec-meta><related-object content-type="mer-Schwer"/></sec-meta>
+<label>2</label>
+<statement>
+<p>Rechne im Kopf. Nutze die Rechengesetze.</p>
+</statement>
+<sec sec-type="subtask" id="pg143_task2a2a">
+<label>a)</label>
+<p>250 &#x00B7; 11 &#x00B7; 4 &#x00B7; 3</p>
 </sec>
-<sec sec-type="task" id="pg_task00101">
-<statement><p>Den Umfang und Fl&#x00E4;cheninhalt von Rechtecken kannst du mit deiner Tabellenkalkulation ermitteln.</p></statement>
-<p>&#x00DC;bertrage die Eingaben in deine Tabellenkalkulation.</p>
+<sec sec-type="subtask" id="pg143_task2a2b">
+<label>b)</label>
+<p>20 &#x00B7; 16 &#x00B7; 6 &#x00B7; 5</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00a">
-<p>In welcher Zelle steht das Wort &#x201E;Seitenl&#x00E4;ngen&#x201C;?</p>
+<sec sec-type="subtask" id="pg143_task2a2c">
+<label>c)</label>
+<statement>
+<p>Schreibe selbst eine &#x00E4;hnliche Aufgabe auf, bei der du <bold>nicht</bold> beliebig verbinden darfst.</p>
+</statement>
 </sec>
-<sec sec-type="subtask" id="pg_task00b">
-<p>Was steht in der Zelle <bold>B6</bold>?</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00c">
-<p>In welcher Zelle steht die Formel <bold>=2<sup>*</sup>C3+2<sup>*</sup>C4</bold>?</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00d">
-<p>Welche Formel steht in der Zelle <bold>C7</bold>?</p>
+<sec id="pg142_s005">
+<sec id="pg142_s006">
+<label>3 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann beim Rechnen die Vorrangregeln &#x201E;Klammern zuerst&#x201C; und &#x201E;Punkt vor Strich&#x201C; beachten.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg128">Seite 128</xref></bold> nach.</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00e">
-<p>Berechne den Umfang und den Fl&#x00E4;cheninhalt f&#x00FC;r ein Rechteck mit den Seitenl&#x00E4;ngen a = 23 cm und b = 47 cm.</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
+<sec sec-type="task" id="pg142_task003">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>3</label>
+<statement>
+<p>Rechne vorteilhaft.</p>
+<p>Beachte die Vorrangregeln.</p>
+</statement>
+<sec sec-type="subtask" id="pg142_task003a">
+<label>a)</label>
+<p>3 + (8 &#x2212; 6)</p> 
 </sec>
-<sec sec-type="task" id="pg_task00102">
-<statement><p>Vier Freundinnen gehen am Wochenende zelten.</p></statement>
-<p>Sie haben eine Kiste Wasser und eine Kiste Limonade gekauft.</p>
-<p>Eine Flasche Wasser kostet 0,50&#x00A0; &#x20AC;.</p>
-<p>Eine Flasche Limonade kostet 0,80&#x00A0; &#x20AC;.</p>
-<p>Hanna nutzt f&#x00FC;r die Abrechnung die Tabellenkalkulation.</p>
-<p>&#x00DC;bertrage die Eingaben in deine Tabellenkalkulation.</p>
-<p>Schreibe die Preise in den Zellen <bold>C2</bold> und <bold>C3</bold> als W&#x00E4;hrung.</p>
+<sec sec-type="subtask" id="pg142_task003b">
+<label>b)</label>
+<p>4 &#x00B7; 2 + 3</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00a">
-<p>In welcher Zelle steht der Name Hanna?</p>
+<sec sec-type="subtask" id="pg142_task003c">
+<label>c)</label>
+<p>2 + 81 : 9</p> 
 </sec>
-<sec sec-type="subtask" id="pg_task00b">
-<p>Was steht in der Zelle <bold>B3</bold>?</p>
+<sec sec-type="subtask" id="pg142_task003d">
+<label>d)</label>
+<p>(4 + 32) : 6</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00c">
-<p>In welche Zelle hat Hanna <bold>=B6+B7+B8+B9</bold> eingetragen? Was berechnet sie hier?</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00d">
-<p>In welche Zelle hat Hanna <bold>=B7<sup>*</sup>C2+C7<sup>*</sup>C3</bold> eingetragen? Was berechnet sie hier?</p>
+<sec sec-type="task" id="pg143_task3a1">
+<sec-meta><related-object content-type="mer-Mittel"/></sec-meta>
+<label>3</label>
+<statement>
+<p>Rechne im Kopf.</p>
+</statement>
+<sec sec-type="subtask" id="pg143_task3a1a">
+<label>a)</label>
+<p>3 &#x00B7; 5 + 6 &#x00B7; 2</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00e">
-<p>Welche Formel hat Hanna in Zelle <bold>C11</bold> eingetragen? Was berechnet sie hier?</p>
+<sec sec-type="subtask" id="pg143_task3a1b">
+<label>b)</label>
+<p>2 &#x00B7; (9 &#x2212; 2) + 6</p>
 </sec>
-<sec sec-type="subtask" id="pg_task00f">
-<p>Welche Formel hat Hanna in Zelle <bold>D6</bold> eingetragen? Was berechnet sie hier?</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436712_pg_0_fx_00.jpg"/></p>
+<sec sec-type="subtask" id="pg143_task3a1c">
+<label>c)</label>
+<p>(40 + 8) : 6 &#x2212; 2</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg143_task3a2">
+<sec-meta><related-object content-type="mer-Schwer"/></sec-meta>
+<label>3</label>
+<statement>
+<p>Rechne im Kopf.</p>
+</statement>
+<sec sec-type="subtask" id="pg143_task3a2a">
+<label>a)</label>
+<p>4 + 50 : 2 &#x2212; 11</p>
+</sec>
+<sec sec-type="subtask" id="pg143_task3a2b">
+<label>b)</label>
+<p>98 + (60 &#x2212; 48) : 3</p>
+</sec>
+<sec sec-type="subtask" id="pg143_task3a2c">
+<label>c)</label>
+<p>8 &#x00B7; (26 &#x2212; 15) &#x2212; 19</p>
+</sec>
+</sec>
+</sec>
+<sec id="pg142_s007">
+<sec id="pg142_s008">
+<label>4 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann das Verteilungsgesetz (Distributivgesetz) zum Ausklammern und zum Ausmultiplizieren nutzen.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg128">Seite 128</xref></bold> nach.</p>
+</sec>
+<sec sec-type="task" id="pg142_task004">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>4</label>
+<statement>
+<p>Rechne vorteilhaft.</p>
+</statement>
+<sec sec-type="subtask" id="pg142_task004a">
+<label>a)</label>
+<statement>
+<p>Klammere zuerst aus:</p>
+<p>83 &#x00B7; 5 + 17 &#x00B7; 5 = (83 + &#x25A0;) &#x00B7; &#x25A0; = &#x2026;</p>
+</statement>
+</sec>
+<sec sec-type="subtask" id="pg142_task004b">
+<label>b)</label>
+<statement>
+<p>Multipliziere aus:</p>
+<p>(8 + 10) &#x00B7; 9 = 8 &#x00B7; 9 + &#x2026;</p>
+</statement>
+</sec>
+</sec>
+<sec sec-type="task" id="pg143_task4a1">
+<sec-meta><related-object content-type="mer-Mittel"/></sec-meta>
+<label>4</label>
+<statement>
+<p>Rechne vorteilhaft. Nutze dazu das Ausklammern oder das Ausmultiplizieren.</p>
+</statement>
+<sec sec-type="subtask" id="pg143_task4a1a">
+<label>a)</label>
+<p>225 &#x00B7; 8 + 775 &#x00B7; 8</p>
+</sec>
+<sec sec-type="subtask" id="pg143_task4a1b">
+<label>b)</label>
+<p>(65 + 91) : 13</p>
+</sec>
+<sec sec-type="subtask" id="pg143_task4a1c">
+<label>c)</label>
+<p>165 : 40 &#x2212; 45 : 40</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg143_task4a2">
+<sec-meta><related-object content-type="mer-Schwer"/></sec-meta>
+<label>4</label>
+<statement>
+<p>Rechne vorteilhaft. Nutze dazu das Ausklammern oder das Ausmultiplizieren.</p>
+</statement>
+<sec sec-type="subtask" id="pg143_task4a2a">
+<label>a)</label>
+<p>106 : 25 &#x2212; 31 : 25</p>
+</sec>
+<sec sec-type="subtask" id="pg143_task4a2b">
+<label>b)</label>
+<p>115 &#x00B7; 17 + 44 &#x00B7; 17 &#x2212; 59 &#x00B7; 17</p>
+</sec>
+<sec sec-type="subtask" id="pg143_task4a2c">
+<label>c)</label>
+<p>59 &#x00B7; 16</p>
+</sec>
+</sec>
+</sec>
+<sec id="pg142_s009">
+<sec id="pg142_s010">
+<label>5 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann schriftlich multiplizieren.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg132">Seite 132</xref></bold> nach.</p>
+</sec>
+<sec sec-type="task" id="pg142_task005">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>5</label>
+<statement>
+<p>&#x00DC;bertrage ins Heft. Multipliziere schriftlich.</p>
+</statement>
+<sec sec-type="subtask" id="pg143_task005a">
+<label>a)</label>
+<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436682_pg_142_fx_001.jpg"/></fig>
+<p>2 7 &#x00B7; 6</p>
+</sec>
+<sec sec-type="subtask" id="pg143_task005b">
+<label>b)</label>
+<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436682_pg_142_fx_002.jpg"/></fig>
+<p>2 8 6 &#x00B7; 1 3</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg143_task5a1">
+<sec-meta><related-object content-type="mer-Mittel"/></sec-meta>
+<label>5</label>
+<statement>
+<p>Multipliziere schriftlich im Heft.</p>
+</statement>
+<sec sec-type="subtask" id="pg143_task5a1a">
+<label>a)</label>
+<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436682_pg_143_fx_001.jpg"/></fig>
+<p>7 6 &#x00B7; 5 2</p>
+</sec>
+<sec sec-type="subtask" id="pg143_task5a1b">
+<label>b)</label>
+<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436682_pg_143_fx_002.jpg"/></fig>
+<p>1 0 8 &#x00B7; 8 0</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg143_task5a2">
+<sec-meta><related-object content-type="mer-Schwer"/></sec-meta>
+<label>5</label>
+<statement>
+<p>Multipliziere schriftlich.</p>
+</statement>
+<sec sec-type="subtask" id="pg143_task5a2a">
+<label>a)</label>
+<p>179 &#x00B7; 53</p>
+</sec>
+<sec sec-type="subtask" id="pg143_task5a2b">
+<label>b)</label>
+<p>564 &#x00B7; 54</p>
+</sec>
+<sec sec-type="subtask" id="pg143_task5a2c">
+<label>c)</label>
+<p>48 &#x00B7; 590</p>
+</sec>
+</sec>
+</sec>
+<sec id="pg142_s011">
+<sec id="pg142_s012">
+<label>6 Kompetenz</label>
+<p specific-use="mer-Lernziel">Ich kann schriftlich dividieren.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg138">Seite 138</xref></bold> nach.</p>
+</sec>
+<sec sec-type="task" id="pg142_task006">
+<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+<label>6</label>
+<statement>
+<p>&#x00DC;bertrage ins Heft. Dividiere schriftlich.</p>
+</statement>
+<sec sec-type="subtask" id="pg142_task006a">
+<label>a)</label>
+<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436682_pg_142_fx_003.jpg"/></fig>
+<p>7 8 4 : 7 = </p> 
+</sec>
+<sec sec-type="subtask" id="pg142_task006b">
+<label>b)</label>
+<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436682_pg_142_fx_004.jpg"/></fig>
+<p>5 0 8 2 : 1 1 =</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg143_task6a1">
+<sec-meta><related-object content-type="mer-Mittel"/></sec-meta>
+<label>6</label>
+<statement>
+<p>Dividiere schriftlich im Heft.</p>
+</statement>
+<sec sec-type="subtask" id="pg143_task6a1a">
+<label>a)</label>
+<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436682_pg_143_fx_003.jpg"/></fig>
+<p>5 6 3 2 : 8</p> 
+</sec>
+<sec sec-type="subtask" id="pg143_task6a1b">
+<label>b)</label>
+<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436682_pg_143_fx_004.jpg"/></fig>
+<p>8 0 6 4 : 1 2</p>
+</sec>
+</sec>
+<sec sec-type="task" id="pg143_task6a2">
+<sec-meta><related-object content-type="mer-Schwer"/></sec-meta>
+<label>6</label>
+<statement>
+<p>Dividiere schriftlich.</p>
+</statement>
+<sec sec-type="subtask" id="pg143_task6a2a">
+<label>a)</label>
+<p>2669 : 17</p>
+</sec>
+<sec sec-type="subtask" id="pg143_task6a2b">
+<label>b)</label>
+<p>60 059 : 19</p>
+</sec>
+<sec sec-type="subtask" id="pg143_task6a2c">
+<label>c)</label>
+<p>124 124 : 124</p>
+</sec>
+</sec>
+</sec>
+
+
+
 </book>
