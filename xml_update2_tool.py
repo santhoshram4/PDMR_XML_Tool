@@ -60,8 +60,64 @@ def process_xml_content(xml_content, isbn_num):
     xml_content = re.sub(pattern_title_group_id, fix_title_group_id, xml_content, flags=re.IGNORECASE)
 
     # ==========================================
-    # STEP 1: Title kulla irukura bold tags-a remove panradhu
+    # STEP 1: HEAD1 TO <book-part> CONVERSION & PAGESTART SHIFT BELOW </book-part>
     # ==========================================
+    active_pg_head1 = ["1"]
+    ch_counter = [0]
+
+    # Pattern to match pageStart OR head1 tags
+    head1_page_pattern = r'(<\?pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*\?>|<pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*/>)|(<head1\b[^>]*>(.*?)</head1>)'
+
+    def replace_head1_structures(m):
+        if m.group(1):
+            p_val = m.group(2) if m.group(2) else m.group(3)
+            active_pg_head1[0] = str(int(p_val)) # Page without leading zeros (e.g., pg6)
+            return m.group(0)
+        elif m.group(4):
+            head_content = m.group(5)
+            clean_title = head_content.replace("<bold>", "").replace("</bold>", "").replace("<bold/>", "").strip()
+            
+            ch_id = f"ch{ch_counter[0]}"
+            ch_counter[0] += 1
+            pg_id = f"pg{active_pg_head1[0]}"
+            
+            # Close previous book-part and body if any
+            prefix_close = "</body>\n</book-part>\n" if ch_counter[0] > 1 else ""
+            
+            book_part_markup = (
+                f'{prefix_close}'
+                f'<book-part book-part-type="mod-Lerneinheit" id="{ch_id}">\n'
+                f'<book-part-meta>\n'
+                f'<book-part-id book-part-id-type="pu-node-id"></book-part-id>\n'
+                f'<title-group id="{pg_id}">\n'
+                f'<label></label>\n'
+                f'<title>{clean_title}</title>\n'
+                f'</title-group>\n'
+                f'</book-part-meta>\n'
+                f'<body>'
+            )
+            return book_part_markup
+
+        return m.group(0)
+
+    xml_content = re.sub(head1_page_pattern, replace_head1_structures, xml_content, flags=re.DOTALL | re.IGNORECASE)
+
+    # If head1 tags were found, close the active <body> and <book-part> before end of file/HTML tags
+    if ch_counter[0] > 0:
+        if '</book>' in xml_content:
+            xml_content = re.sub(r'(\s*</book>)', r'\n</body>\n</book-part>\1', xml_content, count=1, flags=re.IGNORECASE)
+        elif '</html>' in xml_content:
+            xml_content = re.sub(r'(\s*</html>)', r'\n</body>\n</book-part>\1', xml_content, count=1, flags=re.IGNORECASE)
+        else:
+            xml_content += "\n</body>\n</book-part>"
+
+    # --------------------------------------------------------------------------
+    # NEW UPDATE: Shift any pageStart tag immediately above </body>\n</book-part> to BELOW </book-part>
+    # --------------------------------------------------------------------------
+    pattern_pagestart_above_body = r'((?:<\?pageStart\b[^>]*\?>|<pageStart\b[^>]*/>))\s*</body>\s*</book-part>'
+    xml_content = re.sub(pattern_pagestart_above_body, r'</body>\n</book-part>\n\1', xml_content, flags=re.IGNORECASE)
+
+    # Remove bold inside general title tags
     def replace_bold(match):
         title_content = match.group(0)
         title_content = title_content.replace("<bold>", "").replace("</bold>", "").replace("<bold/>", "")
@@ -77,26 +133,64 @@ def process_xml_content(xml_content, isbn_num):
     xml_content = re.sub(pattern_sec, r'</sec>\n\1', xml_content, flags=re.IGNORECASE)
 
     # ==========================================
+    # STEP 2.5: BOXED-TEXT TO <sec id="pgXXX_sYYY"> CONVERSION
+    # ==========================================
+    active_pg = ["000"]
+    s_counter = [1]
+
+    boxed_pattern = r'(<\?pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*\?>|<pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*/>)|(<boxed-text\b[^>]*>(.*?)</boxed-text>)'
+
+    def process_boxed_text(match):
+        if match.group(1):
+            p_val = match.group(2) if match.group(2) else match.group(3)
+            active_pg[0] = f"{int(p_val):03d}"
+            s_counter[0] = 1
+            return match.group(0)
+        elif match.group(4):
+            inner_content = match.group(5).strip()
+            sec_id = f"pg{active_pg[0]}_s{s_counter[0]:03d}"
+            s_counter[0] += 1
+            
+            p_match = re.search(r'<p\b[^>]*>(.*?)</p>', inner_content, flags=re.DOTALL | re.IGNORECASE)
+            
+            label_text = ""
+            if p_match:
+                first_p_full = p_match.group(0)
+                first_p_inner = p_match.group(1).strip()
+                
+                bold_match = re.search(r'^\s*<(?:bold\b[^>]*>(?:\s*<italic\b[^>]*>)?|<italic\b[^>]*>\s*<bold\b[^>]*>)(.*?)(?:</italic>\s*)?</bold>(?:</italic>)?', first_p_inner, flags=re.DOTALL | re.IGNORECASE)
+                
+                if bold_match:
+                    raw_label_text = bold_match.group(1).strip()
+                    label_text = re.sub(r'<[^>]+>', '', raw_label_text)
+                    remaining_p_inner = first_p_inner[bold_match.end():].strip()
+                    
+                    if remaining_p_inner:
+                        updated_first_p = f"<p>{remaining_p_inner}</p>"
+                        inner_content = inner_content.replace(first_p_full, updated_first_p, 1)
+                    else:
+                        inner_content = inner_content.replace(first_p_full, '', 1).strip()
+
+            label_element = f"<label>{label_text}</label>\n" if label_text else ""
+            return f'<sec id="{sec_id}">\n{label_element}{inner_content}\n</sec>'
+            
+        return match.group(0)
+
+    xml_content = re.sub(boxed_pattern, process_boxed_text, xml_content, flags=re.DOTALL | re.IGNORECASE)
+
+    # ==========================================
     # STEP 3: Dynamic Page Track & Image Conversion (<fig><img/></fig>, Standalone <img/>, and <graphic/>)
-    # Reset FX sequence to 1 when page changes!
     # ==========================================
     fx_counter = [1]
-    current_page = ["001"] # Default fallback page number
+    current_page = ["001"]
 
-    # Pattern captures:
-    # Group 1: PageStart tags
-    # Group 4: <p><fig><img/></fig></p>
-    # Group 5: <fig><img/></fig>
-    # Group 6: Standalone <img/> or <img .../> tags
-    # Group 7: Existing <graphic ... /> tags
     combined_pattern = r'(<\?pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*\?>|<pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*/>)|(<p>\s*<fig>\s*<img\s*/>\s*</fig>\s*</p>)|(<fig>\s*<img\s*/>\s*</fig>)|(<img\s*/?>)|(<graphic\b[^>]*\bxlink:href=["\'][^"\']*["\'][^>]*/>)'
 
     def replacer(match):
         if match.group(1):
-            # Page switch detected: update page number & RESET fx_counter to 1
             page_num_val = match.group(2) if match.group(2) else match.group(3)
             current_page[0] = f"{int(page_num_val):03d}"
-            fx_counter[0] = 1  # Reset FX sequence per page!
+            fx_counter[0] = 1
             return match.group(0)
             
         elif match.group(4):
@@ -118,7 +212,6 @@ def process_xml_content(xml_content, isbn_num):
             return f'<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/{isbn_num}_{pg_str}_{fx_str}.jpg"/>'
 
         elif match.group(7):
-            # Fix existing <graphic> tags with active page and fx sequence
             fx_str = f"fx_{fx_counter[0]:03d}"
             fx_counter[0] += 1
             pg_str = f"pg_{current_page[0]}"
