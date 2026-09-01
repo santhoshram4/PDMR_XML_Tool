@@ -3,16 +3,16 @@ import re
 from datetime import datetime
 
 # ==========================================
-# EXPIRY DATE CHECK (Expiry: Aug 31, 2026)
+# EXPIRY DATE CHECK (Expiry: Sep 30, 2026)
 # ==========================================
-EXPIRY_DATE = datetime(2026, 8, 31, 23, 59, 59)
+EXPIRY_DATE = datetime(2026, 9, 30, 23, 59, 59)
 
 def check_expiry():
     current_time = datetime.now()
     if current_time > EXPIRY_DATE:
         print("\n" + "=" * 55)
         print(" ERROR: Script Expired!")
-        print(" This tool has expired on August 31, 2026. Please contact Tool Developer.")
+        print(" This tool has expired on September 30, 2026. Please contact Tool Developer.")
         print("=" * 55 + "\n")
         return False
     return True
@@ -65,13 +65,12 @@ def process_xml_content(xml_content, isbn_num):
     active_pg_head1 = ["1"]
     ch_counter = [0]
 
-    # Pattern to match pageStart OR head1 tags
     head1_page_pattern = r'(<\?pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*\?>|<pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*/>)|(<head1\b[^>]*>(.*?)</head1>)'
 
     def replace_head1_structures(m):
         if m.group(1):
             p_val = m.group(2) if m.group(2) else m.group(3)
-            active_pg_head1[0] = str(int(p_val)) # Page without leading zeros (e.g., pg6)
+            active_pg_head1[0] = str(int(p_val))
             return m.group(0)
         elif m.group(4):
             head_content = m.group(5)
@@ -81,7 +80,6 @@ def process_xml_content(xml_content, isbn_num):
             ch_counter[0] += 1
             pg_id = f"pg{active_pg_head1[0]}"
             
-            # Close previous book-part and body if any
             prefix_close = "</body>\n</book-part>\n" if ch_counter[0] > 1 else ""
             
             book_part_markup = (
@@ -102,7 +100,6 @@ def process_xml_content(xml_content, isbn_num):
 
     xml_content = re.sub(head1_page_pattern, replace_head1_structures, xml_content, flags=re.DOTALL | re.IGNORECASE)
 
-    # If head1 tags were found, close the active <body> and <book-part> before end of file/HTML tags
     if ch_counter[0] > 0:
         if '</book>' in xml_content:
             xml_content = re.sub(r'(\s*</book>)', r'\n</body>\n</book-part>\1', xml_content, count=1, flags=re.IGNORECASE)
@@ -111,13 +108,9 @@ def process_xml_content(xml_content, isbn_num):
         else:
             xml_content += "\n</body>\n</book-part>"
 
-    # --------------------------------------------------------------------------
-    # NEW UPDATE: Shift any pageStart tag immediately above </body>\n</book-part> to BELOW </book-part>
-    # --------------------------------------------------------------------------
     pattern_pagestart_above_body = r'((?:<\?pageStart\b[^>]*\?>|<pageStart\b[^>]*/>))\s*</body>\s*</book-part>'
     xml_content = re.sub(pattern_pagestart_above_body, r'</body>\n</book-part>\n\1', xml_content, flags=re.IGNORECASE)
 
-    # Remove bold inside general title tags
     def replace_bold(match):
         title_content = match.group(0)
         title_content = title_content.replace("<bold>", "").replace("</bold>", "").replace("<bold/>", "")
@@ -179,7 +172,7 @@ def process_xml_content(xml_content, isbn_num):
     xml_content = re.sub(boxed_pattern, process_boxed_text, xml_content, flags=re.DOTALL | re.IGNORECASE)
 
     # ==========================================
-    # STEP 3: Dynamic Page Track & Image Conversion (<fig><img/></fig>, Standalone <img/>, and <graphic/>)
+    # STEP 3: Dynamic Page Track & Image Conversion
     # ==========================================
     fx_counter = [1]
     current_page = ["001"]
@@ -222,13 +215,13 @@ def process_xml_content(xml_content, isbn_num):
     xml_content = re.sub(combined_pattern, replacer, xml_content, flags=re.IGNORECASE)
 
     # ==========================================
-    # STEP 3.1: GLOBAL REPLACE - Replace residual img/000000000000_ tags with loaded ISBN
+    # STEP 3.1: GLOBAL REPLACE - Residual 000000000000 ISBN
     # ==========================================
     pattern_global_zeros = r'(xlink:href=["\']img/)000000000000(_)'
     xml_content = re.sub(pattern_global_zeros, rf'\g<1>{isbn_num}\g<2>', xml_content, flags=re.IGNORECASE)
 
     # ==========================================
-    # STEP 3.2: DYNAMIC SECTION PAGE ID FIX - Update task/subtask sec IDs based on active pageStart
+    # STEP 3.2: DYNAMIC SECTION PAGE ID FIX
     # ==========================================
     current_pg_id = ["001"]
     sec_page_pattern = r'(<\?pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*\?>|<pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*/>)|(<sec\b[^>]*\bid=["\']pg)\d+(_task[^"\']*["\'][^>]*>)'
@@ -243,6 +236,13 @@ def process_xml_content(xml_content, isbn_num):
         return m.group(0)
 
     xml_content = re.sub(sec_page_pattern, sec_page_replacer, xml_content, flags=re.IGNORECASE)
+
+    # ==========================================
+    # STEP 3.3: PULL ORPHAN GRAPHICS INSIDE PRECEDING SUBTASK <sec>
+    # ==========================================
+    orphan_graphic_subtask_pattern = r'(<sec\b[^>]*sec-type=["\']subtask["\'][^>]*>[\s\S]*?)</sec>\s*(<p>\s*<graphic\b[^>]*/>\s*</p>|<graphic\b[^>]*/>)'
+    while re.search(orphan_graphic_subtask_pattern, xml_content, flags=re.IGNORECASE):
+        xml_content = re.sub(orphan_graphic_subtask_pattern, r'\1\n\2\n</sec>', xml_content, flags=re.IGNORECASE)
 
     # ==========================================
     # STEP 4: Remove nested duplicate <p><p>...</p></p> tags
@@ -280,7 +280,7 @@ def process_xml_content(xml_content, isbn_num):
     xml_content = re.sub(pattern_empty_p, '', xml_content, flags=re.IGNORECASE)
 
     # ==========================================
-    # STEP 7: STRICT Punctuation check for <statement> tag
+    # STEP 7: STRICT Punctuation check for <statement> tag in Subtasks
     # ==========================================
     def wrap_subtask_statement(match):
         sec_start = match.group(1)
@@ -301,7 +301,41 @@ def process_xml_content(xml_content, isbn_num):
     xml_content = re.sub(pattern_subtask, wrap_subtask_statement, xml_content, flags=re.DOTALL | re.IGNORECASE)
 
     # ==========================================
-    # STEP 8: ACCURATE Subtask ID Replacement for ALL Children (a, b, c, d...)
+    # STEP 7.5: SAFE TASK-LEVEL STATEMENT WRAPPING
+    # ==========================================
+    def fix_task_level_statement(task_match):
+        task_sec_open = task_match.group(1)
+        label_tag = task_match.group(2)
+        rest_content = task_match.group(3)
+        task_sec_close = task_match.group(4)
+
+        subtask_pos = re.search(r'<sec\b[^>]*sec-type=["\']subtask["\']', rest_content, flags=re.IGNORECASE)
+        
+        if subtask_pos:
+            before_subtasks = rest_content[:subtask_pos.start()]
+            subtasks_and_after = rest_content[subtask_pos.start():]
+        else:
+            before_subtasks = rest_content
+            subtasks_and_after = ""
+
+        clean_before = re.sub(r'</?statement>', '', before_subtasks, flags=re.IGNORECASE).strip()
+        
+        if clean_before:
+            wrapped_statement = f"\n<statement>\n{clean_before}\n</statement>\n"
+        else:
+            wrapped_statement = "\n"
+
+        return f"{task_sec_open}\n{label_tag}{wrapped_statement}{subtasks_and_after}{task_sec_close}"
+
+    pattern_full_task = r'(<sec\b[^>]*sec-type=["\']task["\'][^>]*>)\s*(<label>.*?</label>)(.*?)(</sec>)'
+    xml_content = re.sub(pattern_full_task, fix_task_level_statement, xml_content, flags=re.DOTALL | re.IGNORECASE)
+
+    # Repeat Step 3.3 in case task-level statement re-ordering leaves trailing graphics outside subtask
+    while re.search(orphan_graphic_subtask_pattern, xml_content, flags=re.IGNORECASE):
+        xml_content = re.sub(orphan_graphic_subtask_pattern, r'\1\n\2\n</sec>', xml_content, flags=re.IGNORECASE)
+
+    # ==========================================
+    # STEP 8: ACCURATE Subtask ID Replacement for ALL Children
     # ==========================================
     def fix_subtask_ids_across_file(content):
         parts = re.split(r'(<sec\b[^>]*sec-type=["\']task["\'][^>]*>)', content, flags=re.IGNORECASE)
@@ -336,7 +370,7 @@ def process_xml_content(xml_content, isbn_num):
     xml_content = fix_subtask_ids_across_file(xml_content)
 
     # ==========================================
-    # STEP 9: Remove orphan </fig> inside <p>...</p> (ONLY if <fig> opening tag is missing)
+    # STEP 9: Remove orphan </fig> inside <p>...</p>
     # ==========================================
     def remove_orphan_fig_close(match):
         p_block = match.group(0)
