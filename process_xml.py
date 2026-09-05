@@ -8,26 +8,26 @@ OUTPUT_DIR = "output"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# FIXED REGEX 1: Match subtask list prefixes strictly (ONLY single/double chars like a), b., 1), i. etc.), EXCLUDING inside <td> tags
+# Regex 1: Match subtask list prefixes strictly
 P_TAG_RE = re.compile(
     r"(?<!<td>)\s*<p(?P<attrs>[^>]*)>\s*(?P<label>[a-zA-Z0-9]{1,3}[\.\)])\s*(?P<content>.*?)</p>",
     re.DOTALL | re.IGNORECASE,
 )
 
-# Regex 2: Track pageStart processing instructions like <?pageStart ... pagination="6"?>
+# Regex 2: Track pageStart processing instructions
 PAGE_RE = re.compile(r'<\?pageStart\b[^>]*pagination=["\'](\d+)["\'][^>]*\?>')
 
 # Regex 3: Match inner <fig...>...</fig> or <img.../> tags
-FIG_RE = re.compile(r"<fig\b[^>]*>.*?</fig>|<img\b[^>]*/?>", re.DOTALL | re.IGNORECASE)
+FIG_RE = re.compile(r"<fig\b[^>]*>.*.*?/fig>|<img\b[^>]*/?>", re.DOTALL | re.IGNORECASE)
 
-# Regex 4: Match FULL standalone <fig>...</fig> or <img.../> tags precisely
+# Regex 4: Match FULL standalone <fig>...</fig> or <img.../> tags
 STANDALONE_FIG_RE = re.compile(
     r"<fig\b[^>]*>.*?</fig>|<img\b[^>]*/?>", re.DOTALL | re.IGNORECASE
 )
 
-# Regex 5: Match 'Seite <page_num>' optional with 'Nr. <task_numbers>' pattern
+# Regex 5: Captures page number and sub-task numbers strictly
 SEITE_RE = re.compile(
-    r"\b(Seite\s+(\d+)(?:\s+Nr\.\s+([\d\s,]+))?)\b",
+    r"\b((?:Seite|S\.)\s+(\d+)(?:,?\s+Nr\.\s+([\d\s,]+(?:\.\s*)?))?)",
     re.IGNORECASE,
 )
 
@@ -43,32 +43,63 @@ EMPTY_TD_P_RE = re.compile(
     re.IGNORECASE | re.DOTALL,
 )
 
-# Regex 9: Circled numbers pattern (&#x2460; through &#x2473;)
+# Regex 9: Circled numbers pattern
 CIRCLED_P_RE = re.compile(
     r"<p(?P<attrs>[^>]*)>\s*(?P<entity>&#x24[67][0-9a-fA-F];)\s*(?P<content>.*?)</p>",
     re.DOTALL | re.IGNORECASE,
 )
 
+# Regex 10: Solution link pattern (Lösungen / L&#x00F6;sungen ab S. XXX)
+SOLUTION_LINK_RE = re.compile(
+    r"(?:<italic>)?\s*(L(?:&#x00F6;|ö)sungen\s+ab\s+(?:Seite|S\.)\s+(\d+))\s*(?:</italic>)?",
+    re.IGNORECASE,
+)
+
+# NEW Regex 11: Match and remove <p> tags containing ONLY whitespace or space entities (&#x00A0;, &nbsp;, etc.)
+EMPTY_OR_SPACE_P_RE = re.compile(
+    r"<p(?:\s+[^>]*)?>\s*(?:&#x00A0;|&nbsp;|&#160;|\s)*\s*</p>",
+    re.IGNORECASE | re.DOTALL,
+)
+
+
+def process_solution_links(text):
+    """Transforms 'L&#x00F6;sungen ab S. 218' inside <italic> into <italic><xref ref-type="link-toSolution" rid="pg218">...</xref></italic>."""
+
+    def replace_solution(match):
+        full_text = match.group(1)
+        page_num = int(match.group(2))
+        rid_val = f"pg{page_num}"
+
+        return f'<italic><xref ref-type="link-toSolution" rid="{rid_val}">{full_text}</xref></italic>'
+
+    return SOLUTION_LINK_RE.sub(replace_solution, text)
+
 
 def process_seite_links(text):
-    """Transforms 'Seite 196 Nr. 4, 5' or 'Seite 204' into exact <xref> link tags."""
+    """Transforms 'Seite 24' into <xref ref-type="link-LookItUp" rid="pg24">Seite 24</xref> without leading zeroes in rid."""
 
     def replace_seite(match):
         full_match = match.group(1)
+        prefix_str = "S." if "S." in full_match else "Seite"
         page_num = int(match.group(2))
-        page_str = f"{page_num:03d}"
+        page_str = str(page_num)
         nums_part = match.group(3)
 
         if not nums_part:
             rid_val = f"pg{page_str}"
-            return f'<xref ref-type="link-LookItUp" rid="{rid_val}">{full_match}</xref>'
+            return f'<xref ref-type="link-LookItUp" rid="{rid_val}">{full_match.strip()}</xref>'
 
-        nums_part = nums_part.strip()
-        raw_nums = [n.strip() for n in nums_part.split(",") if n.strip()]
+        has_trailing_dot = nums_part.rstrip().endswith(".")
+
+        trailing_spaces_count = len(nums_part) - len(nums_part.rstrip())
+        trailing_spaces = " " * trailing_spaces_count
+
+        nums_part_clean = nums_part.rstrip(". ")
+        raw_nums = [n.strip() for n in nums_part_clean.split(",") if n.strip()]
 
         if not raw_nums:
             rid_val = f"pg{page_str}"
-            return f'<xref ref-type="link-LookItUp" rid="{rid_val}">{full_match}</xref>'
+            return f'<xref ref-type="link-LookItUp" rid="{rid_val}">{full_match.strip()}</xref>'
 
         xref_list = []
         for idx, num_str in enumerate(raw_nums):
@@ -77,7 +108,8 @@ def process_seite_links(text):
             rid_val = f"pg{page_str}_task{task_str}"
 
             if idx == 0:
-                text_content = f"Seite {match.group(2)} Nr. {num_str}"
+                sep = ", " if prefix_str == "S." else " "
+                text_content = f"{prefix_str} {page_num}{sep}Nr. {num_str}"
             else:
                 text_content = num_str
 
@@ -86,7 +118,11 @@ def process_seite_links(text):
             )
             xref_list.append(xref_tag)
 
-        return ", ".join(xref_list)
+        res = ", ".join(xref_list)
+        if has_trailing_dot:
+            res += "."
+
+        return res + trailing_spaces
 
     return SEITE_RE.sub(replace_seite, text)
 
@@ -262,7 +298,7 @@ def process_book_parts(content):
     def replace_book_part(match):
         page_start_tag = match.group(1)
         pg_num = int(match.group(2))
-        pg_str = f"{pg_num:03d}"
+        pg_str = str(pg_num)
 
         first_head = match.group(3).strip()
         second_head = match.group(4)
@@ -291,7 +327,9 @@ def process_book_parts(content):
     return book_part_re.sub(replace_book_part, content)
 
 
-def process_circled_num_lists(content, get_page_for_pos, sec_counter, page_img_counters):
+def process_circled_num_lists(
+    content, get_page_for_pos, sec_counter, page_img_counters
+):
     """Groups contiguous <p>&#x2460;...</p> elements into <sec id="pgXXX_sYYY"><list> blocks."""
 
     def get_next_sec_id(pg_str):
@@ -408,6 +446,9 @@ def process_task_statement_images(content, get_page_for_pos, page_img_counters):
 
 
 def process_xml_text(content):
+    # UPDATED: Remove <p> tags containing only space entities (e.g. <p>&#x00A0;</p>)
+    content = EMPTY_OR_SPACE_P_RE.sub("", content)
+
     content = SEC_META_RE.sub("", content)
     content = EMPTY_TD_P_RE.sub(r"\1\2", content)
     content = process_book_parts(content)
@@ -418,19 +459,21 @@ def process_xml_text(content):
     page_img_counters = {}
 
     def get_page_for_pos(pos):
-        pg = "001"
+        pg = "1"
         for m in page_matches:
             if m.start() <= pos:
-                pg = f"{int(m.group(1)):03d}"
+                pg = str(int(m.group(1)))
             else:
                 break
         return pg
 
     content = process_kompetenz_sections(content, get_page_for_pos, sec_counter)
-    content = process_circled_num_lists(content, get_page_for_pos, sec_counter, page_img_counters)
+    content = process_circled_num_lists(
+        content, get_page_for_pos, sec_counter, page_img_counters
+    )
     content = process_task_sections(content, get_page_for_pos)
 
-    # SUBTASK REPLACER (Excluding <td> tags)
+    # SUBTASK REPLACER
     def replace_p(match):
         nonlocal task_count
 
@@ -441,6 +484,7 @@ def process_xml_text(content):
         label = match.group("label")
         inner_content = match.group("content").strip()
 
+        inner_content = process_solution_links(inner_content)
         inner_content = process_seite_links(inner_content)
         inner_content = process_nextlevel_tasks(
             inner_content, get_page_for_pos, start_pos
@@ -469,6 +513,7 @@ def process_xml_text(content):
 
         # 2. Text + Image / Text Subtask
         else:
+
             def replace_inline_graphic(fig_match):
                 if pg_str not in page_img_counters:
                     page_img_counters[pg_str] = 1
@@ -485,7 +530,9 @@ def process_xml_text(content):
             has_ending_punctuation = bool(re.search(r"[\.:;\?]$", clean_end_text))
 
             if has_ending_punctuation:
-                body_content = f"<statement>\n<p{attrs}>{inner_content}</p>\n</statement>"
+                body_content = (
+                    f"<statement>\n<p{attrs}>{inner_content}</p>\n</statement>"
+                )
             else:
                 body_content = f"<p{attrs}>{inner_content}</p>"
 
@@ -498,7 +545,9 @@ def process_xml_text(content):
         return res
 
     updated_content = P_TAG_RE.sub(replace_p, content)
-    updated_content = process_task_statement_images(updated_content, get_page_for_pos, page_img_counters)
+    updated_content = process_task_statement_images(
+        updated_content, get_page_for_pos, page_img_counters
+    )
 
     def replace_regular_p(match):
         full_p = match.group(0)
@@ -507,7 +556,8 @@ def process_xml_text(content):
         if '<sec sec-type="subtask"' in full_p:
             return full_p
 
-        p_processed = process_seite_links(full_p)
+        p_processed = process_solution_links(full_p)
+        p_processed = process_seite_links(p_processed)
         p_processed = process_nextlevel_tasks(
             p_processed, get_page_for_pos, start_pos
         )
@@ -550,10 +600,13 @@ def process_xml_text(content):
 
 def main():
     try:
+        # EXPIRY DATE: September 30, 2026
         EXPIRY_DATE = datetime(2026, 9, 30, 23, 59, 59)
-        
+
         if datetime.now() > EXPIRY_DATE:
-            print("This tool has expired on September 30, 2026. Please contact support/developer.")
+            print(
+                "This tool has expired on September 30, 2026. Please contact support/developer."
+            )
             return
 
         if not os.path.exists(INPUT_DIR):
@@ -575,8 +628,19 @@ def main():
             out_path = os.path.join(OUTPUT_DIR, filename)
 
             try:
-                with open(in_path, "r", encoding="utf-8") as f:
-                    content = f.read()
+                content = None
+                for enc in ["utf-8-sig", "utf-8", "latin-1", "cp1252"]:
+                    try:
+                        with open(in_path, "r", encoding=enc) as f:
+                            content = f.read()
+                        break
+                    except UnicodeDecodeError:
+                        continue
+
+                if content is None:
+                    raise Exception(
+                        "File encoding non-compatible. Unable to read file."
+                    )
 
                 updated_xml = process_xml_text(content)
 

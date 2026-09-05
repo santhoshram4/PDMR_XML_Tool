@@ -40,6 +40,13 @@
 <!-- link-tosolution -->
 <p><bold>Rationale Zahlen multiplizieren und dividieren</bold> &#x2192; Seite 24</p>
 
+<!-- link-tosolution -->
+<p>&#x2192; <italic>L&#x00F6;sungen ab S. 218</italic></p>
+
+<!--link-LookItUp-->
+<p>&#x2192; S. 241, Nr. 2 <italic>&#x2212; 7</italic></p>
+
+<p> Gleichungen linearer Funktionen einander zuordnen &#x2192; S. 246, Nr. 3, 4.</p>
 
 <!-- Nextlevel_Task-->
 <p><bold><sec-meta>mer-</sec-meta>&#x25B8;12 <sec-meta>mer-</sec-meta>&#x25B8;10 <sec-meta>mer-</sec-meta>&#x25B8;9</bold></p>
@@ -132,6 +139,7 @@
 <p>Achte auf die Zeichen vor den Zahlen.</p></td>
 <td><p></p></td>
 <td><p></p></td>
+<td><p>&#x00A0;</p></td>
 </tr>
 </tbody>
 </table>
@@ -172,7 +180,13 @@
 <p>a) Beschreibe die Fehler.</p>
 <p>b) Rechne richtig im Heft.</p>
 
-
+<!-- 2 Task Tipp update sec tag-->
+<p><bold>3</bold> L&#x00F6;se die Gleichung.</p>
+<p><bold>Tipp</bold> zu d) Multipliziere aus: <fig><img/></fig></p>
+<p>a) x &#x2212; 9 = 16</p> 
+<p>b) 44 = 4x &#x002B; 12</p>
+<p>c) 5x &#x002B; 3 = &#x2212;7 &#x002B; 7x</p> 
+<p>d) 2(x &#x002B; 3) = &#x2212;8</p>
 
 <!-- 2 Task-->
 <?pageStart pdf="146" pagination="142"?>
@@ -360,7 +374,7 @@
 
 
 
-<!-- 2 Task completed-->
+<!-- 2 Task updated code completed-->
 <sec id="pg142_s001">
 <sec id="pg142_s002">
 <label>1 Kompetenz</label>

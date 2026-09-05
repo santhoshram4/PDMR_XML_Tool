@@ -12,7 +12,7 @@ def check_expiry():
     if current_time > EXPIRY_DATE:
         print("\n" + "=" * 55)
         print(" ERROR: Script Expired!")
-        print(" This tool has expired on September 30, 2026. Please contact Tool Developer.")
+        print(" This tool has expired on August 31, 2026. Please contact Tool Developer.")
         print("=" * 55 + "\n")
         return False
     return True
@@ -20,21 +20,32 @@ def check_expiry():
 input_folder = "input"
 output_folder = "output"
 
+def read_file_safely(file_path):
+    """Reads file content trying multiple encodings to avoid utf-8 decode errors."""
+    encodings = ['utf-8', 'latin-1', 'iso-8859-1', 'cp1252']
+    for enc in encodings:
+        try:
+            with open(file_path, 'r', encoding=enc) as f:
+                return f.read()
+        except UnicodeDecodeError:
+            continue
+    with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+        return f.read()
+
 def get_isbn_number():
     txt_path = os.path.join(input_folder, "Mention_ISBN_Num.txt")
     default_isbn = "000000000000"
     
     if os.path.exists(txt_path):
         try:
-            with open(txt_path, 'r', encoding='utf-8') as f:
-                content = f.read()
-                match = re.search(r'ISBN\s*Number:\s*["\'](\d+)["\']', content, flags=re.IGNORECASE)
-                if match:
-                    return match.group(1)
-                else:
-                    fallback_match = re.search(r'(\d{10,13})', content)
-                    if fallback_match:
-                        return fallback_match.group(1)
+            content = read_file_safely(txt_path)
+            match = re.search(r'ISBN\s*Number:\s*["\'](\d+)["\']', content, flags=re.IGNORECASE)
+            if match:
+                return match.group(1)
+            else:
+                fallback_match = re.search(r'(\d{10,13})', content)
+                if fallback_match:
+                    return fallback_match.group(1)
         except Exception:
             pass
     return default_isbn
@@ -141,6 +152,10 @@ def process_xml_content(xml_content, isbn_num):
             return match.group(0)
         elif match.group(4):
             inner_content = match.group(5).strip()
+            
+            # Clean orphan </statement> inside boxed-text structure if any
+            inner_content = re.sub(r'\s*</statement>\s*', '', inner_content, flags=re.IGNORECASE)
+            
             sec_id = f"pg{active_pg[0]}_s{s_counter[0]:03d}"
             s_counter[0] += 1
             
@@ -301,7 +316,7 @@ def process_xml_content(xml_content, isbn_num):
     xml_content = re.sub(pattern_subtask, wrap_subtask_statement, xml_content, flags=re.DOTALL | re.IGNORECASE)
 
     # ==========================================
-    # STEP 7.5: SAFE TASK-LEVEL STATEMENT WRAPPING
+    # STEP 7.5: SAFE TASK-LEVEL STATEMENT WRAPPING (With Unmatched Closing Clean-Up)
     # ==========================================
     def fix_task_level_statement(task_match):
         task_sec_open = task_match.group(1)
@@ -330,7 +345,9 @@ def process_xml_content(xml_content, isbn_num):
     pattern_full_task = r'(<sec\b[^>]*sec-type=["\']task["\'][^>]*>)\s*(<label>.*?</label>)(.*?)(</sec>)'
     xml_content = re.sub(pattern_full_task, fix_task_level_statement, xml_content, flags=re.DOTALL | re.IGNORECASE)
 
-    # Repeat Step 3.3 in case task-level statement re-ordering leaves trailing graphics outside subtask
+    # Clean orphaned closing </statement> tags outside tasks/subtasks
+    xml_content = re.sub(r'</sec>\s*</statement>', r'</sec>', xml_content, flags=re.IGNORECASE)
+
     while re.search(orphan_graphic_subtask_pattern, xml_content, flags=re.IGNORECASE):
         xml_content = re.sub(orphan_graphic_subtask_pattern, r'\1\n\2\n</sec>', xml_content, flags=re.IGNORECASE)
 
@@ -381,6 +398,39 @@ def process_xml_content(xml_content, isbn_num):
     pattern_p_block = r'<p\b[^>]*>.*?</p>'
     xml_content = re.sub(pattern_p_block, remove_orphan_fig_close, xml_content, flags=re.DOTALL | re.IGNORECASE)
 
+    # ==========================================
+    # STEP 10: WRAP <p><bold>Tipp</bold>...</p> IN <sec id="pgXXX_sYYY">
+    # ==========================================
+    tipp_page = ["000"]
+    tipp_sec_counter = [1]
+
+    pattern_tipp_track = r'(<\?pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*\?>|<pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*/>|<sec\b[^>]*id=["\']pg(\d+)_task)|(<p\b[^>]*>\s*<bold>\s*Tipp:?\s*</bold>.*?</p>)'
+
+    def tipp_replacer(m):
+        if m.group(1):
+            if m.group(2):
+                p_num = m.group(2)
+            elif m.group(3):
+                p_num = m.group(3)
+            else:
+                p_num = m.group(4)
+            
+            p_formatted = f"{int(p_num):03d}"
+            if tipp_page[0] != p_formatted:
+                tipp_page[0] = p_formatted
+                tipp_sec_counter[0] = 1
+            return m.group(0)
+
+        elif m.group(5):
+            tipp_p = m.group(5)
+            sec_id = f"pg{tipp_page[0]}_s{tipp_sec_counter[0]:03d}"
+            tipp_sec_counter[0] += 1
+            return f'<sec id="{sec_id}">\n{tipp_p}\n</sec>'
+
+        return m.group(0)
+
+    xml_content = re.sub(pattern_tipp_track, tipp_replacer, xml_content, flags=re.DOTALL | re.IGNORECASE)
+
     return xml_content
 
 def process_xml_files():
@@ -415,15 +465,16 @@ def process_xml_files():
         input_path = os.path.join(input_folder, file_name)
         output_path = os.path.join(output_folder, file_name)
 
-        with open(input_path, 'r', encoding='utf-8') as f:
-            content = f.read()
+        try:
+            content = read_file_safely(input_path)
+            updated_content = process_xml_content(content, isbn_num)
 
-        updated_content = process_xml_content(content, isbn_num)
+            with open(output_path, 'w', encoding='utf-8') as f:
+                f.write(updated_content)
 
-        with open(output_path, 'w', encoding='utf-8') as f:
-            f.write(updated_content)
-
-        print(f"File run complete: Saved to '{output_folder}/{file_name}'\n")
+            print(f"File run complete: Saved to '{output_folder}/{file_name}'\n")
+        except Exception as e:
+            print(f"Error in processing {file_name}: {e}\n")
 
     print("========================================")
     print("     ALL FILES PROCESSED SUCCESSFULLY!  ")
