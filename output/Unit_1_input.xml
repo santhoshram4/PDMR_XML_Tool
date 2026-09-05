@@ -72,39 +72,38 @@
 </sec>
 
 <!-- Task-->
+<sec id="pg6_s001">
 <sec id="pg6_s003">
 <sec id="pg6_s004">
 <label>2 Kompetenz</label>
 <p specific-use="mer-Lernziel">Ich kann einen Zahlenstrahl zeichnen und einteilen.</p>
 </sec>
 </sec>
-<sec>
-<label>Aufgabe</label>
 <sec sec-type="task" id="pg6_task002">
 <label>2</label>
 <statement>
 <p>Ist der Zahlenstrahl richtig gezeichnet und eingeteilt?</p>
 <p>Verbessere in deinem Heft.</p>
-</statement><sec sec-type="subtask" id="pg6_task001a">
+</statement>
+<sec sec-type="subtask" id="pg6_task001a">
 <label>a)</label>
-<fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_001.jpg"/>
-</fig>
-</sec><sec sec-type="subtask" id="pg6_task001b">
+<fig><img/></fig></p><sec sec-type="subtask" id="pg6_task001b">
 <label>b)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_002.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_001.jpg"/>
 </fig>
 </sec><sec sec-type="subtask" id="pg6_task001c">
 <label>c)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_003.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_002.jpg"/>
 </fig>
+</sec>
+</sec>
 </sec>
 </sec>
 
 <!-- new Task-->
-</sec><sec sec-type="task" id="pg6_task001">
+<sec sec-type="task" id="pg6_task001">
 <label>1</label>
 <statement>
 <p>Erg&#x00E4;nze die S&#x00E4;tze im Heft.</p>
@@ -112,22 +111,22 @@
 </statement><sec sec-type="subtask" id="pg6_task001a">
 <label>a)</label>
 <statement>
-<p>Einen Winkel, der gr&#x00F6;&#x00DF;er als 0&#x00B0; und kleiner als 90&#x00B0; ist, nennt man <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_004.jpg"/>.</p>
+<p>Einen Winkel, der gr&#x00F6;&#x00DF;er als 0&#x00B0; und kleiner als 90&#x00B0; ist, nennt man <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_003.jpg"/>.</p>
 </statement>
 </sec><sec sec-type="subtask" id="pg6_task001b">
 <label>b)</label>
 <statement>
-<p>Ein rechter Winkel ist genau <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_005.jpg"/>&#x00B0; gro&#x00DF;.</p>
+<p>Ein rechter Winkel ist genau <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_004.jpg"/>&#x00B0; gro&#x00DF;.</p>
 </statement>
 </sec><sec sec-type="subtask" id="pg6_task001c">
 <label>c)</label>
 <statement>
-<p>Stumpfe Winkel sind gr&#x00F6;&#x00DF;er als <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_006.jpg"/>&#x00B0;.</p>
+<p>Stumpfe Winkel sind gr&#x00F6;&#x00DF;er als <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_005.jpg"/>&#x00B0;.</p>
 </statement>
 </sec><sec sec-type="subtask" id="pg6_task001d">
 <label>d)</label>
 <statement>
-<p>Ein gestreckter Winkel ist genau <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_007.jpg"/> gro&#x00DF;.</p>
+<p>Ein gestreckter Winkel ist genau <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_006.jpg"/> gro&#x00DF;.</p>
 </statement>
 </sec>
 </sec><sec sec-type="task" id="pg6_task002">
@@ -143,22 +142,22 @@
 </statement><sec sec-type="subtask" id="pg6_task001a">
 <label>a)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_008.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_007.jpg"/>
 </fig>
 </sec><sec sec-type="subtask" id="pg6_task001b">
 <label>b)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_009.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_008.jpg"/>
 </fig>
 </sec><sec sec-type="subtask" id="pg6_task001c">
 <label>c)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_010.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_009.jpg"/>
 </fig>
 </sec><sec sec-type="subtask" id="pg6_task001d">
 <label>d)</label>
 <fig fig-type="exerciseImage">
-<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_011.jpg"/>
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_010.jpg"/>
 </fig>
 </sec>
 <boxed-text position="float">
@@ -193,31 +192,6 @@
 <p>140&#x00B0;</p>
 </statement>
 </sec>
-</sec><sec sec-type="task" id="pg6_task003">
-<label>3</label>
-<statement>
-<p>Zeichne den Winkel ins Heft.</p>
-</statement><sec sec-type="subtask" id="pg6_task001a">
-<label>a)</label>
-<statement>
-<p>40&#x00B0;</p>
-</statement>
-</sec><sec sec-type="subtask" id="pg6_task001b">
-<label>b)</label>
-<statement>
-<p>65&#x00B0;</p>
-</statement>
-</sec><sec sec-type="subtask" id="pg6_task001c">
-<label>c)</label>
-<statement>
-<p>26&#x00B0;</p>
-</statement>
-</sec><sec sec-type="subtask" id="pg6_task001d">
-<label>d)</label>
-<statement>
-<p>152&#x00B0;</p>
-</statement>
-</sec>
 </sec><sec sec-type="task" id="pg6_task004">
 <label>4</label>
 <statement>
@@ -235,8 +209,8 @@
 <label>d)</label>
 <p>r = 2,7 cm</p>
 </sec>
-</sec><sec sec-type="task" id="pg6_task004">
-<label>4</label>
+</sec><sec sec-type="task" id="pg6_task005">
+<label>5</label>
 <statement>
 <p>Zeichne eine Strecke <inline-formula><alternatives><tex-math><![CDATA[\(\overline{{\rm{AB}}}\)]]></tex-math></alternatives></inline-formula> = 5 cm ins Heft.</p>
 <p>Zeichne dann um A und um B je einen Kreis mit dem Radius r = 4 cm.</p>
@@ -259,8 +233,73 @@
 </sec>
 <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_001.jpg"/></p>
 
+
+
+<!-- new Task 1-->
+<p><bold>1 Erg&#x00E4;nze die S&#x00E4;tze im Heft.</bold></p>
+<p>Zeichne je einen passenden Winkel.</p><sec sec-type="subtask" id="pg6_task001a">
+<label>a)</label>
+<statement>
+<p>Einen Winkel, der gr&#x00F6;&#x00DF;er als 0&#x00B0; und kleiner als 90&#x00B0; ist, nennt man <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_011.jpg"/>.</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg6_task001b">
+<label>b)</label>
+<statement>
+<p>Ein rechter Winkel ist genau <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_012.jpg"/>&#x00B0; gro&#x00DF;.</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg6_task001c">
+<label>c)</label>
+<statement>
+<p>Stumpfe Winkel sind gr&#x00F6;&#x00DF;er als <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_013.jpg"/>&#x00B0;.</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg6_task001d">
+<label>d)</label>
+<statement>
+<p>Ein gestreckter Winkel ist genau <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_014.jpg"/> gro&#x00DF;.</p>
+</statement>
+</sec>
+</sec><sec sec-type="task" id="pg6_task002">
+<label>2</label>
+<statement>
+<p>Zeichne ins Heft.</p>
+<p>Beschrifte:</p>
+<list list-type="bullet">
+<list-item><p>die Eckpunkte,</p></list-item>
+<list-item><p>die Seiten,</p></list-item>
+<list-item><p>die Winkel.</p></list-item>
+</list>
+</statement><sec sec-type="subtask" id="pg6_task001a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_015.jpg"/>
+</fig>
+</sec><sec sec-type="subtask" id="pg6_task001b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_016.jpg"/>
+</fig>
+</sec><sec sec-type="subtask" id="pg6_task001c">
+<label>c)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_017.jpg"/>
+</fig>
+</sec><sec sec-type="subtask" id="pg6_task001d">
+<label>d)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_018.jpg"/>
+</fig>
+</sec>
+<boxed-text position="float">
+<p><bold><italic>Hinweis</italic></bold></p>
+<p><italic>Griechische Buchstaben f&#x00FC;r die Winkel:</italic></p>
+<p>&#x03B1; <italic>(alpha)</italic></p>
+<p>&#x03B2; <italic>(beta)</italic></p>
+<p>&#x03B3; <italic>(gamma)</italic></p>
+</boxed-text>
+
+
 <!-- single image-->
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_002.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_5_fx_001.jpg"/></p>
 
 
 <!-- Task-->
@@ -272,7 +311,7 @@
 </statement><sec sec-type="subtask" id="pg6_task001a">
 <label>a)</label>
 <p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{3}\)]]></tex-math></alternatives></inline-formula></p>
-</sec><sec sec-type="subtask" id="pg75_task001b">
+</sec><sec sec-type="subtask" id="pg6_task001b">
 <label>b)</label>
 <p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{4}\)]]></tex-math></alternatives></inline-formula></p>
 </sec><sec sec-type="subtask" id="pg75_task001c">
@@ -294,6 +333,7 @@
 <tr>
 <td><p>Rechne so weiter:</p>
 <p>Achte auf die Zeichen vor den Zahlen.</p></td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
@@ -348,15 +388,15 @@
 <label>a)</label>
 <p></p>
 </sec>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_003.jpg"/></p><sec sec-type="subtask" id="pg143_task001b">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_002.jpg"/></p><sec sec-type="subtask" id="pg143_task001b">
 <label>b)</label>
 <p></p>
 </sec>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_004.jpg"/></p><sec sec-type="subtask" id="pg143_task001c">
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_003.jpg"/></p><sec sec-type="subtask" id="pg143_task001c">
 <label>c)</label>
 <p></p>
 </sec>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_005.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_004.jpg"/></p>
 </sec><sec sec-type="task" id="pg75_task005">
 <label>5</label>
 <statement>
@@ -693,12 +733,12 @@
 <label>a)</label>
 <p></p>
 </sec>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_006.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_005.jpg"/></p>
 <p>2 7 &#x00B7; 6</p><sec sec-type="subtask" id="pg143_task001b">
 <label>b)</label>
 <p></p>
 </sec>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_007.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_006.jpg"/></p>
 <p>2 8 6 &#x00B7; 1 3</p>
 </sec>
 <sec>
@@ -711,12 +751,12 @@
 <label>a)</label>
 <p></p>
 </sec>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_008.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_007.jpg"/></p>
 <p>7 6 &#x00B7; 5 2</p><sec sec-type="subtask" id="pg143_task001b">
 <label>b)</label>
 <p></p>
 </sec>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_009.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_008.jpg"/></p>
 <p>1 0 8 &#x00B7; 8 0</p>
 </sec>
 <sec>
@@ -753,12 +793,12 @@
 <label>a)</label>
 <p></p>
 </sec>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_010.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_009.jpg"/></p>
 <p>7 8 4 : 7 = </p><sec sec-type="subtask" id="pg143_task001b">
 <label>b)</label>
 <p></p>
 </sec>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_011.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_010.jpg"/></p>
 <p>5 0 8 2 : 1 1 =</p>
 </sec>
 <sec>
@@ -771,12 +811,12 @@
 <label>a)</label>
 <p></p>
 </sec>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_012.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_011.jpg"/></p>
 <p>5 6 3 2 : 8</p><sec sec-type="subtask" id="pg143_task001b">
 <label>b)</label>
 <p></p>
 </sec>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_013.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_012.jpg"/></p>
 <p>8 0 6 4 : 1 2</p>
 </sec>
 <sec>

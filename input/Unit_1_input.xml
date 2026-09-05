@@ -17,11 +17,10 @@
 </sec>
 
 <!-- Task opening-->
-<sec>
+sec>
 <label>Aufgabe</label>
 <p><bold>1</bold> Vergleiche die Zahlen.</p>
 <p>Setze im Heft &#x003C;, &#x003E; oder = ein.</p>
-
 <!-- Sub-Task-->
 <p>a) 4 &#x25CF; 9</p>
 <p>b) 3,5 &#x25CF; 2,5</p>
@@ -55,17 +54,24 @@
 </sec>
 
 <!-- Task-->
-<sec>
+<sec id="pg6_s001">
+<sec id="pg6_s002">
 <label>2 Kompetenz</label>
-<p>Ich kann einen Zahlenstrahl zeichnen und einteilen.</p>
+<p specific-use="mer-Lernziel">Ich kann einen Zahlenstrahl zeichnen und einteilen.</p>
 </sec>
-<sec>
-<label>Aufgabe</label>
-<p><bold>2</bold> Ist der Zahlenstrahl richtig gezeichnet und eingeteilt?</p>
+<sec sec-type="task" id="pg6_task002">
+<label>2</label>
+<statement>
+<p>Ist der Zahlenstrahl richtig gezeichnet und eingeteilt?</p>
 <p>Verbessere in deinem Heft.</p>
-<p>a) <fig><img/></fig></p>
+</statement>
+<sec sec-type="subtask" id="pg6_task001a">
+<label>a)</label>
+<fig><img/></fig></p>
 <p>b) <fig><img/></fig></p>
 <p>c) <fig><img/></fig></p>
+</sec>
+</sec>
 </sec>
 
 <!-- new Task-->
@@ -98,23 +104,47 @@
 <p>b) 60&#x00B0;</p>
 <p>c) 25&#x00B0;</p>
 <p>d) 140&#x00B0;</p>
-<p><bold>3</bold> Zeichne den Winkel ins Heft.</p>
-<p>a) 40&#x00B0;</p>
-<p>b) 65&#x00B0;</p>
-<p>c) 26&#x00B0;</p>
-<p>d) 152&#x00B0;</p>
 <p><bold>4</bold> Zeichne den Kreis mit dem Zirkel ins Heft.</p>
 <p>a) Radius r = 4 cm</p>
 <p>b) r = 30 mm</p>
 <p>c) r = 3,5 cm</p>
 <p>d) r = 2,7 cm</p>
-<p><bold>4</bold> Zeichne eine Strecke <inline-formula><alternatives><tex-math><![CDATA[\(\overline{{\rm{AB}}}\)]]></tex-math></alternatives></inline-formula> = 5 cm ins Heft.</p>
+<p><bold>5</bold> Zeichne eine Strecke <inline-formula><alternatives><tex-math><![CDATA[\(\overline{{\rm{AB}}}\)]]></tex-math></alternatives></inline-formula> = 5 cm ins Heft.</p>
 <p>Zeichne dann um A und um B je einen Kreis mit dem Radius r = 4 cm.</p>
 <p><bold>5</bold> Zeichne eine Gerade g ins Heft.</p>
 <p>a) Zeichne eine zu g parallele Gerade h.</p>
 <p>Wie gehst du dabei vor?</p>
 <p>b) Was bedeutet parallel? Erkl&#x00E4;re.</p>
 <fig><img/></fig>
+
+
+
+<!-- new Task 1-->
+<p><bold>1 Erg&#x00E4;nze die S&#x00E4;tze im Heft.</bold></p>
+<p>Zeichne je einen passenden Winkel.</p>
+<p>a) Einen Winkel, der gr&#x00F6;&#x00DF;er als 0&#x00B0; und kleiner als 90&#x00B0; ist, nennt man <fig><img/></fig>.</p>
+<p>b) Ein rechter Winkel ist genau <fig><img/></fig>&#x00B0; gro&#x00DF;.</p>
+<p>c) Stumpfe Winkel sind gr&#x00F6;&#x00DF;er als <fig><img/></fig>&#x00B0; und kleiner als <fig><img/></fig>&#x00B0;.</p>
+<p>d) Ein gestreckter Winkel ist genau <fig><img/></fig> gro&#x00DF;.</p>
+<p><bold>2</bold> Zeichne ins Heft.</p>
+<p>Beschrifte:</p>
+<list list-type="bullet">
+<list-item><p>die Eckpunkte,</p></list-item>
+<list-item><p>die Seiten,</p></list-item>
+<list-item><p>die Winkel.</p></list-item>
+</list>
+<p>a) <fig><img/></fig></p>
+<p>b) <fig><img/></fig></p>
+<p>c) <fig><img/></fig></p>
+<p>d) <fig><img/></fig></p>
+<boxed-text position="float">
+<p><bold><italic>Hinweis</italic></bold></p>
+<p><italic>Griechische Buchstaben f&#x00FC;r die Winkel:</italic></p>
+<p>&#x03B1; <italic>(alpha)</italic></p>
+<p>&#x03B2; <italic>(beta)</italic></p>
+<p>&#x03B3; <italic>(gamma)</italic></p>
+</boxed-text>
+
 
 <!-- single image-->
 <fig><img/></fig>
