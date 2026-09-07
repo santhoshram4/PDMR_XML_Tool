@@ -2,48 +2,57 @@ import os
 import re
 from datetime import datetime
 
-# Folder configuration
+# ==========================================
+# STEP 1: FOLDER CONFIGURATION & SETUP
+# Input & Output folder-a create panrom
+# ==========================================
 INPUT_DIR = "input"
 OUTPUT_DIR = "output"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# Regex 1: Match subtask list prefixes strictly
+
+# ==========================================
+# STEP 2: REGEX PATTERNS DEFINITION
+# Constant patterns ellam inge define panrom
+# ==========================================
+
+# Regex 1: Subtask list patterns match panna (e.g., a), b), 1., 2))
 P_TAG_RE = re.compile(
     r"(?<!<td>)\s*<p(?P<attrs>[^>]*)>\s*(?P<label>[a-zA-Z0-9]{1,3}[\.\)])\s*(?P<content>.*?)</p>",
     re.DOTALL | re.IGNORECASE,
 )
 
-# Regex 2: Track pageStart processing instructions
+# Regex 2: Page numbers track panna <?pageStart ... pagination="24"?> match panna
 PAGE_RE = re.compile(r'<\?pageStart\b[^>]*pagination=["\'](\d+)["\'][^>]*\?>')
 
-# Regex 3: Match inner <fig...>...</fig> or <img.../> tags
-FIG_RE = re.compile(r"<fig\b[^>]*>.*.*?/fig>|<img\b[^>]*/?>", re.DOTALL | re.IGNORECASE)
+# Regex 3: Paragraph-kulla irukkura inner <fig> or <img> tags match panna
+FIG_RE = re.compile(r"<fig\b[^>]*>.*?</fig>|<img\b[^>]*/?>", re.DOTALL | re.IGNORECASE)
 
-# Regex 4: Match FULL standalone <fig>...</fig> or <img.../> tags
+# Regex 4: Separate-a standalone-a irukkura full <fig> or <img> tags match panna
 STANDALONE_FIG_RE = re.compile(
     r"<fig\b[^>]*>.*?</fig>|<img\b[^>]*/?>", re.DOTALL | re.IGNORECASE
 )
 
-# Regex 5: Captures page number and sub-task numbers strictly
+# Regex 5: Page number & task refs match panna (e.g., Seite 24, S. 24, Nr. 1)
 SEITE_RE = re.compile(
     r"\b((?:Seite|S\.)\s+(\d+)(?:,?\s+Nr\.\s+([\d\s,]+(?:\.\s*)?))?)",
     re.IGNORECASE,
 )
 
-# Regex 6: Match &#x25B8; followed by task number
+# Regex 6: &#x25B8; vaitchu varra NextLevel task links match panna
 NEXTLEVEL_RE = re.compile(r"&#x25B8;\s*(\d+)", re.IGNORECASE)
 
-# Regex 7: Cleanup for any <sec-meta> tags completely
+# Regex 7: Unwanted <sec-meta> tags clean/remove panna
 SEC_META_RE = re.compile(r"<sec-meta>.*?</sec-meta>", re.IGNORECASE | re.DOTALL)
 
-# Regex 8: Clean empty <p></p> tags inside <td>...</td>
+# Regex 8: Table-kulla irukkura empty <p></p> tags remove panna
 EMPTY_TD_P_RE = re.compile(
     r"(<td\b[^>]*>)\s*<p(?:\s+[^>]*)?>\s*</p>\s*(</td>)",
     re.IGNORECASE | re.DOTALL,
 )
 
-# Regex 9: Circled numbers pattern
+# Regex 9: Circled numbers match panna (e.g., &#x2460; = ①)
 CIRCLED_P_RE = re.compile(
     r"<p(?P<attrs>[^>]*)>\s*(?P<entity>&#x24[67][0-9a-fA-F];)\s*(?P<content>.*?)</p>",
     re.DOTALL | re.IGNORECASE,
@@ -55,13 +64,17 @@ SOLUTION_LINK_RE = re.compile(
     re.IGNORECASE,
 )
 
-# NEW Regex 11: Match and remove <p> tags containing ONLY whitespace or space entities (&#x00A0;, &nbsp;, etc.)
+# Regex 11: Blank space mattum irukkura empty <p> tags remove panna
 EMPTY_OR_SPACE_P_RE = re.compile(
     r"<p(?:\s+[^>]*)?>\s*(?:&#x00A0;|&nbsp;|&#160;|\s)*\s*</p>",
     re.IGNORECASE | re.DOTALL,
 )
 
 
+# ==========================================
+# STEP 3: CONVERT SOLUTION LINKS
+# 'Lösungen ab S. 218' aa solution <xref> link-a maatha
+# ==========================================
 def process_solution_links(text):
     """Transforms 'L&#x00F6;sungen ab S. 218' inside <italic> into <italic><xref ref-type="link-toSolution" rid="pg218">...</xref></italic>."""
 
@@ -75,6 +88,10 @@ def process_solution_links(text):
     return SOLUTION_LINK_RE.sub(replace_solution, text)
 
 
+# ==========================================
+# STEP 4: CONVERT PAGE & LOOK-IT-UP LINKS
+# 'Seite 24', 'S. 24 Nr. 1' aa LookItUp <xref> link-a maatha
+# ==========================================
 def process_seite_links(text):
     """Transforms 'Seite 24' into <xref ref-type="link-LookItUp" rid="pg24">Seite 24</xref> without leading zeroes in rid."""
 
@@ -127,6 +144,10 @@ def process_seite_links(text):
     return SEITE_RE.sub(replace_seite, text)
 
 
+# ==========================================
+# STEP 5: CONVERT NEXTLEVEL TASK REFERENCES
+# '&#x25B8;12' symbols-a nextlevel_task <xref> link-a maatha
+# ==========================================
 def process_nextlevel_tasks(text, current_page_fn, pos_offset=0):
     """Transforms '&#x25B8;12' into standard <xref> format."""
 
@@ -145,6 +166,10 @@ def process_nextlevel_tasks(text, current_page_fn, pos_offset=0):
     return text
 
 
+# ==========================================
+# STEP 6: CONVERT KOMPETENZ SECTIONS
+# Kompetenz / Lernziel sections-a auto ID potu <sec> maatha
+# ==========================================
 def process_kompetenz_sections(content, get_page_for_pos, sec_counter):
     """Transforms Kompetenz <sec> blocks resetting section IDs per page starting from s001."""
 
@@ -217,11 +242,75 @@ def process_kompetenz_sections(content, get_page_for_pos, sec_counter):
     return "".join(new_content)
 
 
+# ==========================================
+# STEP 7: CONVERT MAIN TASKS
+# Main Tasks (Task 1, Task 2...) sec-type="task" -a maatha
+# ==========================================
 def process_task_sections(content, get_page_for_pos):
     """Parses task <sec> blocks AND standalone <p><bold>N</bold>...</p> tags into task <sec> format."""
 
+    # 7.1 Text-kulla already irukkura <sec> block task-a convert panna
+    sec_block_re = re.compile(r"<sec\b[^>]*>(.*?)</sec>", re.DOTALL | re.IGNORECASE)
+
+    def transform_sec(match):
+        start_pos = match.start()
+        pg_str = get_page_for_pos(start_pos)
+        sec_inner = match.group(1)
+
+        if 'specific-use="mer-Lernziel"' in sec_inner or 'sec-type="task"' in match.group(0):
+            return match.group(0)
+
+        first_p_match = re.search(
+            r"<p(?P<pattrs>[^>]*)>\s*<bold>(?:Task\s*)?(?P<num>\d+)[\.:]?</bold>\s*(?P<pcontent>.*?)</p>",
+            sec_inner,
+            re.DOTALL | re.IGNORECASE,
+        )
+
+        if not first_p_match:
+            return match.group(0)
+
+        task_num = int(first_p_match.group("num"))
+        task_str = f"{task_num:03d}"
+        sec_id = f"pg{pg_str}_task{task_str}"
+
+        p_attrs = first_p_match.group("pattrs")
+        p_content = first_p_match.group("pcontent").strip()
+
+        clean_inner = re.sub(
+            r"^\s*<label>[^<]*</label>\s*", "", sec_inner, flags=re.IGNORECASE
+        )
+
+        first_p_full = first_p_match.group(0)
+        new_first_p = f"<p{p_attrs}>{p_content}</p>" if p_content else ""
+
+        clean_inner = clean_inner.replace(first_p_full, new_first_p, 1)
+
+        subtask_split = re.split(
+            r"(?=(?<!<td>)\s*<p\b[^>]*>\s*[a-zA-Z0-9]{1,3}[\.\)])",
+            clean_inner,
+            maxsplit=1,
+            flags=re.IGNORECASE,
+        )
+
+        statement_part = subtask_split[0].strip()
+        remaining_part = subtask_split[1].strip() if len(subtask_split) > 1 else ""
+
+        res = (
+            f'<sec sec-type="task" id="{sec_id}">\n'
+            f"<label>{task_num}</label>\n"
+            f"<statement>\n{statement_part}\n</statement>\n"
+        )
+        if remaining_part:
+            res += f"{remaining_part}\n"
+        res += "</sec>"
+
+        return res
+
+    content = sec_block_re.sub(transform_sec, content)
+
+    # 7.2 Standalone <p><bold>N</bold>...</p> ah irukkura Tasks-a convert panna
     standalone_p_task_re = re.compile(
-        r"<p(?P<pattrs>[^>]*)>\s*<bold>(?P<num>\d+)</bold>\s*(?P<pcontent>.*?)</p>",
+        r"<p(?P<pattrs>[^>]*)>\s*<bold>(?:Task\s*)?(?P<num>\d+)[\.:]?</bold>\s*(?P<pcontent>.*?)</p>",
         re.DOTALL | re.IGNORECASE,
     )
 
@@ -286,6 +375,10 @@ def process_task_sections(content, get_page_for_pos):
     return "".join(new_content)
 
 
+# ==========================================
+# STEP 8: CONVERT BOOK PARTS & HEADINGS
+# Headings-a <book-part> structure-a convert panna
+# ==========================================
 def process_book_parts(content):
     """Processes <head2> tags following <?pageStart ...?> to create <book-part> wrappers."""
     book_part_re = re.compile(
@@ -327,6 +420,10 @@ def process_book_parts(content):
     return book_part_re.sub(replace_book_part, content)
 
 
+# ==========================================
+# STEP 9: CONVERT CIRCLED NUMBER LISTS
+# Circled number <p> tags-a <list> format-a maatha
+# ==========================================
 def process_circled_num_lists(
     content, get_page_for_pos, sec_counter, page_img_counters
 ):
@@ -413,6 +510,10 @@ def process_circled_num_lists(
     return "".join(new_content)
 
 
+# ==========================================
+# STEP 10: CONVERT TASK STATEMENT IMAGES
+# Task <statement> kulla irukkura images-a <graphic> tag-a maatha
+# ==========================================
 def process_task_statement_images(content, get_page_for_pos, page_img_counters):
     """Converts <fig><img.../></fig> inside/after task <statement> into <p><graphic .../></p>."""
     task_sec_re = re.compile(
@@ -445,19 +546,24 @@ def process_task_statement_images(content, get_page_for_pos, page_img_counters):
     return task_sec_re.sub(replace_task_img, content)
 
 
+# ==========================================
+# STEP 11: MAIN XML PIPELINE / PROCESSOR
+# Ella process-ayum correct-a order-padi execute panna
+# ==========================================
 def process_xml_text(content):
-    # UPDATED: Remove <p> tags containing only space entities (e.g. <p>&#x00A0;</p>)
+    # 11.1 Unwanted empty <p> & <sec-meta> remove panna
     content = EMPTY_OR_SPACE_P_RE.sub("", content)
-
     content = SEC_META_RE.sub("", content)
     content = EMPTY_TD_P_RE.sub(r"\1\2", content)
+    
+    # 11.2 Headings-a book-part-a convert panna
     content = process_book_parts(content)
 
-    task_count = 1
     page_matches = list(PAGE_RE.finditer(content))
     sec_counter = {}
     page_img_counters = {}
 
+    # Helper function page number edukka
     def get_page_for_pos(pos):
         pg = "1"
         for m in page_matches:
@@ -467,18 +573,26 @@ def process_xml_text(content):
                 break
         return pg
 
+    # 11.3 Kompetenz sections convert panna
     content = process_kompetenz_sections(content, get_page_for_pos, sec_counter)
+    
+    # 11.4 Circled number lists convert panna
     content = process_circled_num_lists(
         content, get_page_for_pos, sec_counter, page_img_counters
     )
+    
+    # 11.5 Main Tasks convert panna
     content = process_task_sections(content, get_page_for_pos)
 
-    # SUBTASK REPLACER
-    def replace_p(match):
-        nonlocal task_count
+    # 11.6 Subtasks (a, b, c...) detect panni sec-type="subtask" maatha
+    subtask_trackers = {}
 
+    def replace_p(match):
         start_pos = match.start()
         pg_str = get_page_for_pos(start_pos)
+
+        subtask_trackers[pg_str] = subtask_trackers.get(pg_str, 0) + 1
+        task_count = subtask_trackers[pg_str]
 
         attrs = match.group("attrs")
         label = match.group("label")
@@ -495,7 +609,7 @@ def process_xml_text(content):
 
         text_without_imgs = FIG_RE.sub("", inner_content).strip()
 
-        # 1. Plain Image Subtask
+        # Image mattum irukkura subtask
         if not text_without_imgs and FIG_RE.search(inner_content):
             if pg_str not in page_img_counters:
                 page_img_counters[pg_str] = 1
@@ -511,7 +625,7 @@ def process_xml_text(content):
                 f"</fig>"
             )
 
-        # 2. Text + Image / Text Subtask
+        # Text irukkura subtask
         else:
 
             def replace_inline_graphic(fig_match):
@@ -549,6 +663,7 @@ def process_xml_text(content):
         updated_content, get_page_for_pos, page_img_counters
     )
 
+    # 11.7 Regular <p> tags-kulla irukkura page links-a maatha
     def replace_regular_p(match):
         full_p = match.group(0)
         start_pos = match.start()
@@ -567,6 +682,7 @@ def process_xml_text(content):
         r"<p\b[^>]*>.*?</p>", replace_regular_p, updated_content, flags=re.DOTALL
     )
 
+    # 11.8 Section veliye irukkura standalone images-a <graphic> tag-a maatha
     def replace_standalone_fig(match):
         start_pos = match.start()
         pg_str = get_page_for_pos(start_pos)
@@ -598,9 +714,13 @@ def process_xml_text(content):
     return updated_content
 
 
+# ==========================================
+# STEP 12: MAIN EXECUTION ENTRY POINT
+# Files read panni, process panni output save panna
+# ==========================================
 def main():
     try:
-        # EXPIRY DATE: September 30, 2026
+        # 12.1 Expiry Date check panna
         EXPIRY_DATE = datetime(2026, 9, 30, 23, 59, 59)
 
         if datetime.now() > EXPIRY_DATE:
@@ -609,9 +729,10 @@ def main():
             )
             return
 
+        # 12.2 Input folder check panna
         if not os.path.exists(INPUT_DIR):
             print(
-                f"Error: '{INPUT_DIR}' There is no folder! Create a folder and place the XML files in it."
+                f"Error: '{INPUT_DIR}' folder illai! Create panni files podunga."
             )
             return
 
@@ -622,6 +743,8 @@ def main():
             return
 
         print("Processing started...\n")
+        
+        # 12.3 Ovvoru XML file-a edutthu multiple encodings moolama read panni process panna
         for filename in files:
             print(f"Processing: {filename}")
             in_path = os.path.join(INPUT_DIR, filename)
@@ -629,6 +752,7 @@ def main():
 
             try:
                 content = None
+                # Multi-encoding check
                 for enc in ["utf-8-sig", "utf-8", "latin-1", "cp1252"]:
                     try:
                         with open(in_path, "r", encoding=enc) as f:
@@ -642,8 +766,10 @@ def main():
                         "File encoding non-compatible. Unable to read file."
                     )
 
+                # XML processing call
                 updated_xml = process_xml_text(content)
 
+                # Output file save panna
                 with open(out_path, "w", encoding="utf-8") as f:
                     f.write(updated_xml)
 
@@ -660,4 +786,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    

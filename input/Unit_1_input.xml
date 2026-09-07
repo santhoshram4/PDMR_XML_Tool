@@ -17,10 +17,11 @@
 </sec>
 
 <!-- Task opening-->
-sec>
+<sec>
 <label>Aufgabe</label>
 <p><bold>1</bold> Vergleiche die Zahlen.</p>
 <p>Setze im Heft &#x003C;, &#x003E; oder = ein.</p>
+
 <!-- Sub-Task-->
 <p>a) 4 &#x25CF; 9</p>
 <p>b) 3,5 &#x25CF; 2,5</p>
