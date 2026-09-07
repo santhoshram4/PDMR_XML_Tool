@@ -1,183 +1,331 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="jats-html.xsl"?>
 <!DOCTYPE book PUBLIC "-//NLM//DTD BITS Book Interchange DTD v2.2 20250930//EN" "BITS-book2-2.dtd">
-<?oxygen SCHSchema="Stukturerfassung-Lehrwerke-fuer-KI.sch"?>
 <book xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="2.2">
 <?pageStart pdf="9" pagination="5"?>
-<book-part book-part-type="mod-Lerneinheit" id="ch0">
-<book-part-meta>
-<book-part-id book-part-id-type="pu-node-id"></book-part-id>
-<title-group id="pg5">
-<label></label>
-<title>1</title>
-</title-group>
-</book-part-meta>
-<body>
-</body>
-</book-part>
-<book-part book-part-type="mod-Lerneinheit" id="ch1">
-<book-part-meta>
-<book-part-id book-part-id-type="pu-node-id"></book-part-id>
-<title-group id="pg5">
-<label></label>
-<title>Rationale Zahlen</title>
-</title-group>
-</book-part-meta>
-<body>
+<head1><bold>1</bold></head1>
+<head1><bold>Rationale Zahlen</bold></head1>
 
 <!-- Book part-->
 <?pageStart pdf="10" pagination="6"?>
-<head2><bold>Wiederholung</bold></head2>
-<head2><bold>qweijcx</bold></head2>
+<book-part book-part-type="mod-Lerneinheit">
+<book-part-meta>
+<title-group id="pg6">
+<label>Wiederholung</label>
+<title>qweijcx</title>
+</title-group>
+<related-object content-type=""/>
+</book-part-meta>
+</book-part>
 
-<sec>
+<sec id="pg6_s001">
+<sec id="pg6_s002">
 <label>1 Kompetenz</label>
-<p>Ich kann Zahlen vergleichen.</p>
+<p specific-use="mer-Lernziel">Ich kann Zahlen vergleichen.</p>
+</sec>
 </sec>
 
 <!-- Task opening-->
-<sec>
-<label>Aufgabe</label>
-<p><bold>1</bold> Vergleiche die Zahlen.</p>
+<sec sec-type="task" id="pg6_task001">
+<label>1</label>
+<statement>
+<p>Vergleiche die Zahlen.</p>
 <p>Setze im Heft &#x003C;, &#x003E; oder = ein.</p>
 
 <!-- Sub-Task-->
-<p>a) 4 &#x25CF; 9</p>
-<p>b) 3,5 &#x25CF; 2,5</p>
-<p>c) 0 &#x25CF; 0,1</p>
-<p>d) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{1}{3} \bullet \frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
+</statement><sec sec-type="subtask" id="pg6_task001a">
+<label>a)</label>
+<p>4 &#x25CF; 9</p>
+</sec><sec sec-type="subtask" id="pg6_task002b">
+<label>b)</label>
+<p>3,5 &#x25CF; 2,5</p>
+</sec><sec sec-type="subtask" id="pg6_task003c">
+<label>c)</label>
+<p>0 &#x25CF; 0,1</p>
+</sec><sec sec-type="subtask" id="pg6_task004d">
+<label>d)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{1}{3} \bullet \frac{1}{2}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
 </sec>
 <!-- Task closing-->
 
 <!-- link-LookItUp-->
-<p>&#x2192; Seite 196 Nr. 4, 5</p>
-<p>&#x2192; Seite 204</p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg196_task004">Seite 196 Nr. 4</xref>, <xref ref-type="link-LookItUp" rid="pg196_task005">5</xref></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg204">Seite 204</xref></p>
 
 <!-- link-tosolution -->
-<p><bold>Rationale Zahlen addieren und subtrahieren</bold> &#x2192; <xref ref-type="link-tosolution" rid="pg16">Seiten 16</xref> und <xref ref-type="link-tosolution" rid="pg20">20</xref></p>
+<p><bold>Rationale Zahlen addieren und subtrahieren</bold> &#x2192; Seiten 16 und 20</p>
 
 <!-- link-tosolution -->
-<p><bold>Rationale Zahlen multiplizieren und dividieren</bold> &#x2192; Seite 24</p>
+<p><bold>Rationale Zahlen multiplizieren und dividieren</bold> &#x2192; <xref ref-type="link-LookItUp" rid="pg24">Seite 24</xref></p>
 
 <!-- link-tosolution -->
-<p>&#x2192; <italic>L&#x00F6;sungen ab S. 218</italic></p>
+<p>&#x2192; <italic><xref ref-type="link-toSolution" rid="pg218">L&#x00F6;sungen ab <xref ref-type="link-LookItUp" rid="pg218">S. 218</xref></xref></italic></p>
 
 <!--link-LookItUp-->
-<p>&#x2192; S. 241, Nr. 2 <italic>&#x2212; 7</italic></p>
+<p>&#x2192; <xref ref-type="link-LookItUp" rid="pg241_task002">S. 241, Nr. 2</xref> <italic>&#x2212; 7</italic></p>
 
-<p> Gleichungen linearer Funktionen einander zuordnen &#x2192; S. 246, Nr. 3, 4.</p>
+<p> Gleichungen linearer Funktionen einander zuordnen &#x2192; <xref ref-type="link-LookItUp" rid="pg246_task003">S. 246, Nr. 3</xref>, <xref ref-type="link-LookItUp" rid="pg246_task004">4</xref>.</p>
 
 <!-- Nextlevel_Task-->
-<p><bold><sec-meta>mer-</sec-meta>&#x25B8;12 <sec-meta>mer-</sec-meta>&#x25B8;10 <sec-meta>mer-</sec-meta>&#x25B8;9</bold></p>
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg6_task012">12</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg6_task010">10</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg6_task009">9</xref></bold></p>
 
-<p><bold>&#x25B8;10 &#x25B8;13 &#x25B8;20</bold></p>
+<p><bold>&#x25B8; <xref ref-type="nextlevel_task" rid="pg6_task010">10</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg6_task013">13</xref> &#x25B8; <xref ref-type="nextlevel_task" rid="pg6_task020">20</xref></bold></p>
 </sec>
 
 <!-- Task-->
 <sec id="pg6_s001">
-<sec id="pg6_s002">
+<sec id="pg6_s003">
+<sec id="pg6_s004">
 <label>2 Kompetenz</label>
 <p specific-use="mer-Lernziel">Ich kann einen Zahlenstrahl zeichnen und einteilen.</p>
 </sec>
-<sec sec-type="task" id="pg006_task002">
+</sec>
+<sec sec-type="task" id="pg6_task002">
 <label>2</label>
 <statement>
 <p>Ist der Zahlenstrahl richtig gezeichnet und eingeteilt?</p>
 <p>Verbessere in deinem Heft.</p>
 </statement>
-<sec sec-type="subtask" id="pg006_task002a">
+<sec sec-type="subtask" id="pg6_task001a">
 <label>a)</label>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_001.jpg"/></p></p>
-<p>b) <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_002.jpg"/></p></p>
-<p>c) <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_003.jpg"/></p></p>
+<fig><img/></fig></p><sec sec-type="subtask" id="pg6_task005b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_001.jpg"/>
+</fig>
+</sec><sec sec-type="subtask" id="pg6_task006c">
+<label>c)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_002.jpg"/>
+</fig>
+</sec>
 </sec>
 </sec>
 </sec>
 
 <!-- new Task-->
-<p><bold>1</bold> Erg&#x00E4;nze die S&#x00E4;tze im Heft.</p>
+<sec sec-type="task" id="pg6_task001">
+<label>1</label>
+<statement>
+<p>Erg&#x00E4;nze die S&#x00E4;tze im Heft.</p>
 <p>Zeichne je einen passenden Winkel.</p>
-<p>a) Einen Winkel, der gr&#x00F6;&#x00DF;er als 0&#x00B0; und kleiner als 90&#x00B0; ist, nennt man <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_004.jpg"/></p>.</p>
-<p>b) Ein rechter Winkel ist genau <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_005.jpg"/></p>&#x00B0; gro&#x00DF;.</p>
-<p>c) Stumpfe Winkel sind gr&#x00F6;&#x00DF;er als <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_006.jpg"/></p>&#x00B0; und kleiner als <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_007.jpg"/></p>&#x00B0;.</p>
-<p>d) Ein gestreckter Winkel ist genau <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_008.jpg"/></p> gro&#x00DF;.</p>
-<p><bold>2</bold> Zeichne ins Heft.</p>
+</statement><sec sec-type="subtask" id="pg6_task007a">
+<label>a)</label>
+<statement>
+<p>Einen Winkel, der gr&#x00F6;&#x00DF;er als 0&#x00B0; und kleiner als 90&#x00B0; ist, nennt man <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_003.jpg"/>.</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg6_task008b">
+<label>b)</label>
+<statement>
+<p>Ein rechter Winkel ist genau <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_004.jpg"/>&#x00B0; gro&#x00DF;.</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg6_task009c">
+<label>c)</label>
+<statement>
+<p>Stumpfe Winkel sind gr&#x00F6;&#x00DF;er als <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_005.jpg"/>&#x00B0; und kleiner als <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_006.jpg"/>&#x00B0;.</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg6_task010d">
+<label>d)</label>
+<statement>
+<p>Ein gestreckter Winkel ist genau <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_007.jpg"/> gro&#x00DF;.</p>
+</statement>
+</sec>
+</sec><sec sec-type="task" id="pg6_task002">
+<label>2</label>
+<statement>
+<p>Zeichne ins Heft.</p>
 <p>Beschrifte:</p>
 <list list-type="bullet">
 <list-item><p>die Eckpunkte,</p></list-item>
 <list-item><p>die Seiten,</p></list-item>
 <list-item><p>die Winkel.</p></list-item>
 </list>
-<p>a) <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_009.jpg"/></p></p>
-<p>b) <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_010.jpg"/></p></p>
-<p>c) <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_011.jpg"/></p></p>
-<p>d) <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_012.jpg"/></p></p>
-<sec id="pg006_s001">
-<label>Hinweis</label>
+</statement><sec sec-type="subtask" id="pg6_task011a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_008.jpg"/>
+</fig>
+</sec><sec sec-type="subtask" id="pg6_task012b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_009.jpg"/>
+</fig>
+</sec><sec sec-type="subtask" id="pg6_task013c">
+<label>c)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_010.jpg"/>
+</fig>
+</sec><sec sec-type="subtask" id="pg6_task014d">
+<label>d)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_011.jpg"/>
+</fig>
+</sec>
+<boxed-text position="float">
+<p><bold><italic>Hinweis</italic></bold></p>
 <p><italic>Griechische Buchstaben f&#x00FC;r die Winkel:</italic></p>
 <p>&#x03B1; <italic>(alpha)</italic></p>
 <p>&#x03B2; <italic>(beta)</italic></p>
 <p>&#x03B3; <italic>(gamma)</italic></p>
+</boxed-text>
+</sec><sec sec-type="task" id="pg6_task003">
+<label>3</label>
+<statement>
+<p>Zeichne den Winkel ins Heft.</p>
+</statement><sec sec-type="subtask" id="pg6_task015a">
+<label>a)</label>
+<statement>
+<p>45&#x00B0;</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg6_task016b">
+<label>b)</label>
+<statement>
+<p>60&#x00B0;</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg6_task017c">
+<label>c)</label>
+<statement>
+<p>25&#x00B0;</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg6_task018d">
+<label>d)</label>
+<statement>
+<p>140&#x00B0;</p>
+</statement>
 </sec>
-<p><bold>3</bold> Zeichne den Winkel ins Heft.</p>
-<p>a) 45&#x00B0;</p>
-<p>b) 60&#x00B0;</p>
-<p>c) 25&#x00B0;</p>
-<p>d) 140&#x00B0;</p>
-<p><bold>4</bold> Zeichne den Kreis mit dem Zirkel ins Heft.</p>
-<p>a) Radius r = 4 cm</p>
-<p>b) r = 30 mm</p>
-<p>c) r = 3,5 cm</p>
-<p>d) r = 2,7 cm</p>
-<p><bold>5</bold> Zeichne eine Strecke <inline-formula><alternatives><tex-math><![CDATA[\(\overline{{\rm{AB}}}\)]]></tex-math></alternatives></inline-formula> = 5 cm ins Heft.</p>
+</sec><sec sec-type="task" id="pg6_task004">
+<label>4</label>
+<statement>
+<p>Zeichne den Kreis mit dem Zirkel ins Heft.</p>
+</statement><sec sec-type="subtask" id="pg6_task019a">
+<label>a)</label>
+<p>Radius r = 4 cm</p>
+</sec><sec sec-type="subtask" id="pg6_task020b">
+<label>b)</label>
+<p>r = 30 mm</p>
+</sec><sec sec-type="subtask" id="pg6_task021c">
+<label>c)</label>
+<p>r = 3,5 cm</p>
+</sec><sec sec-type="subtask" id="pg6_task022d">
+<label>d)</label>
+<p>r = 2,7 cm</p>
+</sec>
+</sec><sec sec-type="task" id="pg6_task005">
+<label>5</label>
+<statement>
+<p>Zeichne eine Strecke <inline-formula><alternatives><tex-math><![CDATA[\(\overline{{\rm{AB}}}\)]]></tex-math></alternatives></inline-formula> = 5 cm ins Heft.</p>
 <p>Zeichne dann um A und um B je einen Kreis mit dem Radius r = 4 cm.</p>
-<p><bold>5</bold> Zeichne eine Gerade g ins Heft.</p>
-<p>a) Zeichne eine zu g parallele Gerade h.</p>
-<p>Wie gehst du dabei vor?</p>
-<p>b) Was bedeutet parallel? Erkl&#x00E4;re.</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_013.jpg"/></p>
+</statement>
+</sec><sec sec-type="task" id="pg6_task005">
+<label>5</label>
+<statement>
+<p>Zeichne eine Gerade g ins Heft.</p>
+</statement><sec sec-type="subtask" id="pg6_task023a">
+<label>a)</label>
+<statement>
+<p>Zeichne eine zu g parallele Gerade h.</p>
+</statement>
+</sec>
+<p>Wie gehst du dabei vor?</p><sec sec-type="subtask" id="pg6_task024b">
+<label>b)</label>
+<statement>
+<p>Was bedeutet parallel? Erkl&#x00E4;re.</p>
+</statement>
+</sec>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_001.jpg"/></p>
 
 
 
 <!-- new Task 1-->
 <p><bold>1 Erg&#x00E4;nze die S&#x00E4;tze im Heft.</bold></p>
-<p>Zeichne je einen passenden Winkel.</p>
-<p>a) Einen Winkel, der gr&#x00F6;&#x00DF;er als 0&#x00B0; und kleiner als 90&#x00B0; ist, nennt man <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_014.jpg"/></p>.</p>
-<p>b) Ein rechter Winkel ist genau <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_015.jpg"/></p>&#x00B0; gro&#x00DF;.</p>
-<p>c) Stumpfe Winkel sind gr&#x00F6;&#x00DF;er als <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_016.jpg"/></p>&#x00B0; und kleiner als <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_017.jpg"/></p>&#x00B0;.</p>
-<p>d) Ein gestreckter Winkel ist genau <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_018.jpg"/></p> gro&#x00DF;.</p>
-<p><bold>2</bold> Zeichne ins Heft.</p>
+<p>Zeichne je einen passenden Winkel.</p><sec sec-type="subtask" id="pg6_task025a">
+<label>a)</label>
+<statement>
+<p>Einen Winkel, der gr&#x00F6;&#x00DF;er als 0&#x00B0; und kleiner als 90&#x00B0; ist, nennt man <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_012.jpg"/>.</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg6_task026b">
+<label>b)</label>
+<statement>
+<p>Ein rechter Winkel ist genau <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_013.jpg"/>&#x00B0; gro&#x00DF;.</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg6_task027c">
+<label>c)</label>
+<statement>
+<p>Stumpfe Winkel sind gr&#x00F6;&#x00DF;er als <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_014.jpg"/>&#x00B0; und kleiner als <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_015.jpg"/>&#x00B0;.</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg6_task028d">
+<label>d)</label>
+<statement>
+<p>Ein gestreckter Winkel ist genau <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_016.jpg"/> gro&#x00DF;.</p>
+</statement>
+</sec>
+</sec><sec sec-type="task" id="pg6_task002">
+<label>2</label>
+<statement>
+<p>Zeichne ins Heft.</p>
 <p>Beschrifte:</p>
 <list list-type="bullet">
 <list-item><p>die Eckpunkte,</p></list-item>
 <list-item><p>die Seiten,</p></list-item>
 <list-item><p>die Winkel.</p></list-item>
 </list>
-<p>a) <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_019.jpg"/></p></p>
-<p>b) <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_020.jpg"/></p></p>
-<p>c) <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_021.jpg"/></p></p>
-<p>d) <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_022.jpg"/></p></p>
-<sec id="pg006_s002">
-<label>Hinweis</label>
+</statement><sec sec-type="subtask" id="pg6_task029a">
+<label>a)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_017.jpg"/>
+</fig>
+</sec><sec sec-type="subtask" id="pg6_task030b">
+<label>b)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_018.jpg"/>
+</fig>
+</sec><sec sec-type="subtask" id="pg6_task031c">
+<label>c)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_019.jpg"/>
+</fig>
+</sec><sec sec-type="subtask" id="pg6_task032d">
+<label>d)</label>
+<fig fig-type="exerciseImage">
+<graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_6_fx_020.jpg"/>
+</fig>
+</sec>
+<boxed-text position="float">
+<p><bold><italic>Hinweis</italic></bold></p>
 <p><italic>Griechische Buchstaben f&#x00FC;r die Winkel:</italic></p>
 <p>&#x03B1; <italic>(alpha)</italic></p>
 <p>&#x03B2; <italic>(beta)</italic></p>
 <p>&#x03B3; <italic>(gamma)</italic></p>
-</sec>
+</boxed-text>
 
 
 <!-- single image-->
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_006_fx_023.jpg"/></p>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_5_fx_001.jpg"/></p>
 
 
 <!-- Task-->
-<p><bold>26</bold> Wandle in eine gemischte Zahl um.</p>
+</sec><sec sec-type="task" id="pg6_task026">
+<label>26</label>
+<statement>
+<p>Wandle in eine gemischte Zahl um.</p>
 <!-- Sub-Task-->
-<p>a) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{3}\)]]></tex-math></alternatives></inline-formula></p>
-<p>b) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{4}\)]]></tex-math></alternatives></inline-formula></p>
-<p>c) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{5}\)]]></tex-math></alternatives></inline-formula></p>
-<p>d) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{10}{7}\)]]></tex-math></alternatives></inline-formula></p>
-<p>e) <inline-formula><alternatives><tex-math><![CDATA[\(\frac{8}{3}\)]]></tex-math></alternatives></inline-formula></p>
+</statement><sec sec-type="subtask" id="pg75_task001a">
+<label>a)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{4}{3}\)]]></tex-math></alternatives></inline-formula></p>
+</sec><sec sec-type="subtask" id="pg75_task002b">
+<label>b)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{5}{4}\)]]></tex-math></alternatives></inline-formula></p>
+</sec><sec sec-type="subtask" id="pg75_task003c">
+<label>c)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{7}{5}\)]]></tex-math></alternatives></inline-formula></p>
+</sec><sec sec-type="subtask" id="pg75_task004d">
+<label>d)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{10}{7}\)]]></tex-math></alternatives></inline-formula></p>
+</sec><sec sec-type="subtask" id="pg75_task005e">
+<label>e)</label>
+<p><inline-formula><alternatives><tex-math><![CDATA[\(\frac{8}{3}\)]]></tex-math></alternatives></inline-formula></p>
+</sec>
 
 
 <!-- table -->
@@ -189,7 +337,7 @@
 <p>Achte auf die Zeichen vor den Zahlen.</p></td>
 <td></td>
 <td></td>
-<td><p>&#x00A0;</p></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -199,26 +347,63 @@
 <?pageStart pdf="79" pagination="75"?>
 
 <!-- Task-->
-<p><bold>2</bold> Berechne den Umfang des Vierecks.</p>
+</sec><sec sec-type="task" id="pg75_task002">
+<label>2</label>
+<statement>
+<p>Berechne den Umfang des Vierecks.</p>
 <!-- sub-Task-->
-<p>a) a = 6,5 m; b = 7 m; c = 10,5 m; d = 8,5 m</p>
-<p>b) a = 12,3 m; b = 5,5 m; c = 25,7 m; d = 9,5 m</p>
-<p>c) a = 276 m; b = 105 m; c = 723 m; d = 481 m</p>
-<p>d) a = 60 m 50 cm; b = 70,1 m; c = 110 m; d = 30 m 80 cm</p>
+</statement><sec sec-type="subtask" id="pg75_task006a">
+<label>a)</label>
+<p>a = 6,5 m; b = 7 m; c = 10,5 m; d = 8,5 m</p>
+</sec><sec sec-type="subtask" id="pg75_task007b">
+<label>b)</label>
+<p>a = 12,3 m; b = 5,5 m; c = 25,7 m; d = 9,5 m</p>
+</sec><sec sec-type="subtask" id="pg75_task008c">
+<label>c)</label>
+<p>a = 276 m; b = 105 m; c = 723 m; d = 481 m</p>
+</sec><sec sec-type="subtask" id="pg75_task009d">
+<label>d)</label>
+<p>a = 60 m 50 cm; b = 70,1 m; c = 110 m; d = 30 m 80 cm</p>
+</sec>
 <!-- Task-->
-<p><bold>3</bold> &#x00DC;bertrage die Figuren in dein Heft.</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_075_fx_001.jpg"/></p>
-<p>a) Beschrifte vollst&#x00E4;ndig.</p>
-<p>b) Sch&#x00E4;tze zuerst den Umfang. Miss dann die L&#x00E4;nge der Seiten und berechne den Umfang. Vergleiche mit deiner Sch&#x00E4;tzung.</p>
-<p><bold>4</bold> Nenne die Vierecksart. Berechne den Umfang.</p>
-<p>a)</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_075_fx_002.jpg"/></p>
-<p>b)</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_075_fx_003.jpg"/></p>
-<p>c)</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_075_fx_004.jpg"/></p>
-<p><bold>5</bold> In die Rechnungen von Fiona und Amar haben sich Fehler eingeschlichen.</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_075_fx_005.jpg"/></p>
+</sec><sec sec-type="task" id="pg75_task003">
+<label>3</label>
+<statement>
+<p>&#x00DC;bertrage die Figuren in dein Heft.</p>
+<fig><img/></fig>
+</statement><sec sec-type="subtask" id="pg75_task010a">
+<label>a)</label>
+<statement>
+<p>Beschrifte vollst&#x00E4;ndig.</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg142_task001b">
+<label>b)</label>
+<statement>
+<p>Sch&#x00E4;tze zuerst den Umfang. Miss dann die L&#x00E4;nge der Seiten und berechne den Umfang. Vergleiche mit deiner Sch&#x00E4;tzung.</p>
+</statement>
+</sec>
+</sec><sec sec-type="task" id="pg75_task004">
+<label>4</label>
+<statement>
+<p>Nenne die Vierecksart. Berechne den Umfang.</p>
+</statement><sec sec-type="subtask" id="pg143_task001a">
+<label>a)</label>
+<p></p>
+</sec>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_002.jpg"/></p><sec sec-type="subtask" id="pg143_task002b">
+<label>b)</label>
+<p></p>
+</sec>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_003.jpg"/></p><sec sec-type="subtask" id="pg143_task003c">
+<label>c)</label>
+<p></p>
+</sec>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_004.jpg"/></p>
+</sec><sec sec-type="task" id="pg75_task005">
+<label>5</label>
+<statement>
+<p>In die Rechnungen von Fiona und Amar haben sich Fehler eingeschlichen.</p>
+<fig><img/></fig>
 <p>Fiona:</p>
 <p>u = a + b</p>
 <p>u = 12,5 m + 6,4 m</p>
@@ -227,244 +412,437 @@
 <p>u = 2 &#x00B7; a + 2 &#x00B7; b</p>
 <p>u = 2 &#x00B7; 12,5 + 6,4</p>
 <p>u = 31,4 m</p>
-<p>a) Beschreibe die Fehler.</p>
-<p>b) Rechne richtig im Heft.</p>
+</statement><sec sec-type="subtask" id="pg143_task004a">
+<label>a)</label>
+<statement>
+<p>Beschreibe die Fehler.</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg143_task005b">
+<label>b)</label>
+<statement>
+<p>Rechne richtig im Heft.</p>
+</statement>
+</sec>
 
 <!-- 2 Task Tipp update sec tag-->
-<p><bold>3</bold> L&#x00F6;se die Gleichung.</p>
-<sec id="pg075_s001">
-<p><bold>Tipp</bold> zu d) Multipliziere aus: <p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_075_fx_006.jpg"/></p>
-</sec></p>
-<p>a) x &#x2212; 9 = 16</p> 
-<p>b) 44 = 4x &#x002B; 12</p>
-<p>c) 5x &#x002B; 3 = &#x2212;7 &#x002B; 7x</p> 
-<p>d) 2(x &#x002B; 3) = &#x2212;8</p>
+</sec><sec sec-type="task" id="pg75_task003">
+<label>3</label>
+<statement>
+<p>L&#x00F6;se die Gleichung.</p>
+<p><bold>Tipp</bold> zu d) Multipliziere aus: <fig><img/></fig></p>
+</statement><sec sec-type="subtask" id="pg143_task006a">
+<label>a)</label>
+<p>x &#x2212; 9 = 16</p>
+</sec><sec sec-type="subtask" id="pg143_task007b">
+<label>b)</label>
+<p>44 = 4x &#x002B; 12</p>
+</sec><sec sec-type="subtask" id="pg143_task008c">
+<label>c)</label>
+<p>5x &#x002B; 3 = &#x2212;7 &#x002B; 7x</p>
+</sec><sec sec-type="subtask" id="pg143_task009d">
+<label>d)</label>
+<p>2(x &#x002B; 3) = &#x2212;8</p>
+</sec>
 
 <!-- 2 Task-->
 <?pageStart pdf="146" pagination="142"?>
 <?pageStart pdf="147" pagination="143"?>
-<head2><bold>Zwischentest</bold></head2>
-<sec>
+<book-part book-part-type="mod-Lerneinheit">
+<book-part-meta>
+<title-group id="pg143">
+<title>Zwischentest</title>
+</title-group>
+<related-object content-type=""/>
+</book-part-meta>
+</book-part>
+<sec id="pg143_s001">
+<sec id="pg143_s002">
 <label>1 Kompetenz</label>
-<p>Ich kann im Kopf multiplizieren und dividieren. Ich kann mit den Fachbegriffen der Multiplikation und Division umgehen.</p>
-<p>&#x2192; Lies auf <bold>Seite 124</bold> nach.</p>
+<p specific-use="mer-Lernziel">Ich kann im Kopf multiplizieren und dividieren. Ich kann mit den Fachbegriffen der Multiplikation und Division umgehen.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg124">Seite 124</xref></bold> nach.</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>1</bold> &#x00DC;bertrage ins Heft. Finde die fehlende Zahl.</p>
-<p>a) 9 &#x00B7; 9 = &#x25A0;</p> 
-<p>b) 27 : 9 = &#x25A0;</p>
-<p>c) 6 &#x00B7; &#x25A0; = 42</p> 
-<p>d) &#x25A0; : 3 = 8</p>
+</sec>
+<sec sec-type="task" id="pg143_task001">
+<label>1</label>
+<statement>
+<p>&#x00DC;bertrage ins Heft. Finde die fehlende Zahl.</p>
+</statement><sec sec-type="subtask" id="pg143_task010a">
+<label>a)</label>
+<statement>
+<p>9 &#x00B7; 9 = &#x25A0;</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg143_task011b">
+<label>b)</label>
+<statement>
+<p>27 : 9 = &#x25A0;</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg143_task012c">
+<label>c)</label>
+<p>6 &#x00B7; &#x25A0; = 42</p>
+</sec><sec sec-type="subtask" id="pg143_task013d">
+<label>d)</label>
+<p>&#x25A0; : 3 = 8</p>
+</sec>
 <p>Unterstreiche farbig: Faktor = rot,</p>
 <p>Dividend = blau, Divisor = gr&#x00FC;n.</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>1</bold> Finde den fehlenden Wert. Gib den Fachbegriff f&#x00FC;r den fehlenden Wert an. Nutze:</p> 
+<sec sec-type="task" id="pg143_task001">
+<label>1</label>
+<statement>
+<p>Finde den fehlenden Wert. Gib den Fachbegriff f&#x00FC;r den fehlenden Wert an. Nutze:</p> 
 <p>Faktor, Dividend, Wert des Produkts, Wert des Quotienten</p>
-<p>a) 11 &#x00B7; 7 = &#x25A0;</p> 
-<p>b) 108 : 12 = &#x25A0;</p>
-<p>c) &#x25A0; : 8 = 9</p> 
-<p>d) &#x25A0; &#x00B7; 18 = 90</p>
+</statement><sec sec-type="subtask" id="pg143_task014a">
+<label>a)</label>
+<statement>
+<p>11 &#x00B7; 7 = &#x25A0;</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg143_task015b">
+<label>b)</label>
+<statement>
+<p>108 : 12 = &#x25A0;</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg143_task016c">
+<label>c)</label>
+<p>&#x25A0; : 8 = 9</p>
+</sec><sec sec-type="subtask" id="pg143_task017d">
+<label>d)</label>
+<p>&#x25A0; &#x00B7; 18 = 90</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>1</bold> &#x00DC;bersetze den Text in eine Rechnung und finde den fehlenden Wert.</p>
-<p>a) Der 2. Faktor ist 34. Der Wert des Produkts betr&#x00E4;gt 238.</p>
-<p>b) Der Dividend ist 126, der Divisor ist 14.</p>
 </sec>
-<sec>
+<sec sec-type="task" id="pg143_task001">
+<label>1</label>
+<statement>
+<p>&#x00DC;bersetze den Text in eine Rechnung und finde den fehlenden Wert.</p>
+</statement><sec sec-type="subtask" id="pg143_task018a">
+<label>a)</label>
+<statement>
+<p>Der 2. Faktor ist 34. Der Wert des Produkts betr&#x00E4;gt 238.</p>
+</statement>
+</sec><sec sec-type="subtask" id="pg143_task019b">
+<label>b)</label>
+<statement>
+<p>Der Dividend ist 126, der Divisor ist 14.</p>
+</statement>
+</sec>
+</sec>
+
+<sec id="pg143_s003">
+<sec id="pg143_s004">
 <label>2 Kompetenz</label>
-<p>Ich kann das Vertauschungsgesetz (Kommutativgesetz) und das Verbindungsgesetz (Assoziativgesetz) bei der Multiplikation anwenden.</p>
-<p>&#x2192; Lies auf <bold>Seite 124</bold> nach.</p>
+<p specific-use="mer-Lernziel">Ich kann das Vertauschungsgesetz (Kommutativgesetz) und das Verbindungsgesetz (Assoziativgesetz) bei der Multiplikation anwenden.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg124">Seite 124</xref></bold> nach.</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>2</bold> Rechne vorteilhaft. Nutze die Rechengesetze.</p>
+</sec>
+<sec sec-type="task" id="pg143_task002">
+<label>2</label>
+<statement>
+<p>Rechne vorteilhaft. Nutze die Rechengesetze.</p>
 <p>Vertausche die Zahlen so, dass du einfach rechnen kannst.</p>
-<p>a) 2 &#x00B7; 9 &#x00B7; 5</p>
-<p>b) 20 &#x00B7; 7 &#x00B7; 5</p>
-<p>c) 8 &#x00B7; 4 &#x00B7; 25</p>
+</statement><sec sec-type="subtask" id="pg143_task020a">
+<label>a)</label>
+<p>2 &#x00B7; 9 &#x00B7; 5</p>
+</sec><sec sec-type="subtask" id="pg143_task021b">
+<label>b)</label>
+<p>20 &#x00B7; 7 &#x00B7; 5</p>
+</sec><sec sec-type="subtask" id="pg143_task022c">
+<label>c)</label>
+<p>8 &#x00B7; 4 &#x00B7; 25</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>2</bold> Rechne vorteilhaft. Nutze die Rechengesetze.</p>
-<p>a) 200 &#x00B7; 17 &#x00B7; 5</p>
-<p>b) 18 &#x00B7; 4 &#x00B7; 5</p>
-<p>c) Schreibe selbst eine &#x00E4;hnliche Aufgabe auf, bei der Vertauschen und Verbinden Rechenvorteile bringen.</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>2</bold> Rechne im Kopf. Nutze die Rechengesetze.</p>
-<p>a) 250 &#x00B7; 11 &#x00B7; 4 &#x00B7; 3</p>
-<p>b) 20 &#x00B7; 16 &#x00B7; 6 &#x00B7; 5</p>
-<p>c) Schreibe selbst eine &#x00E4;hnliche Aufgabe auf, bei der du <bold>nicht</bold> beliebig verbinden darfst.</p>
+<sec sec-type="task" id="pg143_task002">
+<label>2</label>
+<statement>
+<p>Rechne vorteilhaft. Nutze die Rechengesetze.</p>
+</statement><sec sec-type="subtask" id="pg143_task023a">
+<label>a)</label>
+<p>200 &#x00B7; 17 &#x00B7; 5</p>
+</sec><sec sec-type="subtask" id="pg143_task024b">
+<label>b)</label>
+<p>18 &#x00B7; 4 &#x00B7; 5</p>
+</sec><sec sec-type="subtask" id="pg143_task025c">
+<label>c)</label>
+<statement>
+<p>Schreibe selbst eine &#x00E4;hnliche Aufgabe auf, bei der Vertauschen und Verbinden Rechenvorteile bringen.</p>
+</statement>
 </sec>
-<sec>
+</sec>
+<sec sec-type="task" id="pg143_task002">
+<label>2</label>
+<statement>
+<p>Rechne im Kopf. Nutze die Rechengesetze.</p>
+</statement><sec sec-type="subtask" id="pg143_task026a">
+<label>a)</label>
+<p>250 &#x00B7; 11 &#x00B7; 4 &#x00B7; 3</p>
+</sec><sec sec-type="subtask" id="pg143_task027b">
+<label>b)</label>
+<p>20 &#x00B7; 16 &#x00B7; 6 &#x00B7; 5</p>
+</sec><sec sec-type="subtask" id="pg143_task028c">
+<label>c)</label>
+<statement>
+<p>Schreibe selbst eine &#x00E4;hnliche Aufgabe auf, bei der du <bold>nicht</bold> beliebig verbinden darfst.</p>
+</statement>
+</sec>
+</sec>
+<sec id="pg143_s005">
+<sec id="pg143_s006">
 <label>3 Kompetenz</label>
-<p>Ich kann beim Rechnen die Vorrangregeln &#x201E;Klammern zuerst&#x201C; und &#x201E;Punkt vor Strich&#x201C; beachten.</p>
-<p>&#x2192; Lies auf <bold>Seite 128</bold> nach.</p>
+<p specific-use="mer-Lernziel">Ich kann beim Rechnen die Vorrangregeln &#x201E;Klammern zuerst&#x201C; und &#x201E;Punkt vor Strich&#x201C; beachten.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg128">Seite 128</xref></bold> nach.</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>3</bold> Rechne vorteilhaft.</p>
+</sec>
+<sec sec-type="task" id="pg143_task003">
+<label>3</label>
+<statement>
+<p>Rechne vorteilhaft.</p>
 <p>Beachte die Vorrangregeln.</p>
-<p>a) 3 + (8 &#x2212; 6)</p> 
-<p>b) 4 &#x00B7; 2 + 3</p>
-<p>c) 2 + 81 : 9</p> 
-<p>d) (4 + 32) : 6</p>
+</statement><sec sec-type="subtask" id="pg143_task029a">
+<label>a)</label>
+<p>3 + (8 &#x2212; 6)</p>
+</sec><sec sec-type="subtask" id="pg143_task030b">
+<label>b)</label>
+<p>4 &#x00B7; 2 + 3</p>
+</sec><sec sec-type="subtask" id="pg143_task031c">
+<label>c)</label>
+<p>2 + 81 : 9</p>
+</sec><sec sec-type="subtask" id="pg143_task032d">
+<label>d)</label>
+<p>(4 + 32) : 6</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>3</bold> Rechne im Kopf.</p>
-<p>a) 3 &#x00B7; 5 + 6 &#x00B7; 2</p>
-<p>b) 2 &#x00B7; (9 &#x2212; 2) + 6</p>
-<p>c) (40 + 8) : 6 &#x2212; 2</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>3</bold> Rechne im Kopf.</p>
-<p>a) 4 + 50 : 2 &#x2212; 11</p>
-<p>b) 98 + (60 &#x2212; 48) : 3</p>
-<p>c) 8 &#x00B7; (26 &#x2212; 15) &#x2212; 19</p>
+<sec sec-type="task" id="pg143_task003">
+<label>3</label>
+<statement>
+<p>Rechne im Kopf.</p>
+</statement><sec sec-type="subtask" id="pg143_task033a">
+<label>a)</label>
+<p>3 &#x00B7; 5 + 6 &#x00B7; 2</p>
+</sec><sec sec-type="subtask" id="pg143_task034b">
+<label>b)</label>
+<p>2 &#x00B7; (9 &#x2212; 2) + 6</p>
+</sec><sec sec-type="subtask" id="pg143_task035c">
+<label>c)</label>
+<p>(40 + 8) : 6 &#x2212; 2</p>
 </sec>
-<sec>
+</sec>
+<sec sec-type="task" id="pg143_task003">
+<label>3</label>
+<statement>
+<p>Rechne im Kopf.</p>
+</statement><sec sec-type="subtask" id="pg143_task036a">
+<label>a)</label>
+<p>4 + 50 : 2 &#x2212; 11</p>
+</sec><sec sec-type="subtask" id="pg143_task037b">
+<label>b)</label>
+<p>98 + (60 &#x2212; 48) : 3</p>
+</sec><sec sec-type="subtask" id="pg143_task038c">
+<label>c)</label>
+<p>8 &#x00B7; (26 &#x2212; 15) &#x2212; 19</p>
+</sec>
+</sec>
+<sec id="pg143_s007">
+<sec id="pg143_s008">
 <label>4 Kompetenz</label>
-<p>Ich kann das Verteilungsgesetz (Distributivgesetz) zum Ausklammern und zum Ausmultiplizieren nutzen.</p>
-<p>&#x2192; Lies auf <bold>Seite 128</bold> nach.</p>
+<p specific-use="mer-Lernziel">Ich kann das Verteilungsgesetz (Distributivgesetz) zum Ausklammern und zum Ausmultiplizieren nutzen.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg128">Seite 128</xref></bold> nach.</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>4</bold> Rechne vorteilhaft.</p>
-<p>a) Klammere zuerst aus:</p>
-<p>83 &#x00B7; 5 + 17 &#x00B7; 5 = (83 + &#x25A0;) &#x00B7; &#x25A0; = &#x2026;</p>
-<p>b) Multipliziere aus:</p>
+</sec>
+<sec sec-type="task" id="pg143_task004">
+<label>4</label>
+<statement>
+<p>Rechne vorteilhaft.</p>
+</statement><sec sec-type="subtask" id="pg143_task039a">
+<label>a)</label>
+<statement>
+<p>Klammere zuerst aus:</p>
+</statement>
+</sec>
+<p>83 &#x00B7; 5 + 17 &#x00B7; 5 = (83 + &#x25A0;) &#x00B7; &#x25A0; = &#x2026;</p><sec sec-type="subtask" id="pg143_task040b">
+<label>b)</label>
+<statement>
+<p>Multipliziere aus:</p>
+</statement>
+</sec>
 <p>(8 + 10) &#x00B7; 9 = 8 &#x00B7; 9 + &#x2026;</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>4</bold> Rechne vorteilhaft. Nutze dazu das Ausklammern oder das Ausmultiplizieren.</p>
-<p>a) 225 &#x00B7; 8 + 775 &#x00B7; 8</p>
-<p>b) (65 + 91) : 13</p>
-<p>c) 165 : 40 &#x2212; 45 : 40</p>
+<sec sec-type="task" id="pg143_task004">
+<label>4</label>
+<statement>
+<p>Rechne vorteilhaft. Nutze dazu das Ausklammern oder das Ausmultiplizieren.</p>
+</statement><sec sec-type="subtask" id="pg143_task041a">
+<label>a)</label>
+<p>225 &#x00B7; 8 + 775 &#x00B7; 8</p>
+</sec><sec sec-type="subtask" id="pg143_task042b">
+<label>b)</label>
+<p>(65 + 91) : 13</p>
+</sec><sec sec-type="subtask" id="pg143_task043c">
+<label>c)</label>
+<p>165 : 40 &#x2212; 45 : 40</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>4</bold> Rechne vorteilhaft. Nutze dazu das Ausklammern oder das Ausmultiplizieren.</p>
-<p>a) 106 : 25 &#x2212; 31 : 25</p>
-<p>b) 115 &#x00B7; 17 + 44 &#x00B7; 17 &#x2212; 59 &#x00B7; 17</p>
-<p>c) 59 &#x00B7; 16</p>
 </sec>
-<sec>
+<sec sec-type="task" id="pg143_task004">
+<label>4</label>
+<statement>
+<p>Rechne vorteilhaft. Nutze dazu das Ausklammern oder das Ausmultiplizieren.</p>
+</statement><sec sec-type="subtask" id="pg143_task044a">
+<label>a)</label>
+<p>106 : 25 &#x2212; 31 : 25</p>
+</sec><sec sec-type="subtask" id="pg143_task045b">
+<label>b)</label>
+<p>115 &#x00B7; 17 + 44 &#x00B7; 17 &#x2212; 59 &#x00B7; 17</p>
+</sec><sec sec-type="subtask" id="pg143_task046c">
+<label>c)</label>
+<p>59 &#x00B7; 16</p>
+</sec>
+</sec>
+<sec id="pg143_s009">
+<sec id="pg143_s010">
 <label>5 Kompetenz</label>
-<p>Ich kann schriftlich multiplizieren.</p>
-<p>&#x2192; Lies auf <bold>Seite 132</bold> nach.</p>
+<p specific-use="mer-Lernziel">Ich kann schriftlich multiplizieren.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg132">Seite 132</xref></bold> nach.</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>5</bold> &#x00DC;bertrage ins Heft. Multipliziere schriftlich.</p>
-<p>a)</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_143_fx_001.jpg"/></p>
-<p>2 7 &#x00B7; 6</p>
-<p>b)</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_143_fx_002.jpg"/></p>
+</sec>
+<sec sec-type="task" id="pg143_task005">
+<label>5</label>
+<statement>
+<p>&#x00DC;bertrage ins Heft. Multipliziere schriftlich.</p>
+</statement><sec sec-type="subtask" id="pg143_task047a">
+<label>a)</label>
+<p></p>
+</sec>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_005.jpg"/></p>
+<p>2 7 &#x00B7; 6</p><sec sec-type="subtask" id="pg143_task048b">
+<label>b)</label>
+<p></p>
+</sec>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_006.jpg"/></p>
 <p>2 8 6 &#x00B7; 1 3</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>5</bold> Multipliziere schriftlich im Heft.</p>
-<p>a)</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_143_fx_003.jpg"/></p>
-<p>7 6 &#x00B7; 5 2</p>
-<p>b)</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_143_fx_004.jpg"/></p>
+<sec sec-type="task" id="pg143_task005">
+<label>5</label>
+<statement>
+<p>Multipliziere schriftlich im Heft.</p>
+</statement><sec sec-type="subtask" id="pg143_task049a">
+<label>a)</label>
+<p></p>
+</sec>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_007.jpg"/></p>
+<p>7 6 &#x00B7; 5 2</p><sec sec-type="subtask" id="pg143_task050b">
+<label>b)</label>
+<p></p>
+</sec>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_008.jpg"/></p>
 <p>1 0 8 &#x00B7; 8 0</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>5</bold> Multipliziere schriftlich.</p>
-<p>a) 179 &#x00B7; 53</p>
-<p>b) 564 &#x00B7; 54</p>
-<p>c) 48 &#x00B7; 590</p>
+<sec sec-type="task" id="pg143_task005">
+<label>5</label>
+<statement>
+<p>Multipliziere schriftlich.</p>
+</statement><sec sec-type="subtask" id="pg143_task051a">
+<label>a)</label>
+<p>179 &#x00B7; 53</p>
+</sec><sec sec-type="subtask" id="pg143_task052b">
+<label>b)</label>
+<p>564 &#x00B7; 54</p>
+</sec><sec sec-type="subtask" id="pg143_task053c">
+<label>c)</label>
+<p>48 &#x00B7; 590</p>
 </sec>
-<sec>
+</sec>
+<sec id="pg143_s011">
+<sec id="pg143_s012">
 <label>6 Kompetenz</label>
-<p>Ich kann schriftlich dividieren.</p>
-<p>&#x2192; Lies auf <bold>Seite 138</bold> nach.</p>
+<p specific-use="mer-Lernziel">Ich kann schriftlich dividieren.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg138">Seite 138</xref></bold> nach.</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>6</bold> &#x00DC;bertrage ins Heft. Dividiere schriftlich.</p>
-<p>a)</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_143_fx_005.jpg"/></p>
-<p>7 8 4 : 7 = </p> 
-<p>b)</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_143_fx_006.jpg"/></p>
+</sec>
+<sec sec-type="task" id="pg143_task006">
+<label>6</label>
+<statement>
+<p>&#x00DC;bertrage ins Heft. Dividiere schriftlich.</p>
+</statement><sec sec-type="subtask" id="pg143_task054a">
+<label>a)</label>
+<p></p>
+</sec>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_009.jpg"/></p>
+<p>7 8 4 : 7 = </p><sec sec-type="subtask" id="pg143_task055b">
+<label>b)</label>
+<p></p>
+</sec>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_010.jpg"/></p>
 <p>5 0 8 2 : 1 1 =</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>6</bold> Dividiere schriftlich im Heft.</p>
-<p>a)</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_143_fx_007.jpg"/></p>
-<p>5 6 3 2 : 8</p> 
-<p>b)</p>
-<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_143_fx_008.jpg"/></p>
+<sec sec-type="task" id="pg143_task006">
+<label>6</label>
+<statement>
+<p>Dividiere schriftlich im Heft.</p>
+</statement><sec sec-type="subtask" id="pg143_task056a">
+<label>a)</label>
+<p></p>
+</sec>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_011.jpg"/></p>
+<p>5 6 3 2 : 8</p><sec sec-type="subtask" id="pg143_task057b">
+<label>b)</label>
+<p></p>
+</sec>
+<p><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/000000000000_pg_1_fx_012.jpg"/></p>
 <p>8 0 6 4 : 1 2</p>
 </sec>
-<sec>
-<label><sec-meta>mer-</sec-meta></label>
-<p><bold>6</bold> Dividiere schriftlich.</p>
-<p>a) 2669 : 17</p>
-<p>b) 60 059 : 19</p>
-<p>c) 124 124 : 124</p>
+<sec sec-type="task" id="pg143_task006">
+<label>6</label>
+<statement>
+<p>Dividiere schriftlich.</p>
+</statement><sec sec-type="subtask" id="pg143_task058a">
+<label>a)</label>
+<p>2669 : 17</p>
+</sec><sec sec-type="subtask" id="pg143_task059b">
+<label>b)</label>
+<p>60 059 : 19</p>
+</sec><sec sec-type="subtask" id="pg143_task060c">
+<label>c)</label>
+<p>124 124 : 124</p>
 </sec>
-<p>&#x2192; L&#x00F6;sungen auf Seite 241</p>
-<p>&#x2192; L&#x00F6;sungen auf Seite 241 und 242</p>
+</sec>
+<p>&#x2192; L&#x00F6;sungen auf <xref ref-type="link-LookItUp" rid="pg241">Seite 241</xref></p>
+<p>&#x2192; L&#x00F6;sungen auf <xref ref-type="link-LookItUp" rid="pg241">Seite 241</xref> und 242</p>
 
 
 
 <!-- 2 Task updated code completed-->
 <sec id="pg142_s001">
-<sec id="pg142_s002">
+<sec id="pg143_s013">
+<sec id="pg143_s014">
 <label>1 Kompetenz</label>
 <p specific-use="mer-Lernziel">Ich kann im Kopf multiplizieren und dividieren. Ich kann mit den Fachbegriffen der Multiplikation und Division umgehen.</p>
-<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg124">Seite 124</xref></bold> nach.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg124"><xref ref-type="link-LookItUp" rid="pg124">Seite 124</xref></xref></bold> nach.</p>
 </sec>
-<sec sec-type="task" id="pg143_task001">
-<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+</sec>
+<sec sec-type="task" id="pg142_task001">
+
 <label>1</label>
 <statement>
 <p>&#x00DC;bertrage ins Heft. Finde die fehlende Zahl.</p>
 </statement>
-<sec sec-type="subtask" id="pg143_task001a">
+<sec sec-type="subtask" id="pg142_task001a">
 <label>a)</label>
-<statement>
-<p>9 &#x00B7; 9 = &#x25A0;</p>
-</statement>
+<p>9 &#x00B7; 9 = &#x25A0;</p> 
 </sec>
-<sec sec-type="subtask" id="pg143_task001b">
+<sec sec-type="subtask" id="pg142_task001b">
 <label>b)</label>
-<statement>
 <p>27 : 9 = &#x25A0;</p>
-</statement>
 </sec>
-<sec sec-type="subtask" id="pg143_task001c">
+<sec sec-type="subtask" id="pg142_task001c">
 <label>c)</label>
-<p>6 &#x00B7; &#x25A0; = 42</p>
+<p>6 &#x00B7; &#x25A0; = 42</p> 
 </sec>
-<sec sec-type="subtask" id="pg143_task001d">
+<sec sec-type="subtask" id="pg142_task001d">
 <label>d)</label>
-<statement>
 <p>&#x25A0; : 3 = 8</p>
 <p>Unterstreiche farbig: Faktor = rot,</p>
 <p>Dividend = blau, Divisor = gr&#x00FC;n.</p>
-</statement>
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task1a1">
-<sec-meta><related-object content-type="mer-Mittel"/></sec-meta>
+
 <label>1</label>
 <statement>
 <p>Finde den fehlenden Wert. Gib den Fachbegriff f&#x00FC;r den fehlenden Wert an. Nutze:</p> 
@@ -472,19 +850,15 @@
 </statement>
 <sec sec-type="subtask" id="pg143_task1a1a">
 <label>a)</label>
-<statement>
-<p>11 &#x00B7; 7 = &#x25A0;</p>
-</statement>
+<p>11 &#x00B7; 7 = &#x25A0;</p> 
 </sec>
 <sec sec-type="subtask" id="pg143_task1a1b">
 <label>b)</label>
-<statement>
 <p>108 : 12 = &#x25A0;</p>
-</statement>
 </sec>
 <sec sec-type="subtask" id="pg143_task1a1c">
 <label>c)</label>
-<p>&#x25A0; : 8 = 9</p>
+<p>&#x25A0; : 8 = 9</p> 
 </sec>
 <sec sec-type="subtask" id="pg143_task1a1d">
 <label>d)</label>
@@ -492,7 +866,7 @@
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task1a2">
-<sec-meta><related-object content-type="mer-Schwer"/></sec-meta>
+
 <label>1</label>
 <statement>
 <p>&#x00DC;bersetze den Text in eine Rechnung und finde den fehlenden Wert.</p>
@@ -512,33 +886,35 @@
 </sec>
 </sec>
 <sec id="pg142_s003">
-<sec id="pg142_s004">
+<sec id="pg143_s015">
+<sec id="pg143_s016">
 <label>2 Kompetenz</label>
 <p specific-use="mer-Lernziel">Ich kann das Vertauschungsgesetz (Kommutativgesetz) und das Verbindungsgesetz (Assoziativgesetz) bei der Multiplikation anwenden.</p>
-<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg124">Seite 124</xref></bold> nach.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg124"><xref ref-type="link-LookItUp" rid="pg124">Seite 124</xref></xref></bold> nach.</p>
 </sec>
-<sec sec-type="task" id="pg143_task002">
-<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+</sec>
+<sec sec-type="task" id="pg142_task002">
+
 <label>2</label>
 <statement>
 <p>Rechne vorteilhaft. Nutze die Rechengesetze.</p>
 <p>Vertausche die Zahlen so, dass du einfach rechnen kannst.</p>
 </statement>
-<sec sec-type="subtask" id="pg143_task002a">
+<sec sec-type="subtask" id="pg142_task002a">
 <label>a)</label>
 <p>2 &#x00B7; 9 &#x00B7; 5</p>
 </sec>
-<sec sec-type="subtask" id="pg143_task002b">
+<sec sec-type="subtask" id="pg142_task002b">
 <label>b)</label>
 <p>20 &#x00B7; 7 &#x00B7; 5</p>
 </sec>
-<sec sec-type="subtask" id="pg143_task002c">
+<sec sec-type="subtask" id="pg142_task002c">
 <label>c)</label>
 <p>8 &#x00B7; 4 &#x00B7; 25</p>
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task2a1">
-<sec-meta><related-object content-type="mer-Mittel"/></sec-meta>
+
 <label>2</label>
 <statement>
 <p>Rechne vorteilhaft. Nutze die Rechengesetze.</p>
@@ -559,7 +935,7 @@
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task2a2">
-<sec-meta><related-object content-type="mer-Schwer"/></sec-meta>
+
 <label>2</label>
 <statement>
 <p>Rechne im Kopf. Nutze die Rechengesetze.</p>
@@ -581,37 +957,39 @@
 </sec>
 </sec>
 <sec id="pg142_s005">
-<sec id="pg142_s006">
+<sec id="pg143_s017">
+<sec id="pg143_s018">
 <label>3 Kompetenz</label>
 <p specific-use="mer-Lernziel">Ich kann beim Rechnen die Vorrangregeln &#x201E;Klammern zuerst&#x201C; und &#x201E;Punkt vor Strich&#x201C; beachten.</p>
-<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg128">Seite 128</xref></bold> nach.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg128"><xref ref-type="link-LookItUp" rid="pg128">Seite 128</xref></xref></bold> nach.</p>
 </sec>
-<sec sec-type="task" id="pg143_task003">
-<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+</sec>
+<sec sec-type="task" id="pg142_task003">
+
 <label>3</label>
 <statement>
 <p>Rechne vorteilhaft.</p>
 <p>Beachte die Vorrangregeln.</p>
 </statement>
-<sec sec-type="subtask" id="pg143_task003a">
+<sec sec-type="subtask" id="pg142_task003a">
 <label>a)</label>
-<p>3 + (8 &#x2212; 6)</p>
+<p>3 + (8 &#x2212; 6)</p> 
 </sec>
-<sec sec-type="subtask" id="pg143_task003b">
+<sec sec-type="subtask" id="pg142_task003b">
 <label>b)</label>
 <p>4 &#x00B7; 2 + 3</p>
 </sec>
-<sec sec-type="subtask" id="pg143_task003c">
+<sec sec-type="subtask" id="pg142_task003c">
 <label>c)</label>
-<p>2 + 81 : 9</p>
+<p>2 + 81 : 9</p> 
 </sec>
-<sec sec-type="subtask" id="pg143_task003d">
+<sec sec-type="subtask" id="pg142_task003d">
 <label>d)</label>
 <p>(4 + 32) : 6</p>
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task3a1">
-<sec-meta><related-object content-type="mer-Mittel"/></sec-meta>
+
 <label>3</label>
 <statement>
 <p>Rechne im Kopf.</p>
@@ -630,7 +1008,7 @@
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task3a2">
-<sec-meta><related-object content-type="mer-Schwer"/></sec-meta>
+
 <label>3</label>
 <statement>
 <p>Rechne im Kopf.</p>
@@ -650,25 +1028,27 @@
 </sec>
 </sec>
 <sec id="pg142_s007">
-<sec id="pg142_s008">
+<sec id="pg143_s019">
+<sec id="pg143_s020">
 <label>4 Kompetenz</label>
 <p specific-use="mer-Lernziel">Ich kann das Verteilungsgesetz (Distributivgesetz) zum Ausklammern und zum Ausmultiplizieren nutzen.</p>
-<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg128">Seite 128</xref></bold> nach.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg128"><xref ref-type="link-LookItUp" rid="pg128">Seite 128</xref></xref></bold> nach.</p>
 </sec>
-<sec sec-type="task" id="pg143_task004">
-<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+</sec>
+<sec sec-type="task" id="pg142_task004">
+
 <label>4</label>
 <statement>
 <p>Rechne vorteilhaft.</p>
 </statement>
-<sec sec-type="subtask" id="pg143_task004a">
+<sec sec-type="subtask" id="pg142_task004a">
 <label>a)</label>
 <statement>
 <p>Klammere zuerst aus:</p>
 <p>83 &#x00B7; 5 + 17 &#x00B7; 5 = (83 + &#x25A0;) &#x00B7; &#x25A0; = &#x2026;</p>
 </statement>
 </sec>
-<sec sec-type="subtask" id="pg143_task004b">
+<sec sec-type="subtask" id="pg142_task004b">
 <label>b)</label>
 <statement>
 <p>Multipliziere aus:</p>
@@ -677,7 +1057,7 @@
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task4a1">
-<sec-meta><related-object content-type="mer-Mittel"/></sec-meta>
+
 <label>4</label>
 <statement>
 <p>Rechne vorteilhaft. Nutze dazu das Ausklammern oder das Ausmultiplizieren.</p>
@@ -696,7 +1076,7 @@
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task4a2">
-<sec-meta><related-object content-type="mer-Schwer"/></sec-meta>
+
 <label>4</label>
 <statement>
 <p>Rechne vorteilhaft. Nutze dazu das Ausklammern oder das Ausmultiplizieren.</p>
@@ -716,47 +1096,49 @@
 </sec>
 </sec>
 <sec id="pg142_s009">
-<sec id="pg142_s010">
+<sec id="pg143_s021">
+<sec id="pg143_s022">
 <label>5 Kompetenz</label>
 <p specific-use="mer-Lernziel">Ich kann schriftlich multiplizieren.</p>
-<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg132">Seite 132</xref></bold> nach.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg132"><xref ref-type="link-LookItUp" rid="pg132">Seite 132</xref></xref></bold> nach.</p>
 </sec>
-<sec sec-type="task" id="pg143_task005">
-<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+</sec>
+<sec sec-type="task" id="pg142_task005">
+
 <label>5</label>
 <statement>
 <p>&#x00DC;bertrage ins Heft. Multipliziere schriftlich.</p>
 </statement>
 <sec sec-type="subtask" id="pg143_task005a">
 <label>a)</label>
-<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_143_fx_009.jpg"/></fig>
+<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436682_pg_142_fx_001.jpg"/></fig>
 <p>2 7 &#x00B7; 6</p>
 </sec>
 <sec sec-type="subtask" id="pg143_task005b">
 <label>b)</label>
-<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_143_fx_010.jpg"/></fig>
+<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436682_pg_142_fx_002.jpg"/></fig>
 <p>2 8 6 &#x00B7; 1 3</p>
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task5a1">
-<sec-meta><related-object content-type="mer-Mittel"/></sec-meta>
+
 <label>5</label>
 <statement>
 <p>Multipliziere schriftlich im Heft.</p>
 </statement>
 <sec sec-type="subtask" id="pg143_task5a1a">
 <label>a)</label>
-<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_143_fx_011.jpg"/></fig>
+<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436682_pg_143_fx_001.jpg"/></fig>
 <p>7 6 &#x00B7; 5 2</p>
 </sec>
 <sec sec-type="subtask" id="pg143_task5a1b">
 <label>b)</label>
-<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_143_fx_012.jpg"/></fig>
+<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436682_pg_143_fx_002.jpg"/></fig>
 <p>1 0 8 &#x00B7; 8 0</p>
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task5a2">
-<sec-meta><related-object content-type="mer-Schwer"/></sec-meta>
+
 <label>5</label>
 <statement>
 <p>Multipliziere schriftlich.</p>
@@ -776,47 +1158,49 @@
 </sec>
 </sec>
 <sec id="pg142_s011">
-<sec id="pg142_s012">
+<sec id="pg143_s023">
+<sec id="pg143_s024">
 <label>6 Kompetenz</label>
 <p specific-use="mer-Lernziel">Ich kann schriftlich dividieren.</p>
-<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg138">Seite 138</xref></bold> nach.</p>
+<p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg138"><xref ref-type="link-LookItUp" rid="pg138">Seite 138</xref></xref></bold> nach.</p>
 </sec>
-<sec sec-type="task" id="pg143_task006">
-<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
+</sec>
+<sec sec-type="task" id="pg142_task006">
+
 <label>6</label>
 <statement>
 <p>&#x00DC;bertrage ins Heft. Dividiere schriftlich.</p>
 </statement>
-<sec sec-type="subtask" id="pg143_task006a">
+<sec sec-type="subtask" id="pg142_task006a">
 <label>a)</label>
-<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_143_fx_013.jpg"/></fig>
+<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436682_pg_142_fx_003.jpg"/></fig>
 <p>7 8 4 : 7 = </p> 
 </sec>
-<sec sec-type="subtask" id="pg143_task006b">
+<sec sec-type="subtask" id="pg142_task006b">
 <label>b)</label>
-<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_143_fx_014.jpg"/></fig>
+<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436682_pg_142_fx_004.jpg"/></fig>
 <p>5 0 8 2 : 1 1 =</p>
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task6a1">
-<sec-meta><related-object content-type="mer-Mittel"/></sec-meta>
+
 <label>6</label>
 <statement>
 <p>Dividiere schriftlich im Heft.</p>
 </statement>
 <sec sec-type="subtask" id="pg143_task6a1a">
 <label>a)</label>
-<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_143_fx_015.jpg"/></fig>
+<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436682_pg_143_fx_003.jpg"/></fig>
 <p>5 6 3 2 : 8</p> 
 </sec>
 <sec sec-type="subtask" id="pg143_task6a1b">
 <label>b)</label>
-<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060049080_pg_143_fx_016.jpg"/></fig>
+<fig fig-type="exerciseImage"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/9783060436682_pg_143_fx_004.jpg"/></fig>
 <p>8 0 6 4 : 1 2</p>
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task6a2">
-<sec-meta><related-object content-type="mer-Schwer"/></sec-meta>
+
 <label>6</label>
 <statement>
 <p>Dividiere schriftlich.</p>
@@ -835,9 +1219,8 @@
 </sec>
 </sec>
 </sec>
-</body>
-</book-part>
 
 
 
 </book>
+</sec>

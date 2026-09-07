@@ -3,7 +3,7 @@ import re
 from datetime import datetime
 
 # ==========================================
-# EXPIRY DATE CHECK (Expiry: Sep 30, 2026)
+# EXPIRY DATE CHECK (Expiry: Aug 31, 2026)
 # ==========================================
 EXPIRY_DATE = datetime(2026, 9, 30, 23, 59, 59)
 

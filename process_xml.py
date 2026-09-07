@@ -375,12 +375,16 @@ def process_task_sections(content, get_page_for_pos):
     return "".join(new_content)
 
 
+
 # ==========================================
 # STEP 8: CONVERT BOOK PARTS & HEADINGS
-# Headings-a <book-part> structure-a convert panna
+# Headings & Specific Words-a <book-part> structure-a convert panna
 # ==========================================
-def process_book_parts(content):
-    """Processes <head2> tags following <?pageStart ...?> to create <book-part> wrappers."""
+def process_book_parts(content, get_page_for_pos):
+    """Processes <head2> tags and specific keywords (ENTDECKEN, VERSTEHEN, ANWENDEN)
+    into <book-part> wrappers."""
+
+    # 8.1 Page start apparam varra <head2> (With Page Start Tag)
     book_part_re = re.compile(
         r'(<\?pageStart\b[^>]*pagination=["\'](\d+)["\'][^>]*\?>)\s*'
         r'<head2>(?:<bold>)?(.*?)(?:</bold>)?</head2>'
@@ -417,8 +421,70 @@ def process_book_parts(content):
         )
         return book_part_structure
 
-    return book_part_re.sub(replace_book_part, content)
+    content = book_part_re.sub(replace_book_part, content)
 
+    # 8.2 Page start illamal thaniya varra <head2> (Standalone <head2>)
+    standalone_head2_re = re.compile(
+        r'<head2>(?:<bold>)?(.*?)(?:</bold>)?</head2>'
+        r'(?:\s*<head2>(?:<bold>)?(.*?)(?:</bold>)?</head2>)?',
+        re.DOTALL | re.IGNORECASE,
+    )
+
+    def replace_standalone_head2(match):
+        start_pos = match.start()
+        pg_str = get_page_for_pos(start_pos)
+
+        first_head = match.group(1).strip()
+        second_head = match.group(2)
+
+        if second_head is not None:
+            second_head = second_head.strip()
+            title_group_inner = (
+                f"<label>{first_head}</label>\n" f"<title>{second_head}</title>"
+            )
+        else:
+            title_group_inner = f"<title>{first_head}</title>"
+
+        book_part_structure = (
+            f'<book-part book-part-type="mod-Lerneinheit">\n'
+            f"<book-part-meta>\n"
+            f'<title-group id="pg{pg_str}">\n'
+            f"{title_group_inner}\n"
+            f"</title-group>\n"
+            f'<related-object content-type=""/>\n'
+            f"</book-part-meta>\n"
+            f"</book-part>"
+        )
+        return book_part_structure
+
+    content = standalone_head2_re.sub(replace_standalone_head2, content)
+
+    # 8.3 Specific Words (<p><bold>ENTDECKEN/VERSTEHEN/ANWENDEN</bold></p>) -> <book-part>
+    words_book_part_re = re.compile(
+        r'<p(?:\s+[^>]*)?>\s*(?:<bold>)?\s*(ENTDECKEN|VERSTEHEN|ANWENDEN)\s*(?:</bold>)?\s*</p>',
+        re.IGNORECASE,
+    )
+
+    def replace_words_book_part(match):
+        start_pos = match.start()
+        pg_str = get_page_for_pos(start_pos)
+        word = match.group(1).strip()
+
+        book_part_structure = (
+            f'<book-part book-part-type="mod-Lerneinheit">\n'
+            f"<book-part-meta>\n"
+            f'<title-group id="pg{pg_str}">\n'
+            f"<title>{word}</title>\n"
+            f"</title-group>\n"
+            f'<related-object content-type=""/>\n'
+            f"</book-part-meta>\n"
+            f"</book-part>"
+        )
+        return book_part_structure
+
+    content = words_book_part_re.sub(replace_words_book_part, content)
+
+    return content
 
 # ==========================================
 # STEP 9: CONVERT CIRCLED NUMBER LISTS
@@ -555,9 +621,6 @@ def process_xml_text(content):
     content = EMPTY_OR_SPACE_P_RE.sub("", content)
     content = SEC_META_RE.sub("", content)
     content = EMPTY_TD_P_RE.sub(r"\1\2", content)
-    
-    # 11.2 Headings-a book-part-a convert panna
-    content = process_book_parts(content)
 
     page_matches = list(PAGE_RE.finditer(content))
     sec_counter = {}
@@ -572,6 +635,9 @@ def process_xml_text(content):
             else:
                 break
         return pg
+
+    # 11.2 Headings-a book-part-a convert panna
+    content = process_book_parts(content, get_page_for_pos)
 
     # 11.3 Kompetenz sections convert panna
     content = process_kompetenz_sections(content, get_page_for_pos, sec_counter)
