@@ -247,7 +247,15 @@ def process_kompetenz_sections(content, get_page_for_pos, sec_counter):
 # Main Tasks (Task 1, Task 2...) sec-type="task" -a maatha
 # ==========================================
 def process_task_sections(content, get_page_for_pos):
-    """Parses task <sec> blocks AND standalone <p><bold>N</bold>...</p> tags into task <sec> format."""
+    """Parses task <sec> blocks AND standalone <p><bold>N ...</bold>...</p> tags into task <sec> format."""
+
+    # Task pattern:
+    # 1. <p><bold>25</bold> Content...</p>
+    # 2. <p><bold>25 Content...</bold></p>
+    TASK_P_RE = re.compile(
+        r"<p(?P<pattrs>[^>]*)>\s*<bold>(?:Task\s*)?(?P<num>\d+)[\.:]?(?P<bold_tail>.*?)</bold>\s*(?P<pcontent>.*?)</p>",
+        re.DOTALL | re.IGNORECASE,
+    )
 
     # 7.1 Text-kulla already irukkura <sec> block task-a convert panna
     sec_block_re = re.compile(r"<sec\b[^>]*>(.*?)</sec>", re.DOTALL | re.IGNORECASE)
@@ -260,12 +268,7 @@ def process_task_sections(content, get_page_for_pos):
         if 'specific-use="mer-Lernziel"' in sec_inner or 'sec-type="task"' in match.group(0):
             return match.group(0)
 
-        first_p_match = re.search(
-            r"<p(?P<pattrs>[^>]*)>\s*<bold>(?:Task\s*)?(?P<num>\d+)[\.:]?</bold>\s*(?P<pcontent>.*?)</p>",
-            sec_inner,
-            re.DOTALL | re.IGNORECASE,
-        )
-
+        first_p_match = TASK_P_RE.search(sec_inner)
         if not first_p_match:
             return match.group(0)
 
@@ -274,14 +277,18 @@ def process_task_sections(content, get_page_for_pos):
         sec_id = f"pg{pg_str}_task{task_str}"
 
         p_attrs = first_p_match.group("pattrs")
+        bold_tail = first_p_match.group("bold_tail").strip()
         p_content = first_p_match.group("pcontent").strip()
+
+        # Combine title text inside bold & outside bold if any
+        full_title_text = f"{bold_tail} {p_content}".strip()
 
         clean_inner = re.sub(
             r"^\s*<label>[^<]*</label>\s*", "", sec_inner, flags=re.IGNORECASE
         )
 
         first_p_full = first_p_match.group(0)
-        new_first_p = f"<p{p_attrs}>{p_content}</p>" if p_content else ""
+        new_first_p = f"<p{p_attrs}>{full_title_text}</p>" if full_title_text else ""
 
         clean_inner = clean_inner.replace(first_p_full, new_first_p, 1)
 
@@ -308,13 +315,8 @@ def process_task_sections(content, get_page_for_pos):
 
     content = sec_block_re.sub(transform_sec, content)
 
-    # 7.2 Standalone <p><bold>N</bold>...</p> ah irukkura Tasks-a convert panna
-    standalone_p_task_re = re.compile(
-        r"<p(?P<pattrs>[^>]*)>\s*<bold>(?:Task\s*)?(?P<num>\d+)[\.:]?</bold>\s*(?P<pcontent>.*?)</p>",
-        re.DOTALL | re.IGNORECASE,
-    )
-
-    matches = list(standalone_p_task_re.finditer(content))
+    # 7.2 Standalone <p><bold>N ...</bold>...</p> ah irukkura Tasks-a convert panna
+    matches = list(TASK_P_RE.finditer(content))
     if not matches:
         return content
 
@@ -336,9 +338,11 @@ def process_task_sections(content, get_page_for_pos):
         sec_id = f"pg{pg_str}_task{task_str}"
 
         p_attrs = m.group("pattrs")
+        bold_tail = m.group("bold_tail").strip()
         p_content = m.group("pcontent").strip()
 
-        first_statement_p = f"<p{p_attrs}>{p_content}</p>" if p_content else ""
+        full_title_text = f"{bold_tail} {p_content}".strip()
+        first_statement_p = f"<p{p_attrs}>{full_title_text}</p>" if full_title_text else ""
 
         new_content.append(content[last_idx:start_pos])
 
@@ -373,8 +377,6 @@ def process_task_sections(content, get_page_for_pos):
         new_content.append(content[last_idx:])
 
     return "".join(new_content)
-
-
 
 # ==========================================
 # STEP 8: CONVERT BOOK PARTS & HEADINGS

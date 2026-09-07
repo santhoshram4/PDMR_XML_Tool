@@ -55,25 +55,13 @@
 </sec>
 
 <!-- Task-->
-<sec id="pg6_s001">
-<sec id="pg6_s002">
-<label>2 Kompetenz</label>
-<p specific-use="mer-Lernziel">Ich kann einen Zahlenstrahl zeichnen und einteilen.</p>
-</sec>
-<sec sec-type="task" id="pg6_task002">
-<label>2</label>
-<statement>
+<p><bold>25 Regelm&#x00E4;&#x00DF;ige Vielecke</bold></p/>
 <p>Ist der Zahlenstrahl richtig gezeichnet und eingeteilt?</p>
 <p>Verbessere in deinem Heft.</p>
-</statement>
-<sec sec-type="subtask" id="pg6_task001a">
-<label>a)</label>
-<fig><img/></fig></p>
+<p>a) <fig><img/></fig></p>
 <p>b) <fig><img/></fig></p>
 <p>c) <fig><img/></fig></p>
-</sec>
-</sec>
-</sec>
+
 
 <!-- new Task-->
 <p><bold>1</bold> Erg&#x00E4;nze die S&#x00E4;tze im Heft.</p>
