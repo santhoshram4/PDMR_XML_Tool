@@ -152,8 +152,6 @@ def process_xml_content(xml_content, isbn_num):
             return match.group(0)
         elif match.group(4):
             inner_content = match.group(5).strip()
-            
-            # Clean orphan </statement> inside boxed-text structure if any
             inner_content = re.sub(r'\s*</statement>\s*', '', inner_content, flags=re.IGNORECASE)
             
             sec_id = f"pg{active_pg[0]}_s{s_counter[0]:03d}"
@@ -316,7 +314,7 @@ def process_xml_content(xml_content, isbn_num):
     xml_content = re.sub(pattern_subtask, wrap_subtask_statement, xml_content, flags=re.DOTALL | re.IGNORECASE)
 
     # ==========================================
-    # STEP 7.5: SAFE TASK-LEVEL STATEMENT WRAPPING (With Unmatched Closing Clean-Up)
+    # STEP 7.5: SAFE TASK-LEVEL STATEMENT WRAPPING
     # ==========================================
     def fix_task_level_statement(task_match):
         task_sec_open = task_match.group(1)
@@ -345,7 +343,6 @@ def process_xml_content(xml_content, isbn_num):
     pattern_full_task = r'(<sec\b[^>]*sec-type=["\']task["\'][^>]*>)\s*(<label>.*?</label>)(.*?)(</sec>)'
     xml_content = re.sub(pattern_full_task, fix_task_level_statement, xml_content, flags=re.DOTALL | re.IGNORECASE)
 
-    # Clean orphaned closing </statement> tags outside tasks/subtasks
     xml_content = re.sub(r'</sec>\s*</statement>', r'</sec>', xml_content, flags=re.IGNORECASE)
 
     while re.search(orphan_graphic_subtask_pattern, xml_content, flags=re.IGNORECASE):
@@ -430,6 +427,92 @@ def process_xml_content(xml_content, isbn_num):
         return m.group(0)
 
     xml_content = re.sub(pattern_tipp_track, tipp_replacer, xml_content, flags=re.DOTALL | re.IGNORECASE)
+
+    # ==========================================
+    # STEP 11: DOUBLE PAGE TASK & SUBTASK ID DYNAMIC FORMATTING (REVISED)
+    # ==========================================
+    def process_consecutive_page_ids(content):
+        # Look for two consecutive pageStart tags
+        double_page_pattern = r'((?:<\?pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*\?>|<pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*/>)\s*(?:<\?pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*\?>|<pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*/>))'
+        
+        blocks = re.split(double_page_pattern, content, flags=re.IGNORECASE)
+        if len(blocks) <= 1:
+            return content
+
+        out_parts = [blocks[0]]
+        
+        i = 1
+        while i < len(blocks):
+            pages_markup = blocks[i]
+            p1 = blocks[i+1] if blocks[i+1] else blocks[i+2]
+            p2 = blocks[i+3] if blocks[i+3] else blocks[i+4]
+            section_content = blocks[i+5] if (i+5) < len(blocks) else ""
+            
+            # Find next pageStart to limit this block scope
+            next_single_page_pos = re.search(r'<\?pageStart\b|<pageStart\b', section_content, flags=re.IGNORECASE)
+            if next_single_page_pos:
+                target_block = section_content[:next_single_page_pos.start()]
+                remaining_block = section_content[next_single_page_pos.start():]
+            else:
+                target_block = section_content
+                remaining_block = ""
+
+            pg1_num = p1
+            pg2_num = p2
+            
+            label_counts = {}
+            
+            def replace_task_and_subtasks(task_m):
+                task_open = task_m.group(1)
+                lbl_val = task_m.group(2)
+                task_body = task_m.group(3)
+                task_close = task_m.group(4)
+
+                label_counts[lbl_val] = label_counts.get(lbl_val, 0) + 1
+                occurrence = label_counts[lbl_val]
+
+                if occurrence == 1:
+                    target_pg = pg1_num
+                    base_task_id = f"pg{target_pg}_task{int(lbl_val):03d}"
+                else:
+                    target_pg = pg2_num
+                    suffix_index = occurrence - 1
+                    base_task_id = f"pg{target_pg}_task{lbl_val}a{suffix_index}"
+
+                # Update subtask IDs cleanly inside the task body
+                def sub_replacer(sub_m):
+                    sub_open = sub_m.group(1)
+                    sub_lbl = sub_m.group(2)
+                    return f'{sub_open}{base_task_id}{sub_lbl}"'
+
+                task_body_updated = re.sub(
+                    r'(<sec\b[^>]*sec-type=["\']subtask["\'][^>]*id=["\'])pg\d+_task[^"\']*?([a-z]+)["\']',
+                    sub_replacer,
+                    task_body,
+                    flags=re.IGNORECASE
+                )
+
+                # Format task tag and label on new line nicely
+                task_open_updated = re.sub(r'id=["\'][^"\']*["\']', f'id="{base_task_id}"', task_open, flags=re.IGNORECASE)
+
+                return f"{task_open_updated}\n<label>{lbl_val}</label>{task_body_updated}\n{task_close}"
+
+            task_pattern = r'(<sec\b[^>]*sec-type=["\']task["\'][^>]*id=["\'][^"\']*["\'][^>]*>)\s*<label>(\d+)</label>(.*?)(</sec>)'
+            updated_target = re.sub(task_pattern, replace_task_and_subtasks, target_block, flags=re.DOTALL | re.IGNORECASE)
+
+            # Fix non-task sec id (like <sec id="pg143_s001"> -> <sec id="pg142_s001">)
+            def fix_s_sec_ids(s_m):
+                s_num = s_m.group(1)
+                return f'<sec id="pg{pg1_num}_s{s_num}">'
+
+            updated_target = re.sub(r'<sec\b[^>]*id=["\']pg\d+_s(\d+)["\'][^>]*>', fix_s_sec_ids, updated_target, flags=re.IGNORECASE)
+
+            out_parts.append(pages_markup + updated_target + remaining_block)
+            i += 6
+
+        return "".join(out_parts)
+
+    xml_content = process_consecutive_page_ids(xml_content)
 
     return xml_content
 

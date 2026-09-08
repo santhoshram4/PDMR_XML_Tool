@@ -241,7 +241,6 @@
 <p>a) Der 2. Faktor ist 34. Der Wert des Produkts betr&#x00E4;gt 238.</p>
 <p>b) Der Dividend ist 126, der Divisor ist 14.</p>
 </sec>
-
 <sec>
 <label>2 Kompetenz</label>
 <p>Ich kann das Vertauschungsgesetz (Kommutativgesetz) und das Verbindungsgesetz (Assoziativgesetz) bei der Multiplikation anwenden.</p>
@@ -394,55 +393,73 @@
 
 
 <!-- 2 Task updated code completed-->
+
+<?pageStart pdf="146" pagination="142"?>
+<?pageStart pdf="147" pagination="143"?>
+<book-part book-part-type="mod-Lerneinheit">
+<book-part-meta>
+<title-group id="pg143">
+<title>Zwischentest</title>
+</title-group>
+<related-object content-type=""/>
+</book-part-meta>
+</book-part>
 <sec id="pg142_s001">
 <sec id="pg142_s002">
 <label>1 Kompetenz</label>
 <p specific-use="mer-Lernziel">Ich kann im Kopf multiplizieren und dividieren. Ich kann mit den Fachbegriffen der Multiplikation und Division umgehen.</p>
 <p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg124">Seite 124</xref></bold> nach.</p>
 </sec>
+</sec>
 <sec sec-type="task" id="pg142_task001">
-<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
 <label>1</label>
 <statement>
 <p>&#x00DC;bertrage ins Heft. Finde die fehlende Zahl.</p>
 </statement>
 <sec sec-type="subtask" id="pg142_task001a">
 <label>a)</label>
-<p>9 &#x00B7; 9 = &#x25A0;</p> 
+<statement>
+<p>9 &#x00B7; 9 = &#x25A0;</p>
+</statement>
 </sec>
 <sec sec-type="subtask" id="pg142_task001b">
 <label>b)</label>
+<statement>
 <p>27 : 9 = &#x25A0;</p>
+</statement>
 </sec>
 <sec sec-type="subtask" id="pg142_task001c">
 <label>c)</label>
-<p>6 &#x00B7; &#x25A0; = 42</p> 
+<p>6 &#x00B7; &#x25A0; = 42</p>
 </sec>
 <sec sec-type="subtask" id="pg142_task001d">
 <label>d)</label>
 <p>&#x25A0; : 3 = 8</p>
-<p>Unterstreiche farbig: Faktor = rot,</p>
-<p>Dividend = blau, Divisor = gr&#x00FC;n.</p>
 </sec>
+<p>Unterstreiche farbig: Faktor = rot,</p>
+ <p>Dividend = blau, Divisor = gr&#x00FC;n.</p>
 </sec>
 <sec sec-type="task" id="pg143_task1a1">
-<sec-meta><related-object content-type="mer-Mittel"/></sec-meta>
 <label>1</label>
 <statement>
 <p>Finde den fehlenden Wert. Gib den Fachbegriff f&#x00FC;r den fehlenden Wert an. Nutze:</p> 
 <p>Faktor, Dividend, Wert des Produkts, Wert des Quotienten</p>
 </statement>
-<sec sec-type="subtask" id="pg143_task1a1a">
+<sec sec-type="subtask" id="pg142_task1a1a">
 <label>a)</label>
-<p>11 &#x00B7; 7 = &#x25A0;</p> 
+<statement>
+<p>11 &#x00B7; 7 = &#x25A0;</p>
+</statement>
 </sec>
 <sec sec-type="subtask" id="pg143_task1a1b">
 <label>b)</label>
+<statement>
 <p>108 : 12 = &#x25A0;</p>
+</statement>
 </sec>
 <sec sec-type="subtask" id="pg143_task1a1c">
 <label>c)</label>
-<p>&#x25A0; : 8 = 9</p> 
+<p>&#x25A0; : 8 = 9</p>
 </sec>
 <sec sec-type="subtask" id="pg143_task1a1d">
 <label>d)</label>
@@ -450,7 +467,6 @@
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task1a2">
-<sec-meta><related-object content-type="mer-Schwer"/></sec-meta>
 <label>1</label>
 <statement>
 <p>&#x00DC;bersetze den Text in eine Rechnung und finde den fehlenden Wert.</p>
@@ -468,7 +484,6 @@
 </statement>
 </sec>
 </sec>
-</sec>
 <sec id="pg142_s003">
 <sec id="pg142_s004">
 <label>2 Kompetenz</label>
@@ -476,27 +491,25 @@
 <p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg124">Seite 124</xref></bold> nach.</p>
 </sec>
 <sec sec-type="task" id="pg142_task002">
-<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
 <label>2</label>
 <statement>
 <p>Rechne vorteilhaft. Nutze die Rechengesetze.</p>
 <p>Vertausche die Zahlen so, dass du einfach rechnen kannst.</p>
 </statement>
-<sec sec-type="subtask" id="pg142_task002a">
+<sec sec-type="subtask" id="pg143_task002a">
 <label>a)</label>
 <p>2 &#x00B7; 9 &#x00B7; 5</p>
 </sec>
-<sec sec-type="subtask" id="pg142_task002b">
+<sec sec-type="subtask" id="pg143_task002b">
 <label>b)</label>
 <p>20 &#x00B7; 7 &#x00B7; 5</p>
 </sec>
-<sec sec-type="subtask" id="pg142_task002c">
+<sec sec-type="subtask" id="pg143_task002c">
 <label>c)</label>
 <p>8 &#x00B7; 4 &#x00B7; 25</p>
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task2a1">
-<sec-meta><related-object content-type="mer-Mittel"/></sec-meta>
 <label>2</label>
 <statement>
 <p>Rechne vorteilhaft. Nutze die Rechengesetze.</p>
@@ -506,7 +519,7 @@
 <p>200 &#x00B7; 17 &#x00B7; 5</p>
 </sec>
 <sec sec-type="subtask" id="pg143_task2a1b">
-<label>a)</label>
+<label>b)</label>
 <p>18 &#x00B7; 4 &#x00B7; 5</p>
 </sec>
 <sec sec-type="subtask" id="pg143_task2a1c">
@@ -517,7 +530,6 @@
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task2a2">
-<sec-meta><related-object content-type="mer-Schwer"/></sec-meta>
 <label>2</label>
 <statement>
 <p>Rechne im Kopf. Nutze die Rechengesetze.</p>
@@ -544,8 +556,8 @@
 <p specific-use="mer-Lernziel">Ich kann beim Rechnen die Vorrangregeln &#x201E;Klammern zuerst&#x201C; und &#x201E;Punkt vor Strich&#x201C; beachten.</p>
 <p>&#x2192; Lies auf <bold><xref ref-type="link-LookItUp" rid="pg128">Seite 128</xref></bold> nach.</p>
 </sec>
+</sec>
 <sec sec-type="task" id="pg142_task003">
-<sec-meta><related-object content-type="mer-Einfach"/></sec-meta>
 <label>3</label>
 <statement>
 <p>Rechne vorteilhaft.</p>
@@ -553,7 +565,7 @@
 </statement>
 <sec sec-type="subtask" id="pg142_task003a">
 <label>a)</label>
-<p>3 + (8 &#x2212; 6)</p> 
+<p>3 + (8 &#x2212; 6)</p>
 </sec>
 <sec sec-type="subtask" id="pg142_task003b">
 <label>b)</label>
@@ -561,7 +573,7 @@
 </sec>
 <sec sec-type="subtask" id="pg142_task003c">
 <label>c)</label>
-<p>2 + 81 : 9</p> 
+<p>2 + 81 : 9</p>
 </sec>
 <sec sec-type="subtask" id="pg142_task003d">
 <label>d)</label>
@@ -569,7 +581,6 @@
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task3a1">
-<sec-meta><related-object content-type="mer-Mittel"/></sec-meta>
 <label>3</label>
 <statement>
 <p>Rechne im Kopf.</p>
@@ -588,7 +599,6 @@
 </sec>
 </sec>
 <sec sec-type="task" id="pg143_task3a2">
-<sec-meta><related-object content-type="mer-Schwer"/></sec-meta>
 <label>3</label>
 <statement>
 <p>Rechne im Kopf.</p>
@@ -607,6 +617,7 @@
 </sec>
 </sec>
 </sec>
+
 <sec id="pg142_s007">
 <sec id="pg142_s008">
 <label>4 Kompetenz</label>

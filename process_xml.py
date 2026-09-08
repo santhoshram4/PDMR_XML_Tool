@@ -376,7 +376,7 @@ def process_task_sections(content, get_page_for_pos):
     if last_idx < len(content):
         new_content.append(content[last_idx:])
 
-    return "".join(new_content)
+    return "".join(new_content) 
 
 # ==========================================
 # STEP 8: CONVERT BOOK PARTS & HEADINGS
