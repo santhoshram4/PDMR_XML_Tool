@@ -71,6 +71,13 @@ def process_xml_content(xml_content, isbn_num):
     xml_content = re.sub(pattern_title_group_id, fix_title_group_id, xml_content, flags=re.IGNORECASE)
 
     # ==========================================
+    # STEP 0.2: SHIFT CLOSING TAGS BELOW PAGESTART TO ABOVE PAGESTART
+    # ==========================================
+    pattern_closing_below_page = r'((?:<\?pageStart\b[^>]*\?>|<pageStart\b[^>]*/>))\s*(</(?:sec|body|book-part|statement|p)\b[^>]*>)'
+    while re.search(pattern_closing_below_page, xml_content, flags=re.IGNORECASE):
+        xml_content = re.sub(pattern_closing_below_page, r'\2\n\1', xml_content, flags=re.IGNORECASE)
+
+    # ==========================================
     # STEP 1: HEAD1 TO <book-part> CONVERSION & PAGESTART SHIFT BELOW </book-part>
     # ==========================================
     active_pg_head1 = ["1"]
@@ -164,12 +171,13 @@ def process_xml_content(xml_content, isbn_num):
                 first_p_full = p_match.group(0)
                 first_p_inner = p_match.group(1).strip()
                 
-                bold_match = re.search(r'^\s*<(?:bold\b[^>]*>(?:\s*<italic\b[^>]*>)?|<italic\b[^>]*>\s*<bold\b[^>]*>)(.*?)(?:</italic>\s*)?</bold>(?:</italic>)?', first_p_inner, flags=re.DOTALL | re.IGNORECASE)
+                label_pattern = r'^\s*(Hinweis\s+zu\s+<bold>\d+</bold>:?|Hinweis\s+zu\s+\d+:?)'
+                lbl_match = re.search(label_pattern, first_p_inner, flags=re.IGNORECASE)
                 
-                if bold_match:
-                    raw_label_text = bold_match.group(1).strip()
-                    label_text = re.sub(r'<[^>]+>', '', raw_label_text)
-                    remaining_p_inner = first_p_inner[bold_match.end():].strip()
+                if lbl_match:
+                    raw_label = lbl_match.group(0)
+                    label_text = re.sub(r'</?bold>', '', raw_label).strip()
+                    remaining_p_inner = first_p_inner[lbl_match.end():].strip()
                     
                     if remaining_p_inner:
                         updated_first_p = f"<p>{remaining_p_inner}</p>"
@@ -322,31 +330,27 @@ def process_xml_content(xml_content, isbn_num):
         rest_content = task_match.group(3)
         task_sec_close = task_match.group(4)
 
-        subtask_pos = re.search(r'<sec\b[^>]*sec-type=["\']subtask["\']', rest_content, flags=re.IGNORECASE)
+        nest_sec_pos = re.search(r'<sec\b', rest_content, flags=re.IGNORECASE)
         
-        if subtask_pos:
-            before_subtasks = rest_content[:subtask_pos.start()]
-            subtasks_and_after = rest_content[subtask_pos.start():]
+        if nest_sec_pos:
+            before_nested = rest_content[:nest_sec_pos.start()]
+            nested_and_after = rest_content[nest_sec_pos.start():]
         else:
-            before_subtasks = rest_content
-            subtasks_and_after = ""
+            before_nested = rest_content
+            nested_and_after = ""
 
-        clean_before = re.sub(r'</?statement>', '', before_subtasks, flags=re.IGNORECASE).strip()
-        
+        clean_before = re.sub(r'</?statement>', '', before_nested, flags=re.IGNORECASE).strip()
+        clean_after = re.sub(r'</?statement>', '', nested_and_after, flags=re.IGNORECASE).strip()
+
         if clean_before:
             wrapped_statement = f"\n<statement>\n{clean_before}\n</statement>\n"
         else:
             wrapped_statement = "\n"
 
-        return f"{task_sec_open}\n{label_tag}{wrapped_statement}{subtasks_and_after}{task_sec_close}"
+        return f"{task_sec_open}\n{label_tag}{wrapped_statement}{clean_after}\n{task_sec_close}"
 
     pattern_full_task = r'(<sec\b[^>]*sec-type=["\']task["\'][^>]*>)\s*(<label>.*?</label>)(.*?)(</sec>)'
     xml_content = re.sub(pattern_full_task, fix_task_level_statement, xml_content, flags=re.DOTALL | re.IGNORECASE)
-
-    xml_content = re.sub(r'</sec>\s*</statement>', r'</sec>', xml_content, flags=re.IGNORECASE)
-
-    while re.search(orphan_graphic_subtask_pattern, xml_content, flags=re.IGNORECASE):
-        xml_content = re.sub(orphan_graphic_subtask_pattern, r'\1\n\2\n</sec>', xml_content, flags=re.IGNORECASE)
 
     # ==========================================
     # STEP 8: ACCURATE Subtask ID Replacement for ALL Children
@@ -429,10 +433,9 @@ def process_xml_content(xml_content, isbn_num):
     xml_content = re.sub(pattern_tipp_track, tipp_replacer, xml_content, flags=re.DOTALL | re.IGNORECASE)
 
     # ==========================================
-    # STEP 11: DOUBLE PAGE TASK & SUBTASK ID DYNAMIC FORMATTING (REVISED)
+    # STEP 11: DOUBLE PAGE TASK & SUBTASK ID DYNAMIC FORMATTING
     # ==========================================
     def process_consecutive_page_ids(content):
-        # Look for two consecutive pageStart tags
         double_page_pattern = r'((?:<\?pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*\?>|<pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*/>)\s*(?:<\?pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*\?>|<pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*/>))'
         
         blocks = re.split(double_page_pattern, content, flags=re.IGNORECASE)
@@ -448,7 +451,6 @@ def process_xml_content(xml_content, isbn_num):
             p2 = blocks[i+3] if blocks[i+3] else blocks[i+4]
             section_content = blocks[i+5] if (i+5) < len(blocks) else ""
             
-            # Find next pageStart to limit this block scope
             next_single_page_pos = re.search(r'<\?pageStart\b|<pageStart\b', section_content, flags=re.IGNORECASE)
             if next_single_page_pos:
                 target_block = section_content[:next_single_page_pos.start()]
@@ -479,7 +481,6 @@ def process_xml_content(xml_content, isbn_num):
                     suffix_index = occurrence - 1
                     base_task_id = f"pg{target_pg}_task{lbl_val}a{suffix_index}"
 
-                # Update subtask IDs cleanly inside the task body
                 def sub_replacer(sub_m):
                     sub_open = sub_m.group(1)
                     sub_lbl = sub_m.group(2)
@@ -492,7 +493,6 @@ def process_xml_content(xml_content, isbn_num):
                     flags=re.IGNORECASE
                 )
 
-                # Format task tag and label on new line nicely
                 task_open_updated = re.sub(r'id=["\'][^"\']*["\']', f'id="{base_task_id}"', task_open, flags=re.IGNORECASE)
 
                 return f"{task_open_updated}\n<label>{lbl_val}</label>{task_body_updated}\n{task_close}"
@@ -500,7 +500,6 @@ def process_xml_content(xml_content, isbn_num):
             task_pattern = r'(<sec\b[^>]*sec-type=["\']task["\'][^>]*id=["\'][^"\']*["\'][^>]*>)\s*<label>(\d+)</label>(.*?)(</sec>)'
             updated_target = re.sub(task_pattern, replace_task_and_subtasks, target_block, flags=re.DOTALL | re.IGNORECASE)
 
-            # Fix non-task sec id (like <sec id="pg143_s001"> -> <sec id="pg142_s001">)
             def fix_s_sec_ids(s_m):
                 s_num = s_m.group(1)
                 return f'<sec id="pg{pg1_num}_s{s_num}">'
@@ -513,6 +512,66 @@ def process_xml_content(xml_content, isbn_num):
         return "".join(out_parts)
 
     xml_content = process_consecutive_page_ids(xml_content)
+
+    # ==========================================
+    # STEP 12: STATEMENT TAG BALANCE & UNMATCHED CLOSING REMOVAL
+    # ==========================================
+    statement_tokens = re.split(r'(</?statement\b[^>]*>)', xml_content, flags=re.IGNORECASE)
+    cleaned_tokens = []
+    is_inside_statement = False
+
+    for token in statement_tokens:
+        if token.lower().startswith('<statement'):
+            if not is_inside_statement:
+                is_inside_statement = True
+                cleaned_tokens.append(token)
+            else:
+                pass
+        elif token.lower().startswith('</statement'):
+            if is_inside_statement:
+                is_inside_statement = False
+                cleaned_tokens.append(token)
+            else:
+                pass
+        else:
+            cleaned_tokens.append(token)
+
+    xml_content = "".join(cleaned_tokens)
+
+    # ==========================================
+    # STEP 12.1: UNWANTED CLOSING </sec> TAG REMOVAL
+    # ==========================================
+    sec_tokens = re.split(r'(<sec\b[^>]*>|</sec>)', xml_content, flags=re.IGNORECASE)
+    cleaned_sec_tokens = []
+    open_sec_count = 0
+
+    for token in sec_tokens:
+        if token.lower().startswith('<sec'):
+            open_sec_count += 1
+            cleaned_sec_tokens.append(token)
+        elif token.lower().startswith('</sec'):
+            if open_sec_count > 0:
+                open_sec_count -= 1
+                cleaned_sec_tokens.append(token)
+            else:
+                # Discard orphan/extra closing </sec> tag
+                pass
+        else:
+            cleaned_sec_tokens.append(token)
+
+    xml_content = "".join(cleaned_sec_tokens)
+
+    # ==========================================
+    # STEP 13: REMOVE UNWANTED BLANK/EMPTY LINES & WHITESPACES
+    # ==========================================
+    cleaned_lines = []
+    for line in xml_content.splitlines():
+        clean_l = line.replace('&nbsp;', ' ').replace('\xa0', ' ')
+        if clean_l.strip():
+            cleaned_lines.append(clean_l)
+            
+    xml_content = "\n".join(cleaned_lines)
+    xml_content = re.sub(r'>\s*\n\s*\n+\s*<', '>\n<', xml_content)
 
     return xml_content
 

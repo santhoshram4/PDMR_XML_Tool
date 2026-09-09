@@ -249,9 +249,6 @@ def process_kompetenz_sections(content, get_page_for_pos, sec_counter):
 def process_task_sections(content, get_page_for_pos):
     """Parses task <sec> blocks AND standalone <p><bold>N ...</bold>...</p> tags into task <sec> format."""
 
-    # Task pattern:
-    # 1. <p><bold>25</bold> Content...</p>
-    # 2. <p><bold>25 Content...</bold></p>
     TASK_P_RE = re.compile(
         r"<p(?P<pattrs>[^>]*)>\s*<bold>(?:Task\s*)?(?P<num>\d+)[\.:]?(?P<bold_tail>.*?)</bold>\s*(?P<pcontent>.*?)</p>",
         re.DOTALL | re.IGNORECASE,
@@ -280,7 +277,6 @@ def process_task_sections(content, get_page_for_pos):
         bold_tail = first_p_match.group("bold_tail").strip()
         p_content = first_p_match.group("pcontent").strip()
 
-        # Combine title text inside bold & outside bold if any
         full_title_text = f"{bold_tail} {p_content}".strip()
 
         clean_inner = re.sub(
@@ -303,7 +299,7 @@ def process_task_sections(content, get_page_for_pos):
         remaining_part = subtask_split[1].strip() if len(subtask_split) > 1 else ""
 
         res = (
-            f'<sec sec-type="task" id="{sec_id}">\n'
+            f'\n<sec sec-type="task" id="{sec_id}">\n'
             f"<label>{task_num}</label>\n"
             f"<statement>\n{statement_part}\n</statement>\n"
         )
@@ -362,7 +358,7 @@ def process_task_sections(content, get_page_for_pos):
         full_statement = f"{first_statement_p}\n{statement_tail}".strip()
 
         res = (
-            f'<sec sec-type="task" id="{sec_id}">\n'
+            f'\n<sec sec-type="task" id="{sec_id}">\n'
             f"<label>{task_num}</label>\n"
             f"<statement>\n{full_statement}\n</statement>\n"
         )
@@ -376,7 +372,8 @@ def process_task_sections(content, get_page_for_pos):
     if last_idx < len(content):
         new_content.append(content[last_idx:])
 
-    return "".join(new_content) 
+    return "".join(new_content)
+
 
 # ==========================================
 # STEP 8: CONVERT BOOK PARTS & HEADINGS
@@ -488,6 +485,7 @@ def process_book_parts(content, get_page_for_pos):
 
     return content
 
+
 # ==========================================
 # STEP 9: CONVERT CIRCLED NUMBER LISTS
 # Circled number <p> tags-a <list> format-a maatha
@@ -564,7 +562,7 @@ def process_circled_num_lists(
 
         items_joined = "\n".join(items_str)
         list_block = (
-            f'<sec id="{sec_id}">\n'
+            f'\n<sec id="{sec_id}">\n'
             f'<list list-type="simple">\n'
             f"{items_joined}\n"
             f"</list>\n"
@@ -643,12 +641,12 @@ def process_xml_text(content):
 
     # 11.3 Kompetenz sections convert panna
     content = process_kompetenz_sections(content, get_page_for_pos, sec_counter)
-    
+
     # 11.4 Circled number lists convert panna
     content = process_circled_num_lists(
         content, get_page_for_pos, sec_counter, page_img_counters
     )
-    
+
     # 11.5 Main Tasks convert panna
     content = process_task_sections(content, get_page_for_pos)
 
@@ -718,8 +716,9 @@ def process_xml_text(content):
             else:
                 body_content = f"<p{attrs}>{inner_content}</p>"
 
+        # Enforced newline before <sec> to guarantee separate lines
         res = (
-            f'<sec sec-type="subtask" id="{sec_id}">\n'
+            f'\n<sec sec-type="subtask" id="{sec_id}">\n'
             f"<label>{label}</label>\n"
             f"{body_content}\n"
             f"</sec>"
@@ -811,7 +810,7 @@ def main():
             return
 
         print("Processing started...\n")
-        
+
         # 12.3 Ovvoru XML file-a edutthu multiple encodings moolama read panni process panna
         for filename in files:
             print(f"Processing: {filename}")
