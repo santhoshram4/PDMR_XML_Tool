@@ -240,7 +240,34 @@ def process_kompetenz_sections(content, get_page_for_pos, sec_counter):
 
     new_content.append(content[last_idx:])
     return "".join(new_content)
+# ==========================================
+# STEP 6.1: CONVERT 'Lies und übe:' SECTIONS
+# <sec><label>Lies und &#x00FC;be:</label>...-kku auto ID (pgXXX_sYYY) sethu convert panna
+# ==========================================
+def process_lies_und_uebe_sections(content, get_page_for_pos, sec_counter):
+    """Adds id="pgXXX_sYYY" to <sec> blocks containing <label>Lies und &#x00FC;be:</label>."""
 
+    lies_sec_re = re.compile(
+        r"<sec(?P<attrs>[^>]*)>\s*<label>(?P<label_content>\s*Lies\s+und\s+(?:&#x00FC;|ü)be:?\s*)</label>",
+        re.DOTALL | re.IGNORECASE,
+    )
+
+    def get_sec_id(pg_str):
+        if pg_str not in sec_counter:
+            sec_counter[pg_str] = 1
+        else:
+            sec_counter[pg_str] += 1
+        return f"pg{pg_str}_s{sec_counter[pg_str]:03d}"
+
+    def replace_lies_sec(match):
+        start_pos = match.start()
+        pg_str = get_page_for_pos(start_pos)
+        sec_id = get_sec_id(pg_str)
+        lbl_content = match.group("label_content")
+
+        return f'\n<sec id="{sec_id}">\n<label>{lbl_content}</label>'
+
+    return lies_sec_re.sub(replace_lies_sec, content)
 
 # ==========================================
 # STEP 7: CONVERT MAIN TASKS
@@ -374,16 +401,126 @@ def process_task_sections(content, get_page_for_pos):
 
     return "".join(new_content)
 
-
 # ==========================================
 # STEP 8: CONVERT BOOK PARTS & HEADINGS
 # Headings & Specific Words-a <book-part> structure-a convert panna
 # ==========================================
 def process_book_parts(content, get_page_for_pos):
-    """Processes <head2> tags and specific keywords (ENTDECKEN, VERSTEHEN, ANWENDEN)
-    into <book-part> wrappers."""
+    """Processes <head1>+<head2> text-only, <head1>+<head1>, <head1>+<head2>,
+    standalone <head2>, and specific keywords into <book-part> wrappers."""
 
-    # 8.1 Page start apparam varra <head2> (With Page Start Tag)
+    # 8.0a Page start + <head1> (Text) + <head2> (Title) -> Nested book-part
+    head1_text_head2_re = re.compile(
+        r'(<\?pageStart\b[^>]*pagination=["\'](\d+)["\'][^>]*\?>)\s*'
+        r'<head1>(?:<bold>)?([^\d<][^<]*?)(?:</bold>)?</head1>\s*'
+        r'<head2>(?:<bold>)?(.*?)(?:</bold>)?</head2>',
+        re.DOTALL | re.IGNORECASE,
+    )
+
+    def replace_head1_text_head2(match):
+        page_start_tag = match.group(1)
+        pg_num = int(match.group(2))
+        pg_str = str(pg_num)
+
+        head1_label_text = match.group(3).strip()
+        head2_title_text = match.group(4).strip()
+
+        book_part_structure = (
+            f"{page_start_tag}\n"
+            f'<book-part book-part-type="mod-Lerneinheit">\n'
+            f"<book-part-meta>\n"
+            f'<book-part-id book-part-id-type="pu-node-id"></book-part-id>\n'
+            f'<title-group id="pg{pg_str}">\n'
+            f"<title>{head2_title_text}</title>\n"
+            f"</title-group>\n"
+            f"</book-part-meta>\n"
+            f"<body>\n"
+            f'<book-part book-part-type="mod-Lerneinheit">\n'
+            f"<book-part-meta>\n"
+            f'<book-part-id book-part-id-type="pu-node-id"></book-part-id>\n'
+            f'<title-group id="pg{pg_str}">\n'
+            f"<label>{head1_label_text}</label>\n"
+            f"</title-group>\n"
+            f"</book-part-meta>\n"
+            f"<body>\n"
+            f"</body>\n"
+            f"</book-part>\n"
+            f"</body>\n"
+            f"</book-part>"
+        )
+        return book_part_structure
+
+    content = head1_text_head2_re.sub(replace_head1_text_head2, content)
+
+    # 8.0b Page start + <head1> (Number) + <head1> (Title) pattern
+    head1_head1_re = re.compile(
+        r'(<\?pageStart\b[^>]*pagination=["\'](\d+)["\'][^>]*\?>)\s*'
+        r'<head1>(?:<bold>)?(\d+)(?:</bold>)?</head1>\s*'
+        r'<head1>(?:<bold>)?(.*?)(?:</bold>)?</head1>',
+        re.DOTALL | re.IGNORECASE,
+    )
+
+    def replace_head1_head1(match):
+        page_start_tag = match.group(1)
+        pg_num = int(match.group(2))
+        pg_str = str(pg_num)
+
+        ch_num = match.group(3).strip()
+        title_text = match.group(4).strip()
+
+        book_part_structure = (
+            f"{page_start_tag}\n"
+            f'<book-part book-part-type="mod-Lerneinheit" id="ch{ch_num}">\n'
+            f"<book-part-meta>\n"
+            f'<book-part-id book-part-id-type="pu-node-id"></book-part-id>\n'
+            f'<title-group id="pg{pg_str}">\n'
+            f"<label>{ch_num}</label>\n"
+            f"<title>{title_text}</title>\n"
+            f"</title-group>\n"
+            f"</book-part-meta>\n"
+            f"<body>\n"
+            f"</body>\n"
+            f"</book-part>"
+        )
+        return book_part_structure
+
+    content = head1_head1_re.sub(replace_head1_head1, content)
+
+    # 8.0c Page start + <head1> (Number) + <head2> (Title) pattern
+    head1_head2_re = re.compile(
+        r'(<\?pageStart\b[^>]*pagination=["\'](\d+)["\'][^>]*\?>)\s*'
+        r'<head1>(?:<bold>)?(\d+)(?:</bold>)?</head1>\s*'
+        r'<head2>(?:<bold>)?(.*?)(?:</bold>)?</head2>',
+        re.DOTALL | re.IGNORECASE,
+    )
+
+    def replace_head1_head2(match):
+        page_start_tag = match.group(1)
+        pg_num = int(match.group(2))
+        pg_str = str(pg_num)
+
+        ch_num = match.group(3).strip()
+        title_text = match.group(4).strip()
+
+        book_part_structure = (
+            f"{page_start_tag}\n"
+            f'<book-part book-part-type="mod-Lerneinheit" id="ch{ch_num}">\n'
+            f"<book-part-meta>\n"
+            f'<book-part-id book-part-id-type="pu-node-id"></book-part-id>\n'
+            f'<title-group id="pg{pg_str}">\n'
+            f"<label>{ch_num}</label>\n"
+            f"<title>{title_text}</title>\n"
+            f"</title-group>\n"
+            f"</book-part-meta>\n"
+            f"<body>\n"
+            f"</body>\n"
+            f"</book-part>"
+        )
+        return book_part_structure
+
+    content = head1_head2_re.sub(replace_head1_head2, content)
+
+    # 8.1 Page start apparam varra standalone <head2> (With Page Start Tag)
     book_part_re = re.compile(
         r'(<\?pageStart\b[^>]*pagination=["\'](\d+)["\'][^>]*\?>)\s*'
         r'<head2>(?:<bold>)?(.*?)(?:</bold>)?</head2>'
@@ -416,6 +553,8 @@ def process_book_parts(content, get_page_for_pos):
             f"</title-group>\n"
             f'<related-object content-type=""/>\n'
             f"</book-part-meta>\n"
+            f"<body>\n"
+            f"</body>\n"
             f"</book-part>"
         )
         return book_part_structure
@@ -452,6 +591,8 @@ def process_book_parts(content, get_page_for_pos):
             f"</title-group>\n"
             f'<related-object content-type=""/>\n'
             f"</book-part-meta>\n"
+            f"<body>\n"
+            f"</body>\n"
             f"</book-part>"
         )
         return book_part_structure
@@ -477,6 +618,8 @@ def process_book_parts(content, get_page_for_pos):
             f"</title-group>\n"
             f'<related-object content-type=""/>\n'
             f"</book-part-meta>\n"
+            f"<body>\n"
+            f"</body>\n"
             f"</book-part>"
         )
         return book_part_structure
@@ -484,7 +627,6 @@ def process_book_parts(content, get_page_for_pos):
     content = words_book_part_re.sub(replace_words_book_part, content)
 
     return content
-
 
 # ==========================================
 # STEP 9: CONVERT CIRCLED NUMBER LISTS
@@ -641,6 +783,9 @@ def process_xml_text(content):
 
     # 11.3 Kompetenz sections convert panna
     content = process_kompetenz_sections(content, get_page_for_pos, sec_counter)
+
+    # 11.3b 'Lies und übe:' sections-ukku ID convert panna
+    content = process_lies_und_uebe_sections(content, get_page_for_pos, sec_counter)
 
     # 11.4 Circled number lists convert panna
     content = process_circled_num_lists(

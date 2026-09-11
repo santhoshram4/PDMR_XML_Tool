@@ -554,12 +554,33 @@ def process_xml_content(xml_content, isbn_num):
                 open_sec_count -= 1
                 cleaned_sec_tokens.append(token)
             else:
-                # Discard orphan/extra closing </sec> tag
                 pass
         else:
             cleaned_sec_tokens.append(token)
 
     xml_content = "".join(cleaned_sec_tokens)
+
+    # ==========================================
+    # STEP 12.2: DYNAMIC SECTION PAGE ID & SEQUENCE CORRECTOR (<sec id="pg007_s015">)
+    # ==========================================
+    global_page = ["001"]
+    sec_seq_counter = [1]
+
+    sec_id_pattern = r'(<\?pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*\?>|<pageStart\b[^>]*\bpagination=["\'](\d+)["\'][^>]*/>)|(<sec\b[^>]*\bid=["\']pg\d+_s\d+["\'][^>]*>)'
+
+    def fix_sec_id_sequence(match):
+        if match.group(1):
+            p_val = match.group(2) if match.group(2) else match.group(3)
+            global_page[0] = f"{int(p_val):03d}"
+            sec_seq_counter[0] = 1
+            return match.group(0)
+        elif match.group(4):
+            sec_id = f"pg{global_page[0]}_s{sec_seq_counter[0]:03d}"
+            sec_seq_counter[0] += 1
+            return f'<sec id="{sec_id}">'
+        return match.group(0)
+
+    xml_content = re.sub(sec_id_pattern, fix_sec_id_sequence, xml_content, flags=re.IGNORECASE)
 
     # ==========================================
     # STEP 13: REMOVE UNWANTED BLANK/EMPTY LINES & WHITESPACES
